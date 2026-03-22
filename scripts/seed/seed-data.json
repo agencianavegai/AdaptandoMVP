@@ -1,0 +1,702 @@
+[
+  {
+    "mundo_id": 1,
+    "notebook_id": "a6b34baa-1368-4783-975b-d950b74c17f6",
+    "pilula": {
+      "titulo": "A Gestão Profissional do Coração: Unindo Administração e Voluntariado",
+      "conteudo": "Administrar o voluntariado em uma organização é transformar a energia da solidariedade em impacto social estruturado. Gerir voluntários exige o mesmo rigor aplicado aos colaboradores remunerados, desde a seleção criteriosa até a integração à cultura organizacional [1, 2]. O segredo está em entender que o trabalho voluntário não é apenas uma ajuda casual, mas um compromisso de cidadania que demanda liderança clara e suporte constante [3, 4].\n\nA base legal é o alicerce dessa relação, sendo obrigatória a formalização por meio do Termo de Adesão, garantindo que não haja vínculo empregatício e definindo as responsabilidades de ambas as partes [5, 6]. No entanto, a verdadeira gestão vai além do papel: ela reside na construção de equipes baseadas na confiança e na gestão colaborativa, onde o líder atua como um facilitador do potencial humano [7, 8].\n\nManter a chama do engajamento acesa é o grande desafio administrativo. Como 74% dos brasileiros buscam o voluntariado por solidariedade, a organização deve retribuir com feedback, reconhecimento e oportunidades de aprendizado [9, 10]. Uma gestão eficiente não apenas alcança metas institucionais, mas proporciona ao voluntário uma experiência transformadora de crescimento pessoal e emocional [11, 12].\n\nPor fim, o voluntariado estratégico — seja tradicional ou empresarial — fortalece a governança e amplia a diversidade das organizações [13, 14]. Ao tratar o talento voluntário com profissionalismo e carinho, as instituições do Terceiro Setor colocam 'a casa em ordem' e tornam-se vetores reais de desenvolvimento e justiça social no país [15, 16]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "De acordo com a legislação brasileira, qual documento é indispensável para formalizar a relação entre a organização e o voluntário?",
+        "alternativas": [
+          "Contrato de Prestação de Serviços Autônomos",
+          "Termo de Adesão ao Serviço Voluntário",
+          "Acordo de Confidencialidade e Ética",
+          "Registro em Carteira de Trabalho Social"
+        ],
+        "explicacao": "A Lei nº 9.608/98 exige expressamente que o serviço voluntário seja exercido mediante a celebração de um Termo de Adesão entre a entidade e o prestador do serviço [5, 6].",
+        "correta_idx": 1,
+        "dificuldade": "facil"
+      },
+      {
+        "pergunta": "Segundo a Pesquisa Voluntariado no Brasil 2021, qual é a principal motivação que move os voluntários brasileiros?",
+        "alternativas": [
+          "Desejo de adquirir experiência profissional",
+          "Obrigações de natureza religiosa",
+          "Dever de cidadania perante o Estado",
+          "Ser solidário e ajudar os outros"
+        ],
+        "explicacao": "A pesquisa aponta que a solidariedade é o motivo majoritário, citado por 74% dos voluntários entrevistados [9, 17].",
+        "correta_idx": 3,
+        "dificuldade": "facil"
+      },
+      {
+        "pergunta": "Qual modelo de gestão organizacional se caracteriza pela horizontalidade e pela 'dupla subordinação' dos profissionais?",
+        "alternativas": [
+          "Modelo de Gestão Tradicional",
+          "Modelo de Gestão Matricial",
+          "Modelo de Estrutura Linear",
+          "Modelo de Gestão por Colegiado"
+        ],
+        "explicacao": "O Modelo Matricial é caracterizado pela horizontalidade e pela múltipla subordinação, onde o profissional responde ao seu gerente habitual e ao líder do projeto [18].",
+        "correta_idx": 1,
+        "dificuldade": "medio"
+      },
+      {
+        "pergunta": "No contexto da construção de equipes de alta performance, qual elemento é citado como a base fundamental de uma equipe coesa?",
+        "alternativas": [
+          "Comprometimento com metas financeiras",
+          "Hierarquia rígida e controle de processos",
+          "Confiança mútua entre os integrantes",
+          "Ausência total de conflitos internos"
+        ],
+        "explicacao": "Segundo Patrick Lencioni, a confiança é a base de uma equipe funcional; sem ela, o trabalho em equipe é impossível [8, 19].",
+        "correta_idx": 2,
+        "dificuldade": "medio"
+      },
+      {
+        "pergunta": "Por que muitas empresas investem na criação de Programas de Voluntariado Empresarial?",
+        "alternativas": [
+          "Para substituir funcionários CLT em épocas de crise",
+          "Para obter isenção total de impostos federais",
+          "Como forma de desenvolver talentos e 'soft skills' na equipe",
+          "Apenas para cumprir obrigatoriedades da Lei de Cotas"
+        ],
+        "explicacao": "As empresas entendem o voluntariado como uma forma de desenvolver talentos internos e habilidades como comunicação, liderança e espírito de equipe [14, 20].",
+        "correta_idx": 2,
+        "dificuldade": "dificil"
+      }
+    ]
+  },
+  {
+    "mundo_id": 2,
+    "notebook_id": "6858b336-bb37-4101-bf57-c2ad45e19661",
+    "pilula": {
+      "titulo": "Desvelando Horizontes: A Força do Diagnóstico Comunitário",
+      "conteudo": "A pesquisa e o diagnóstico representam o sopro vital de qualquer intervenção social transformadora. Longe de serem meros exercícios burocráticos, eles são ferramentas de **análise interpretativa** que permitem desvelar a realidade, identificando vulnerabilidades e riscos que, de outra forma, permaneceriam invisíveis aos olhos apressados [1, 2]. É nesse momento de escuta e observação que o gestor deixa de apenas \"apagar fogos\" imediatistas para se tornar um estrategista do bem comum, fundamentando cada decisão em dados concretos e na compreensão profunda do território [3, 4].\n\nO verdadeiro diferencial de um diagnóstico potente é a **participação ativa da comunidade**. Quando ouvimos os anseios e as propostas daqueles que vivem a realidade local, transformamos beneficiários passivos em protagonistas da mudança [5, 6]. Essa conexão humana, validada por fontes primárias como grupos focais e entrevistas, garante que o projeto não seja apenas uma ideia no papel, mas uma resposta legítima e pulsante às demandas reais da população [7, 8].\n\nDominar o uso de indicadores e métodos de coleta é empoderar a própria missão institucional. Ao traduzir a complexidade social em dados mensuráveis, ganhamos a precisão necessária para planejar, executar e, acima de tudo, provar que a transformação é possível [9, 10]. Cada pesquisa é um convite para olhar o mundo com criticidade e esperança, pavimentando caminhos para uma sociedade mais justa onde o conhecimento serve como alavanca para a dignidade humana [11, 12]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual é a principal função do diagnóstico socioterritorial no ciclo de políticas públicas?",
+        "alternativas": [
+          "Substituir a necessidade de financiamento externo.",
+          "Promover a venda de serviços para o mercado privado.",
+          "Fornecer uma análise interpretativa que permite compreender a realidade social e identificar vulnerabilidades.",
+          "Substituir o papel do Estado na prestação de serviços básicos."
+        ],
+        "explicacao": "O diagnóstico possibilita uma compreensão interpretativa da realidade social de um território, sendo etapa essencial para antecipar decisões assertivas e identificar riscos e vulnerabilidades [1, 4].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "No contexto da pesquisa social, o que são consideradas fontes primárias de dados?",
+        "alternativas": [
+          "Livros, dicionários e enciclopédias oficiais.",
+          "Questionários, grupos focais, entrevistas e assembleias.",
+          "Dados estatísticos do IBGE e relatórios da ONU.",
+          "Artigos de periódicos e teses de doutorado."
+        ],
+        "explicacao": "Fontes primárias referem-se a informações originais coletadas diretamente pelo autor da pesquisa, como entrevistas, reuniões e questionários [7, 13].",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Por que a participação da comunidade é considerada um diferencial na identificação de demandas sociais?",
+        "alternativas": [
+          "Porque reduz o tempo gasto na elaboração do projeto escrito.",
+          "Para que a comunidade sinta que está cumprindo uma obrigação legal.",
+          "Para garantir que a comunidade perceba os problemas e se torne um ator engajado na busca da solução.",
+          "Apenas para cumprir exigências de transparência dos financiadores."
+        ],
+        "explicacao": "O envolvimento da comunidade permite que ela se torne ator da ação e abrace a causa, garantindo que as demandas identificadas reflitam os anseios reais da população [5, 14].",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que caracteriza a atuação profissional baseada no imediatismo ('apagar fogo') mencionada nas fontes?",
+        "alternativas": [
+          "Uma estratégia eficiente de resolução rápida de crises.",
+          "A falta de inserção da lógica do planejamento no cotidiano, afetando a qualidade e os resultados do serviço.",
+          "O foco exclusivo no lucro e no retorno financeiro imediato.",
+          "A utilização de tecnologias sociais de ponta para respostas ágeis."
+        ],
+        "explicacao": "Atuar no imediatismo significa realizar ações que não provêem mudanças qualitativas a longo prazo por falta de planejamento e diagnóstico adequados [3].",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual a importância dos indicadores sociais para o diagnóstico e acompanhamento de projetos?",
+        "alternativas": [
+          "Servem apenas para listar nomes de participantes em eventos.",
+          "São ferramentas que traduzem aspectos da realidade de forma mensurável para observação e avaliação.",
+          "Substituem a necessidade de relatórios descritivos finais.",
+          "Servem para determinar o salário dos gestores do projeto."
+        ],
+        "explicacao": "Indicadores são instrumentos que permitem identificar, medir e traduzir aspectos da realidade social, tornando operacional a observação e avaliação dos resultados [9, 10].",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "mundo_id": 3,
+    "notebook_id": "2555025b-586d-430e-ac39-fb2f8ac64edf",
+    "pilula": {
+      "titulo": "O Despertar da Pedagogia Ativa e Criativa",
+      "conteudo": "A educação contemporânea nos convida a transcender o modelo tradicional, onde o estudante deixa de ser um mero receptor passivo para se tornar o protagonista vibrante de sua própria aprendizagem [1-3]. Através das metodologias ativas, o ambiente escolar transforma-se em um espaço de ação e reflexão, onde o \"aprender fazendo\" fortalece a autonomia e o espírito científico necessários para o novo milênio [4-6].\n\nNeste cenário, a ludicidade e o jogo revelam-se como catalisadores fundamentais, permitindo que o conhecimento se ancore em experiências reais e significativas [7, 8]. Brincar não é apenas diversão; é a base sobre a qual a criança constrói sua identidade e compreende o mundo, integrando razão e emoção de forma indissociável [9-11]. A criatividade floresce como uma habilidade universal, impulsionada por desafios que incentivam a busca por soluções originais e o pensamento crítico [12-14].\n\nO papel do educador evolui para o de um mediador e facilitador, que utiliza ferramentas como o cinema, a tecnologia e a pedagogia de projetos para despertar a curiosidade e o engajamento discente [15-18]. Ao promover uma educação dialógica e humanizada, preparamos indivíduos resilientes e conscientes, capazes de transformar a sociedade e encarar com entusiasmo as constantes mudanças do século XXI [19-21]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual é a principal mudança de paradigma proposta pelas metodologias ativas em relação ao ensino tradicional?",
+        "alternativas": [
+          "A centralização de todo o conhecimento na autoridade do professor.",
+          "O foco exclusivo na memorização mecânica de conteúdos programáticos.",
+          "O protagonismo do aluno em seu próprio processo de aprendizagem.",
+          "A eliminação completa de qualquer suporte tecnológico em sala de aula."
+        ],
+        "explicacao": "As metodologias ativas visam colocar o aluno como sujeito ativo e protagonista, rompendo com a passividade do modelo tradicional onde o professor é o único detentor do saber [1, 3, 22, 23].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Segundo o referencial de Vygotsky citado nos textos, qual a função da brincadeira no desenvolvimento infantil?",
+        "alternativas": [
+          "Um mero momento de distração para gastar energia física.",
+          "Uma atividade que impulsiona a zona de desenvolvimento proximal.",
+          "Uma prática instintiva que não depende de aprendizado social.",
+          "Um substituto ineficiente para as aulas teóricas tradicionais."
+        ],
+        "explicacao": "Vygotsky compreende o brincar como uma atividade social que impulsiona o desenvolvimento cognitivo e permite à criança internalizar conceitos complexos [8, 24, 25].",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "O que caracteriza a 'Aprendizagem Significativa' conforme as teorias apresentadas?",
+        "alternativas": [
+          "A retenção temporária de informações apenas para a realização de provas.",
+          "O aprendizado isolado de conceitos sem conexão com a realidade do aluno.",
+          "A ancoragem de novos conhecimentos em estruturas cognitivas pré-existentes.",
+          "O processo de receber passivamente ideias já prontas do professor."
+        ],
+        "explicacao": "A aprendizagem significativa ocorre quando o estudante consegue estabelecer conexões substantivas entre as novas informações e o que já conhece [26-28].",
+        "correta_idx": 2,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Qual é o novo papel atribuído ao professor dentro das metodologias ativas e da pedagogia de projetos?",
+        "alternativas": [
+          "Transmissor centralizador e única fonte de informação.",
+          "Observador passivo que não deve interferir no processo dos alunos.",
+          "Mediador, facilitador e orientador da aprendizagem.",
+          "Avaliador focado exclusivamente em métricas quantitativas e notas."
+        ],
+        "explicacao": "O professor transita de transmissor centralizador para mediador e facilitador, negociando e criando condições para que os alunos resolvam problemas [1, 15, 29, 30].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Como a criatividade é definida nas perspectivas pedagógicas contemporâneas citadas?",
+        "alternativas": [
+          "Um dom divino e hereditário restrito apenas a gênios ou artistas.",
+          "Uma habilidade fixa determinada exclusivamente pela genética no nascimento.",
+          "Uma potencialidade humana desenvolvida no contexto social e cultural.",
+          "A simples capacidade de seguir regras e instruções técnicas com perfeição."
+        ],
+        "explicacao": "A criatividade é vista como uma condição inerente a todos os seres humanos, que se desenvolve através da interação com o meio e experiências vividas [12, 13, 31, 32].",
+        "correta_idx": 2,
+        "dificuldade": "médio"
+      }
+    ]
+  },
+  {
+    "mundo_id": 4,
+    "notebook_id": "6858b336-bb37-4101-bf57-c2ad45e19661",
+    "pilula": {
+      "titulo": "A Arquitetura da Mudança: Transformando Sonhos em Projetos",
+      "conteudo": "A gestão de projetos sociais é muito mais do que o preenchimento de formulários; é a arte de construir pontes entre as nossas utopias coletivas e a realidade concreta das comunidades [1, 2]. Gerenciar um projeto significa dar vida a uma intenção de mudança, organizando esforços de forma estratégica para que cada recurso — seja ele humano, material ou financeiro — seja otimizado em prol do bem comum [3, 4]. É o exercício de transformar a vontade de mudar o mundo em um plano de trabalho estruturado, com metas claras e resultados que possam ser sentidos e celebrados [5, 6].\n\nNo coração de uma gestão eficiente reside o equilíbrio do \"triângulo sagrado\": escopo, tempo e custo [7]. O gestor de sucesso é aquele que navega por essas restrições com criatividade e transparência, entendendo que o planejamento não é uma camisa de força, mas um mapa de navegação que permite correções de rumo através do monitoramento contínuo [8-10]. A comunicação assertiva surge aqui como a ferramenta que garante credibilidade e visibilidade, atraindo parceiros e engajando a comunidade como protagonista da própria transformação [11-13].\n\nAo final de cada ciclo, a verdadeira gestão se revela na sustentabilidade e no legado deixado [14, 15]. Gerir é liderar *com* as pessoas, fortalecendo redes de solidariedade que sobrevivem ao encerramento de um financiamento específico [16, 17]. Cada projeto concluído com rigor técnico e sensibilidade humana é um degrau a mais na construção de uma sociedade mais justa, provando que, com organização e propósito, o impacto social positivo é uma conquista ao nosso alcance [18, 19]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Quais são as três variáveis que compõem o chamado 'triângulo sagrado' da gestão de projetos?",
+        "alternativas": [
+          "Planejamento, Execução e Avaliação",
+          "Escopo/Qualidade, Custo/Recursos e Tempo",
+          "Missão, Visão e Valores",
+          "Governo, Empresa e Sociedade Civil"
+        ],
+        "explicacao": "O gerente de projetos deve ter consciência das limitações internas e externas impostas a qualquer projeto, representadas pelas restrições de escopo, custo e tempo.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "De acordo com os manuais de gestão, o que NÃO pode ser alterado em um projeto durante sua execução, sob risco de descaracterizá-lo completamente?",
+        "alternativas": [
+          "A equipe técnica",
+          "O cronograma de reuniões",
+          "O Objetivo/Objeto da proposta",
+          "O fornecedor de materiais de consumo"
+        ],
+        "explicacao": "O objetivo de um projeto não pode ser mudado, pois isso alteraria todo o seu escopo, significando que o projeto passou a ser outro.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual é a principal diferença entre a 'Missão' e a 'Visão' de uma organização social?",
+        "alternativas": [
+          "Não há diferença, são sinônimos utilizados para marketing social.",
+          "A Missão foca no lucro e a Visão foca no impacto social.",
+          "A Missão é a razão de ser (o que faz e para que), enquanto a Visão é onde a organização pretende estar no futuro.",
+          "A Missão é definida pela comunidade e a Visão é definida pelo governo."
+        ],
+        "explicacao": "A missão declara a razão de ser da instituição, enquanto a visão orienta o caminho, definindo onde a organização deverá estar em um horizonte de médio ou longo prazo.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Sobre o monitoramento e acompanhamento de projetos, é correto afirmar que:",
+        "alternativas": [
+          "Devem ser feitos apenas no último mês do projeto para prestação de contas.",
+          "Servem para verificar se as atividades estão ocorrendo conforme o planejado e corrigir possíveis distorções.",
+          "Sua única finalidade é substituir a necessidade de auditoria externa.",
+          "Devem ser realizados exclusivamente por membros externos à comunidade."
+        ],
+        "explicacao": "O monitoramento atravessa todo o processo de gestão, verificando o cumprimento de metas e permitindo a correção de rumos de forma sistemática.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que caracteriza a 'Sustentabilidade' de um projeto social além do aspecto financeiro?",
+        "alternativas": [
+          "A dependência total e permanente de um único financiador estatal.",
+          "A capacidade de desdobramento, competência técnica, articulação em rede e engajamento comunitário.",
+          "A exclusão de parcerias privadas para manter a pureza da causa.",
+          "A realização de ações imediatistas que não requerem planejamento futuro."
+        ],
+        "explicacao": "A sustentabilidade relaciona-se ao fortalecimento do projeto para que ele tenha continuidade, envolvendo fatores como organização interna, credibilidade e articulações locais e regionais.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "mundo_id": 5,
+    "notebook_id": "53b9a1ab-e742-40a9-a14a-cce3aada69b6",
+    "pilula": {
+      "titulo": "A Comunicação como Alma da Transformação Social",
+      "conteudo": "Neste vasto universo do Terceiro Setor, a comunicação não deve ser vista como um mero adereço ou um recurso de emergência para momentos de crise, mas como um elemento fundador e estruturante das próprias organizações [1, 2]. Comunicar é a arte de expressar a missão, transformando valores abstratos em relações de conhecimento e reconhecimento que legitimam a atuação social perante a comunidade [1, 3]. Quando uma organização se comunica de forma estratégica, ela deixa de apenas descrever o que faz para efetivamente expressar sua essência, gerando o impacto necessário para a mudança social [1, 4].\n\nPara transformar desafios em oportunidades, as organizações precisam abraçar a **comunicação integrada**, que harmoniza os fluxos internos, administrativos, mercadológicos e institucionais [5-7]. Essa abordagem profissional é o principal trampolim para a sustentabilidade financeira e a credibilidade, permitindo que a causa defendida seja o verdadeiro foco da mensagem [8-10]. Ao adotar uma postura proativa e transparente, a entidade ganha espaço na mente do público, transformando simpatizantes em doadores leais e parceiros engajados [11-13].\n\nVivemos na era da \"conversa global\", onde a internet e as redes sociais permitem que as organizações se tornem mais humanas e autênticas [14, 15]. O segredo do sucesso contemporâneo reside em entender que os mercados são conversas e que a comunidade é parte integrante da identidade da organização [15, 16]. Portanto, comunique com entusiasmo, ética e clareza; pois, no coração de cada grande transformação social, existe sempre uma comunicação poderosa capaz de inspirar e mobilizar o mundo para o bem comum [17-19]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Segundo o modelo de comunicação integrada de Kunsch (2003), qual eixo é responsável pela construção de uma imagem e identidade corporativas fortes e positivas?",
+        "alternativas": [
+          "Comunicação Administrativa",
+          "Comunicação Interna",
+          "Comunicação Institucional",
+          "Comunicação Mercadológica"
+        ],
+        "explicacao": "A comunicação institucional é responsável pela construção e formação de uma imagem e identidade corporativas fortes e positivas, buscando a construção de uma personalidade organizacional credível [7].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual é a distinção fundamental entre 'informação' e 'comunicação' apresentada por Dominique Wolton nas fontes?",
+        "alternativas": [
+          "A informação é digital e a comunicação é analógica",
+          "A informação refere-se à mensagem e a comunicação à relação",
+          "A informação é técnica e a comunicação é estratégica",
+          "Não existe distinção, são conceitos sinônimos"
+        ],
+        "explicacao": "Baseando-se nas palavras de Dominique Wolton, as fontes afirmam que a informação se refere à mensagem e a comunicação à relação [3].",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que significa a tese de que 'os mercados são conversas', conforme o Cluetrain Manifesto citado nos textos?",
+        "alternativas": [
+          "Que as empresas devem vender seus produtos através de chats",
+          "Que o marketing deve ser focado apenas em propaganda de rádio",
+          "Que houve uma transição do monólogo para um relacionamento bidirecional e simétrico entre muitos",
+          "Que as negociações de mercado devem ser feitas apenas presencialmente"
+        ],
+        "explicacao": "A frase remete para a passagem de um paradigma de monólogo (um para muitos) para uma situação em que muitos se relacionam com muitos de forma bidirecional, impulsionada pela internet [14, 16].",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Por que os colaboradores e voluntários são considerados os 'embaixadores' de uma organização da sociedade civil?",
+        "alternativas": [
+          "Porque eles representam a organização em eventos diplomáticos",
+          "Porque são fontes de informação credíveis e difundem mensagens junto a outros grupos",
+          "Porque são os únicos que podem falar com a imprensa",
+          "Porque eles decidem quem serão os novos financiadores"
+        ],
+        "explicacao": "Os colaboradores são designados como embaixadores por serem fontes de informação credíveis sobre a organização e por difundirem mensagens junto a outros grupos de interlocutores [20].",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual é o principal objetivo da 'Comunicação no Interesse Público' nas organizações sociais?",
+        "alternativas": [
+          "Aumentar o lucro líquido da instituição ao final do ano",
+          "Atender exclusivamente às necessidades de marketing dos diretores",
+          "Promover a mudança de conhecimentos, atitudes e comportamentos visando o bem comum",
+          "Reduzir o número de voluntários para cortar custos operacionais"
+        ],
+        "explicacao": "A comunicação no interesse público visa contribuir para a mudança de conhecimentos, atitudes e comportamentos nos diversos públicos-alvo, tendo como finalidade a mudança social e o bem comum [21, 22].",
+        "correta_idx": 2,
+        "dificuldade": "difícil"
+      }
+    ]
+  },
+  {
+    "mundo_id": 6,
+    "notebook_id": "da8cd8b1-9424-4b34-b7a3-3c500f28cb66",
+    "pilula": {
+      "titulo": "A Tecnologia como Motor de Transformação e Inclusão Social",
+      "conteudo": "A tecnologia é muito mais do que um conjunto de ferramentas; ela é uma ponte estratégica que conecta governos e cidadãos, permitindo a efetivação de direitos sociais mesmo nos tempos mais desafiadores [1, 2]. A verdadeira transformação digital não se limita à digitalização da burocracia, mas exige uma reformulação profunda dos modelos de gestão para torná-los mais dinâmicos, transparentes e, acima de tudo, focados nas necessidades reais das pessoas [3, 4].\n\nO aprendizado mais valioso deste novo horizonte é que a inovação deve ser inclusiva. O conceito de **Tecnologia Social** nos ensina que o conhecimento deve ser democratizado e construído coletivamente com a comunidade, transformando o beneficiário de um simples consumidor em um protagonista da mudança [5, 6]. É através desse engajamento participativo que conseguimos criar soluções que respeitam a cultura local e promovem a verdadeira emancipação social [7, 8].\n\nEmbora existam desafios como a desigualdade digital e a necessidade de proteção de dados, eles são convites para a ação e para o investimento em políticas de inclusão [9, 10]. Estamos trilhando um caminho onde a inteligência artificial, as moedas sociais digitais e a transparência pública podem fortalecer os laços de confiança e impulsionar o bem-estar coletivo [11, 12]. O futuro digital é um espaço de aprendizado contínuo e oportunidades ilimitadas para construir uma sociedade mais justa e resiliente [13, 14]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que diferencia primordialmente a Tecnologia Social (TS) da Tecnologia Convencional (TC)?",
+        "alternativas": [
+          "A TC é voltada para a inclusão social, enquanto a TS foca exclusivamente no lucro.",
+          "A TS é desenvolvida de forma participativa e voltada para demandas sociais, enquanto a TC é orientada pelo mercado e acumulação de capital.",
+          "A TS só pode ser desenvolvida por empresas multinacionais estrangeiras.",
+          "A TC não utiliza conhecimento científico em sua construção, ao contrário da TS."
+        ],
+        "explicacao": "A Tecnologia Social é orientada para a satisfação de necessidades humanas e construção coletiva, contrapondo-se à Tecnologia Convencional que visa o lucro e pode gerar exclusão [15-17].",
+        "correta_idx": 1,
+        "dificuldade": "facil"
+      },
+      {
+        "pergunta": "Qual foi um dos principais impactos da pandemia da COVID-19 na gestão pública brasileira mencionados nas fontes?",
+        "alternativas": [
+          "A proibição total do uso de smartphones para acesso a serviços públicos.",
+          "A eliminação da necessidade de transparência e prestação de contas.",
+          "A aceleração da transformação digital e da oferta de serviços públicos online, como o Auxílio Emergencial.",
+          "O fim definitivo do atendimento presencial em todas as prefeituras de pequeno porte."
+        ],
+        "explicacao": "A pandemia acelerou a tendência de digitalização do governo e exigiu estratégias de resolução de problemas a partir do distanciamento social, destacando-se o Auxílio Emergencial via aplicativo [1, 18, 19].",
+        "correta_idx": 2,
+        "dificuldade": "media"
+      },
+      {
+        "pergunta": "Segundo a pesquisa TIC Organizações Sem Fins Lucrativos 2022, qual é a principal barreira para o uso de computadores e internet pelas OSCs?",
+        "alternativas": [
+          "Falta de interesse dos gestores em adotar novas tecnologias.",
+          "Poucos recursos financeiros para investimento na área de tecnologia.",
+          "Ausência total de infraestrutura de internet em todas as regiões do Brasil.",
+          "Excesso de dispositivos móveis de propriedade das organizações."
+        ],
+        "explicacao": "A maioria das OSCs (64%) relatou que a falta de recursos financeiros para investimento em tecnologia é a maior dificuldade encontrada [20, 21].",
+        "correta_idx": 1,
+        "dificuldade": "facil"
+      },
+      {
+        "pergunta": "Qual é um dos riscos éticos associados ao uso de Inteligência Artificial (IA) no setor público?",
+        "alternativas": [
+          "Aumentar excessivamente a velocidade de todos os processos burocráticos.",
+          "Produzir resultados enviesados que levam à discriminação ou exclusão de certos grupos.",
+          "Garantir que todos os cidadãos entendam perfeitamente o funcionamento dos algoritmos.",
+          "Eliminar completamente o uso de dados pessoais em qualquer tipo de análise."
+        ],
+        "explicacao": "Algoritmos de IA podem herdar preconceitos sociais presentes nos dados de treinamento, resultando em decisões discriminatórias ou excludentes [22, 23].",
+        "correta_idx": 1,
+        "dificuldade": "media"
+      },
+      {
+        "pergunta": "O que o texto descreve como o 'Canto da Sereia' no contexto das mídias sociais para as OSCs?",
+        "alternativas": [
+          "O fato de as redes sociais serem gratuitas e garantirem alcance ilimitado a todas as causas.",
+          "A ilusão de que a presença em redes sociais substitui a necessidade de um website próprio e políticas de dados.",
+          "A limitação do alcance orgânico pelos algoritmos, forçando organizações com poucos recursos a pagarem por anúncios para serem vistas.",
+          "A facilidade de captar doadores através de transmissões ao vivo sem qualquer custo operacional."
+        ],
+        "explicacao": "As redes sociais mudaram seus algoritmos para limitar o alcance orgânico, criando um cenário onde apenas postagens patrocinadas têm visibilidade expressiva, o que desafia a sustentabilidade das OSCs [24-26].",
+        "correta_idx": 2,
+        "dificuldade": "dificil"
+      }
+    ]
+  },
+  {
+    "mundo_id": 7,
+    "notebook_id": "12e270a9-1390-4812-b0db-4bccb877d491",
+    "pilula": {
+      "titulo": "A Bússola da Transformação: O Poder dos Indicadores Sociais",
+      "conteudo": "Os indicadores sociais não são apenas números frios em uma planilha; eles são a **bússola que guia o Terceiro Setor** rumo a uma transformação real e profunda. No universo das Organizações da Sociedade Civil (OSCs), medir o desempenho significa dar voz aos resultados e transformar intenções em evidências concretas de mudança [1, 2]. Ao adotar uma cultura de mensuração, sua organização deixa de apenas \"fazer o bem\" e passa a \"fazer a diferença\" de forma estratégica, transparente e profissional [3-5].\n\nAprender a distinguir entre **eficiência, eficácia e efetividade** é o que separa um projeto comum de uma iniciativa de alto impacto. Enquanto a eficiência foca no uso inteligente e responsável dos recursos, a eficácia garante que os resultados previstos sejam realmente alcançados, e a efetividade assegura que essas melhorias permaneçam na vida das pessoas a longo prazo [6, 7]. Esse conhecimento empodera o gestor social a ajustar rotas, aprender com a realidade e celebrar cada vitória com a segurança de estar gerando valor social real [8-10].\n\nMensurar o desempenho é, acima de tudo, um **ato de confiança e coragem**. Através de indicadores validados por especialistas e alinhados aos Objetivos de Desenvolvimento Sustentável (ODS), fortalecemos o elo fundamental do doar estratégico, atraindo parceiros que buscam transformações duradouras [11-13]. Utilize esses dados como ferramenta de inspiração: cada indicador positivo é a prova viva de que o trabalho da sua organização está construindo um Brasil mais justo, solidário e acolhedor para todos [4, 5, 14]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "De acordo com as fontes, qual é a definição correta de indicadores em projetos sociais?",
+        "alternativas": [
+          "São a própria realidade social em sua totalidade e complexidade.",
+          "São escalas financeiras usadas exclusivamente para calcular o lucro de uma organização.",
+          "São parâmetros que servem para detalhar em que medida os objetivos de um projeto foram alcançados. [1]",
+          "São instrumentos de marketing que visam apenas atrair doadores sem compromisso com dados."
+        ],
+        "explicacao": "Indicadores são sinalizadores ou marcas que buscam expressar aspectos da realidade de forma observável ou mensurável, servindo para verificar o alcance dos objetivos [1].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual é a principal diferença entre 'Eficiência' e 'Eficácia' na gestão social?",
+        "alternativas": [
+          "A eficiência foca nos resultados finais e a eficácia foca na sustentabilidade.",
+          "Eficiência diz respeito à boa utilização dos recursos; eficácia observa se as ações permitiram alcançar os resultados previstos. [6]",
+          "Eficácia trata do impacto em outras áreas e eficiência trata da qualidade do serviço.",
+          "Não existe diferença entre os termos, ambos medem a satisfação do beneficiário."
+        ],
+        "explicacao": "Eficiência foca na relação entre recursos e atividades realizadas, enquanto a eficácia avalia se os resultados planejados foram de fato atingidos [6].",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "O que caracteriza o indicador de 'Impacto' em um sistema de monitoramento?",
+        "alternativas": [
+          "A medição do custo médio mensal por beneficiário atendido.",
+          "A contagem simples do número de pessoas que participaram de um evento.",
+          "Mudanças em outras áreas ou públicos não diretamente trabalhados, demonstrando poder de influência e irradiação. [7]",
+          "A verificação se os funcionários estão satisfeitos com seus salários."
+        ],
+        "explicacao": "Impacto diz respeito às mudanças indiretas ou em áreas vizinhas geradas em virtude dos resultados do projeto, revelando seu poder de influência externa [7].",
+        "correta_idx": 2,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Por que o 'doar estratégico' exige a apresentação de resultados por meio de indicadores?",
+        "alternativas": [
+          "Para que o doador possa decidir quais funcionários devem ser demitidos.",
+          "Para que o governo possa taxar as doações recebidas pelas ONGs.",
+          "Porque requer profundidade, ajuste de expectativas e a comprovação das transformações sociais entregues. [4, 12, 15]",
+          "Para garantir que a organização gaste todo o recurso em publicidade televisiva."
+        ],
+        "explicacao": "O doar estratégico vai além do agradecimento; ele busca apoiar organizações que concretizam transformações reais, exigindo transparência e resultados mensuráveis [3, 4, 15].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Na metodologia do Guia da Vitrine de ONGs, como foi calculado o índice '% adequação' para a seleção final dos indicadores?",
+        "alternativas": [
+          "Pela soma do tempo de experiência de todos os mentores envolvidos.",
+          "Pela média percentual de respostas 'sim' das ONGs sobre compreensão, relevância e viabilidade de coleta do dado. [16, 17]",
+          "Pela quantidade de vezes que o indicador aparece em sites internacionais.",
+          "Pelo valor total arrecadado pela organização no último ano fiscal."
+        ],
+        "explicacao": "O índice de adequação validou se as ONGs compreendiam o indicador, se o consideravam relevante e se possuíam capacidade técnica para coletar os dados regularmente [16-18].",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      }
+    ]
+  },
+  {
+    "mundo_id": 8,
+    "notebook_id": "75ecd9e1-3f6c-4cad-bd79-0b43824a4ed4",
+    "pilula": {
+      "titulo": "A Arte Sagrada de Mobilizar Aliados para a Mudança",
+      "conteudo": "Captar recursos é, antes de tudo, a \"sutil arte de ensinar a alegria de doar\" e o privilégio de conectar pessoas a causas que transformam o mundo [1-3]. Não se trata de implorar ou pedir esmolas, mas de encontrar aliados e atuar como um condutor de recursos para realizar as mudanças que os próprios doadores desejam ver na sociedade [4-6]. Quando você entende que a sua organização é um canal para o impacto social, o ato de pedir se torna um convite poderoso para a cidadania ativa e para a construção coletiva de um futuro mais justo e sustentável [7-9].\n\nPara garantir que sua missão seja duradoura e resiliente, a regra de ouro é a diversificação estratégica: o ideal é buscar o equilíbrio dos \"três terços\", dividindo o apoio entre indivíduos, empresas e governos, para que nenhuma fonte isolada represente o risco de paralisar a instituição [10-12]. Um bom planejamento, traduzido em um Plano Anual de Captação, funciona como o mapa que transforma sonhos em metas concretas, definindo com clareza quanto e até quando os recursos devem ser mobilizados para que a equipe técnica foque no que faz de melhor: transformar realidades [13-15].\n\nLembre-se sempre que as pessoas não doam simplesmente porque a organização tem necessidades financeiras, mas porque você oferece soluções reais para problemas que as inquietam [16, 17]. Use o poder do *storytelling* para narrar histórias de vida impactantes, envolva seus apoiadores emocionalmente e nunca se esqueça da regra de ouro: peça! Muitos brasileiros estão prontos para ajudar, mas esperam ser convidados para fazer parte de algo maior [18-21]. Como captador, você é um \"profeta social\" pavimentando o caminho para um mundo onde o sucesso é medido pela vida de quem foi ajudado [22, 23]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual é a regra dos 'três terços' (ou 'Paz e Amor') sugerida para a sustentabilidade financeira de uma OSC?",
+        "alternativas": [
+          "Concentrar 100% dos recursos em convênios governamentais estáveis.",
+          "Depender exclusivamente de grandes doadores internacionais.",
+          "Diversificar as fontes entre indivíduos, empresas e governos para que nenhuma exceda 1/3 da receita.",
+          "Focar apenas em eventos de arrecadação sazonais."
+        ],
+        "explicacao": "A diversificação evita a dependência excessiva de uma única fonte. Se uma falhar, a entidade tem outras para garantir sua autonomia e sobrevivência [12, 24].",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Segundo Lynne Twist, qual é a primeira regra fundamental da captação de recursos?",
+        "alternativas": [
+          "Pedir o dinheiro claramente, sem desculpas e com orgulho.",
+          "Aguardar que o doador sinta a necessidade e ofereça ajuda.",
+          "Enviar apenas e-mails impessoais para evitar constrangimentos.",
+          "Solicitar recursos apenas em momentos de crise financeira extrema."
+        ],
+        "explicacao": "Lynne Twist enfatiza que é essencial não ter medo de pedir e fazê-lo com respeito, afirmando a generosidade do doador como parte da solução [8, 21].",
+        "correta_idx": 0,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que diferencia a 'doação transformacional' da 'doação transacional'?",
+        "alternativas": [
+          "A transformacional foca apenas no valor do cheque, enquanto a transacional foca no projeto.",
+          "A transformacional vê a organização como um canal para o impacto do doador; a transacional foca no processo interno da OSC.",
+          "A transacional exige a troca por bens materiais, e a transformacional é anônima.",
+          "Não há diferença prática entre os dois modelos de captação."
+        ],
+        "explicacao": "Na doação transformacional, a organização é o veículo pelo qual doadores e investidores resolvem desafios da comunidade e atingem seus próprios objetivos de impacto [25, 26].",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      },
+      {
+        "pergunta": "De acordo com os especialistas, qual é a função primordial de um 'Plano Anual de Captação'?",
+        "alternativas": [
+          "Descrever a metodologia pedagógica da organização.",
+          "Organizar apenas as despesas operacionais do escritório.",
+          "Definir metas claras de quanto captar e estabelecer o prazo final para alcançar esse objetivo.",
+          "Listar o nome de todos os voluntários da instituição."
+        ],
+        "explicacao": "Um plano de captação eficaz deve responder basicamente a 'quanto' e 'até quando' o montante total do orçamento anual deve ser assegurado [14, 15].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Por que o uso de 'storytelling' (narrativa de histórias) é considerado essencial na captação?",
+        "alternativas": [
+          "Para preencher relatórios burocráticos exigidos pelo governo.",
+          "Porque as pessoas doam com o coração primeiro; histórias reais humanizam o trabalho e geram conexão emocional.",
+          "Para ocultar dados financeiros negativos da organização.",
+          "Porque histórias fictícias atraem mais patrocinadores corporativos."
+        ],
+        "explicacao": "Personagens reais e histórias de mudança mostram o valor que a organização adiciona e facilitam a conexão dos sonhos do doador com a missão da OSC [27-29].",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "mundo_id": 9,
+    "notebook_id": "c1e1b405-4470-431d-903d-14f399b98877",
+    "pilula": {
+      "titulo": "A Sustentabilidade Financeira como Motor da Transformação Social",
+      "conteudo": "A gestão financeira no Terceiro Setor vai muito além do simples equilíbrio entre receitas e despesas; ela é a base para a perenidade do impacto social. O Marco Regulatório das Organizações da Sociedade Civil (MROSC) estabelece um regime jurídico que valoriza a autonomia das organizações na gestão de seus recursos, permitindo que a aplicação das verbas ocorra de acordo com as práticas do setor privado, desde que focada no cumprimento do objeto pactuado [1, 2]. Dominar ferramentas como o Plano de Trabalho e o uso da plataforma eletrônica é o primeiro passo para garantir que cada recurso seja transformado em benefício real para a população [3-5].\n\nUm dos aprendizados mais valiosos reside no direito à imunidade tributária, uma garantia constitucional que protege o patrimônio, a renda e os serviços das entidades de educação e assistência social [6, 7]. Diferente de um favor legal ou isenção revogável, a imunidade é uma cláusula pétrea que permite que as organizações mantenham seus recursos integralmente aplicados em suas finalidades estatutárias, fortalecendo sua capacidade de atuação sem o ônus dos impostos [8-10]. Esse reconhecimento do Estado é um convite para que as OSCs busquem a eficiência máxima em sua gestão [11, 12].\n\nAlcançar um \"superávit\" financeiro não deve ser visto com desconfiança, mas sim como uma meta de gestão para reinvestimento e expansão das atividades sociais [13, 14]. A legislação moderna permite inclusive a remuneração de dirigentes que atuam na gestão executiva, desde que respeitados os valores de mercado e os limites legais, promovendo a profissionalização necessária para lidar com os desafios contemporâneos [15, 16]. Uma contabilidade transparente e uma prestação de contas focada em resultados são as melhores aliadas para atrair novas parcerias e doações [17-19].\n\nGerir com excelência é um ato de coragem e compromisso. Ao planejar detalhadamente cada despesa — desde os custos diretos da equipe até os custos indiretos essenciais — a organização constrói um escudo de segurança jurídica e transparência ativa [20-22]. Lembre-se: uma organização financeiramente saudável é uma organização empoderada para mudar o mundo. A jornada da conformidade financeira é o caminho mais seguro para a realização dos seus sonhos de justiça social [23, 24]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual a principal diferença entre imunidade tributária e isenção, conforme os conceitos jurídicos apresentados?",
+        "alternativas": [
+          "A imunidade é um favor legal concedido pelo prefeito, enquanto a isenção está na Constituição.",
+          "A imunidade é uma limitação constitucional (cláusula pétrea), enquanto a isenção é um benefício legal que pode ser revogado a qualquer momento.",
+          "Ambas são idênticas na prática e dependem apenas do preenchimento de requisitos municipais.",
+          "A imunidade aplica-se apenas a impostos federais, enquanto a isenção aplica-se apenas a taxas municipais."
+        ],
+        "explicacao": "A imunidade tem sede constitucional e é uma cláusula pétrea que limita o poder de tributar, enquanto a isenção é criada por legislação infraconstitucional e pode ser retirada conforme a vontade do legislador [8, 25, 26].",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "No âmbito do MROSC, qual é considerado o documento mais importante da parceria, por especificar o objeto, metas e despesas?",
+        "alternativas": [
+          "Estatuto Social da OSC",
+          "Edital de Chamamento Público",
+          "Plano de Trabalho",
+          "Relatório de Execução Financeira"
+        ],
+        "explicacao": "O plano de trabalho é a peça mais importante da parceria, pois deve especificar o objeto, prever ações, metas, indicadores e estimar as despesas [3, 27].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "É permitido que uma OSC remunere seus dirigentes estatutários com recursos da parceria ou de suas próprias rendas?",
+        "alternativas": [
+          "Não, pois isso descaracterizaria a entidade como sem fins lucrativos.",
+          "Sim, desde que atuem efetivamente na gestão executiva e a remuneração respeite os valores de mercado e limites legais.",
+          "Sim, mas apenas se o dirigente for voluntário e não tiver outro emprego.",
+          "Apenas se a OSC possuir o título de Utilidade Pública Estadual."
+        ],
+        "explicacao": "A legislação atual, incluindo a Lei 13.151/2015, permite a remuneração de dirigentes que atuam na gestão executiva, desde que fixada pelo órgão de deliberação superior e dentro dos limites de mercado [15, 16, 28].",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "O que caracteriza uma entidade como 'sem fins lucrativos' de acordo com a aplicação dos seus resultados financeiros?",
+        "alternativas": [
+          "A obrigatoriedade de fechar o balanço anual sempre com déficit ou zerado.",
+          "A proibição de cobrar por qualquer serviço prestado à comunidade.",
+          "A aplicação integral de seus excedentes (superávit) na manutenção e desenvolvimento de seus objetivos sociais, sem distribuição entre sócios ou dirigentes.",
+          "O recebimento exclusivo de doações, sendo vedada a prestação de serviços remunerados."
+        ],
+        "explicacao": "Ser sem fins lucrativos significa não distribuir resultados ou patrimônio, mas reinvestir todo o superávit na consecução do objeto social da entidade [29-31].",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual o limite percentual e de valor para o pagamento de custos com a elaboração da proposta e do plano de trabalho em uma parceria federal?",
+        "alternativas": [
+          "Até 10% do valor global, limitado a R$ 100.000,00.",
+          "Até 5% do valor global, limitado a R$ 50.000,00.",
+          "Até 2% do valor global, sem limite de valor fixo.",
+          "Não é permitido pagar por custos de elaboração de proposta com recursos da parceria."
+        ],
+        "explicacao": "As OSCs selecionadas podem prever o pagamento desses custos até o limite de 5% do valor global do instrumento, limitado a R$ 50.000,00 [32, 33].",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      }
+    ]
+  },
+  {
+    "mundo_id": 10,
+    "notebook_id": "82753203-e6e1-4a9b-9d7c-fe6c48195b1f",
+    "pilula": {
+      "titulo": "A Arte de Liderar com Propósito na Diretoria Executiva",
+      "conteudo": "Liderar uma organização do Terceiro Setor é uma jornada transformadora que exige profissionalizar a paixão sem perder a essência da causa [1, 2]. O segredo do sucesso não reside em um comando solitário, mas em uma liderança compartilhada, onde o diretor executivo e a presidência do conselho atuam como co-pilotos em um jato bimotor, garantindo sincronia e rumo ao destino desejado [3, 4]. Essa parceria estratégica permite navegar pelo \"DNA confuso\" do setor, priorizando decisões que tragam sustentabilidade e impacto real [2, 5].\n\nPara prosperar na diretoria, é fundamental cercar-se das pessoas certas, priorizando a conexão com a missão e a \"luz interna\" de cada colaborador acima de meras competências técnicas [6, 7]. Manter essa paixão acesa é o que evita o desânimo e mobiliza a equipe para enfrentar os desafios hercúleos do cotidiano [8, 9]. Um líder eficaz deve ser também um mestre na arte de contar histórias, transformando números e programas em narrativas vivas que toquem o coração de doadores e parceiros [10, 11].\n\nAbrace a autenticidade e lidere com alegria, pois o trabalho social, embora sério, deve ser encarado como um privilégio e não como um fardo [12, 13]. Ter a coragem para tomar decisões difíceis e o humor para aliviar a pressão são antídotos vitais contra o burnout e fundamentais para construir uma cultura organizacional resiliente [14-16]. Lembre-se: seu poder vem das vozes ao seu redor, e sua missão é o farol que guia o progresso de toda a comunidade [17, 18]."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Como os guias descrevem a relação ideal de liderança entre o diretor executivo e o presidente do conselho?",
+        "alternativas": [
+          "Uma hierarquia rígida onde o presidente do conselho é o chefe absoluto.",
+          "Uma liderança compartilhada, comparada a dois co-pilotos em um cockpit.",
+          "Uma separação total onde o conselho não interfere na gestão.",
+          "Uma relação de subordinação total da equipe técnica ao conselho."
+        ],
+        "explicacao": "A liderança eficaz no Terceiro Setor é sempre compartilhada, exigindo que ambos trabalhem em parceria para garantir a sincronia da organização [3, 4].",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "De acordo com a experiência na GLAAD relatada nos textos, qual a razão número um para a rotatividade de pessoal?",
+        "alternativas": [
+          "Falta de habilidades técnicas específicas para o cargo.",
+          "Salários baixos em comparação ao setor corporativo.",
+          "Falta de paixão e conexão com a missão do trabalho.",
+          "Excesso de burocracia governamental nos projetos."
+        ],
+        "explicacao": "A falta de entusiasmo ou 'luz interna' pela causa é frequentemente contagiosa e o principal motivo de demissões ou aposentadorias precoces [7, 8].",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual atributo é destacado como essencial para que um diretor executivo mude 'corações e mentes' e prospere na função?",
+        "alternativas": [
+          "Ter sempre a razão absoluta em todas as discussões técnicas.",
+          "Evitar qualquer tipo de vulnerabilidade diante da equipe.",
+          "Autenticidade, agindo como uma pessoa inteira e não como uma fachada.",
+          "Focar exclusivamente nos problemas negativos do mundo para gerar urgência."
+        ],
+        "explicacao": "Atributos como autenticidade, convicção e alegria são fundamentais para um líder ser convincente e construir uma comunidade de apoio [12, 13, 19].",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "No processo de planejamento estratégico, qual deve ser o papel dos funcionários e conselheiros?",
+        "alternativas": [
+          "Os conselheiros definem a estratégia sozinhos e os funcionários apenas executam.",
+          "Os funcionários devem decidir tudo, pois estão mais próximos do dia a dia.",
+          "Devem trabalhar em conjunto, aproveitando os conhecimentos e talentos individuais de ambos.",
+          "O planejamento deve ser feito exclusivamente por consultores externos sem a participação interna."
+        ],
+        "explicacao": "É essencial estabelecer uma parceria e designar papéis desde o início para que as estratégias reflitam as tendências do setor e sejam exequíveis [20, 21].",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Ao gerenciar crises públicas, qual princípio básico deve ser colocado no topo da lista de operações de um diretor?",
+        "alternativas": [
+          "Sempre priorizar o segredo absoluto sobre os problemas.",
+          "Nunca mentir e antecipar potenciais vulnerabilidades.",
+          "Aguardar a notícia sair no jornal antes de ligar para o conselho.",
+          "Delegar a responsabilidade total da crise para os voluntários."
+        ],
+        "explicacao": "Um bom líder deve antecipar crises, preparar um porta-voz e manter a transparência absoluta, nunca mentindo [22-24].",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      }
+    ]
+  }
+]
