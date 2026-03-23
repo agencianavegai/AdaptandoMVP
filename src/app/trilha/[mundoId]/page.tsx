@@ -1,10 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { getTrilhaData } from "@/lib/actions/gamification";
-import { Lock, Check, Sparkles } from "lucide-react";
+import { Lock, Check, Sparkles, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { DynamicSkyBackground } from "@/components/ui/DynamicSkyBackground";
+import StoryModal from "@/components/ui/StoryModal";
+import { WORLD_LORE } from "@/lib/constants/lore";
 
 interface Fase {
   id: string;
@@ -34,25 +37,53 @@ export default function TrilhaPage() {
   const [mundo, setMundo] = useState<Mundo | null>(null);
   const [fases, setFases] = useState<Fase[]>([]);
   const [progresso, setProgresso] = useState<Progresso | null>(null);
-  const [voluntario, setVoluntario] = useState<{vidas_atuais: number} | null>(null);
+  const [voluntario, setVoluntario] = useState<{vidas_atuais: number; last_heart_lost: string | null} | null>(null);
+  const [nextRechargeSeconds, setNextRechargeSeconds] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
+
+  const loadData = useCallback(async () => {
+    try {
+      const data = await getTrilhaData(mundoId);
+      setMundo(data.mundo);
+      setFases(data.fases);
+      setProgresso(data.progresso);
+      setVoluntario(data.voluntario);
+      setNextRechargeSeconds(data.nextRechargeSeconds);
+    } catch {
+      router.push("/mapa");
+    } finally {
+      setLoading(false);
+    }
+  }, [mundoId, router]);
+
+  const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    async function load() {
-      try {
-        const data = await getTrilhaData(mundoId);
-        setMundo(data.mundo);
-        setFases(data.fases);
-        setProgresso(data.progresso);
-        setVoluntario(data.voluntario);
-      } catch {
-        router.push("/mapa");
-      } finally {
-        setLoading(false);
+    loadData();
+  }, [loadData]);
+
+  // Handle Lore Modal First View
+  useEffect(() => {
+    if (!loading && mundo) {
+      const storageKey = `lore_visto_mundo_${mundo.ordem}`;
+      const hasSeenLore = localStorage.getItem(storageKey);
+      
+      if (!hasSeenLore) {
+        setIsStoryModalOpen(true);
+        localStorage.setItem(storageKey, "true");
       }
     }
-    load();
-  }, [mundoId]);
+  }, [loading, mundo]);
+
+  // Auto-scroll to the bottom after loading (the journey starts from the bottom)
+  useEffect(() => {
+    if (!loading && bottomRef.current) {
+      setTimeout(() => {
+        bottomRef.current?.scrollIntoView({ behavior: "instant" });
+      }, 100);
+    }
+  }, [loading]);
 
   if (loading) {
     return (
@@ -76,6 +107,8 @@ export default function TrilhaPage() {
   const isWorldComplete = progresso.status === "concluido";
   const totalFases = 6;
   const completedFases = isWorldComplete ? totalFases : currentFase - 1;
+  const vidasAtuais = voluntario?.vidas_atuais ?? 0;
+  const noLives = vidasAtuais <= 0;
 
   function getFaseStatus(ordem: number): "bloqueada" | "ativa" | "concluida" {
     if (isWorldComplete) return "concluida";
@@ -85,7 +118,7 @@ export default function TrilhaPage() {
   }
 
   return (
-    <div className="min-h-dvh map-scroll-bg bg-fixed relative">
+    <DynamicSkyBackground mundoId={mundo.ordem}>
       {/* Back Button */}
       <button
         onClick={() => router.push("/mapa")}
@@ -102,21 +135,30 @@ export default function TrilhaPage() {
         <h1 className="font-display font-black text-3xl text-white mt-4 drop-shadow-lg uppercase">
           {mundo.nome_tema}
         </h1>
-        <p className="text-white/60 font-medium mt-2">
+        <p className="text-white/60 font-medium mt-2 mb-4">
           {completedFases}/{totalFases} Pipas empinadas
         </p>
+
+        {/* Manual Reopen Story Button */}
+        <button
+          onClick={() => setIsStoryModalOpen(true)}
+          className="inline-flex items-center gap-2 bg-black/20 hover:bg-black/40 text-white/90 backdrop-blur-sm px-4 py-2 rounded-xl transition-colors border border-white/10"
+        >
+          <BookOpen className="w-4 h-4" />
+          <span className="font-display font-bold text-sm uppercase tracking-wide">
+            Ler História
+          </span>
+        </button>
       </div>
+
 
       {/* Mosaico Reward */}
       <div className="mx-auto max-w-xs px-6 mb-10">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20" style={{ aspectRatio: '3/2' }}>
-          {/* Mosaic base - gradient matching the world */}
           <div className="absolute inset-0 gradient-brand opacity-30" />
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-6xl">{isWorldComplete ? "🏆" : "🪁"}</span>
           </div>
-
-          {/* 6 overlay blocks (2x3 grid) */}
           <div className="absolute inset-0 grid grid-cols-3 grid-rows-2">
             {Array.from({ length: totalFases }, (_, i) => {
               const faseNum = i + 1;
@@ -126,9 +168,7 @@ export default function TrilhaPage() {
                   key={i}
                   className={cn(
                     "border border-white/10 transition-all duration-700",
-                    isRevealed
-                      ? "bg-transparent"
-                      : "bg-gray-900/80 backdrop-blur-sm"
+                    isRevealed ? "bg-transparent" : "bg-gray-900/80 backdrop-blur-sm"
                   )}
                 >
                   {!isRevealed && (
@@ -143,49 +183,42 @@ export default function TrilhaPage() {
         </div>
       </div>
 
-      {/* Trilha Path — 6 Pipas bottom-to-top */}
+      {/* Trilha Path */}
       <div className="flex flex-col-reverse items-center pb-32 px-6 gap-0">
+        <div ref={bottomRef} />
         {fases.map((fase, index) => {
           const status = getFaseStatus(fase.ordem);
           const isActive = status === "ativa";
           const isCompleted = status === "concluida";
           const isLocked = status === "bloqueada";
 
-          // Zigzag: odd left, even right
           const direction = index % 2 === 0 ? -1 : 1;
           const translateX = direction * 30;
 
           return (
             <div key={fase.id} className="relative flex flex-col items-center">
-              {/* Connecting line */}
               {index < fases.length - 1 && (
                 <div className="kite-line h-16 w-0 my-1 opacity-60" />
               )}
 
-              {/* Kite Node */}
               <div
                 className="relative group transition-transform duration-300"
                 style={{ transform: `translateX(${translateX}px)` }}
               >
                 <button
-                  disabled={isLocked || (isActive && (voluntario?.vidas_atuais ?? 0) <= 0)}
+                  disabled={isLocked}
                   onClick={() => {
-                    if (!isLocked) {
-                      if (isActive && (voluntario?.vidas_atuais ?? 0) <= 0) {
-                         alert("⚠️ Fim das Vidas!\n\nVocê está sem 'Papéis de Seda' (vidas). Aguarde nossa funcionalidade de recarga ou compre mais vidas na lojinha futura!");
-                         return;
-                      }
-                      router.push(`/arena/${mundoId}?fase=${fase.ordem}`);
-                    }
+                    if (isLocked) return;
+                    router.push(`/arena/${mundoId}?fase=${fase.ordem}`);
                   }}
                   className={cn(
                     "w-16 h-16 sm:w-20 sm:h-20 rounded-[var(--radius-kite)] flex items-center justify-center text-white border-[3px] border-white transition-all",
-                    isLocked || (isActive && (voluntario?.vidas_atuais ?? 0) <= 0)
+                    isLocked 
                       ? "bg-black/20 border-black/10 cursor-not-allowed opacity-60"
                       : isCompleted
                       ? "bg-emerald-500 shadow-[0_6px_0_0_#059669] hover:scale-105 cursor-pointer"
                       : "bg-[var(--color-brand)] shadow-[0_6px_0_0_var(--color-brand-shadow)] hover:scale-110 cursor-pointer",
-                    isActive && (voluntario?.vidas_atuais ?? 0) > 0 && "ring-6 ring-white/40 animate-pulse-glow"
+                    isActive && "ring-6 ring-white/40 animate-pulse-glow"
                   )}
                 >
                   {isLocked ? (
@@ -197,13 +230,10 @@ export default function TrilhaPage() {
                   )}
                 </button>
 
-                {/* Label */}
                 <div
                   className={cn(
                     "absolute top-1/2 -translate-y-1/2 pointer-events-none w-max z-10",
-                    direction <= 0
-                      ? "left-[calc(100%+12px)]"
-                      : "right-[calc(100%+12px)]"
+                    direction <= 0 ? "left-[calc(100%+12px)]" : "right-[calc(100%+12px)]"
                   )}
                 >
                   <div className={cn(
@@ -226,6 +256,16 @@ export default function TrilhaPage() {
           );
         })}
       </div>
-    </div>
+
+      {mundo && WORLD_LORE[mundo.ordem] && (
+        <StoryModal 
+          isOpen={isStoryModalOpen}
+          onClose={() => setIsStoryModalOpen(false)}
+          title={WORLD_LORE[mundo.ordem].title}
+          theme={WORLD_LORE[mundo.ordem].theme}
+          description={WORLD_LORE[mundo.ordem].description}
+        />
+      )}
+    </DynamicSkyBackground>
   );
 }

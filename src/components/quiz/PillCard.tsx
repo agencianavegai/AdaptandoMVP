@@ -1,14 +1,19 @@
 "use client";
 
+import HeartRechargeTimer from "@/components/gamification/HeartRechargeTimer";
+
 interface PillCardProps {
   titulo: string;
   conteudo: string;
   faseOrdem: number;
   mundoNome: string;
   onContinue: () => void;
+  vidas?: number;
+  nextRechargeSeconds?: number;
+  onRecharge?: () => void;
 }
 
-export default function PillCard({ titulo, conteudo, faseOrdem, mundoNome, onContinue }: PillCardProps) {
+export default function PillCard({ titulo, conteudo, faseOrdem, mundoNome, onContinue, vidas, nextRechargeSeconds, onRecharge }: PillCardProps) {
   // Simple markdown-like rendering: split by double newline for paragraphs
   const paragraphs = conteudo.split(/\n\n+/).filter(Boolean);
 
@@ -45,14 +50,24 @@ export default function PillCard({ titulo, conteudo, faseOrdem, mundoNome, onCon
           })}
         </div>
 
-        {/* CTA Button */}
-        <button
-          onClick={onContinue}
-          className="mt-8 w-full btn-3d-brand py-5 text-lg font-display font-black uppercase tracking-wider flex items-center justify-center gap-3"
-        >
-          <span>Desenrolar Linha</span>
-          <span className="text-2xl">🪁</span>
-        </button>
+        {/* CTA Button or Timer */}
+        {vidas !== undefined && vidas <= 0 ? (
+          <div className="mt-8">
+            <HeartRechargeTimer
+              nextRechargeSeconds={nextRechargeSeconds || 0}
+              currentVidas={vidas}
+              onRecharge={onRecharge}
+            />
+          </div>
+        ) : (
+          <button
+            onClick={onContinue}
+            className="mt-8 w-full btn-3d-brand py-5 text-lg font-display font-black uppercase tracking-wider flex items-center justify-center gap-3"
+          >
+            <span>Desenrolar Linha</span>
+            <span className="text-2xl">🪁</span>
+          </button>
+        )}
       </div>
     </div>
   );

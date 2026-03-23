@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BottomNav from "@/components/navigation/BottomNav";
 
 export const metadata: Metadata = {
   title: "Adaptando — Dando Linha pra Sonhar",
@@ -47,6 +48,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <BottomNav />
       </body>
     </html>
   );

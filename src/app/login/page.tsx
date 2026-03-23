@@ -32,32 +32,32 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-dvh gradient-storm flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden relative">
-      
+
       {/* Floating Elements Background */}
       <div className="absolute top-1/4 left-10 text-4xl opacity-20 animate-float" style={{ animationDelay: '0s' }}>☁️</div>
       <div className="absolute top-1/2 right-12 text-5xl opacity-10 animate-float" style={{ animationDelay: '1s' }}>🪁</div>
       <div className="absolute bottom-1/4 left-1/4 text-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}>⚡</div>
 
       <div className="w-full max-w-md z-10 flex flex-col items-center">
-        
+
         {/* LOGO & HERO TEXT */}
         <div className="mb-10 text-center animate-slide-up">
-          <img 
-            src="/logo.png" 
-            alt="Instituto Ádapo" 
-            className="w-28 h-28 mx-auto mb-6 transform -rotate-3 hover:rotate-0 transition-transform drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] object-contain" 
+          <img
+            src="/logo.png"
+            alt="Instituto Ádapo"
+            className="w-28 h-28 mx-auto mb-6 transform -rotate-3 hover:rotate-0 transition-transform drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] object-contain"
           />
           <h1 className="font-display font-black text-4xl text-white uppercase tracking-wider drop-shadow-md">
-            Adaptando
+            | Adaptando |
           </h1>
           <p className="mt-3 text-lg font-bold text-white/80 tracking-wide">
-            Vamos dar linha?
+            Aprenda sobre ONGs enquanto joga e desafia seus amigos.
           </p>
         </div>
 
         {/* LOGIN FORM - GAMER STYLE */}
         <div className="bg-white/95 backdrop-blur-xl w-full p-8 sm:p-10 shadow-2xl flex flex-col gap-6 animate-slide-up" style={{ borderRadius: "32px", animationDelay: "0.1s" }}>
-          
+
           <form onSubmit={handleLogin} className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
               <label className="font-black text-[var(--color-text-secondary)] uppercase text-sm tracking-wider ml-1">
@@ -68,7 +68,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-[#f0f0f0] border-2 border-[#e5e5e5] rounded-2xl px-5 py-4 w-full text-[var(--color-text-primary)] font-bold text-lg placeholder:text-gray-400 focus:outline-none focus:border-[var(--color-info)] focus:bg-white transition-colors"
-                placeholder="seunome@pipa.com"
+                placeholder="emicida@gmail.com"
                 required
               />
             </div>

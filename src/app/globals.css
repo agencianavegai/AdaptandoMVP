@@ -262,6 +262,48 @@
   }
 }
 
+/* =========================================
+   CLIMATE PARTICLE EFFECTS
+   ========================================= */
+.climate-rain-heavy {
+  background-image:
+    linear-gradient(transparent 92%, rgba(180,210,255,0.25) 92%, rgba(180,210,255,0.25) 100%),
+    linear-gradient(transparent 94%, rgba(160,200,255,0.2) 94%, rgba(160,200,255,0.2) 100%);
+  background-size: 3px 30px, 5px 40px;
+  animation: climateRain 0.6s linear infinite;
+}
+
+.climate-rain {
+  background-image:
+    linear-gradient(transparent 93%, rgba(180,210,255,0.2) 93%, rgba(180,210,255,0.2) 100%);
+  background-size: 4px 35px;
+  animation: climateRain 0.8s linear infinite;
+}
+
+.climate-drizzle {
+  background-image:
+    linear-gradient(transparent 96%, rgba(180,210,255,0.12) 96%, rgba(180,210,255,0.12) 100%);
+  background-size: 6px 50px;
+  animation: climateRain 1.2s linear infinite;
+}
+
+.climate-fog {
+  background: radial-gradient(ellipse at 30% 50%, rgba(200,210,230,0.15) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 40%, rgba(200,210,230,0.12) 0%, transparent 55%),
+              radial-gradient(ellipse at 50% 70%, rgba(200,210,230,0.1) 0%, transparent 50%);
+  animation: climateFog 6s ease-in-out infinite alternate;
+}
+
+@keyframes climateRain {
+  0% { background-position: 0 0, 3px 0; }
+  100% { background-position: 0 30px, 3px 40px; }
+}
+
+@keyframes climateFog {
+  0% { opacity: 0.4; transform: translateX(-5px); }
+  100% { opacity: 0.8; transform: translateX(5px); }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

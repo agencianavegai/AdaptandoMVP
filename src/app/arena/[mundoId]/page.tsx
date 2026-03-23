@@ -6,6 +6,8 @@ import { getArenaData, submitAnswer, completeFase } from "@/lib/actions/gamifica
 import PillCard from "@/components/quiz/PillCard";
 import QuizQuestion from "@/components/quiz/QuizQuestion";
 import ArenaResult from "@/components/quiz/ArenaResult";
+import { DynamicSkyBackground } from "@/components/ui/DynamicSkyBackground";
+import StreakCelebration from "@/components/gamification/StreakCelebration";
 
 interface Alternativa {
   texto: string;
@@ -39,6 +41,7 @@ export default function ArenaPage() {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [vidas, setVidas] = useState(5);
   const [metrosLinha, setMetrosLinha] = useState(0);
+  const [nextRechargeSeconds, setNextRechargeSeconds] = useState(0);
   const [loading, setLoading] = useState(true);
 
   // State machine: 0 = pill, 1-5 = quiz questions, 6 = result
@@ -46,6 +49,7 @@ export default function ArenaPage() {
   const [score, setScore] = useState(0);
   const [metrosGanhos, setMetrosGanhos] = useState(0);
   const [mundoConcluido, setMundoConcluido] = useState(false);
+  const [streakData, setStreakData] = useState<{ count: number; isNew: boolean } | null>(null);
 
   useEffect(() => {
     async function load() {
@@ -55,6 +59,7 @@ export default function ArenaPage() {
         setQuizzes(data.quizzes);
         setVidas(data.vidas);
         setMetrosLinha(data.metrosLinha);
+        setNextRechargeSeconds(data.nextRechargeSeconds || 0);
       } catch {
         router.push(`/trilha/${mundoId}`);
       } finally {
@@ -98,6 +103,9 @@ export default function ArenaPage() {
         if (completion.mundoConcluido) {
           setMetrosGanhos((prev) => prev + 50);
         }
+        if (completion.streakIncreased) {
+          setStreakData({ count: completion.newStreak, isNew: true });
+        }
         setCurrentStep(quizzes.length + 1);
       }
     } catch {
@@ -112,7 +120,7 @@ export default function ArenaPage() {
           <span className="text-4xl">📖</span>
         </div>
         <p className="text-white font-display font-black text-xl mt-6 uppercase tracking-wide">
-          Abrindo a pílula...
+          Preparando carretel...
         </p>
       </div>
     );
@@ -148,7 +156,7 @@ export default function ArenaPage() {
   const isResult = currentStep > TOTAL_QUESTIONS;
 
   return (
-    <div className="min-h-dvh map-scroll-bg bg-fixed">
+    <DynamicSkyBackground mundoId={mundoId}>
       {backButton}
       {!isResult && livesDisplay}
 
@@ -160,6 +168,15 @@ export default function ArenaPage() {
             faseOrdem={faseOrdem}
             mundoNome={`Céu ${mundoId}`}
             onContinue={handlePillContinue}
+            vidas={vidas}
+            nextRechargeSeconds={nextRechargeSeconds}
+            onRecharge={() => {
+              // Reload data to get new lives
+              getArenaData(mundoId, faseOrdem).then(data => {
+                setVidas(data.vidas);
+                setNextRechargeSeconds(data.nextRechargeSeconds || 0);
+              });
+            }}
           />
         )}
 
@@ -187,6 +204,15 @@ export default function ArenaPage() {
           />
         )}
       </div>
-    </div>
+
+      {/* Streak Celebration */}
+      {streakData && (
+        <StreakCelebration
+          streakCount={streakData.count}
+          isNew={streakData.isNew}
+          onClose={() => setStreakData(null)}
+        />
+      )}
+    </DynamicSkyBackground>
   );
 }
