@@ -39,6 +39,25 @@
   /* Fonts */
   --font-display: "Outfit", sans-serif;
   --font-body: "Inter", sans-serif;
+
+  /* Custom Animations for Map Backgrounds */
+  --animate-pulse-slow: pulse-slow 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-pan-clouds: pan-clouds 60s linear infinite;
+  --animate-radiant-pulse: radiant-pulse 15s ease-in-out infinite;
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+  }
+  @keyframes pan-clouds {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(-5%) translateY(-2%); }
+    100% { transform: translateX(0) translateY(0); }
+  }
+  @keyframes radiant-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+  }
 }
 
 @layer base {
@@ -52,6 +71,21 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
+  }
+
+  /* Accessibility: visible focus ring for keyboard nav */
+  :focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
@@ -99,13 +133,16 @@
     background-color: var(--color-brand);
     border-bottom: 5px solid var(--color-brand-shadow);
   }
+  .btn-3d-brand:hover:not(:disabled) {
+    background-color: var(--color-brand-active);
+  }
   .btn-3d-brand:active, .btn-3d-brand[data-active="true"] {
     transform: translateY(4px);
     border-bottom: 0px solid var(--color-brand-shadow);
     margin-top: 5px;
   }
   .btn-3d-brand:disabled {
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: not-allowed;
     transform: none;
   }
@@ -202,8 +239,8 @@
   }
 
   .kite-line {
-    border-left: 6px dashed rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-left: 6px dashed rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.15);
   }
 
   /* =========================================

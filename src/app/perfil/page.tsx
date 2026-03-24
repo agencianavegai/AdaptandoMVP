@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getUserProfile, logout } from "@/lib/actions/user";
-import { Flame, Zap, Trophy, LogOut, Wind, Heart, Medal, Star } from "lucide-react";
+import { Flame, Zap, Trophy, LogOut, Wind, Heart, Medal, Star, Share2, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Voluntario {
@@ -118,6 +118,7 @@ export default function PerfilPage() {
   const [mundosConcluidos, setMundosConcluidos] = useState(0);
   const [loading, setLoading] = useState(true);
   const [loggingOut, setLoggingOut] = useState(false);
+  const [copied, setCopied] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -146,14 +147,35 @@ export default function PerfilPage() {
     }
   }
 
+  const handleShare = async () => {
+    if (!voluntario) return;
+    
+    const text = `Estou a ${voluntario.ofensiva_atual} dias me Adaptando e já conquistei ${voluntario.metros_linha} metros de linha no Instituto Ádapo! Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
+    
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: "Meu Perfil no Instituto Ádapo",
+          text,
+        });
+      } else {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
+    } catch (error) {
+      console.log("Compartilhamento cancelado ou não suportado", error);
+    }
+  };
+
   if (loading) {
     return (
       <div className="min-h-dvh bg-slate-50 flex flex-col items-center justify-center space-y-6">
-        <div className="w-24 h-24 bg-slate-200 rounded-full flex items-center justify-center animate-pulse">
-           <span className="text-5xl opacity-50">👤</span>
+        <div className="w-24 h-24 bg-[var(--color-brand)] rounded-[var(--radius-kite)] flex items-center justify-center animate-float shadow-[0_8px_0_0_var(--color-brand-shadow)]">
+          <span className="text-5xl" aria-hidden="true">👤</span>
         </div>
-        <h2 className="text-slate-400 font-display font-black text-2xl tracking-wide uppercase animate-pulse">
-          Carregando...
+        <h2 className="text-white font-display font-black text-2xl tracking-wide uppercase" style={{ color: 'var(--color-storm-dark)' }}>
+          Carregando Perfil...
         </h2>
       </div>
     );
@@ -222,14 +244,14 @@ export default function PerfilPage() {
           <StatCard
             icon={<Flame className="w-5 h-5 text-orange-600 fill-orange-500" />}
             value={voluntario.ofensiva_atual}
-            label="Chama Atual"
+            label="Ofensiva Atual"
             colorClass="bg-orange-100"
             borderColorClass="border-b-orange-200"
           />
           <StatCard
             icon={<Zap className="w-5 h-5 text-amber-500 fill-amber-400" />}
             value={voluntario.melhor_ofensiva}
-            label="Maior Chama"
+            label="Maior Ofensiva"
             colorClass="bg-amber-100"
             borderColorClass="border-b-amber-200"
           />
@@ -285,6 +307,26 @@ export default function PerfilPage() {
           />
 
         </div>
+      </div>
+
+      {/* FAB: Social Share Button */}
+      <div className="fixed bottom-6 left-0 right-0 px-6 z-50 flex justify-center w-full max-w-md mx-auto">
+        <button
+          onClick={handleShare}
+          className="w-full min-h-[56px] bg-gradient-to-r from-[#ff7f06] to-pink-500 hover:from-orange-500 hover:to-pink-600 active:scale-[0.98] text-white font-display font-black text-xl rounded-2xl shadow-[0_8px_20px_-4px_rgba(255,127,6,0.6)] border border-white/20 flex items-center justify-center gap-3 transition-all duration-300"
+        >
+          {copied ? (
+            <>
+              <Check className="w-6 h-6 animate-in zoom-in" strokeWidth={3} />
+              Copiado!
+            </>
+          ) : (
+            <>
+              <Share2 className="w-6 h-6" strokeWidth={2.5} />
+              Mostrar ao Mundo 🪁
+            </>
+          )}
+        </button>
       </div>
 
     </div>

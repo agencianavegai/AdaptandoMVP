@@ -28,11 +28,11 @@ export default function PillCard({ titulo, conteudo, faseOrdem, mundoNome, onCon
 
       {/* Content Card */}
       <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl flex-1 flex flex-col">
-        <h2 className="font-display font-black text-xl sm:text-2xl text-gray-900 mb-6 leading-tight">
+        <h2 className="font-display font-black text-2xl sm:text-3xl text-gray-900 mb-6 leading-tight">
           {titulo}
         </h2>
 
-        <div className="flex-1 space-y-4 text-gray-700 leading-relaxed text-base">
+        <div className="flex-1 space-y-4 text-gray-800 leading-loose text-[17px]">
           {paragraphs.map((p, i) => {
             // Bold text: **text**
             const parts = p.split(/\*\*(.*?)\*\*/g);

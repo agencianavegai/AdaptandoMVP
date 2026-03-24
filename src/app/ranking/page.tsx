@@ -80,14 +80,14 @@ function PodiumCard({ user, position, isMe }: { user: RankUser; position: 1 | 2 
     },
     3: {
       height: "h-24",
-      bgColor: "bg-orange-400",
-      borderColor: "border-orange-300",
-      avatarBorder: "border-orange-400",
+      bgColor: "bg-amber-700",
+      borderColor: "border-amber-600",
+      avatarBorder: "border-amber-700",
       avatarSize: "w-20 h-20 text-2xl",
       order: "order-3",
-      badgeColor: "bg-orange-500",
-      numberColor: "text-orange-100",
-      textColor: "text-orange-900",
+      badgeColor: "bg-amber-800",
+      numberColor: "text-amber-100",
+      textColor: "text-amber-100",
       crown: null,
     },
   };
@@ -120,7 +120,7 @@ function PodiumCard({ user, position, isMe }: { user: RankUser; position: 1 | 2 
       {/* Name */}
       <p className={cn(
         "font-display font-black text-sm text-center max-w-[90px] truncate mt-2", 
-        isMe ? "text-blue-500" : "text-slate-700"
+        isMe ? "text-[var(--color-brand)]" : "text-white/80"
       )}>
         {user.nome?.split(" ")[0] || "Anônimo"}
       </p>
@@ -168,12 +168,12 @@ export default function RankingPage() {
 
   if (loading) {
     return (
-      <div className="min-h-dvh bg-slate-50 flex flex-col items-center justify-center space-y-6">
-        <div className="w-24 h-24 bg-slate-200 rounded-[var(--radius-kite)] flex items-center justify-center animate-pulse">
-           <span className="text-5xl opacity-50">🏆</span>
+      <div className="min-h-dvh bg-[var(--color-storm-dark)] flex flex-col items-center justify-center space-y-6">
+        <div className="w-24 h-24 bg-[var(--color-brand)] rounded-[var(--radius-kite)] flex items-center justify-center animate-float shadow-[0_8px_0_0_var(--color-brand-shadow)]">
+          <span className="text-5xl" aria-hidden="true">🏆</span>
         </div>
-        <h2 className="text-slate-400 font-display font-black text-2xl tracking-wide uppercase animate-pulse">
-          Carregando...
+        <h2 className="text-white font-display font-black text-2xl tracking-wide uppercase">
+          Carregando Ranking...
         </h2>
       </div>
     );
@@ -183,14 +183,14 @@ export default function RankingPage() {
   const rest = ranking.slice(3);
 
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-sky-50 to-slate-100 pb-28 font-sans">
+    <div className="min-h-dvh bg-gradient-to-b from-[var(--color-storm-dark)] to-[var(--color-storm-mid)] pb-28 font-sans">
       
       {/* Header */}
       <div className="pt-12 pb-8 text-center px-4">
-        <h1 className="font-display font-black text-4xl text-slate-800 uppercase tracking-tight">
+        <h1 className="font-display font-black text-4xl text-white uppercase tracking-tight">
           Os Maiores Voos
         </h1>
-        <p className="text-slate-500 font-bold text-sm mt-2 tracking-wide">
+        <p className="text-white/60 font-bold text-sm mt-2 tracking-wide">
           O Pódio dos Pipeiros Mais Altos
         </p>
       </div>
@@ -226,14 +226,14 @@ export default function RankingPage() {
                 className={cn(
                   "flex items-center gap-4 rounded-2xl p-4 border-2 border-b-[6px] transition-all",
                   isMe
-                    ? "bg-blue-50 border-blue-200 border-b-blue-300 shadow-sm"
+                    ? "bg-[var(--color-brand)]/10 border-[var(--color-brand)]/40 border-b-[var(--color-brand-shadow)]/40 shadow-sm"
                     : "bg-white border-slate-200 border-b-slate-300"
                 )}
               >
                 {/* Position */}
                 <span className={cn(
                   "font-display font-black text-lg w-6 text-center",
-                  isMe ? "text-blue-500" : "text-slate-400"
+                  isMe ? "text-[var(--color-brand)]" : "text-slate-400"
                 )}>
                   {position}
                 </span>
@@ -243,14 +243,14 @@ export default function RankingPage() {
                   nome={user.nome} 
                   avatar_url={user.avatar_url} 
                   sizeClass="w-12 h-12 text-sm" 
-                  borderClass={isMe ? "border-blue-300" : "border-slate-200"}
+                  borderClass={isMe ? "border-[var(--color-brand)]/60" : "border-slate-200"}
                 />
 
                 {/* Name */}
                 <div className="flex-1 min-w-0">
                   <p className={cn(
                     "font-display font-black text-base truncate", 
-                    isMe ? "text-blue-600" : "text-slate-700"
+                    isMe ? "text-[var(--color-brand)]" : "text-slate-700"
                   )}>
                     {user.nome || "Anônimo"}
                   </p>
@@ -260,13 +260,13 @@ export default function RankingPage() {
                 <div className="text-right">
                   <p className={cn(
                     "font-display font-black text-xl leading-none",
-                    isMe ? "text-blue-600" : "text-slate-800"
+                    isMe ? "text-[var(--color-brand)]" : "text-slate-800"
                   )}>
                     {user.metros_linha}
                   </p>
                   <p className={cn(
                     "text-[10px] font-bold uppercase tracking-wide mt-0.5",
-                    isMe ? "text-blue-400" : "text-slate-400"
+                    isMe ? "text-[var(--color-brand-light)]" : "text-slate-400"
                   )}>
                     metros
                   </p>

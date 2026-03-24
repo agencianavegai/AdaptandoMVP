@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
+import { AlertTriangle, Loader2 } from "lucide-react";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -33,10 +34,10 @@ export default function LoginPage() {
   return (
     <div className="min-h-dvh gradient-storm flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden relative">
 
-      {/* Floating Elements Background */}
-      <div className="absolute top-1/4 left-10 text-4xl opacity-20 animate-float" style={{ animationDelay: '0s' }}>☁️</div>
-      <div className="absolute top-1/2 right-12 text-5xl opacity-10 animate-float" style={{ animationDelay: '1s' }}>🪁</div>
-      <div className="absolute bottom-1/4 left-1/4 text-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}>⚡</div>
+      {/* Decorative Background Blobs (CSS only, no emojis) */}
+      <div className="absolute top-1/4 left-10 w-14 h-14 rounded-full bg-white/5 animate-float" style={{ animationDelay: '0s' }} aria-hidden="true" />
+      <div className="absolute top-1/2 right-12 w-20 h-20 rounded-full bg-white/5 animate-float" style={{ animationDelay: '1.2s' }} aria-hidden="true" />
+      <div className="absolute bottom-1/4 left-1/4 w-10 h-10 rounded-full bg-[var(--color-brand)]/10 animate-float" style={{ animationDelay: '2s' }} aria-hidden="true" />
 
       <div className="w-full max-w-md z-10 flex flex-col items-center">
 
@@ -88,17 +89,21 @@ export default function LoginPage() {
             </div>
 
             {erro && (
-              <div className="bg-red-100 border-2 border-red-200 text-red-600 px-4 py-3 rounded-2xl font-bold text-sm text-center flex items-center justify-center gap-2 animate-pop-in">
-                <span>⚠️</span> {erro}
+              <div className="bg-red-100 border-2 border-red-200 text-red-600 px-4 py-3 rounded-2xl font-bold text-sm text-center flex items-center justify-center gap-2 animate-pop-in" role="alert">
+                <AlertTriangle className="w-4 h-4 shrink-0" strokeWidth={2.5} /> {erro}
               </div>
             )}
 
             <button
               type="submit"
               disabled={loading}
-              className="btn-3d-brand py-5 text-xl mt-2 w-full"
+              className="btn-3d-brand py-5 text-xl mt-2 w-full flex items-center justify-center gap-2"
             >
-              {loading ? "BOOOORA! 🚀" : "ENTRAR"}
+              {loading ? (
+                <><Loader2 className="w-5 h-5 animate-spin" /> ENTRANDO...</>
+              ) : (
+                "ENTRAR"
+              )}
             </button>
           </form>
 

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { getMapaData } from "@/lib/actions/gamification";
 import TopBar from "@/components/map/TopBar";
 import WorldCard from "@/components/map/WorldCard";
+import MapAnimatedBackground from "@/components/map/MapAnimatedBackground";
 
 interface MundoCeu {
   id: number;
@@ -64,6 +65,13 @@ export default function MapaPage() {
     return prog?.pontuacao_local || 0;
   }
 
+  // Determina o máximo mundo desbloqueado para o fundo dinâmico
+  function getMaxMundoId(): number {
+    const unlocked = progressos.filter((p) => p.status === "ativo" || p.status === "concluido");
+    if (unlocked.length === 0) return 1;
+    return Math.max(...unlocked.map((p) => p.mundo_id));
+  }
+
   if (loading) {
     return (
       <div className="min-h-dvh bg-[var(--color-storm-dark)] flex flex-col items-center justify-center space-y-6">
@@ -78,12 +86,15 @@ export default function MapaPage() {
   }
 
   return (
-    <div className="relative min-h-dvh bg-[var(--color-storm-dark)]">
+    <div className="relative min-h-dvh">
+      {/* Dynamic Animated Skies */}
+      <MapAnimatedBackground maxMundoId={getMaxMundoId()} />
+
       {/* Fixed Top Bar */}
       <TopBar voluntario={voluntario} nextRechargeSeconds={nextRechargeSeconds} />
 
       {/* World Cards List */}
-      <main className="flex flex-col gap-6 p-5 pt-28 pb-28">
+      <main className="relative z-10 flex flex-col gap-6 p-5 pt-28 pb-28">
         {/* Section Title */}
         <div className="text-center mb-2">
           <h1 className="font-display font-black text-2xl text-white uppercase tracking-wide">

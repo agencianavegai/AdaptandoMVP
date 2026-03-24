@@ -64,7 +64,7 @@ export default function QuizQuestion({
 
       {/* Question Card */}
       <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl">
-        <h3 className="font-display font-black text-lg sm:text-xl text-gray-900 mb-8 leading-snug">
+        <h3 className="font-display font-black text-xl sm:text-2xl text-gray-900 mb-8 leading-snug">
           {pergunta}
         </h3>
 
@@ -92,7 +92,7 @@ export default function QuizQuestion({
                 onClick={() => handleSelect(idx)}
                 disabled={answered}
                 className={cn(
-                  "w-full text-left px-5 py-4 rounded-2xl border-2 font-bold text-base transition-all duration-200",
+                  "w-full text-left px-5 py-4 rounded-2xl border-2 font-bold text-[17px] transition-all duration-200",
                   buttonStyle
                 )}
               >
@@ -114,6 +114,8 @@ export default function QuizQuestion({
                 ? "bg-emerald-50 border-2 border-emerald-200"
                 : "bg-red-50 border-2 border-red-200"
             )}
+            role="status"
+            aria-live="polite"
           >
             {acertou ? (
               <div className="flex items-center gap-3">

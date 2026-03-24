@@ -38,7 +38,7 @@ export default function WorldCard({ mundo, status, score, onNavigate }: WorldCar
         "border-b-[6px]",
         isCompleted ? "border-b-[var(--color-success-shadow)]" : isActive ? "border-b-[var(--color-brand-shadow)]" : "border-b-gray-600"
       )}
-      style={{ minHeight: "180px" }}
+      style={{ minHeight: "200px" }}
     >
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -85,8 +85,8 @@ export default function WorldCard({ mundo, status, score, onNavigate }: WorldCar
         </div>
 
         {/* Middle: Title & Description */}
-        <div className="mt-auto">
-          <h2 className="font-display font-black text-2xl text-white uppercase leading-tight drop-shadow-md">
+        <div className="flex-1 flex flex-col justify-end">
+          <h2 className="font-display font-black text-2xl text-white uppercase leading-tight drop-shadow-md line-clamp-2">
             {mundo.nome_tema}
           </h2>
           <p className="text-white/60 text-sm font-medium mt-1 line-clamp-1">

@@ -122,6 +122,8 @@ export default function TrilhaPage() {
       {/* Back Button */}
       <button
         onClick={() => router.push("/mapa")}
+        aria-label="Voltar para o Mapa"
+        title="Voltar"
         className="fixed top-4 left-4 z-50 bg-black/30 backdrop-blur-md text-white w-12 h-12 rounded-full flex items-center justify-center font-black text-xl border-2 border-white/20 hover:bg-black/50 transition-all"
       >
         ←
