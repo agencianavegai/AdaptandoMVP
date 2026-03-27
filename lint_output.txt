@@ -1,0 +1,5 @@
+
+> adaptando-mvp@0.1.0 lint
+> next lint
+
+Invalid project directory provided, no such directory: C:\Users\Usuario\Desktop\AdaptandoMVP\lint
