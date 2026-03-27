@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
 import { AlertTriangle, Loader2, Eye, EyeOff, Lock } from "lucide-react";
@@ -11,8 +11,28 @@ export default function ClientPage({ initialError }: { initialError?: string }) 
   const [showPassword, setShowPassword] = useState(false);
   const [erro, setErro] = useState(initialError || "");
   const [loading, setLoading] = useState(false);
+  const [sessionReady, setSessionReady] = useState(false);
   const router = useRouter();
   const supabase = createSupabaseClient();
+
+  // Listen for auth state changes — handles hash fragment (#access_token=...&type=recovery)
+  // which is the Implicit flow used by some Supabase configurations
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "PASSWORD_RECOVERY" || (event === "SIGNED_IN" && session)) {
+        setSessionReady(true);
+      }
+    });
+
+    // Also check if session already exists (from PKCE exchange in server component)
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session) {
+        setSessionReady(true);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [supabase]);
 
   async function handleUpdatePassword(e: React.FormEvent) {
     e.preventDefault();
@@ -24,10 +44,11 @@ export default function ClientPage({ initialError }: { initialError?: string }) 
     });
 
     if (error) {
-      setErro("Não conseguimos atualizar sua senha. Talvez a sessão tenha expirado.");
+      console.error("updateUser error:", error);
+      setErro("Não conseguimos atualizar sua senha. Talvez a sessão tenha expirado. Solicite um novo link.");
       setLoading(false);
     } else {
-      router.push("/mapa"); // Redireciona pro dashboard após o sucesso
+      router.push("/mapa");
     }
   }
 
