@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
 import { AlertTriangle, Loader2, Mail, CheckCircle, ArrowLeft } from "lucide-react";
+import AboutModal from "@/components/auth/AboutModal";
 
 export default function EsqueciSenhaPage() {
   const [email, setEmail] = useState("");
@@ -130,6 +131,8 @@ export default function EsqueciSenhaPage() {
            </button>
         )}
       </div>
+
+      <AboutModal />
     </div>
   );
 }

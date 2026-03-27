@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
 import { AlertTriangle, Loader2, Eye, EyeOff } from "lucide-react";
+import AboutModal from "@/components/auth/AboutModal";
 
 export default function CadastroPage() {
   const [nome, setNome] = useState("");
@@ -181,6 +182,8 @@ export default function CadastroPage() {
         </p>
 
       </div>
+
+      <AboutModal />
     </div>
   );
 }

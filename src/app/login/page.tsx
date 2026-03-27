@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
 import { AlertTriangle, Loader2, Eye, EyeOff } from "lucide-react";
+import AboutModal from "@/components/auth/AboutModal";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -53,7 +54,7 @@ export default function LoginPage() {
             | Adaptando |
           </h1>
           <p className="mt-3 text-lg font-bold text-white/80 tracking-wide">
-            Aprenda sobre ONGs enquanto joga e desafia seus amigos.
+            Aprenda sobre o Terceiro Setor enquanto joga e desafia seus amigos.
           </p>
         </div>
 
@@ -98,8 +99,8 @@ export default function LoginPage() {
                 </button>
               </div>
               <div className="flex justify-end mt-1">
-                <a 
-                  href="/esqueci-senha" 
+                <a
+                  href="/esqueci-senha"
                   className="text-sm font-bold text-[var(--color-brand)] hover:text-[var(--color-brand-light)] transition-colors"
                 >
                   Esqueceu a senha?
@@ -139,6 +140,8 @@ export default function LoginPage() {
           </a>
         </p>
       </div>
+
+      <AboutModal />
     </div>
   );
 }

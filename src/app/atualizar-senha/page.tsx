@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
 import { AlertTriangle, Loader2, Eye, EyeOff, Lock } from "lucide-react";
+import AboutModal from "@/components/auth/AboutModal";
 
 export default function AtualizarSenhaPage() {
   const [senha, setSenha] = useState("");
@@ -108,6 +109,8 @@ export default function AtualizarSenhaPage() {
 
         </div>
       </div>
+
+      <AboutModal />
     </div>
   );
 }
