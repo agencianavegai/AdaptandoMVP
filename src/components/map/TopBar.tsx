@@ -350,12 +350,9 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
           {/* Modal Container */}
-          <div ref={captureRef} className="w-full h-full sm:h-auto sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 sm:rounded-3xl shadow-2xl flex flex-col relative overflow-hidden animate-slide-up">
+          <div className="w-full h-full sm:h-auto sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 sm:rounded-3xl shadow-2xl flex flex-col relative overflow-hidden animate-slide-up">
 
-            {/* Soft Sun/Clouds gradient overlay to add contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
-
-            {/* Fechar Modal */}
+            {/* Fechar Modal (FORA da captura) */}
             <button
               onClick={() => setShowProfileModal(false)}
               className="absolute top-6 right-6 z-20 w-10 h-10 bg-black/10 rounded-full flex items-center justify-center text-white hover:bg-black/20 transition-colors backdrop-blur-md cursor-pointer outline-none"
@@ -363,105 +360,121 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
               <X strokeWidth={3} className="w-5 h-5" />
             </button>
 
-            {/* Content Wrapper */}
-            <div className="flex-1 flex flex-col justify-between pt-12 pb-8 px-6 relative z-10 w-full h-full">
+            {/* ===== ÁREA CAPTURÁVEL (ref para html-to-image) ===== */}
+            <div ref={captureRef} className="bg-gradient-to-b from-orange-400 to-amber-500 relative overflow-hidden">
 
-              <div className="text-center flex flex-col items-center flex-1">
-                {/* Título Celebrativo */}
-                <h2 className="font-display font-black text-3xl sm:text-4xl text-white drop-shadow-md tracking-wide uppercase mb-8">
-                  Eu to<br />VOANDO ALTO!
-                </h2>
+              {/* Soft Sun/Clouds gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
 
-                {/* Personagem (Avatar gigante estilo Duo) */}
-                <div className="relative mb-8 mt-2">
-                  <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-110"></div>
-                  {voluntario?.avatar_url ? (
-                    <img
-                      src={voluntario.avatar_url}
-                      alt={nome}
-                      className="w-40 h-40 border-8 border-white object-cover shadow-2xl bg-orange-100 animate-bounce-hover relative z-10"
-                      style={{ borderRadius: "2rem" }}
-                    />
-                  ) : (
-                    <div
-                      className="w-40 h-40 border-8 border-white shadow-2xl flex items-center justify-center text-6xl font-black text-white bg-[var(--color-brand)] animate-bounce-hover relative z-10"
-                      style={{ borderRadius: "2rem" }}
-                    >
-                      {initials}
-                    </div>
-                  )}
-                  {/* Etiqueta de nome do Herói */}
-                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-4 py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20">
-                    {nome}
-                  </div>
-                </div>
+              {/* Content Wrapper */}
+              <div className="flex flex-col items-center pt-12 pb-6 px-6 relative z-10 w-full">
 
-                {/* Stats Dashboard (RPG Style) */}
-                <div className="w-full flex flex-col gap-3 mt-4">
+                <div className="text-center flex flex-col items-center">
+                  {/* Título Celebrativo */}
+                  <h2 className="font-display font-black text-3xl sm:text-4xl text-white drop-shadow-md tracking-wide uppercase mb-8">
+                    Eu to<br />VOANDO ALTO!
+                  </h2>
 
-                  {/* Linha de Métricas: Grid 2 colunas */}
-                  <div className="grid grid-cols-2 gap-3">
-                    {/* Card 1: Ofensiva (Compacto, número gigante) */}
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-orange-200">
-                      <Flame className="w-8 h-8 text-orange-500 mb-2" fill="currentColor" />
-                      <span className="font-display font-black text-4xl text-orange-500 leading-none tabular-nums">{ofensiva}</span>
-                      <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Ofensiva</span>
-                    </div>
-
-                    {/* Card 2: Metros de Linha (Compacto, número gigante) */}
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-blue-200">
-                      <span className="text-3xl mb-2 drop-shadow-sm">🪁</span>
-                      <span className="font-display font-black text-4xl text-blue-500 leading-none tabular-nums">{metros}</span>
-                      <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Metros</span>
-                    </div>
-                  </div>
-
-                  {/* Linha Narrativa: Foco Atual (Full Width) */}
-                  {currentFocus && (
-                    <div className="bg-white rounded-2xl p-4 flex items-center gap-4 shadow-sm border-2 border-orange-100 border-b-[5px] border-b-orange-200 text-left">
-                      <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-orange-100 border border-orange-200 rounded-xl flex items-center justify-center shrink-0">
-                        <span className="text-2xl">🎯</span>
+                  {/* Personagem (Avatar gigante estilo Duo) */}
+                  <div className="relative mb-8 mt-2">
+                    <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-110"></div>
+                    {voluntario?.avatar_url ? (
+                      <img
+                        src={voluntario.avatar_url}
+                        alt={nome}
+                        className="w-40 h-40 border-8 border-white object-cover shadow-2xl bg-orange-100 relative z-10"
+                        style={{ borderRadius: "2rem" }}
+                      />
+                    ) : (
+                      <div
+                        className="w-40 h-40 border-8 border-white shadow-2xl flex items-center justify-center text-6xl font-black text-white bg-[var(--color-brand)] relative z-10"
+                        style={{ borderRadius: "2rem" }}
+                      >
+                        {initials}
                       </div>
+                    )}
+                    {/* Etiqueta de nome do Herói */}
+                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-4 py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20">
+                      {nome}
+                    </div>
+                  </div>
+
+                  {/* Stats Dashboard (RPG Style) */}
+                  <div className="w-full flex flex-col gap-3 mt-4">
+
+                    {/* Linha de Métricas: Grid 2 colunas */}
+                    <div className="grid grid-cols-2 gap-3">
+                      {/* Card 1: Ofensiva */}
+                      <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-orange-200">
+                        <Flame className="w-8 h-8 text-orange-500 mb-2" fill="currentColor" />
+                        <span className="font-display font-black text-4xl text-orange-500 leading-none tabular-nums">{ofensiva}</span>
+                        <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Ofensiva</span>
+                      </div>
+
+                      {/* Card 2: Metros de Linha */}
+                      <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-blue-200">
+                        <span className="text-3xl mb-2 drop-shadow-sm">🪁</span>
+                        <span className="font-display font-black text-4xl text-blue-500 leading-none tabular-nums">{metros}</span>
+                        <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Metros</span>
+                      </div>
+                    </div>
+
+                    {/* Linha Narrativa: Foco Atual (Full Width) */}
+                    {currentFocus && (
+                      <div className="bg-white rounded-2xl p-4 flex items-center gap-4 shadow-sm border-2 border-orange-100 border-b-[5px] border-b-orange-200 text-left">
+                        <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-orange-100 border border-orange-200 rounded-xl flex items-center justify-center shrink-0">
+                          <span className="text-2xl">🎯</span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-0.5">Foco Atual</h3>
+                          <p className="text-slate-800 font-black text-base sm:text-lg leading-snug truncate">
+                            {currentFocus}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Banner CTA: Convite VIP */}
+                    <div className="bg-sky-50 border-2 border-sky-100 rounded-2xl p-4 flex items-center gap-3 text-left mt-1">
+                      <span className="text-3xl shrink-0">🚀</span>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-0.5">Foco Atual</h3>
-                        <p className="text-slate-800 font-black text-base sm:text-lg leading-snug truncate">
-                          {currentFocus}
-                        </p>
+                        <p className="text-sky-700 font-black text-sm leading-tight">Quer voar alto também?</p>
+                        <p className="text-sky-600/80 text-xs font-medium leading-snug mt-0.5">Junte-se ao Instituto Ádapo. Capacite-se e ajude a transformar o Terceiro Setor!</p>
                       </div>
                     </div>
-                  )}
 
-                  {/* Banner CTA: Convite VIP */}
-                  <div className="bg-sky-50 border-2 border-sky-100 rounded-2xl p-4 flex items-center gap-3 text-left mt-1">
-                    <span className="text-3xl shrink-0">🚀</span>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sky-700 font-black text-sm leading-tight">Quer voar alto também?</p>
-                      <p className="text-sky-600/80 text-xs font-medium leading-snug mt-0.5">Junte-se ao Instituto Ádapo. Capacite-se e ajude a transformar o Terceiro Setor!</p>
-                    </div>
                   </div>
-
                 </div>
-              </div>
 
-              {/* Botão de Ação / Compartilhamento */}
-              <div className="mt-6 w-full shrink-0 relative z-20">
-                <button
-                  onClick={handleShare}
-                  disabled={shareLoading}
-                  className="w-full py-4 bg-white text-orange-500 font-display font-black text-xl tracking-wide uppercase rounded-2xl border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[6px] flex items-center justify-center gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none disabled:opacity-70 disabled:pointer-events-none"
-                  title="Compartilhar meu voo"
-                >
-                  {shareLoading ? (
-                    <><Loader2 className="w-6 h-6 animate-spin" /> Preparando imagem...</>
-                  ) : shareCopied ? (
-                    <><Download className="w-6 h-6" /> Imagem salva! Pronta para postar.</>
-                  ) : (
-                    <><Share2 className="w-6 h-6 text-orange-400" strokeWidth={3} /> Compartilhar meu voo</>
-                  )}
-                </button>
-              </div>
+                {/* Assinatura Instagram 📸 (Dentro da captura) */}
+                <div className="w-full mt-5 flex items-center justify-center gap-2 opacity-80">
+                  <span className="text-white/90 font-bold text-xs tracking-wide drop-shadow-sm">Desenvolvido por:</span>
+                  <span className="text-white font-black text-sm tracking-wide drop-shadow-md">@instituto.adapo</span>
+                  <span className="text-sm">🪁</span>
+                </div>
 
+              </div>
             </div>
+            {/* ===== FIM DA ÁREA CAPTURÁVEL ===== */}
+
+            {/* Botão de Ação / Compartilhamento (FORA da captura) */}
+            <div className="px-6 pb-8 pt-4 relative z-20 bg-gradient-to-t from-amber-500 to-amber-500">
+              <button
+                onClick={handleShare}
+                disabled={shareLoading}
+                className="w-full py-4 bg-white text-orange-500 font-display font-black text-xl tracking-wide uppercase rounded-2xl border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[6px] flex items-center justify-center gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none disabled:opacity-70 disabled:pointer-events-none"
+                title="Compartilhar meu voo"
+              >
+                {shareLoading ? (
+                  <><Loader2 className="w-6 h-6 animate-spin" /> Preparando imagem...</>
+                ) : shareCopied ? (
+                  <><Download className="w-6 h-6" /> Imagem salva! Pronta para postar.</>
+                ) : (
+                  <><Share2 className="w-6 h-6 text-orange-400" strokeWidth={3} /> Compartilhar meu voo</>
+                )}
+              </button>
+            </div>
+
           </div>
         </div>
       )}
