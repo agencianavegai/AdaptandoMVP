@@ -117,26 +117,26 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4 w-full bg-black/20 backdrop-blur-md">
-        <div className="max-w-md mx-auto flex items-center justify-between gap-4">
+      <header className="fixed top-0 left-0 right-0 z-50 px-2 sm:px-4 py-2 sm:py-4 w-full bg-black/20 backdrop-blur-md">
+        <div className="max-w-md mx-auto flex items-center justify-between gap-1.5 sm:gap-4">
 
           {/* AVATAR + Name */}
           <button
             onClick={() => handleOpenModal(setShowProfileModal)}
             onMouseEnter={playHover}
-            className="flex items-center gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-transform group text-left outline-none"
+            className="flex items-center gap-2 sm:gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-transform group text-left outline-none shrink-0"
           >
             <div className="relative">
               {voluntario?.avatar_url ? (
                 <img
                   src={voluntario.avatar_url}
                   alt={nome}
-                  className="w-12 h-12 rounded-2xl border-4 border-white object-cover shadow-lg bg-orange-200"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl border-[3px] sm:border-4 border-white object-cover shadow-lg bg-orange-200"
                   style={{ borderRadius: "var(--radius-kite)" }}
                 />
               ) : (
                 <div
-                  className="w-12 h-12 border-4 border-white shadow-lg flex items-center justify-center text-sm font-black text-white bg-[var(--color-brand)]"
+                  className="w-10 h-10 sm:w-12 sm:h-12 border-[3px] sm:border-4 border-white shadow-lg flex items-center justify-center text-sm font-black text-white bg-[var(--color-brand)]"
                   style={{ borderRadius: "var(--radius-kite)" }}
                 >
                   {initials}
@@ -144,13 +144,13 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
               )}
             </div>
 
-            <span className="text-lg font-display font-black text-white drop-shadow-md hidden min-[380px]:block truncate max-w-[90px] group-hover:text-[var(--color-brand-light)] transition-colors">
+            <span className="text-sm sm:text-lg font-display font-black text-white drop-shadow-md hidden min-[380px]:block truncate max-w-[60px] sm:max-w-[90px] group-hover:text-[var(--color-brand-light)] transition-colors">
               {nome.split(" ")[0]}
             </span>
           </button>
 
           {/* METRICS */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             {/* Volume Toggle */}
             <button
               onClick={() => {
@@ -158,13 +158,13 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
                 toggleMute();
               }}
               onMouseEnter={playHover}
-              className="flex flex-col items-center justify-center bg-white border-[3px] border-[#e5e5e5] w-[42px] h-[46px] rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none"
+              className="flex flex-col items-center justify-center bg-white border-[2px] sm:border-[3px] border-[#e5e5e5] w-[34px] h-[38px] sm:w-[42px] sm:h-[46px] rounded-xl sm:rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none shrink-0"
               aria-label={isMuted ? "Ativar som" : "Desativar som"}
             >
               {isMuted ? (
-                <VolumeX className="w-5 h-5 text-gray-400" />
+                <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
               ) : (
-                <Volume2 className="w-5 h-5 text-[var(--color-brand)]" />
+                <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-brand)]" />
               )}
             </button>
 
@@ -172,20 +172,20 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             <button
               onClick={() => handleOpenModal(setShowLivesModal)}
               onMouseEnter={playHover}
-              className="flex flex-col items-center bg-white border-[3px] border-[#e5e5e5] px-2.5 py-1.5 rounded-2xl shadow-sm transition-transform hover:-translate-y-1 active:scale-95 cursor-pointer outline-none"
+              className="flex flex-col items-center bg-white border-[2px] sm:border-[3px] border-[#e5e5e5] px-1.5 sm:px-2.5 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl shadow-sm transition-transform hover:-translate-y-1 active:scale-95 cursor-pointer outline-none shrink-0"
             >
               <div className="flex items-center gap-0.5">
                 {Array.from({ length: 5 }, (_, i) => (
                   <Heart
                     key={i}
-                    className={cn("w-3.5 h-3.5 transition-all", i >= vidas && "opacity-30")}
+                    className={cn("w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 transition-all", i >= vidas && "opacity-30")}
                     fill={i < vidas ? "var(--color-danger)" : "#d1d5db"}
                     color={i < vidas ? "var(--color-danger)" : "#d1d5db"}
                   />
                 ))}
               </div>
               <div className="flex items-center justify-center mt-0.5">
-                <span className={cn("text-[10px] font-black", vidas > 0 ? "text-[var(--color-danger)]" : "text-gray-400")}>
+                <span className={cn("text-[8px] sm:text-[10px] font-black", vidas > 0 ? "text-[var(--color-danger)]" : "text-gray-400")}>
                   {vidas}/5
                 </span>
                 {vidas < 5 && nextRechargeSeconds > 0 && <MiniTimer seconds={nextRechargeSeconds} />}
@@ -196,10 +196,10 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             <button
               onClick={() => handleOpenModal(setShowXpModal)}
               onMouseEnter={playHover}
-              className="flex flex-col items-center bg-white border-[3px] border-[#e5e5e5] px-3 py-1.5 rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none"
+              className="flex flex-col items-center bg-white border-[2px] sm:border-[3px] border-[#e5e5e5] px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none shrink-0"
             >
-              <Wind className="w-5 h-5 text-[var(--color-info)] drop-shadow-sm" strokeWidth={3} />
-              <span className="text-xs font-black mt-0.5 text-[var(--color-info)]">
+              <Wind className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-info)] drop-shadow-sm" strokeWidth={3} />
+              <span className="text-[10px] sm:text-xs font-black mt-0.5 text-[var(--color-info)]">
                 {metros}m
               </span>
             </button>
@@ -208,15 +208,15 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             <button
               onClick={() => handleOpenModal(setShowChamaModal)}
               onMouseEnter={playHover}
-              className="flex flex-col items-center bg-white border-[3px] border-[#e5e5e5] px-3 py-1.5 rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none"
+              className="flex flex-col items-center bg-white border-[2px] sm:border-[3px] border-[#e5e5e5] px-1.5 sm:px-3 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none shrink-0"
             >
               <Flame
-                className="w-5 h-5 drop-shadow-sm"
+                className="w-4 h-4 sm:w-5 sm:h-5 drop-shadow-sm"
                 fill={ofensiva > 0 ? "var(--color-warning)" : "#e5e5e5"}
                 color={ofensiva > 0 ? "var(--color-warning)" : "#a3a3a3"}
                 strokeWidth={2}
               />
-              <span className={cn("text-xs font-black mt-0.5", ofensiva > 0 ? "text-[var(--color-warning)]" : "text-gray-400")}>
+              <span className={cn("text-[10px] sm:text-xs font-black mt-0.5", ofensiva > 0 ? "text-[var(--color-warning)]" : "text-gray-400")}>
                 {ofensiva}
               </span>
             </button>
@@ -378,11 +378,11 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
       {/* Profile Summary & Share Modal (Celebração do Herói - Duolingo Style) */}
       {showProfileModal && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm animate-in fade-in duration-300 sm:p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm animate-in fade-in duration-300 p-4"
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
           {/* Modal Container */}
-          <div className="w-full h-full sm:h-auto sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 sm:rounded-3xl shadow-2xl flex flex-col relative overflow-hidden animate-slide-up">
+          <div className="w-full max-h-[85vh] sm:max-h-[90vh] overflow-y-auto scrollbar-hide sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up [&::-webkit-scrollbar]:hidden" style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}>
 
             {/* Fechar Modal (FORA da captura) */}
             <button
