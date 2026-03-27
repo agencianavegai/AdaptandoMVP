@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Flame, Wind, Heart, Clock, X, Share2 } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Flame, Wind, Heart, Clock, X, Share2, Loader2, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { toPng } from "html-to-image";
 
 interface TopBarProps {
   voluntario: {
@@ -49,6 +50,8 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
   const [showChamaModal, setShowChamaModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
   const [shareCopied, setShareCopied] = useState(false);
+  const [shareLoading, setShareLoading] = useState(false);
+  const captureRef = useRef<HTMLDivElement>(null);
 
   const nome = voluntario?.nome || "Cria";
   const initials = nome.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase();
@@ -57,22 +60,47 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
   const ofensiva = voluntario?.ofensiva_atual ?? 0;
 
   const handleShare = async () => {
+    if (!captureRef.current || shareLoading) return;
+    setShareLoading(true);
+
     const focusText = currentFocus ? ` Meu foco atual é dominar: ${currentFocus}.` : "";
     const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo!${focusText} Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
 
     try {
-      if (navigator.share) {
+      // Generate PNG from the modal content
+      const dataUrl = await toPng(captureRef.current, {
+        quality: 0.95,
+        pixelRatio: 2,
+        backgroundColor: "#f59e0b", // amber-500 fallback
+      });
+
+      // Convert data URL to Blob then File
+      const res = await fetch(dataUrl);
+      const blob = await res.blob();
+      const file = new File([blob], "voo-adapo.png", { type: "image/png" });
+
+      // Try native share with image
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
-          title: "Minha Ofensiva no Instituto Ádapo",
+          files: [file],
+          title: "Meu Voo no Instituto Ádapo",
           text,
         });
       } else {
-        await navigator.clipboard.writeText(text);
+        // Fallback: auto-download the image
+        const link = document.createElement("a");
+        link.href = dataUrl;
+        link.download = "voo-adapo.png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
         setShareCopied(true);
         setTimeout(() => setShareCopied(false), 3000);
       }
     } catch (err) {
       console.log("Compartilhamento cancelado ou falhou", err);
+    } finally {
+      setShareLoading(false);
     }
   };
 
@@ -322,7 +350,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
           {/* Modal Container */}
-          <div className="w-full h-full sm:h-auto sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 sm:rounded-3xl shadow-2xl flex flex-col relative overflow-hidden animate-slide-up">
+          <div ref={captureRef} className="w-full h-full sm:h-auto sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 sm:rounded-3xl shadow-2xl flex flex-col relative overflow-hidden animate-slide-up">
 
             {/* Soft Sun/Clouds gradient overlay to add contrast */}
             <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
@@ -419,11 +447,17 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
               <div className="mt-6 w-full shrink-0 relative z-20">
                 <button
                   onClick={handleShare}
-                  className="w-full py-4 bg-white text-orange-500 font-display font-black text-xl tracking-wide uppercase rounded-2xl border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[6px] flex items-center justify-center gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none"
+                  disabled={shareLoading}
+                  className="w-full py-4 bg-white text-orange-500 font-display font-black text-xl tracking-wide uppercase rounded-2xl border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[6px] flex items-center justify-center gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none disabled:opacity-70 disabled:pointer-events-none"
                   title="Compartilhar meu voo"
                 >
-                  <Share2 className="w-6 h-6 text-orange-400" strokeWidth={3} />
-                  {shareCopied ? "Copiado!" : "Compartilhar meu voo"}
+                  {shareLoading ? (
+                    <><Loader2 className="w-6 h-6 animate-spin" /> Preparando imagem...</>
+                  ) : shareCopied ? (
+                    <><Download className="w-6 h-6" /> Imagem salva! Pronta para postar.</>
+                  ) : (
+                    <><Share2 className="w-6 h-6 text-orange-400" strokeWidth={3} /> Compartilhar meu voo</>
+                  )}
                 </button>
               </div>
 

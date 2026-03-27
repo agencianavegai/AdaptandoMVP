@@ -4,9 +4,13 @@ import { cookies } from 'next/headers';
 export async function createSupabaseServerClient() {
   const cookieStore = await cookies();
 
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  // Prerender safe: if env var is missing or invalid, fallback to placeholder
+  const validUrl = url && url.startsWith('http') ? url : 'https://placeholder.supabase.co';
+
   return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    validUrl,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder',
     {
       cookies: {
         getAll() {
