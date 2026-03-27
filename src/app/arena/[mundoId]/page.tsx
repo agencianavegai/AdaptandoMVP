@@ -8,6 +8,8 @@ import QuizQuestion from "@/components/quiz/QuizQuestion";
 import ArenaResult from "@/components/quiz/ArenaResult";
 import { DynamicSkyBackground } from "@/components/ui/DynamicSkyBackground";
 import StreakCelebration from "@/components/gamification/StreakCelebration";
+import { Settings } from "lucide-react";
+import SettingsHubModal from "@/components/ui/SettingsHubModal";
 
 interface Alternativa {
   texto: string;
@@ -44,8 +46,8 @@ export default function ArenaPage() {
   const [nextRechargeSeconds, setNextRechargeSeconds] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  // State machine: 0 = pill, 1-5 = quiz questions, 6 = result
   const [currentStep, setCurrentStep] = useState(0);
+  const [showSettings, setShowSettings] = useState(false);
   const [score, setScore] = useState(0);
   const [metrosGanhos, setMetrosGanhos] = useState(0);
   const [mundoConcluido, setMundoConcluido] = useState(false);
@@ -142,12 +144,22 @@ export default function ArenaPage() {
 
   // Lives HUD
   const livesDisplay = (
-    <div className="fixed top-4 right-4 z-50 flex items-center gap-1 bg-black/30 backdrop-blur-md px-4 py-2 rounded-full border-2 border-white/20">
-      {Array.from({ length: 5 }, (_, i) => (
-        <span key={i} className={`text-lg transition-all ${i < vidas ? "scale-100" : "scale-75 grayscale opacity-40"}`}>
-          {i < vidas ? "❤️" : "🖤"}
-        </span>
-      ))}
+    <div className="fixed top-4 right-4 z-50 flex items-center gap-2">
+      <div className="flex items-center gap-1 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full border-2 border-white/20">
+        {Array.from({ length: 5 }, (_, i) => (
+          <span key={i} className={`text-base sm:text-lg transition-all ${i < vidas ? "scale-100" : "scale-75 grayscale opacity-40"}`}>
+            {i < vidas ? "❤️" : "🖤"}
+          </span>
+        ))}
+      </div>
+      <button 
+        onClick={() => setShowSettings(true)}
+        className="bg-black/30 backdrop-blur-md text-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-white/20 hover:bg-black/50 transition-all opacity-80 hover:opacity-100 shrink-0"
+        title="Configurações"
+      >
+        <Settings className="w-5 h-5" />
+      </button>
+      <SettingsHubModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
     </div>
   );
 

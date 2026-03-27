@@ -1,0 +1,268 @@
+"use client";
+
+import { useState } from "react";
+import { X, ChevronRight, Volume2, VolumeX, Shield, Info, MessageSquare, ArrowLeft, Send } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useAudio } from "@/contexts/AudioContext";
+import { useGameSound } from "@/hooks/useGameSound";
+import { submitFeedback } from "@/lib/actions/feedback";
+
+type ScreenContext = "main" | "about" | "privacy" | "rights" | "feedback";
+
+interface SettingsHubModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalProps) {
+  const [screen, setScreen] = useState<ScreenContext>("main");
+  const { isMuted, toggleMute } = useAudio();
+  const { playClick, playModalSwoosh } = useGameSound();
+
+  // Feedback State
+  const [feedMsg, setFeedMsg] = useState("");
+  const [feedType, setFeedType] = useState<"sugestao" | "bug">("sugestao");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [toastMsg, setToastMsg] = useState<string | null>(null);
+
+  if (!isOpen) {
+    if (screen !== "main") setScreen("main"); // reset on close natively
+    return null;
+  }
+
+  const handleClose = () => {
+    playModalSwoosh();
+    onClose();
+    setTimeout(() => setScreen("main"), 300);
+  };
+
+  const navigateTo = (newScreen: ScreenContext) => {
+    playClick();
+    setScreen(newScreen);
+  };
+
+  const toggleSound = () => {
+    playClick();
+    toggleMute();
+  };
+
+  const handleFeedbackSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!feedMsg.trim()) return;
+
+    playClick();
+    setIsSubmitting(true);
+    try {
+      await submitFeedback(feedMsg, feedType);
+      setToastMsg("Sua mensagem voou até nossos desenvolvedores! 🪁");
+      setFeedMsg("");
+      setTimeout(() => setToastMsg(null), 4000);
+      setTimeout(() => setScreen("main"), 2500);
+    } catch {
+      setToastMsg("Falha ao enviar, tente novamente.");
+      setTimeout(() => setToastMsg(null), 3000);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <div 
+        className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300" 
+        onClick={handleClose}
+      />
+      
+      {/* Modal Box */}
+      <div className="relative w-full max-w-sm bg-white rounded-[1.5rem] shadow-2xl flex flex-col overflow-hidden animate-in zoom-in-95 duration-300">
+        
+        {/* Header */}
+        <div className="bg-slate-50 flex items-center justify-between px-5 py-4 border-b-2 border-slate-100">
+          <div className="flex items-center gap-2">
+            {screen !== "main" && (
+              <button 
+                onClick={() => navigateTo(screen === 'privacy' || screen === 'rights' ? 'about' : 'main')} 
+                className="p-1 -ml-2 text-slate-400 hover:text-slate-600 transition-colors"
+                title="Voltar"
+              >
+                <ArrowLeft className="w-5 h-5" strokeWidth={3} />
+              </button>
+            )}
+            <h2 className="font-display font-black text-xl text-slate-800 uppercase tracking-wide">
+              {screen === "main" && "Ajustes de Cria"}
+              {screen === "about" && "Sobre o App"}
+              {screen === "privacy" && "Privacidade"}
+              {screen === "rights" && "Seus Direitos"}
+              {screen === "feedback" && "Feedback"}
+            </h2>
+          </div>
+          
+          <button 
+            onClick={handleClose}
+            className="w-8 h-8 flex items-center justify-center bg-slate-200 text-slate-500 rounded-full hover:bg-slate-300 hover:text-slate-700 transition-colors"
+          >
+            <X className="w-5 h-5" strokeWidth={2.5} />
+          </button>
+        </div>
+
+        {/* Content Area */}
+        <div className="p-5 max-h-[75vh] overflow-y-auto scrollbar-hide flex flex-col gap-3">
+          
+          {/* SCREEN: MAIN */}
+          {screen === "main" && (
+            <div className="flex flex-col gap-2">
+              <button 
+                onClick={toggleSound}
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={cn("p-2 rounded-lg", isMuted ? "bg-red-100 text-red-500" : "bg-brand/10 text-brand")}>
+                    {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+                  </div>
+                  <span className="font-bold text-slate-700 text-[15px]">Efeitos Sonoros</span>
+                </div>
+                <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", isMuted ? "bg-slate-300" : "bg-green-500")}>
+                  <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", !isMuted && "translate-x-6")} />
+                </div>
+              </button>
+
+              <button 
+                onClick={() => navigateTo("about")}
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-blue-100 text-blue-500">
+                    <Info className="w-5 h-5" />
+                  </div>
+                  <span className="font-bold text-slate-700 text-[15px]">Sobre o Adaptando</span>
+                </div>
+                <ChevronRight className="w-5 h-5 text-slate-400" />
+              </button>
+
+              <button 
+                onClick={() => navigateTo("feedback")}
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-orange-100 text-orange-500">
+                    <MessageSquare className="w-5 h-5" />
+                  </div>
+                  <span className="font-bold text-slate-700 text-[15px]">Enviar Feedback</span>
+                </div>
+                <ChevronRight className="w-5 h-5 text-slate-400" />
+              </button>
+            </div>
+          )}
+
+          {/* SCREEN: ABOUT */}
+          {screen === "about" && (
+            <div className="flex flex-col gap-4 animate-in slide-in-from-right-4 duration-200">
+              <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 text-amber-900">
+                <p className="text-[14px] leading-relaxed font-medium">
+                  O projeto <strong>Adaptando</strong> é uma iniciativa educacional e gamificada desenvolvida pelo <strong>Instituto Ádapo</strong> para empoderar o empendedorismo na comunidade de forma lúdica, engajadora e transformadora.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2 mt-2">
+                <button 
+                  onClick={() => navigateTo("privacy")}
+                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 transition-all text-left"
+                >
+                  <span className="font-bold text-slate-600 text-sm">Políticas de Privacidade</span>
+                  <Shield className="w-4 h-4 text-slate-400" />
+                </button>
+                <button 
+                  onClick={() => navigateTo("rights")}
+                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 transition-all text-left"
+                >
+                  <span className="font-bold text-slate-600 text-sm">Direitos dos Usuários</span>
+                  <ChevronRight className="w-4 h-4 text-slate-400" />
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* SCREEN: PRIVACY */}
+          {screen === "privacy" && (
+            <div className="flex flex-col gap-3 text-slate-600 text-sm leading-relaxed animate-in slide-in-from-right-4 duration-200">
+              <p>
+                No Instituto Ádapo, levamos a proteção dos seus dados a sério. Coletamos informações de progresso do jogo e interações puramente para melhorar sua jornada educacional.
+              </p>
+              <p>
+                As informações salvas englobam os testes respondidos e a métrica de desempenho contínuo (A "Ofensiva"). Nenhum dado sensível é repassado a terceiros de fins comerciais.
+              </p>
+            </div>
+          )}
+
+          {/* SCREEN: RIGHTS (LGPD) */}
+          {screen === "rights" && (
+            <div className="flex flex-col gap-4 text-slate-600 text-sm leading-relaxed animate-in slide-in-from-right-4 duration-200">
+              <div className="bg-red-50 p-4 rounded-xl border border-red-200 text-red-800 font-medium">
+                "Você tem o direito de solicitar a exclusão total dos seus dados a qualquer momento."
+              </div>
+              <p>
+                Conforme a Lei Geral de Proteção de Dados (LGPD), você detém controle do que coletamos. Você tem o direito ao acesso, correção de informações incompletas, anonimização e portabilidade.
+              </p>
+              <p className="text-xs text-slate-400 mt-2">
+                Para solicitar remoção, entre em contato via Feedback ou com os administradores.
+              </p>
+            </div>
+          )}
+
+          {/* SCREEN: FEEDBACK */}
+          {screen === "feedback" && (
+            <form onSubmit={handleFeedbackSubmit} className="flex flex-col gap-4 animate-in slide-in-from-right-4 duration-200">
+              {toastMsg ? (
+                <div className="bg-green-50 text-green-700 p-4 font-bold rounded-xl border border-green-200 flex items-center gap-2 text-sm justify-center text-center animate-in fade-in duration-300">
+                  {toastMsg}
+                </div>
+              ) : (
+                <>
+                  <div className="flex gap-2 p-1 bg-slate-100 rounded-lg">
+                    <button
+                      type="button"
+                      onClick={() => setFeedType("sugestao")}
+                      className={cn("flex-1 py-1.5 text-xs font-bold rounded-md transition-all", feedType === "sugestao" ? "bg-white text-slate-800 shadow-sm" : "text-slate-500 hover:text-slate-700")}
+                    >
+                      💡 Sugestão
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setFeedType("bug")}
+                      className={cn("flex-1 py-1.5 text-xs font-bold rounded-md transition-all", feedType === "bug" ? "bg-white text-red-600 shadow-sm" : "text-slate-500 hover:text-red-500")}
+                    >
+                      🐛 Erro / Bug
+                    </button>
+                  </div>
+                  
+                  <textarea 
+                    autoFocus
+                    required
+                    value={feedMsg}
+                    onChange={(e) => setFeedMsg(e.target.value)}
+                    placeholder={feedType === 'sugestao' ? "Como podemos empolgar mais o seu voo?" : "O que atrapalhou seu progresso?"}
+                    className="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 transition-all resize-none h-32"
+                  />
+                  
+                  <button 
+                    type="submit"
+                    disabled={isSubmitting || !feedMsg.trim()}
+                    className="w-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 active:scale-[0.98] text-white font-black text-sm uppercase tracking-wide py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:pointer-events-none disabled:active:scale-100 shadow-[0_4px_10px_-4px_rgba(249,115,22,0.6)]"
+                  >
+                    {isSubmitting ? "Enviando..." : (
+                      <>
+                        Enviar Voo <Send className="w-4 h-4 ml-1" />
+                      </>
+                    )}
+                  </button>
+                </>
+              )}
+            </form>
+          )}
+
+        </div>
+      </div>
+    </div>
+  );
+}

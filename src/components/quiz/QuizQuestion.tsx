@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Loader2, ArrowRight } from "lucide-react";
 import { useGameSound } from "@/hooks/useGameSound";
@@ -48,16 +48,30 @@ export default function QuizQuestion({
     setIsSubmitting(true);
     const isCorrectAnswer = selectedIdx === correctIdx;
     
-    if (isCorrectAnswer) {
-      playQuizCorrect();
-    } else {
-      playQuizWrong();
-    }
-    
     await onSubmit(selectedIdx, isCorrectAnswer);
     setAnswered(true);
     setIsSubmitting(false);
   }
+
+  useEffect(() => {
+    let timeoutId: any;
+
+    if (answered && !isSubmitting) {
+      if (acertou) {
+        timeoutId = setTimeout(() => {
+          playQuizCorrect();
+        }, 2000);
+      } else {
+        timeoutId = setTimeout(() => {
+          playQuizWrong();
+        }, 2000);
+      }
+    }
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [answered, isSubmitting, acertou, playQuizCorrect, playQuizWrong]);
 
   return (
     <div className="animate-slide-up flex flex-col">
@@ -109,7 +123,7 @@ export default function QuizQuestion({
               <button
                 key={idx}
                 onMouseEnter={playHover}
-                onClick={() => { playClick(); handleSelect(idx); }}
+                onClick={() => handleSelect(idx)}
                 disabled={answered}
                 className={cn(
                   "w-full text-left px-5 py-4 rounded-2xl border-2 font-bold text-[17px] transition-all duration-200",

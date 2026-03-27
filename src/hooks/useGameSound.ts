@@ -9,12 +9,12 @@ export function useGameSound() {
 
   // Load sound sprites or individual files
   // For now, mapping individual files from public/sounds/
-  const [playUiHoverSound] = useSound("/sounds/ui-hover.mp3", { volume: 0.3 });
-  const [playUiClickSound] = useSound("/sounds/ui-click.mp3", { volume: 0.5 });
-  const [playQuizCorrectSound] = useSound("/sounds/quiz-correct.mp3", { volume: 0.6 });
-  const [playQuizWrongSound] = useSound("/sounds/quiz-wrong.mp3", { volume: 0.6 });
-  const [playPhaseCompleteSound] = useSound("/sounds/phase-complete.mp3", { volume: 0.6 });
-  const [playModalSwooshSound] = useSound("/sounds/modal-swoosh.mp3", { volume: 0.4 });
+  const [playUiHoverSound] = useSound("/sounds/ui-hover.mp3", { volume: 0.3, interrupt: true });
+  const [playUiClickSound] = useSound("/sounds/ui-click.mp3", { volume: 0.5, interrupt: true });
+  const [playQuizCorrectSound] = useSound("/sounds/quiz-correct.mp3", { volume: 0.6, interrupt: true });
+  const [playQuizWrongSound] = useSound("/sounds/quiz-wrong.mp3", { volume: 0.6, interrupt: true });
+  const [playPhaseCompleteSound] = useSound("/sounds/phase-complete.mp3", { volume: 0.6, interrupt: true });
+  const [playModalSwooshSound] = useSound("/sounds/modal-swoosh.mp3", { volume: 0.4, interrupt: true });
 
   const playHover = useCallback(() => {
     if (!isMuted) playUiHoverSound();

@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getUserProfile, logout } from "@/lib/actions/user";
-import { Flame, Zap, Trophy, LogOut, Wind, Heart, Medal, Star, Share2, Check } from "lucide-react";
+import { Flame, Zap, Trophy, LogOut, Wind, Heart, Medal, Star, Share2, Check, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
+import SettingsHubModal from "@/components/ui/SettingsHubModal";
 
 interface Voluntario {
   id: string;
@@ -119,6 +120,7 @@ export default function PerfilPage() {
   const [loading, setLoading] = useState(true);
   const [loggingOut, setLoggingOut] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -193,8 +195,17 @@ export default function PerfilPage() {
   return (
     <div className="min-h-dvh bg-slate-50 pb-28 font-sans">
       
+      <SettingsHubModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
+
       {/* TOP BAR: Logout / Settings Icon */}
-      <div className="px-6 pt-6 flex justify-end">
+      <div className="px-6 pt-6 flex justify-end gap-3">
+        <button
+          onClick={() => setShowSettings(true)}
+          className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-400 border-2 border-slate-200 shadow-sm hover:text-slate-600 hover:border-slate-300 transition-colors active:scale-95"
+          title="Configurações"
+        >
+          <Settings strokeWidth={2.5} className="w-5 h-5" />
+        </button>
         <button
           onClick={handleLogout}
           disabled={loggingOut}
