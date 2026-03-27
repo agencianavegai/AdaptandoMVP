@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { DynamicSkyBackground } from "@/components/ui/DynamicSkyBackground";
 import StoryModal from "@/components/ui/StoryModal";
 import { WORLD_LORE } from "@/lib/constants/lore";
+import { useGameSound } from "@/hooks/useGameSound";
 
 interface Fase {
   id: string;
@@ -43,6 +44,8 @@ export default function TrilhaPage() {
   const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
   const [clickedFaseId, setClickedFaseId] = useState<string | null>(null);
+
+  const { playHover, playClick } = useGameSound();
 
   const loadData = useCallback(async () => {
     try {
@@ -123,7 +126,8 @@ export default function TrilhaPage() {
     <DynamicSkyBackground mundoId={mundo.ordem}>
       {/* Back Button */}
       <button
-        onClick={() => router.push("/mapa")}
+        onClick={() => { playClick(); router.push("/mapa"); }}
+        onMouseEnter={playHover}
         aria-label="Voltar para o Mapa"
         title="Voltar"
         className="fixed top-4 left-4 z-50 bg-black/30 backdrop-blur-md text-white w-12 h-12 rounded-full flex items-center justify-center font-black text-xl border-2 border-white/20 hover:bg-black/50 transition-all"
@@ -145,7 +149,8 @@ export default function TrilhaPage() {
 
         {/* Manual Reopen Story Button */}
         <button
-          onClick={() => setIsStoryModalOpen(true)}
+          onClick={() => { playClick(); setIsStoryModalOpen(true); }}
+          onMouseEnter={playHover}
           className="inline-flex items-center gap-2 bg-black/20 hover:bg-black/40 text-white/90 backdrop-blur-sm px-4 py-2 rounded-xl transition-colors border border-white/10"
         >
           <BookOpen className="w-4 h-4" />
@@ -211,8 +216,10 @@ export default function TrilhaPage() {
               >
                 <button
                   disabled={isLocked || isPending}
+                  onMouseEnter={playHover}
                   onClick={() => {
                     if (isLocked) return;
+                    playClick();
                     setClickedFaseId(fase.id);
                     startTransition(() => {
                       router.push(`/arena/${mundoId}?fase=${fase.ordem}`);

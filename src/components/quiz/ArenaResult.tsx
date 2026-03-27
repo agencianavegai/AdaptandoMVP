@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useGameSound } from "@/hooks/useGameSound";
 
 interface ArenaResultProps {
   score: number;
@@ -26,7 +28,16 @@ export default function ArenaResult({
   const perfect = score === totalQuestions;
   const gameOver = vidasRestantes <= 0;
 
+  const { playPhaseComplete, playClick, playHover } = useGameSound();
+
+  useEffect(() => {
+    if (passed && !gameOver) {
+      playPhaseComplete();
+    }
+  }, [passed, gameOver, playPhaseComplete]);
+
   function handleBack() {
+    playClick();
     if (gameOver) {
       router.push("/mapa");
     } else {
@@ -93,7 +104,8 @@ export default function ArenaResult({
         {/* Action Button */}
         <button
           onClick={handleBack}
-          className="w-full btn-3d-brand py-4 text-lg font-display font-black uppercase tracking-wider"
+          onMouseEnter={playHover}
+          className="w-full btn-3d-brand py-4 text-lg font-display font-black uppercase tracking-wider transition-transform hover:-translate-y-0.5 active:translate-y-0"
         >
           {gameOver ? "Voltar ao Mapa" : mundoConcluido ? "Próximo Céu!" : "Ver Trilha"}
         </button>

@@ -6,6 +6,7 @@ import { getMapaData } from "@/lib/actions/gamification";
 import TopBar from "@/components/map/TopBar";
 import WorldCard from "@/components/map/WorldCard";
 import MapAnimatedBackground from "@/components/map/MapAnimatedBackground";
+import { useGameSound } from "@/hooks/useGameSound";
 
 interface MundoCeu {
   id: number;
@@ -37,6 +38,7 @@ export default function MapaPage() {
   const [nextRechargeSeconds, setNextRechargeSeconds] = useState(0);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
+  const { playClick } = useGameSound();
 
   useEffect(() => {
     async function loadData() {
@@ -119,7 +121,7 @@ export default function MapaPage() {
             mundo={mundo}
             status={getWorldStatus(mundo.id)}
             score={getWorldScore(mundo.id)}
-            onNavigate={(id) => router.push(`/trilha/${id}`)}
+            onNavigate={(id) => { playClick(); router.push(`/trilha/${id}`) }}
           />
         ))}
       </main>

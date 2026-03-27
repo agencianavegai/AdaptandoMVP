@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Flame, Wind, Heart, Clock, X, Share2, Loader2, Download } from "lucide-react";
+import { Flame, Wind, Heart, Clock, X, Share2, Loader2, Download, Volume2, VolumeX } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toPng } from "html-to-image";
+import { useAudio } from "@/contexts/AudioContext";
+import { useGameSound } from "@/hooks/useGameSound";
 
 interface TopBarProps {
   voluntario: {
@@ -59,7 +61,16 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
   const metros = voluntario?.metros_linha ?? 0;
   const ofensiva = voluntario?.ofensiva_atual ?? 0;
 
+  const { isMuted, toggleMute } = useAudio();
+  const { playClick, playHover, playModalSwoosh } = useGameSound();
+
+  const handleOpenModal = (setModal: (v: boolean) => void) => {
+    playModalSwoosh();
+    setModal(true);
+  };
+
   const handleShare = async () => {
+    playClick();
     if (!captureRef.current || shareLoading) return;
     setShareLoading(true);
 
@@ -111,7 +122,8 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
           {/* AVATAR + Name */}
           <button
-            onClick={() => setShowProfileModal(true)}
+            onClick={() => handleOpenModal(setShowProfileModal)}
+            onMouseEnter={playHover}
             className="flex items-center gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-transform group text-left outline-none"
           >
             <div className="relative">
@@ -139,9 +151,27 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
           {/* METRICS */}
           <div className="flex items-center gap-2">
+            {/* Volume Toggle */}
+            <button
+              onClick={() => {
+                playClick();
+                toggleMute();
+              }}
+              onMouseEnter={playHover}
+              className="flex flex-col items-center justify-center bg-white border-[3px] border-[#e5e5e5] w-[42px] h-[46px] rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none"
+              aria-label={isMuted ? "Ativar som" : "Desativar som"}
+            >
+              {isMuted ? (
+                <VolumeX className="w-5 h-5 text-gray-400" />
+              ) : (
+                <Volume2 className="w-5 h-5 text-[var(--color-brand)]" />
+              )}
+            </button>
+
             {/* Papéis de Seda (Vidas) — Clickable to open Modal */}
             <button
-              onClick={() => setShowLivesModal(true)}
+              onClick={() => handleOpenModal(setShowLivesModal)}
+              onMouseEnter={playHover}
               className="flex flex-col items-center bg-white border-[3px] border-[#e5e5e5] px-2.5 py-1.5 rounded-2xl shadow-sm transition-transform hover:-translate-y-1 active:scale-95 cursor-pointer outline-none"
             >
               <div className="flex items-center gap-0.5">
@@ -164,7 +194,8 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
             {/* Metros de Linha (XP) */}
             <button
-              onClick={() => setShowXpModal(true)}
+              onClick={() => handleOpenModal(setShowXpModal)}
+              onMouseEnter={playHover}
               className="flex flex-col items-center bg-white border-[3px] border-[#e5e5e5] px-3 py-1.5 rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none"
             >
               <Wind className="w-5 h-5 text-[var(--color-info)] drop-shadow-sm" strokeWidth={3} />
@@ -175,7 +206,8 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
             {/* Chama (Ofensiva / Streak) */}
             <button
-              onClick={() => setShowChamaModal(true)}
+              onClick={() => handleOpenModal(setShowChamaModal)}
+              onMouseEnter={playHover}
               className="flex flex-col items-center bg-white border-[3px] border-[#e5e5e5] px-3 py-1.5 rounded-2xl shadow-sm hover:-translate-y-1 active:scale-95 transition-transform cursor-pointer outline-none"
             >
               <Flame

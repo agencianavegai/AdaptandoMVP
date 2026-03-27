@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import BottomNav from "@/components/navigation/BottomNav";
+import { AudioProvider } from "@/contexts/AudioContext";
 
 export const metadata: Metadata = {
   title: "Adaptando — Dando Linha pra Sonhar",
@@ -43,8 +44,10 @@ export default function RootLayout({
             `,
           }}
         />
-        {children}
-        <BottomNav />
+        <AudioProvider>
+          {children}
+          <BottomNav />
+        </AudioProvider>
       </body>
     </html>
   );

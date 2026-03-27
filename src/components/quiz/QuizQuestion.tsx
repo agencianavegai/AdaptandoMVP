@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Loader2, ArrowRight } from "lucide-react";
+import { useGameSound } from "@/hooks/useGameSound";
 
 interface Alternativa {
   texto: string;
@@ -35,6 +36,8 @@ export default function QuizQuestion({
   const correctIdx = alternativas.findIndex((a) => a.correta);
   const acertou = selectedIdx === correctIdx;
 
+  const { playHover, playClick, playQuizCorrect, playQuizWrong } = useGameSound();
+
   function handleSelect(idx: number) {
     if (answered || isSubmitting) return;
     setSelectedIdx(idx);
@@ -43,7 +46,15 @@ export default function QuizQuestion({
   async function handleConfirm() {
     if (selectedIdx === null || answered || isSubmitting) return;
     setIsSubmitting(true);
-    await onSubmit(selectedIdx, selectedIdx === correctIdx);
+    const isCorrectAnswer = selectedIdx === correctIdx;
+    
+    if (isCorrectAnswer) {
+      playQuizCorrect();
+    } else {
+      playQuizWrong();
+    }
+    
+    await onSubmit(selectedIdx, isCorrectAnswer);
     setAnswered(true);
     setIsSubmitting(false);
   }
@@ -97,7 +108,8 @@ export default function QuizQuestion({
             return (
               <button
                 key={idx}
-                onClick={() => handleSelect(idx)}
+                onMouseEnter={playHover}
+                onClick={() => { playClick(); handleSelect(idx); }}
                 disabled={answered}
                 className={cn(
                   "w-full text-left px-5 py-4 rounded-2xl border-2 font-bold text-[17px] transition-all duration-200",
@@ -117,7 +129,8 @@ export default function QuizQuestion({
         {!answered && (
           <div className="mt-8 animate-slide-up">
             <button
-              onClick={handleConfirm}
+              onMouseEnter={playHover}
+              onClick={() => { playClick(); handleConfirm(); }}
               disabled={selectedIdx === null || isSubmitting}
               className="w-full btn-3d-brand py-4 font-display font-black uppercase text-lg tracking-wide flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bg-[var(--color-brand)] disabled:active:translate-y-0 disabled:active:border-b-[4px]"
             >
@@ -169,7 +182,8 @@ export default function QuizQuestion({
 
             {/* Continuar Button */}
             <button
-              onClick={onNext}
+              onMouseEnter={playHover}
+              onClick={() => { playClick(); onNext(); }}
               className={cn(
                 "mt-6 w-full py-4 rounded-xl font-display font-black text-white uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-md hover:-translate-y-0.5 active:translate-y-0",
                 acertou ? "bg-emerald-600 hover:bg-emerald-700 font-display" : "bg-red-600 hover:bg-red-700 font-display"
