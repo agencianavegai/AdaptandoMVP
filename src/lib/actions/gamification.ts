@@ -2,6 +2,48 @@
 
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { revalidatePath } from "next/cache";
+import type { SupabaseClient } from "@supabase/supabase-js";
+
+// ─── Streak Helpers ──────────────────────────────────────
+
+function toUTCDateStr(date: Date): string {
+  return date.toISOString().slice(0, 10);
+}
+
+/**
+ * Read-time streak decay: if the user hasn't completed anything
+ * since "yesterday" (UTC), silently reset their streak to 0 in the DB
+ * and return the corrected value.
+ */
+async function checkAndDecayStreak(
+  supabase: SupabaseClient,
+  userId: string,
+  vol: { ofensiva_atual: number; last_completed_at: string | null }
+): Promise<number> {
+  if (vol.ofensiva_atual <= 0) return 0;
+  if (!vol.last_completed_at) return vol.ofensiva_atual;
+
+  const now = new Date();
+  const todayStr = toUTCDateStr(now);
+  const yesterday = new Date(now);
+  yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+  const yesterdayStr = toUTCDateStr(yesterday);
+
+  const lastStr = toUTCDateStr(new Date(vol.last_completed_at));
+
+  // If last activity was today or yesterday, streak is still valid
+  if (lastStr === todayStr || lastStr === yesterdayStr) {
+    return vol.ofensiva_atual;
+  }
+
+  // Gap > 1 day: silently reset the streak in the DB
+  await supabase
+    .from("voluntarios")
+    .update({ ofensiva_atual: 0 })
+    .eq("id", userId);
+
+  return 0;
+}
 
 // ─── Types ───────────────────────────────────────────────
 
@@ -54,10 +96,19 @@ export async function getMapaData() {
     supabase.from("voluntarios").select("*").eq("id", user.id).single(),
   ]);
 
+  // Read-time streak decay: correct stale ofensiva before sending to frontend
+  const vol = voluntarioRes.data;
+  if (vol) {
+    vol.ofensiva_atual = await checkAndDecayStreak(supabase, user.id, {
+      ofensiva_atual: vol.ofensiva_atual,
+      last_completed_at: vol.last_completed_at,
+    });
+  }
+
   return {
     mundos: mundosRes.data || [],
     progressos: progressoRes.data || [],
-    voluntario: voluntarioRes.data,
+    voluntario: vol,
     nextRechargeSeconds,
   };
 }
@@ -170,7 +221,7 @@ export async function completeFase(mundoId: number, faseOrdem: number, pontosGan
 
   const TOTAL_FASES = 6;
 
-  // ── Streak logic ──
+  // ── Streak logic (UTC-consistent) ──
   const { data: vol } = await supabase
     .from("voluntarios")
     .select("ofensiva_atual, melhor_ofensiva, last_completed_at")
@@ -182,31 +233,31 @@ export async function completeFase(mundoId: number, faseOrdem: number, pontosGan
 
   if (vol) {
     const now = new Date();
-    const todayStr = now.toISOString().slice(0, 10);
+    const todayStr = toUTCDateStr(now);
 
     if (vol.last_completed_at) {
-      const lastDate = new Date(vol.last_completed_at);
-      const lastStr = lastDate.toISOString().slice(0, 10);
+      const lastStr = toUTCDateStr(new Date(vol.last_completed_at));
 
       if (lastStr === todayStr) {
-        // Same day — no change
+        // Same day — keep current streak, don't double-count
         newStreak = vol.ofensiva_atual;
       } else {
-        // Check if it was yesterday
         const yesterday = new Date(now);
-        yesterday.setDate(yesterday.getDate() - 1);
-        const yesterdayStr = yesterday.toISOString().slice(0, 10);
+        yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+        const yesterdayStr = toUTCDateStr(yesterday);
 
         if (lastStr === yesterdayStr) {
+          // Played yesterday — increment
           newStreak = vol.ofensiva_atual + 1;
           streakIncreased = true;
         } else {
-          // Gap > 1 day: reset
+          // Gap > 1 day — reset to 1 (starting fresh today)
           newStreak = 1;
-          streakIncreased = vol.ofensiva_atual === 0;
+          streakIncreased = true;
         }
       }
     } else {
+      // First time ever completing a phase
       streakIncreased = true;
     }
 

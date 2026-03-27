@@ -36,9 +36,27 @@ export async function getUserProfile() {
 
   const { data: voluntario } = await supabase
     .from("voluntarios")
-    .select("id, nome, avatar_url, metros_linha, vidas_atuais, ofensiva_atual, melhor_ofensiva")
+    .select("id, nome, avatar_url, metros_linha, vidas_atuais, ofensiva_atual, melhor_ofensiva, last_completed_at")
     .eq("id", user.id)
     .single();
+
+  // Read-time streak decay: if gap > 1 day, show 0 and silently reset
+  if (voluntario && voluntario.ofensiva_atual > 0 && voluntario.last_completed_at) {
+    const now = new Date();
+    const todayStr = now.toISOString().slice(0, 10);
+    const yesterday = new Date(now);
+    yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+    const yesterdayStr = yesterday.toISOString().slice(0, 10);
+    const lastStr = new Date(voluntario.last_completed_at).toISOString().slice(0, 10);
+
+    if (lastStr !== todayStr && lastStr !== yesterdayStr) {
+      voluntario.ofensiva_atual = 0;
+      await supabase
+        .from("voluntarios")
+        .update({ ofensiva_atual: 0 })
+        .eq("id", user.id);
+    }
+  }
 
   // Count completed worlds
   const { count: mundosConcluidos } = await supabase

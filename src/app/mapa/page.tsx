@@ -72,6 +72,13 @@ export default function MapaPage() {
     return Math.max(...unlocked.map((p) => p.mundo_id));
   }
 
+  // Determina o foco/tema do usuário para compartilhar no modal
+  function getCurrentFocus(): string | undefined {
+    const maxId = getMaxMundoId();
+    const curr = mundos.find((m) => m.id === maxId);
+    return curr?.nome_tema;
+  }
+
   if (loading) {
     return (
       <div className="min-h-dvh bg-[var(--color-storm-dark)] flex flex-col items-center justify-center space-y-6">
@@ -91,7 +98,7 @@ export default function MapaPage() {
       <MapAnimatedBackground maxMundoId={getMaxMundoId()} />
 
       {/* Fixed Top Bar */}
-      <TopBar voluntario={voluntario} nextRechargeSeconds={nextRechargeSeconds} />
+      <TopBar voluntario={voluntario} nextRechargeSeconds={nextRechargeSeconds} currentFocus={getCurrentFocus()} />
 
       {/* World Cards List */}
       <main className="relative z-10 flex flex-col gap-6 p-5 pt-28 pb-28">

@@ -13,6 +13,7 @@ interface TopBarProps {
     ofensiva_atual: number;
   } | null;
   nextRechargeSeconds?: number;
+  currentFocus?: string;
 }
 
 function MiniTimer({ seconds }: { seconds: number }) {
@@ -42,7 +43,7 @@ function MiniTimer({ seconds }: { seconds: number }) {
   );
 }
 
-export default function TopBar({ voluntario, nextRechargeSeconds = 0 }: TopBarProps) {
+export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFocus }: TopBarProps) {
   const [showLivesModal, setShowLivesModal] = useState(false);
   const [showXpModal, setShowXpModal] = useState(false);
   const [showChamaModal, setShowChamaModal] = useState(false);
@@ -56,8 +57,9 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0 }: TopBarPr
   const ofensiva = voluntario?.ofensiva_atual ?? 0;
 
   const handleShare = async () => {
-    const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo! Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
-    
+    const focusText = currentFocus ? ` Meu foco atual é dominar: ${currentFocus}.` : "";
+    const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo!${focusText} Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
+
     try {
       if (navigator.share) {
         await navigator.share({
@@ -80,7 +82,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0 }: TopBarPr
         <div className="max-w-md mx-auto flex items-center justify-between gap-4">
 
           {/* AVATAR + Name */}
-          <button 
+          <button
             onClick={() => setShowProfileModal(true)}
             className="flex items-center gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-transform group text-left outline-none"
           >
@@ -313,86 +315,118 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0 }: TopBarPr
         </div>
       )}
 
-      {/* Profile Summary & Share Modal */}
+      {/* Profile Summary & Share Modal (Celebração do Herói - Duolingo Style) */}
       {showProfileModal && (
-        <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm animate-in fade-in duration-300 sm:p-4"
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
-          <div className="w-full max-w-sm bg-gradient-to-br from-[#ff7f06] to-pink-500 rounded-3xl shadow-2xl flex flex-col items-center gap-4 relative text-center border-4 border-white/30 overflow-hidden animate-slide-up">
-            
-            {/* Efeitos do Céu Laranja */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-overlay opacity-30 blur-2xl"></div>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white rounded-full mix-blend-overlay opacity-20 blur-xl"></div>
+          {/* Modal Container */}
+          <div className="w-full h-full sm:h-auto sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 sm:rounded-3xl shadow-2xl flex flex-col relative overflow-hidden animate-slide-up">
+
+            {/* Soft Sun/Clouds gradient overlay to add contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
 
             {/* Fechar Modal */}
-            <button 
+            <button
               onClick={() => setShowProfileModal(false)}
-              className="absolute top-4 right-4 z-10 w-8 h-8 bg-black/20 rounded-full flex items-center justify-center text-white hover:bg-black/40 transition-colors backdrop-blur-md"
+              className="absolute top-6 right-6 z-20 w-10 h-10 bg-black/10 rounded-full flex items-center justify-center text-white hover:bg-black/20 transition-colors backdrop-blur-md cursor-pointer outline-none"
             >
-              <X strokeWidth={3} className="w-4 h-4" />
+              <X strokeWidth={3} className="w-5 h-5" />
             </button>
-            
-            {/* Avatar Gigante */}
-            <div className="relative pt-6 z-10">
-              {voluntario?.avatar_url ? (
-                <img
-                  src={voluntario.avatar_url}
-                  alt={nome}
-                  className="w-24 h-24 border-4 border-white object-cover shadow-xl bg-orange-200 animate-bounce-hover"
-                  style={{ borderRadius: "var(--radius-kite)" }}
-                />
-              ) : (
-                <div 
-                  className="w-24 h-24 border-4 border-white shadow-xl flex items-center justify-center text-3xl font-black text-white bg-[var(--color-brand)] animate-bounce-hover"
-                  style={{ borderRadius: "var(--radius-kite)" }}
-                >
-                  {initials}
+
+            {/* Content Wrapper */}
+            <div className="flex-1 flex flex-col justify-between pt-12 pb-8 px-6 relative z-10 w-full h-full">
+
+              <div className="text-center flex flex-col items-center flex-1">
+                {/* Título Celebrativo */}
+                <h2 className="font-display font-black text-3xl sm:text-4xl text-white drop-shadow-md tracking-wide uppercase mb-8">
+                  Eu to<br />VOANDO ALTO!
+                </h2>
+
+                {/* Personagem (Avatar gigante estilo Duo) */}
+                <div className="relative mb-8 mt-2">
+                  <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-110"></div>
+                  {voluntario?.avatar_url ? (
+                    <img
+                      src={voluntario.avatar_url}
+                      alt={nome}
+                      className="w-40 h-40 border-8 border-white object-cover shadow-2xl bg-orange-100 animate-bounce-hover relative z-10"
+                      style={{ borderRadius: "2rem" }}
+                    />
+                  ) : (
+                    <div
+                      className="w-40 h-40 border-8 border-white shadow-2xl flex items-center justify-center text-6xl font-black text-white bg-[var(--color-brand)] animate-bounce-hover relative z-10"
+                      style={{ borderRadius: "2rem" }}
+                    >
+                      {initials}
+                    </div>
+                  )}
+                  {/* Etiqueta de nome do Herói */}
+                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-4 py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20">
+                    {nome}
+                  </div>
                 </div>
-              )}
-            </div>
-            
-            <h2 className="font-display font-black text-3xl text-white drop-shadow-md z-10 w-full px-4 truncate tracking-wide">
-              {nome}
-            </h2>
 
-            {/* Ofensiva em Destaque Gigante */}
-            <div className="bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl p-6 w-11/12 mx-auto flex flex-col items-center shadow-lg relative z-10 mt-2">
-              <div className="flex items-center gap-2 mb-2">
-                <Flame className="w-6 h-6 text-[var(--color-warning)]" fill="var(--color-warning)" strokeWidth={2.5} />
-                <span className="font-display font-bold text-[var(--color-warning-shadow)] uppercase tracking-wide text-sm">
-                  Ofensiva Atual
-                </span>
-                <Flame className="w-6 h-6 text-[var(--color-warning)]" fill="var(--color-warning)" strokeWidth={2.5} />
+                {/* Stats Dashboard (RPG Style) */}
+                <div className="w-full flex flex-col gap-3 mt-4">
+
+                  {/* Linha de Métricas: Grid 2 colunas */}
+                  <div className="grid grid-cols-2 gap-3">
+                    {/* Card 1: Ofensiva (Compacto, número gigante) */}
+                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-orange-200">
+                      <Flame className="w-8 h-8 text-orange-500 mb-2" fill="currentColor" />
+                      <span className="font-display font-black text-4xl text-orange-500 leading-none tabular-nums">{ofensiva}</span>
+                      <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Ofensiva</span>
+                    </div>
+
+                    {/* Card 2: Metros de Linha (Compacto, número gigante) */}
+                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-blue-200">
+                      <span className="text-3xl mb-2 drop-shadow-sm">🪁</span>
+                      <span className="font-display font-black text-4xl text-blue-500 leading-none tabular-nums">{metros}</span>
+                      <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Metros</span>
+                    </div>
+                  </div>
+
+                  {/* Linha Narrativa: Foco Atual (Full Width) */}
+                  {currentFocus && (
+                    <div className="bg-white rounded-2xl p-4 flex items-center gap-4 shadow-sm border-2 border-orange-100 border-b-[5px] border-b-orange-200 text-left">
+                      <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-orange-100 border border-orange-200 rounded-xl flex items-center justify-center shrink-0">
+                        <span className="text-2xl">🎯</span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-0.5">Foco Atual</h3>
+                        <p className="text-slate-800 font-black text-base sm:text-lg leading-snug truncate">
+                          {currentFocus}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Banner CTA: Convite VIP */}
+                  <div className="bg-sky-50 border-2 border-sky-100 rounded-2xl p-4 flex items-center gap-3 text-left mt-1">
+                    <span className="text-3xl shrink-0">🚀</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sky-700 font-black text-sm leading-tight">Quer voar alto também?</p>
+                      <p className="text-sky-600/80 text-xs font-medium leading-snug mt-0.5">Junte-se ao Instituto Ádapo. Capacite-se e ajude a transformar o Terceiro Setor!</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-              
-              <div className="flex flex-col items-center pt-2 pb-1 text-[var(--color-warning)]">
-                <span className="text-lg font-bold text-[var(--color-warning-shadow)] opacity-90">Estou a</span>
-                <span className="font-display font-black text-6xl tabular-nums drop-shadow-sm leading-none my-1">
-                  {ofensiva}
-                </span>
-                <span className="font-black text-lg text-[var(--color-warning-shadow)] uppercase tracking-wide">dias me Adaptando</span>
+
+              {/* Botão de Ação / Compartilhamento */}
+              <div className="mt-6 w-full shrink-0 relative z-20">
+                <button
+                  onClick={handleShare}
+                  className="w-full py-4 bg-white text-orange-500 font-display font-black text-xl tracking-wide uppercase rounded-2xl border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[6px] flex items-center justify-center gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none"
+                  title="Compartilhar meu voo"
+                >
+                  <Share2 className="w-6 h-6 text-orange-400" strokeWidth={3} />
+                  {shareCopied ? "Copiado!" : "Compartilhar meu voo"}
+                </button>
               </div>
-            </div>
 
-            {/* Metros Badge */}
-            <div className="bg-black/20 backdrop-blur-md rounded-xl px-4 py-2 mt-1 mb-2 flex items-center gap-2 relative z-10 border border-white/10">
-              <Wind className="w-5 h-5 text-white" strokeWidth={3} />
-              <span className="text-white font-black text-base drop-shadow-sm">
-                {metros} <span className="text-sm font-semibold opacity-80">metros de linha</span>
-              </span>
-            </div>
-
-            {/* Web Share API Button */}
-            <div className="w-full px-5 py-5 pb-6 relative z-10">
-              <button 
-                onClick={handleShare}
-                className="btn-3d w-full py-4 text-[15px] font-black uppercase text-[var(--color-brand-shadow)] bg-white border-b-[4px] border-b-gray-200 hover:bg-gray-50 flex items-center justify-center gap-2 group transition-colors"
-                title="Compartilhar Progresso"
-              >
-                <Share2 className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={3} />
-                {shareCopied ? "Copiado!" : "Compartilhar Progresso"}
-              </button>
             </div>
           </div>
         </div>
