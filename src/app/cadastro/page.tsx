@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createSupabaseClient } from "@/lib/supabase/client";
-import { AlertTriangle, Loader2, Eye, EyeOff } from "lucide-react";
+import { AlertTriangle, Loader2, Eye, EyeOff, HelpCircle } from "lucide-react";
 import AboutModal from "@/components/auth/AboutModal";
 
 export default function CadastroPage() {
@@ -11,6 +11,8 @@ export default function CadastroPage() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [isAdapete, setIsAdapete] = useState(false);
+  const [showAdapeteInfo, setShowAdapeteInfo] = useState(false);
   const [erro, setErro] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -44,6 +46,7 @@ export default function CadastroPage() {
         id: authData.user.id,
         nome: nome,
         email: email,
+        is_adapete: isAdapete,
       });
 
       if (insertError) {
@@ -147,6 +150,43 @@ export default function CadastroPage() {
                   {showPassword ? <EyeOff className="w-6 h-6" /> : <Eye className="w-6 h-6" />}
                 </button>
               </div>
+            </div>
+
+            {/* Adapete Toggle */}
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <label className="font-black text-[var(--color-text-secondary)] uppercase text-sm tracking-wider ml-1">
+                    Sou um Adapete
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => setShowAdapeteInfo(!showAdapeteInfo)}
+                    className="text-gray-400 hover:text-[var(--color-info)] transition-colors"
+                    aria-label="O que é um Adapete?"
+                  >
+                    <HelpCircle className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* Toggle Switch */}
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={isAdapete}
+                  onClick={() => setIsAdapete(!isAdapete)}
+                  className={`relative w-14 h-8 rounded-full transition-colors duration-300 ${isAdapete ? 'bg-[var(--color-brand)]' : 'bg-gray-300'}`}
+                >
+                  <span className={`absolute top-1 w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300 ${isAdapete ? 'translate-x-7' : 'translate-x-1'}`} />
+                </button>
+              </div>
+
+              {/* Adapete Info Tooltip */}
+              {showAdapeteInfo && (
+                <div className="bg-sky-50 border-2 border-sky-100 rounded-2xl p-4 text-sky-700 text-sm font-medium leading-relaxed animate-pop-in">
+                  <strong>Adapetes</strong> são os membros oficiais e voluntários internos do Instituto Ádapo. Se você é novo por aqui e quer aprender com a gente, deixe desmarcado e junte-se aos <strong>Viajantes</strong>! 🪁
+                </div>
+              )}
             </div>
 
             {erro && (

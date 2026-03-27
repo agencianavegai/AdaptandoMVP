@@ -5,24 +5,34 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 // ─── getRanking ──────────────────────────────────────────
 // Top 50 voluntários por metros_linha DESC
 
-export async function getRanking() {
+export async function getRanking(filter: "adapete" | "global" = "adapete") {
   const supabase = await createSupabaseServerClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) throw new Error("Não autenticado");
 
-  const { data: ranking } = await supabase
+  let query = supabase
     .from("voluntarios")
-    .select("id, nome, avatar_url, metros_linha")
+    .select("id, nome, avatar_url, metros_linha, is_adapete")
     .order("metros_linha", { ascending: false })
     .limit(50);
 
+  if (filter === "adapete") {
+    query = query.eq("is_adapete", true);
+  }
+
+  const { data: ranking } = await query;
+
   // Find current user's position
   const myPosition = (ranking || []).findIndex((v) => v.id === user.id) + 1;
+
+  // Get current user's adapete status
+  const myRecord = (ranking || []).find((v) => v.id === user.id);
 
   return {
     ranking: ranking || [],
     myId: user.id,
     myPosition: myPosition > 0 ? myPosition : null,
+    isAdapete: myRecord?.is_adapete ?? false,
   };
 }
 

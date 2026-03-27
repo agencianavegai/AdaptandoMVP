@@ -330,7 +330,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             </div>
 
             <p className="text-gray-600 font-medium leading-relaxed">
-              Mantenha a sua ofensiva completando pelo menos uma fase (Leitura + Quiz) todos os dias. Se pular um dia, a chama apaga!
+              Mantenha a sua ofensiva completando pelo menos uma fase todos os dias. Se pular um dia, a chama apaga!
             </p>
 
             <button
@@ -426,7 +426,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
                           <span className="text-2xl">🎯</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-0.5">Foco Atual</h3>
+                          <h3 className="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-0.5">Aprendendo mais sobre:</h3>
                           <p className="text-slate-800 font-black text-base sm:text-lg leading-snug truncate">
                             {currentFocus}
                           </p>

@@ -56,7 +56,7 @@ export default function StreakCelebration({ streakCount, isNew, onClose }: Strea
         </div>
 
         <p className="text-[var(--color-text-secondary)] text-sm text-center font-medium">
-          Sua chama aumentou! Continue assim para não perder a sequência.
+          Seu vento soprou mais forte! Continue assim para não perder a sequência.
         </p>
       </div>
     </div>
