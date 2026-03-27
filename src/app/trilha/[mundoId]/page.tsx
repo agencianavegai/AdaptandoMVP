@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef, useTransition } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { getTrilhaData } from "@/lib/actions/gamification";
-import { Lock, Check, Sparkles, BookOpen } from "lucide-react";
+import { Lock, Check, Sparkles, BookOpen, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { DynamicSkyBackground } from "@/components/ui/DynamicSkyBackground";
 import StoryModal from "@/components/ui/StoryModal";
@@ -41,6 +41,8 @@ export default function TrilhaPage() {
   const [nextRechargeSeconds, setNextRechargeSeconds] = useState(0);
   const [loading, setLoading] = useState(true);
   const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
+  const [isPending, startTransition] = useTransition();
+  const [clickedFaseId, setClickedFaseId] = useState<string | null>(null);
 
   const loadData = useCallback(async () => {
     try {
@@ -208,22 +210,29 @@ export default function TrilhaPage() {
                 style={{ transform: `translateX(${translateX}px)` }}
               >
                 <button
-                  disabled={isLocked}
+                  disabled={isLocked || isPending}
                   onClick={() => {
                     if (isLocked) return;
-                    router.push(`/arena/${mundoId}?fase=${fase.ordem}`);
+                    setClickedFaseId(fase.id);
+                    startTransition(() => {
+                      router.push(`/arena/${mundoId}?fase=${fase.ordem}`);
+                    });
                   }}
                   className={cn(
                     "w-16 h-16 sm:w-20 sm:h-20 rounded-[var(--radius-kite)] flex items-center justify-center text-white border-[3px] border-white transition-all",
                     isLocked 
                       ? "bg-black/20 border-black/10 cursor-not-allowed opacity-60"
+                      : isPending && clickedFaseId === fase.id
+                      ? "bg-[var(--color-brand)]/80 scale-95 opacity-80 cursor-wait shadow-none"
                       : isCompleted
                       ? "bg-emerald-500 shadow-[0_6px_0_0_#059669] hover:scale-105 cursor-pointer"
                       : "bg-[var(--color-brand)] shadow-[0_6px_0_0_var(--color-brand-shadow)] hover:scale-110 cursor-pointer",
-                    isActive && "ring-6 ring-white/40 animate-pulse-glow"
+                    isActive && !isPending && "ring-6 ring-white/40 animate-pulse-glow"
                   )}
                 >
-                  {isLocked ? (
+                  {isPending && clickedFaseId === fase.id ? (
+                    <Loader2 className="w-7 h-7 text-white animate-spin" strokeWidth={3} />
+                  ) : isLocked ? (
                     <Lock className="w-6 h-6 text-white/40" strokeWidth={3} />
                   ) : isCompleted ? (
                     <Check className="w-7 h-7 text-white" strokeWidth={4} />

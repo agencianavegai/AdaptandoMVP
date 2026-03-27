@@ -73,7 +73,7 @@ export default function ArenaPage() {
     setCurrentStep(1);
   }, []);
 
-  const handleAnswer = useCallback(async (selectedIdx: number, acertou: boolean) => {
+  const handleAnswerSubmit = useCallback(async (selectedIdx: number, acertou: boolean) => {
     const quiz = quizzes[currentStep - 1];
     if (!quiz) return;
 
@@ -86,19 +86,27 @@ export default function ArenaPage() {
         setScore((prev) => prev + 1);
         setMetrosGanhos((prev) => prev + 10);
       }
+    } catch {
+      // Silent fail — optimistic UI
+    }
+  }, [quizzes, currentStep]);
 
-      // Game Over check
-      if (result.novasVidas <= 0) {
-        setCurrentStep(quizzes.length + 1); // Jump to result
-        return;
-      }
+  const handleNextQuestion = useCallback(async () => {
+    // If dead, jump to result
+    if (vidas <= 0) {
+      setCurrentStep(quizzes.length + 1);
+      return;
+    }
 
-      // If more questions, advance; otherwise complete
-      if (currentStep < quizzes.length) {
-        setCurrentStep((prev) => prev + 1);
-      } else {
-        // All questions answered — complete the phase
-        const completion = await completeFase(mundoId, faseOrdem, score + (acertou ? 1 : 0));
+    // If more questions, advance
+    if (currentStep < quizzes.length) {
+      setCurrentStep((prev) => prev + 1);
+    } else {
+      // All questions answered — complete the phase!
+      // Provide optimistic loading UX: wait for completion
+      try {
+        const lastQuizWasCorrect = false; // We incrementally updated score above
+        const completion = await completeFase(mundoId, faseOrdem, score);
         setMundoConcluido(completion.mundoConcluido);
         if (completion.mundoConcluido) {
           setMetrosGanhos((prev) => prev + 50);
@@ -106,12 +114,13 @@ export default function ArenaPage() {
         if (completion.streakIncreased) {
           setStreakData({ count: completion.newStreak, isNew: true });
         }
+      } catch {
+        // Silent fail
+      } finally {
         setCurrentStep(quizzes.length + 1);
       }
-    } catch {
-      // Silent fail — optimistic UI already updated
     }
-  }, [quizzes, currentStep, mundoId, faseOrdem, score]);
+  }, [quizzes.length, currentStep, vidas, mundoId, faseOrdem, score]);
 
   if (loading) {
     return (
@@ -190,7 +199,8 @@ export default function ArenaPage() {
             explicacao={quizzes[currentStep - 1].explicacao}
             questionNumber={currentStep}
             totalQuestions={TOTAL_QUESTIONS}
-            onAnswer={handleAnswer}
+            onSubmit={handleAnswerSubmit}
+            onNext={handleNextQuestion}
           />
         )}
 

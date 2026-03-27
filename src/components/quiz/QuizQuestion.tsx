@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Loader2, ArrowRight } from "lucide-react";
 
 interface Alternativa {
   texto: string;
@@ -14,7 +15,8 @@ interface QuizQuestionProps {
   explicacao: string | null;
   questionNumber: number;
   totalQuestions: number;
-  onAnswer: (selectedIdx: number, acertou: boolean) => void;
+  onSubmit: (selectedIdx: number, acertou: boolean) => Promise<void>;
+  onNext: () => void;
 }
 
 export default function QuizQuestion({
@@ -23,23 +25,27 @@ export default function QuizQuestion({
   explicacao,
   questionNumber,
   totalQuestions,
-  onAnswer,
+  onSubmit,
+  onNext,
 }: QuizQuestionProps) {
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [answered, setAnswered] = useState(false);
 
   const correctIdx = alternativas.findIndex((a) => a.correta);
   const acertou = selectedIdx === correctIdx;
 
   function handleSelect(idx: number) {
-    if (answered) return;
+    if (answered || isSubmitting) return;
     setSelectedIdx(idx);
-    setAnswered(true);
+  }
 
-    // Auto-advance after feedback delay
-    setTimeout(() => {
-      onAnswer(idx, idx === correctIdx);
-    }, 2500);
+  async function handleConfirm() {
+    if (selectedIdx === null || answered || isSubmitting) return;
+    setIsSubmitting(true);
+    await onSubmit(selectedIdx, selectedIdx === correctIdx);
+    setAnswered(true);
+    setIsSubmitting(false);
   }
 
   return (
@@ -84,6 +90,8 @@ export default function QuizQuestion({
               } else {
                 buttonStyle = "bg-gray-50 border-gray-200 shadow-[0_4px_0_0_#e5e5e5] text-gray-400 opacity-60";
               }
+            } else if (isSelected) {
+              buttonStyle = "bg-blue-50 border-blue-400 shadow-[0_4px_0_0_#60a5fa] text-blue-900 scale-[1.02] ring-2 ring-blue-200";
             }
 
             return (
@@ -104,6 +112,23 @@ export default function QuizQuestion({
             );
           })}
         </div>
+
+        {/* Confirm Button */}
+        {!answered && (
+          <div className="mt-8 animate-slide-up">
+            <button
+              onClick={handleConfirm}
+              disabled={selectedIdx === null || isSubmitting}
+              className="w-full btn-3d-brand py-4 font-display font-black uppercase text-lg tracking-wide flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bg-[var(--color-brand)] disabled:active:translate-y-0 disabled:active:border-b-[4px]"
+            >
+              {isSubmitting ? (
+                <><Loader2 className="w-6 h-6 animate-spin" /> Verificando...</>
+              ) : (
+                "Confirmar Resposta"
+              )}
+            </button>
+          </div>
+        )}
 
         {/* Inline Feedback */}
         {answered && (
@@ -141,6 +166,17 @@ export default function QuizQuestion({
                 )}
               </div>
             )}
+
+            {/* Continuar Button */}
+            <button
+              onClick={onNext}
+              className={cn(
+                "mt-6 w-full py-4 rounded-xl font-display font-black text-white uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-md hover:-translate-y-0.5 active:translate-y-0",
+                acertou ? "bg-emerald-600 hover:bg-emerald-700 font-display" : "bg-red-600 hover:bg-red-700 font-display"
+              )}
+            >
+              Continuar <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
         )}
       </div>
