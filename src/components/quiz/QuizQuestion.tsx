@@ -47,7 +47,7 @@ export default function QuizQuestion({
     if (selectedIdx === null || answered || isSubmitting) return;
     setIsSubmitting(true);
     const isCorrectAnswer = selectedIdx === correctIdx;
-    
+
     await onSubmit(selectedIdx, isCorrectAnswer);
     setAnswered(true);
     setIsSubmitting(false);
@@ -60,11 +60,11 @@ export default function QuizQuestion({
       if (acertou) {
         timeoutId = setTimeout(() => {
           playQuizCorrect();
-        }, 2000);
+        }, 300);
       } else {
         timeoutId = setTimeout(() => {
           playQuizWrong();
-        }, 2000);
+        }, 300);
       }
     }
 

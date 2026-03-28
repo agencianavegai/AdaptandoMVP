@@ -1,16 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { getUserProfile, logout } from "@/lib/actions/user";
-import { Flame, Zap, Trophy, LogOut, Wind, Heart, Medal, Star, Share2, Check, Settings } from "lucide-react";
+import { uploadRealPhoto } from "@/lib/actions/avatar";
+import { Flame, Zap, Trophy, LogOut, Wind, Heart, Medal, Star, Share2, Check, Settings, Image as ImageIcon, PaintBucket, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import SettingsHubModal from "@/components/ui/SettingsHubModal";
+import { UserAvatar } from "@/components/ui/UserAvatar";
+import { AdapeteCreatorModal } from "@/components/profile/AdapeteCreatorModal";
 
 interface Voluntario {
   id: string;
   nome: string;
-  avatar_url: string | null;
+  avatar_url?: string | null;
+  avatar_type?: string | null;
+  uploaded_url?: string | null;
+  character_id?: string | null;
+  avatar_bg_color?: string | null;
   metros_linha: number;
   vidas_atuais: number;
   ofensiva_atual: number;
@@ -121,7 +128,30 @@ export default function PerfilPage() {
   const [loggingOut, setLoggingOut] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [showAdapeteModal, setShowAdapeteModal] = useState(false);
+  const [isUploading, startUpload] = useTransition();
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
+
+  const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.files?.[0]) return;
+    const file = e.target.files[0];
+    const formData = new FormData();
+    formData.append("file", file);
+
+    startUpload(async () => {
+      const result = await uploadRealPhoto(formData);
+      if (result.success && voluntario) {
+        // Optimistic UI update or simply let useEffect fetch again
+        // Here we just let Next.js revalidation do its job but visually we can immediately trigger a hard refresh or state update:
+        setVoluntario({ ...voluntario, avatar_type: "upload", uploaded_url: result.url });
+      } else {
+        alert(result.error || "Erro ao fazer upload");
+      }
+    });
+
+    if (fileInputRef.current) fileInputRef.current.value = "";
+  };
 
   useEffect(() => {
     async function loadProfile() {
@@ -196,6 +226,23 @@ export default function PerfilPage() {
     <div className="min-h-dvh bg-slate-50 pb-28 font-sans">
       
       <SettingsHubModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
+      
+      <AdapeteCreatorModal 
+        isOpen={showAdapeteModal} 
+        onClose={() => setShowAdapeteModal(false)} 
+        onSaved={(charId, color) => {
+          if (voluntario) {
+            setVoluntario({
+              ...voluntario, 
+              avatar_type: "character", 
+              character_id: charId, 
+              avatar_bg_color: color 
+            });
+          }
+        }}
+        currentBgColor={voluntario.avatar_bg_color || undefined}
+        currentCharacterId={voluntario.character_id || undefined}
+      />
 
       {/* TOP BAR: Logout / Settings Icon */}
       <div className="px-6 pt-6 flex justify-end gap-3">
@@ -219,19 +266,21 @@ export default function PerfilPage() {
       {/* HEADER: Player Altar */}
       <div className="flex flex-col items-center px-6 -mt-2">
         <div className="relative mb-4">
-          {voluntario.avatar_url ? (
-            <img
-              src={voluntario.avatar_url}
-              alt={voluntario.nome}
-              className="w-32 h-32 rounded-full object-cover border-[6px] border-white shadow-xl bg-white"
-            />
-          ) : (
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center font-display font-black text-5xl text-white border-[6px] border-white shadow-xl">
-               {initials}
+          <UserAvatar 
+            user={voluntario}
+            className="w-32 h-32 border-[6px] border-white shadow-xl min-[400px]:w-36 min-[400px]:h-36"
+            iconSizeClassName="text-5xl font-black"
+            style={{ borderRadius: "50%" }}
+          />
+
+          {isUploading && (
+            <div className="absolute inset-0 bg-white/70 backdrop-blur-sm rounded-full flex items-center justify-center z-10 border-[6px] border-transparent">
+              <Loader2 className="w-8 h-8 animate-spin text-orange-500" strokeWidth={3} />
             </div>
           )}
+
           {/* Subtle decoration */}
-          <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-1.5 shadow-md border-2 border-slate-100">
+          <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-1.5 shadow-md border-2 border-slate-100 z-20">
              <Trophy className="w-6 h-6 text-amber-500 fill-amber-100" />
           </div>
         </div>
@@ -239,9 +288,37 @@ export default function PerfilPage() {
         <h1 className="font-display font-black text-3xl text-slate-800 text-center uppercase tracking-wide">
           {voluntario.nome || "Anônimo"}
         </h1>
-        <p className="text-slate-500 font-bold text-sm tracking-wide mt-1">
+        <p className="text-slate-500 font-bold text-sm tracking-wide mt-1 mb-5">
            Membro do Ádapo
         </p>
+
+        {/* Change Avatar CTAs */}
+        <div className="flex items-center gap-2 sm:gap-3 w-full max-w-[260px]">
+          <input 
+            type="file" 
+            accept="image/png, image/jpeg, image/jpg, image/webp" 
+            className="hidden" 
+            ref={fileInputRef}
+            onChange={handlePhotoUpload}
+          />
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            disabled={isUploading}
+            className="flex-1 min-h-[44px] bg-white border-2 border-slate-200 text-slate-600 font-black text-sm uppercase tracking-wider rounded-xl shadow-sm hover:border-slate-300 hover:text-slate-800 active:scale-95 flex items-center justify-center gap-2 outline-none transition-all disabled:opacity-50 disabled:scale-100"
+          >
+            <ImageIcon strokeWidth={2.5} className="w-4 h-4" />
+            <span className="hidden min-[360px]:inline">Foto</span>
+          </button>
+          
+          <button
+            onClick={() => setShowAdapeteModal(true)}
+            disabled={isUploading}
+            className="flex-1 min-h-[44px] bg-[var(--color-brand)] border-2 border-[var(--color-brand)] shadow-[0_4px_0_0_var(--color-brand-shadow)] active:translate-y-1 active:shadow-none hover:brightness-110 text-white font-black text-sm uppercase tracking-wider rounded-xl flex items-center justify-center gap-2 outline-none transition-all disabled:opacity-50"
+          >
+            <PaintBucket strokeWidth={2.5} className="w-4 h-4" />
+            <span className="hidden min-[360px]:inline">Adapete</span>
+          </button>
+        </div>
       </div>
 
       <div className="w-full h-px bg-slate-200 my-8" />

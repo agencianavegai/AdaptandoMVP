@@ -12,7 +12,7 @@ export async function getRanking(filter: "adapete" | "global" = "adapete") {
 
   let query = supabase
     .from("voluntarios")
-    .select("id, nome, avatar_url, metros_linha, is_adapete")
+    .select("id, nome, avatar_url, avatar_type, uploaded_url, character_id, avatar_bg_color, metros_linha, is_adapete")
     .order("metros_linha", { ascending: false })
     .limit(50);
 
@@ -46,7 +46,7 @@ export async function getUserProfile() {
 
   const { data: voluntario } = await supabase
     .from("voluntarios")
-    .select("id, nome, avatar_url, metros_linha, vidas_atuais, ofensiva_atual, melhor_ofensiva, last_completed_at")
+    .select("id, nome, avatar_url, avatar_type, uploaded_url, character_id, avatar_bg_color, metros_linha, vidas_atuais, ofensiva_atual, melhor_ofensiva, last_completed_at")
     .eq("id", user.id)
     .single();
 

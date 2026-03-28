@@ -6,11 +6,16 @@ import { cn } from "@/lib/utils";
 import { toPng } from "html-to-image";
 import { useAudio } from "@/contexts/AudioContext";
 import { useGameSound } from "@/hooks/useGameSound";
+import { UserAvatar } from "@/components/ui/UserAvatar";
 
 interface TopBarProps {
   voluntario: {
     nome: string;
-    avatar_url: string | null;
+    avatar_url?: string | null;
+    avatar_type?: string | null;
+    uploaded_url?: string | null;
+    character_id?: string | null;
+    avatar_bg_color?: string | null;
     metros_linha: number;
     vidas_atuais: number;
     ofensiva_atual: number;
@@ -147,23 +152,14 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             onMouseEnter={playHover}
             className="flex items-center gap-2 sm:gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-transform group text-left outline-none shrink-0"
           >
-            <div className="relative">
-              {voluntario?.avatar_url ? (
-                <img
-                  src={voluntario.avatar_url}
-                  alt={nome}
-                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl border-[3px] sm:border-4 border-white object-cover shadow-lg bg-orange-200"
-                  style={{ borderRadius: "var(--radius-kite)" }}
-                />
-              ) : (
-                <div
-                  className="w-10 h-10 sm:w-12 sm:h-12 border-[3px] sm:border-4 border-white shadow-lg flex items-center justify-center text-sm font-black text-white bg-[var(--color-brand)]"
-                  style={{ borderRadius: "var(--radius-kite)" }}
-                >
-                  {initials}
-                </div>
-              )}
-            </div>
+            {voluntario && (
+              <UserAvatar 
+                user={voluntario} 
+                className="w-10 h-10 sm:w-12 sm:h-12 border-[3px] sm:border-4 border-white shadow-lg" 
+                iconSizeClassName="text-sm font-black" 
+                style={{ borderRadius: "var(--radius-kite)" }} 
+              />
+            )}
 
             <span className="text-sm sm:text-lg font-display font-black text-white drop-shadow-md hidden min-[380px]:block truncate max-w-[60px] sm:max-w-[90px] group-hover:text-[var(--color-brand-light)] transition-colors">
               {nome.split(" ")[0]}
@@ -431,20 +427,13 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
                   {/* Personagem (Avatar gigante estilo Duo) */}
                   <div className="relative mb-5 sm:mb-8 mt-1 sm:mt-2">
                     <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-110"></div>
-                    {voluntario?.avatar_url ? (
-                      <img
-                        src={voluntario.avatar_url}
-                        alt={nome}
-                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white object-cover shadow-2xl bg-orange-100 relative z-10"
-                        style={{ borderRadius: "1.5rem" }}
+                    {voluntario && (
+                      <UserAvatar 
+                        user={voluntario} 
+                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white shadow-2xl relative z-10" 
+                        iconSizeClassName="text-4xl sm:text-6xl font-black" 
+                        style={{ borderRadius: "1.5rem" }} 
                       />
-                    ) : (
-                      <div
-                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white shadow-2xl flex items-center justify-center text-4xl sm:text-6xl font-black text-white bg-[var(--color-brand)] relative z-10"
-                        style={{ borderRadius: "1.5rem" }}
-                      >
-                        {initials}
-                      </div>
                     )}
                     {/* Etiqueta de nome do Herói */}
                     <div className="absolute -bottom-3 sm:-bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-3 sm:px-4 py-1 sm:py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20 text-sm sm:text-base">

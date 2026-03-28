@@ -1,4 +1,4 @@
-﻿export type Json =
+export type Json =
   | string
   | number
   | boolean
@@ -213,6 +213,10 @@ export type Database = {
       voluntarios: {
         Row: {
           avatar_url: string | null
+          avatar_type: string | null
+          uploaded_url: string | null
+          character_id: string | null
+          avatar_bg_color: string | null
           created_at: string
           email: string
           id: string
@@ -226,6 +230,10 @@ export type Database = {
         }
         Insert: {
           avatar_url?: string | null
+          avatar_type?: string | null
+          uploaded_url?: string | null
+          character_id?: string | null
+          avatar_bg_color?: string | null
           created_at?: string
           email: string
           id: string
@@ -239,6 +247,10 @@ export type Database = {
         }
         Update: {
           avatar_url?: string | null
+          avatar_type?: string | null
+          uploaded_url?: string | null
+          character_id?: string | null
+          avatar_bg_color?: string | null
           created_at?: string
           email?: string
           id?: string
