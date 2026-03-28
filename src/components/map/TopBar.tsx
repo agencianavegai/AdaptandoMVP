@@ -86,11 +86,24 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
     const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo!${focusText} Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
 
     try {
-      // Generate PNG from the modal content
+      // Generate PNG at 9:16 Story ratio (1080×1920) for Instagram/WhatsApp Stories
+      // The style overrides temporarily resize the capture node to story dimensions,
+      // centering the content vertically while the gradient fills the extra space.
       const dataUrl = await toPng(captureRef.current, {
         quality: 0.95,
-        pixelRatio: 2,
-        backgroundColor: "#f59e0b", // amber-500 fallback
+        pixelRatio: 1,
+        width: 1080,
+        height: 1920,
+        style: {
+          width: '1080px',
+          height: '1920px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '80px 100px',
+        },
+        backgroundColor: "#f59e0b",
       });
 
       // Convert data URL to Blob then File
