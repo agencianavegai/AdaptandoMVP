@@ -64,6 +64,14 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
   const { isMuted, toggleMute } = useAudio();
   const { playClick, playHover, playModalSwoosh } = useGameSound();
 
+  // Lock body scroll when profile modal is open (prevents scroll bleed on mobile)
+  useEffect(() => {
+    if (showProfileModal) {
+      document.body.style.overflow = 'hidden';
+      return () => { document.body.style.overflow = ''; };
+    }
+  }, [showProfileModal]);
+
   const handleOpenModal = (setModal: (v: boolean) => void) => {
     playModalSwoosh();
     setModal(true);
@@ -378,18 +386,18 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
       {/* Profile Summary & Share Modal (Celebração do Herói - Duolingo Style) */}
       {showProfileModal && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm animate-in fade-in duration-300 p-4"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm animate-in fade-in duration-300 p-3 sm:p-4 overscroll-contain touch-none"
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
-          {/* Modal Container */}
-          <div className="w-full max-h-[85vh] sm:max-h-[90vh] overflow-y-auto scrollbar-hide sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up [&::-webkit-scrollbar]:hidden" style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}>
+          {/* Modal Container — fit-to-screen on mobile, no scroll needed */}
+          <div className="w-full max-h-[calc(100dvh-24px)] sm:max-h-[90vh] overflow-hidden sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up">
 
             {/* Fechar Modal (FORA da captura) */}
             <button
               onClick={() => setShowProfileModal(false)}
-              className="absolute top-6 right-6 z-20 w-10 h-10 bg-black/10 rounded-full flex items-center justify-center text-white hover:bg-black/20 transition-colors backdrop-blur-md cursor-pointer outline-none"
+              className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 w-8 h-8 sm:w-10 sm:h-10 bg-black/10 rounded-full flex items-center justify-center text-white hover:bg-black/20 transition-colors backdrop-blur-md cursor-pointer outline-none"
             >
-              <X strokeWidth={3} className="w-5 h-5" />
+              <X strokeWidth={3} className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             {/* ===== ÁREA CAPTURÁVEL (ref para html-to-image) ===== */}
@@ -399,67 +407,67 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
               <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
 
               {/* Content Wrapper */}
-              <div className="flex flex-col items-center pt-12 pb-6 px-6 relative z-10 w-full">
+              <div className="flex flex-col items-center pt-8 sm:pt-12 pb-4 sm:pb-6 px-4 sm:px-6 relative z-10 w-full">
 
                 <div className="text-center flex flex-col items-center">
                   {/* Título Celebrativo */}
-                  <h2 className="font-display font-black text-3xl sm:text-4xl text-white drop-shadow-md tracking-wide uppercase mb-8">
+                  <h2 className="font-display font-black text-2xl sm:text-4xl text-white drop-shadow-md tracking-wide uppercase mb-4 sm:mb-8">
                     Eu to<br />VOANDO ALTO!
                   </h2>
 
                   {/* Personagem (Avatar gigante estilo Duo) */}
-                  <div className="relative mb-8 mt-2">
+                  <div className="relative mb-5 sm:mb-8 mt-1 sm:mt-2">
                     <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-110"></div>
                     {voluntario?.avatar_url ? (
                       <img
                         src={voluntario.avatar_url}
                         alt={nome}
-                        className="w-40 h-40 border-8 border-white object-cover shadow-2xl bg-orange-100 relative z-10"
-                        style={{ borderRadius: "2rem" }}
+                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white object-cover shadow-2xl bg-orange-100 relative z-10"
+                        style={{ borderRadius: "1.5rem" }}
                       />
                     ) : (
                       <div
-                        className="w-40 h-40 border-8 border-white shadow-2xl flex items-center justify-center text-6xl font-black text-white bg-[var(--color-brand)] relative z-10"
-                        style={{ borderRadius: "2rem" }}
+                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white shadow-2xl flex items-center justify-center text-4xl sm:text-6xl font-black text-white bg-[var(--color-brand)] relative z-10"
+                        style={{ borderRadius: "1.5rem" }}
                       >
                         {initials}
                       </div>
                     )}
                     {/* Etiqueta de nome do Herói */}
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-4 py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20">
+                    <div className="absolute -bottom-3 sm:-bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-3 sm:px-4 py-1 sm:py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20 text-sm sm:text-base">
                       {nome}
                     </div>
                   </div>
 
                   {/* Stats Dashboard (RPG Style) */}
-                  <div className="w-full flex flex-col gap-3 mt-4">
+                  <div className="w-full flex flex-col gap-2 sm:gap-3 mt-2 sm:mt-4">
 
                     {/* Linha de Métricas: Grid 2 colunas */}
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-2 gap-2 sm:gap-3">
                       {/* Card 1: Ofensiva */}
-                      <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-orange-200">
-                        <Flame className="w-8 h-8 text-orange-500 mb-2" fill="currentColor" />
-                        <span className="font-display font-black text-4xl text-orange-500 leading-none tabular-nums">{ofensiva}</span>
-                        <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Ofensiva</span>
+                      <div className="bg-white rounded-2xl p-2.5 sm:p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[4px] sm:border-b-[5px] border-b-orange-200">
+                        <Flame className="w-6 h-6 sm:w-8 sm:h-8 text-orange-500 mb-1 sm:mb-2" fill="currentColor" />
+                        <span className="font-display font-black text-3xl sm:text-4xl text-orange-500 leading-none tabular-nums">{ofensiva}</span>
+                        <span className="text-slate-400 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest mt-1">Ofensiva</span>
                       </div>
 
                       {/* Card 2: Metros de Linha */}
-                      <div className="bg-white rounded-2xl p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[5px] border-b-blue-200">
-                        <span className="text-3xl mb-2 drop-shadow-sm">🪁</span>
-                        <span className="font-display font-black text-4xl text-blue-500 leading-none tabular-nums">{metros}</span>
-                        <span className="text-slate-400 font-bold text-[10px] uppercase tracking-widest mt-1.5">Metros</span>
+                      <div className="bg-white rounded-2xl p-2.5 sm:p-4 flex flex-col items-center text-center shadow-sm border-2 border-slate-100 border-b-[4px] sm:border-b-[5px] border-b-blue-200">
+                        <span className="text-2xl sm:text-3xl mb-1 sm:mb-2 drop-shadow-sm">🪁</span>
+                        <span className="font-display font-black text-3xl sm:text-4xl text-blue-500 leading-none tabular-nums">{metros}</span>
+                        <span className="text-slate-400 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest mt-1">Metros</span>
                       </div>
                     </div>
 
                     {/* Linha Narrativa: Foco Atual (Full Width) */}
                     {currentFocus && (
-                      <div className="bg-white rounded-2xl p-4 flex items-center gap-4 shadow-sm border-2 border-orange-100 border-b-[5px] border-b-orange-200 text-left">
-                        <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-orange-100 border border-orange-200 rounded-xl flex items-center justify-center shrink-0">
-                          <span className="text-2xl">🎯</span>
+                      <div className="bg-white rounded-2xl p-2.5 sm:p-4 flex items-center gap-3 sm:gap-4 shadow-sm border-2 border-orange-100 border-b-[4px] sm:border-b-[5px] border-b-orange-200 text-left">
+                        <div className="w-9 h-9 sm:w-12 sm:h-12 bg-gradient-to-br from-amber-100 to-orange-100 border border-orange-200 rounded-xl flex items-center justify-center shrink-0">
+                          <span className="text-lg sm:text-2xl">🎯</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <h3 className="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-0.5">Aprendendo mais sobre:</h3>
-                          <p className="text-slate-800 font-black text-base sm:text-lg leading-snug truncate">
+                          <h3 className="text-orange-500 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest mb-0.5">Aprendendo mais sobre:</h3>
+                          <p className="text-slate-800 font-black text-sm sm:text-lg leading-snug truncate">
                             {currentFocus}
                           </p>
                         </div>
@@ -467,11 +475,11 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
                     )}
 
                     {/* Banner CTA: Convite VIP */}
-                    <div className="bg-sky-50 border-2 border-sky-100 rounded-2xl p-4 flex items-center gap-3 text-left mt-1">
-                      <span className="text-3xl shrink-0">🚀</span>
+                    <div className="bg-sky-50 border-2 border-sky-100 rounded-2xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-3 text-left">
+                      <span className="text-2xl sm:text-3xl shrink-0">🚀</span>
                       <div className="flex-1 min-w-0">
-                        <p className="text-sky-700 font-black text-sm leading-tight">Quer voar alto também?</p>
-                        <p className="text-sky-600/80 text-xs font-medium leading-snug mt-0.5">Junte-se ao Instituto Ádapo. Capacite-se e ajude a transformar o Terceiro Setor!</p>
+                        <p className="text-sky-700 font-black text-xs sm:text-sm leading-tight">Quer voar alto também?</p>
+                        <p className="text-sky-600/80 text-[11px] sm:text-xs font-medium leading-snug mt-0.5">Junte-se ao Instituto Ádapo e transforme o Terceiro Setor!</p>
                       </div>
                     </div>
 
@@ -479,10 +487,10 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
                 </div>
 
                 {/* Assinatura Instagram 📸 (Dentro da captura) */}
-                <div className="w-full mt-5 flex items-center justify-center gap-2 opacity-80">
-                  <span className="text-white/90 font-bold text-xs tracking-wide drop-shadow-sm">Desenvolvido por:</span>
-                  <span className="text-white font-black text-sm tracking-wide drop-shadow-md">@instituto.adapo</span>
-                  <span className="text-sm">🪁</span>
+                <div className="w-full mt-3 sm:mt-5 flex items-center justify-center gap-1.5 sm:gap-2 opacity-80">
+                  <span className="text-white/90 font-bold text-[11px] sm:text-xs tracking-wide drop-shadow-sm">Desenvolvido por:</span>
+                  <span className="text-white font-black text-xs sm:text-sm tracking-wide drop-shadow-md">@instituto.adapo</span>
+                  <span className="text-xs sm:text-sm">🪁</span>
                 </div>
 
               </div>
@@ -490,19 +498,19 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             {/* ===== FIM DA ÁREA CAPTURÁVEL ===== */}
 
             {/* Botão de Ação / Compartilhamento (FORA da captura) */}
-            <div className="px-6 pb-8 pt-4 relative z-20 bg-gradient-to-t from-amber-500 to-amber-500">
+            <div className="px-4 sm:px-6 pb-5 sm:pb-8 pt-3 sm:pt-4 relative z-20 bg-gradient-to-t from-amber-500 to-amber-500">
               <button
                 onClick={handleShare}
                 disabled={shareLoading}
-                className="w-full py-4 bg-white text-orange-500 font-display font-black text-xl tracking-wide uppercase rounded-2xl border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[6px] flex items-center justify-center gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none disabled:opacity-70 disabled:pointer-events-none"
+                className="w-full py-3 sm:py-4 bg-white text-orange-500 font-display font-black text-base sm:text-xl tracking-wide uppercase rounded-2xl border-b-[5px] sm:border-b-[6px] border-b-orange-200 hover:bg-slate-50 hover:border-b-orange-100 hover:translate-y-[2px] active:border-b-0 active:translate-y-[5px] sm:active:translate-y-[6px] flex items-center justify-center gap-2 sm:gap-3 transition-all duration-150 shadow-lg cursor-pointer outline-none disabled:opacity-70 disabled:pointer-events-none"
                 title="Compartilhar meu voo"
               >
                 {shareLoading ? (
-                  <><Loader2 className="w-6 h-6 animate-spin" /> Preparando imagem...</>
+                  <><Loader2 className="w-5 h-5 sm:w-6 sm:h-6 animate-spin" /> Preparando...</>
                 ) : shareCopied ? (
-                  <><Download className="w-6 h-6" /> Imagem salva! Pronta para postar.</>
+                  <><Download className="w-5 h-5 sm:w-6 sm:h-6" /> Imagem salva!</>
                 ) : (
-                  <><Share2 className="w-6 h-6 text-orange-400" strokeWidth={3} /> Compartilhar meu voo</>
+                  <><Share2 className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" strokeWidth={3} /> Compartilhar meu voo</>
                 )}
               </button>
             </div>
