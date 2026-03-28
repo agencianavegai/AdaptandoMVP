@@ -1,21 +1,22 @@
 {
   "name": "Adaptando — Dando Linha pra Sonhar",
   "short_name": "Adaptando",
-  "description": "Plataforma gamificada de microlearning para voluntários.",
-  "start_url": "/mapa",
+  "description": "Plataforma gamificada de capacitação do Instituto Ádapo",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#1e1e2f",
-  "theme_color": "#1e1e2f",
+  "background_color": "#ffffff",
+  "theme_color": "#ea580c",
   "orientation": "portrait-primary",
+  "categories": ["education", "games"],
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo.png",
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

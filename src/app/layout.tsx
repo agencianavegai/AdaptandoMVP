@@ -5,9 +5,58 @@ import BottomNav from "@/components/navigation/BottomNav";
 import { AudioProvider } from "@/contexts/AudioContext";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://adaptando.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Adaptando — Dando Linha pra Sonhar",
-  description: "Plataforma gamificada de microlearning para voluntários do Instituto Ádapo",
+  title: {
+    default: "Adaptando | Instituto Ádapo",
+    template: "%s | Adaptando",
+  },
+  description: "Capacitação gamificada para o Terceiro Setor. Dê linha para seus sonhos! 🪁",
+  metadataBase: new URL(APP_URL),
+  applicationName: "Adaptando",
+  keywords: ["adaptando", "instituto ádapo", "gamificação", "terceiro setor", "microlearning", "voluntários", "capacitação"],
+  authors: [{ name: "Instituto Ádapo" }],
+  creator: "Instituto Ádapo",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: APP_URL,
+    siteName: "Adaptando",
+    title: "Adaptando | Instituto Ádapo",
+    description: "Capacitação gamificada para o Terceiro Setor. Dê linha para seus sonhos! 🪁",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Adaptando — Dando Linha pra Sonhar",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adaptando | Instituto Ádapo",
+    description: "Capacitação gamificada para o Terceiro Setor. Dê linha para seus sonhos! 🪁",
+    images: ["/og-image.jpg"],
+    creator: "@institutoadapo",
+  },
+  icons: {
+    icon: [
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Adaptando",
+  },
 };
 
 export default function RootLayout({
@@ -24,12 +73,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <meta name="theme-color" content="#1e1e2f" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Adaptando" />
       </head>
       <body className="font-body antialiased bg-slate-50 text-slate-900 dark:bg-[#0f1117] dark:text-slate-100 transition-colors duration-300">
         <Script
