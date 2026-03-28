@@ -69,20 +69,20 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       {/* Backdrop */}
-      <div 
-        className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300" 
+      <div
+        className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300"
         onClick={handleClose}
       />
-      
+
       {/* Modal Box */}
       <div className="relative w-full max-w-sm bg-white rounded-[1.5rem] shadow-2xl flex flex-col overflow-hidden animate-in zoom-in-95 duration-300">
-        
+
         {/* Header */}
         <div className="bg-slate-50 flex items-center justify-between px-5 py-4 border-b-2 border-slate-100">
           <div className="flex items-center gap-2">
             {screen !== "main" && (
-              <button 
-                onClick={() => navigateTo(screen === 'privacy' || screen === 'rights' ? 'about' : 'main')} 
+              <button
+                onClick={() => navigateTo(screen === 'privacy' || screen === 'rights' ? 'about' : 'main')}
                 className="p-1 -ml-2 text-slate-400 hover:text-slate-600 transition-colors"
                 title="Voltar"
               >
@@ -97,8 +97,8 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
               {screen === "feedback" && "Feedback"}
             </h2>
           </div>
-          
-          <button 
+
+          <button
             onClick={handleClose}
             className="w-8 h-8 flex items-center justify-center bg-slate-200 text-slate-500 rounded-full hover:bg-slate-300 hover:text-slate-700 transition-colors"
           >
@@ -108,11 +108,11 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
 
         {/* Content Area */}
         <div className="p-5 max-h-[75vh] overflow-y-auto scrollbar-hide flex flex-col gap-3">
-          
+
           {/* SCREEN: MAIN */}
           {screen === "main" && (
             <div className="flex flex-col gap-2">
-              <button 
+              <button
                 onClick={toggleSound}
                 className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left group"
               >
@@ -127,7 +127,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                 </div>
               </button>
 
-              <button 
+              <button
                 onClick={() => navigateTo("about")}
                 className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left"
               >
@@ -140,7 +140,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                 <ChevronRight className="w-5 h-5 text-slate-400" />
               </button>
 
-              <button 
+              <button
                 onClick={() => navigateTo("feedback")}
                 className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left"
               >
@@ -160,19 +160,19 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
             <div className="flex flex-col gap-4 animate-in slide-in-from-right-4 duration-200">
               <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 text-amber-900">
                 <p className="text-[14px] leading-relaxed font-medium">
-                  O projeto <strong>Adaptando</strong> é uma iniciativa educacional e gamificada desenvolvida pelo <strong>Instituto Ádapo</strong> para empoderar o empendedorismo na comunidade de forma lúdica, engajadora e transformadora.
+                  O projeto <strong>Adaptando</strong> é uma iniciativa educacional e gamificada desenvolvida pelo <strong>Instituto Ádapo</strong> para empoderar os membros do terceiro setor de forma lúdica, engajadora e transformadora.
                 </p>
               </div>
 
               <div className="flex flex-col gap-2 mt-2">
-                <button 
+                <button
                   onClick={() => navigateTo("privacy")}
                   className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 transition-all text-left"
                 >
                   <span className="font-bold text-slate-600 text-sm">Políticas de Privacidade</span>
                   <Shield className="w-4 h-4 text-slate-400" />
                 </button>
-                <button 
+                <button
                   onClick={() => navigateTo("rights")}
                   className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 transition-all text-left"
                 >
@@ -235,8 +235,8 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                       🐛 Erro / Bug
                     </button>
                   </div>
-                  
-                  <textarea 
+
+                  <textarea
                     autoFocus
                     required
                     value={feedMsg}
@@ -244,15 +244,15 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                     placeholder={feedType === 'sugestao' ? "Como podemos empolgar mais o seu voo?" : "O que atrapalhou seu progresso?"}
                     className="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 transition-all resize-none h-32"
                   />
-                  
-                  <button 
+
+                  <button
                     type="submit"
                     disabled={isSubmitting || !feedMsg.trim()}
                     className="w-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 active:scale-[0.98] text-white font-black text-sm uppercase tracking-wide py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:pointer-events-none disabled:active:scale-100 shadow-[0_4px_10px_-4px_rgba(249,115,22,0.6)]"
                   >
                     {isSubmitting ? "Enviando..." : (
                       <>
-                        Enviar Voo <Send className="w-4 h-4 ml-1" />
+                        Confirmar <Send className="w-4 h-4 ml-1" />
                       </>
                     )}
                   </button>
