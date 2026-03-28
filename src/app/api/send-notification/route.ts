@@ -2,12 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import webpush from "web-push";
 
-// Configure VAPID for web-push
-webpush.setVapidDetails(
-  process.env.VAPID_SUBJECT || "mailto:contato@institutoadapo.org.br",
-  process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || "",
-  process.env.VAPID_PRIVATE_KEY || ""
-);
+// Configure VAPID for web-push safely (prevents build crash if env vars are missing)
+if (process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY && process.env.VAPID_PRIVATE_KEY) {
+  webpush.setVapidDetails(
+    process.env.VAPID_SUBJECT || "mailto:contato@institutoadapo.org.br",
+    process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
+    process.env.VAPID_PRIVATE_KEY
+  );
+} else {
+  console.warn("VAPID keys not configured. Push notifications will not work.");
+}
 
 // Admin Supabase client (bypasses RLS)
 function getAdminClient() {
