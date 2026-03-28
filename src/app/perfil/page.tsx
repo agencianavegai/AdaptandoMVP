@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import SettingsHubModal from "@/components/ui/SettingsHubModal";
 import { UserAvatar } from "@/components/ui/UserAvatar";
 import { AdapeteCreatorModal } from "@/components/profile/AdapeteCreatorModal";
+import { AvatarLightboxModal } from "@/components/profile/AvatarLightboxModal";
 
 interface Voluntario {
   id: string;
@@ -129,6 +130,7 @@ export default function PerfilPage() {
   const [copied, setCopied] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [showAdapeteModal, setShowAdapeteModal] = useState(false);
+  const [showLightbox, setShowLightbox] = useState(false);
   const [isUploading, startUpload] = useTransition();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
@@ -223,7 +225,7 @@ export default function PerfilPage() {
     .toUpperCase();
 
   return (
-    <div className="min-h-dvh bg-slate-50 pb-28 font-sans">
+    <div className="min-h-dvh bg-slate-50 pb-36 font-sans">
       
       <SettingsHubModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
       
@@ -242,6 +244,12 @@ export default function PerfilPage() {
         }}
         currentBgColor={voluntario.avatar_bg_color || undefined}
         currentCharacterId={voluntario.character_id || undefined}
+      />
+
+      <AvatarLightboxModal 
+        isOpen={showLightbox} 
+        onClose={() => setShowLightbox(false)} 
+        user={voluntario} 
       />
 
       {/* TOP BAR: Logout / Settings Icon */}
@@ -265,10 +273,15 @@ export default function PerfilPage() {
 
       {/* HEADER: Player Altar */}
       <div className="flex flex-col items-center px-6 -mt-2">
-        <div className="relative mb-4">
+        <div 
+          className="relative mb-4 cursor-pointer group"
+          onClick={() => setShowLightbox(true)}
+          role="button"
+          tabIndex={0}
+        >
           <UserAvatar 
             user={voluntario}
-            className="w-32 h-32 border-[6px] border-white shadow-xl min-[400px]:w-36 min-[400px]:h-36"
+            className="w-32 h-32 border-[6px] border-white shadow-xl min-[400px]:w-36 min-[400px]:h-36 group-hover:scale-105 transition-transform"
             iconSizeClassName="text-5xl font-black"
             style={{ borderRadius: "50%" }}
           />

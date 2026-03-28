@@ -7,6 +7,7 @@ import { toPng } from "html-to-image";
 import { useAudio } from "@/contexts/AudioContext";
 import { useGameSound } from "@/hooks/useGameSound";
 import { UserAvatar } from "@/components/ui/UserAvatar";
+import { AvatarLightboxModal } from "@/components/profile/AvatarLightboxModal";
 
 interface TopBarProps {
   voluntario: {
@@ -56,6 +57,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
   const [showXpModal, setShowXpModal] = useState(false);
   const [showChamaModal, setShowChamaModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
+  const [showLightbox, setShowLightbox] = useState(false);
   const [shareCopied, setShareCopied] = useState(false);
   const [shareLoading, setShareLoading] = useState(false);
   const captureRef = useRef<HTMLDivElement>(null);
@@ -153,11 +155,11 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             className="flex items-center gap-2 sm:gap-3 cursor-pointer hover:scale-105 active:scale-95 transition-transform group text-left outline-none shrink-0"
           >
             {voluntario && (
-              <UserAvatar 
-                user={voluntario} 
-                className="w-10 h-10 sm:w-12 sm:h-12 border-[3px] sm:border-4 border-white shadow-lg" 
-                iconSizeClassName="text-sm font-black" 
-                style={{ borderRadius: "var(--radius-kite)" }} 
+              <UserAvatar
+                user={voluntario}
+                className="w-10 h-10 sm:w-12 sm:h-12 border-[3px] sm:border-4 border-white shadow-lg"
+                iconSizeClassName="text-sm font-black"
+                style={{ borderRadius: "var(--radius-kite)" }}
               />
             )}
 
@@ -425,21 +427,27 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
                   </h2>
 
                   {/* Personagem (Avatar gigante estilo Duo) */}
-                  <div className="relative mb-5 sm:mb-8 mt-1 sm:mt-2">
+                  <button 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setShowLightbox(true);
+                    }}
+                    className="relative mb-5 sm:mb-8 mt-1 sm:mt-2 cursor-pointer outline-none group hover:scale-105 active:scale-95 transition-transform"
+                  >
                     <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-110"></div>
                     {voluntario && (
-                      <UserAvatar 
-                        user={voluntario} 
-                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white shadow-2xl relative z-10" 
-                        iconSizeClassName="text-4xl sm:text-6xl font-black" 
-                        style={{ borderRadius: "1.5rem" }} 
+                      <UserAvatar
+                        user={voluntario}
+                        className="w-28 h-28 sm:w-40 sm:h-40 border-[6px] sm:border-8 border-white shadow-2xl relative z-10"
+                        iconSizeClassName="text-4xl sm:text-6xl font-black"
+                        style={{ borderRadius: "1.5rem" }}
                       />
                     )}
                     {/* Etiqueta de nome do Herói */}
                     <div className="absolute -bottom-3 sm:-bottom-4 left-1/2 -translate-x-1/2 bg-white text-orange-500 font-black px-3 sm:px-4 py-1 sm:py-1.5 rounded-full shadow-lg border-[3px] border-orange-100 whitespace-nowrap z-20 text-sm sm:text-base">
                       {nome}
                     </div>
-                  </div>
+                  </button>
 
                   {/* Stats Dashboard (RPG Style) */}
                   <div className="w-full flex flex-col gap-2 sm:gap-3 mt-2 sm:mt-4">
@@ -490,7 +498,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
                 {/* Assinatura Instagram 📸 (Dentro da captura) */}
                 <div className="w-full mt-3 sm:mt-5 flex items-center justify-center gap-1.5 sm:gap-2 opacity-80">
-                  <span className="text-white/90 font-bold text-[11px] sm:text-xs tracking-wide drop-shadow-sm">Desenvolvido por:</span>
+                  <span className="text-white/90 font-bold text-[11px] sm:text-xs tracking-wide drop-shadow-sm">Game de estudos desenvolvido por:</span>
                   <span className="text-white font-black text-xs sm:text-sm tracking-wide drop-shadow-md">@instituto.adapo</span>
                   <span className="text-xs sm:text-sm">🪁</span>
                 </div>
@@ -520,6 +528,12 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
           </div>
         </div>
       )}
+
+      <AvatarLightboxModal 
+        isOpen={showLightbox} 
+        onClose={() => setShowLightbox(false)} 
+        user={voluntario} 
+      />
     </>
   );
 }

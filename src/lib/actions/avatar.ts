@@ -57,9 +57,9 @@ export async function uploadRealPhoto(formData: FormData) {
     }
 
     // Revalidate affected routes
-    revalidatePath("/perfil");
+    revalidatePath("/perfil", "page");
     revalidatePath("/mapa");
-    revalidatePath("/ranking");
+    revalidatePath("/ranking", "page");
 
     return { success: true, url: publicUrl };
   } catch (error: any) {
@@ -95,9 +95,9 @@ export async function updateAdapeteCharacter(characterId: string, bgColor: strin
     }
 
     // Revalidate affected routes
-    revalidatePath("/perfil");
+    revalidatePath("/perfil", "page");
     revalidatePath("/mapa");
-    revalidatePath("/ranking");
+    revalidatePath("/ranking", "page");
 
     return { success: true };
   } catch (error: any) {
