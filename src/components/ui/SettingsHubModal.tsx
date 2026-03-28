@@ -1,12 +1,24 @@
 "use client";
 
-import { useState } from "react";
-import { X, ChevronRight, Volume2, VolumeX, Shield, Info, MessageSquare, ArrowLeft, Send, Sun, Moon } from "lucide-react";
+import { useState, useEffect } from "react";
+import { X, ChevronRight, Volume2, VolumeX, Shield, Info, MessageSquare, ArrowLeft, Send, Sun, Moon, Bell, BellOff, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAudio } from "@/contexts/AudioContext";
 import { useGameSound } from "@/hooks/useGameSound";
 import { submitFeedback } from "@/lib/actions/feedback";
+import { savePushSubscription, removePushSubscription } from "@/lib/actions/push";
 import { useTheme } from "next-themes";
+
+function urlBase64ToUint8Array(base64String: string) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
 
 type ScreenContext = "main" | "about" | "privacy" | "rights" | "feedback";
 
@@ -26,6 +38,71 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   const [feedType, setFeedType] = useState<"sugestao" | "bug">("sugestao");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toastMsg, setToastMsg] = useState<string | null>(null);
+
+  // Push State
+  const [isPushActive, setIsPushActive] = useState(false);
+  const [isPushLoading, setIsPushLoading] = useState(false);
+
+  useEffect(() => {
+    if (isOpen && "serviceWorker" in navigator && "PushManager" in window) {
+      navigator.serviceWorker.ready.then((reg) => {
+        reg.pushManager.getSubscription().then((sub) => {
+          setIsPushActive(!!sub);
+        });
+      });
+    }
+  }, [isOpen]);
+
+  const togglePush = async () => {
+    playClick();
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+      setToastMsg("Notificações não suportadas pelo seu navegador.");
+      setTimeout(() => setToastMsg(null), 3000);
+      return;
+    }
+
+    setIsPushLoading(true);
+    try {
+      const reg = await navigator.serviceWorker.ready;
+      let sub = await reg.pushManager.getSubscription();
+
+      if (isPushActive && sub) {
+        // Unsubscribe
+        await sub.unsubscribe();
+        await removePushSubscription();
+        setIsPushActive(false);
+        setToastMsg("Notificações desativadas.");
+      } else {
+        // Subscribe
+        const permission = await Notification.requestPermission();
+        if (permission !== "granted") {
+          throw new Error("Permissão negada");
+        }
+
+        const vapidPublicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+        if (!vapidPublicKey) throw new Error("Chave VAPID não configurada");
+
+        const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+
+        sub = await reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: convertedVapidKey,
+        });
+
+        // Send to server
+        await savePushSubscription(sub.toJSON() as any);
+        setIsPushActive(true);
+        setToastMsg("Lembretes ativados! 🪁");
+      }
+    } catch (err: any) {
+      console.error(err);
+      setToastMsg("Falha ao configurar notificações.");
+      setIsPushActive(false);
+    } finally {
+      setIsPushLoading(false);
+      setTimeout(() => setToastMsg(null), 3000);
+    }
+  };
 
   if (!isOpen) {
     if (screen !== "main") setScreen("main");
@@ -134,6 +211,23 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                 </div>
                 <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", isMuted ? "bg-slate-300 dark:bg-slate-600" : "bg-green-500")}>
                   <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", !isMuted && "translate-x-6")} />
+                </div>
+              </button>
+
+              {/* Push Toggle */}
+              <button
+                onClick={togglePush}
+                disabled={isPushLoading}
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left group disabled:opacity-50"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={cn("p-2 rounded-lg", isPushActive ? "bg-orange-500 text-white" : "bg-brand/10 text-brand dark:text-orange-400 dark:bg-orange-500/20")}>
+                    {isPushLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : isPushActive ? <Bell className="w-5 h-5" /> : <BellOff className="w-5 h-5" />}
+                  </div>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Lembretes de Voo</span>
+                </div>
+                <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", !isPushActive ? "bg-slate-300 dark:bg-slate-600" : "bg-orange-500")}>
+                  <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", isPushActive && "translate-x-6")} />
                 </div>
               </button>
 
