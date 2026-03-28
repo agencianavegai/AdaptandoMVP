@@ -108,7 +108,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(to bottom, #fb923c, #f59e0b)', // Ensures gradient fills entirely
+          background: '#f97316',
           margin: 0,
         },
       });
@@ -401,7 +401,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
           {/* Modal Container — fit-to-screen on mobile, no scroll needed */}
-          <div className="w-full max-h-[calc(100dvh-24px)] sm:max-h-[90vh] overflow-hidden sm:max-w-md bg-gradient-to-b from-orange-400 to-amber-500 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up">
+          <div className="w-full max-h-[calc(100dvh-24px)] sm:max-h-[90vh] overflow-hidden sm:max-w-md bg-orange-500 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up">
 
             {/* Fechar Modal (FORA da captura) */}
             <button
@@ -412,7 +412,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             </button>
 
             {/* ===== ÁREA CAPTURÁVEL (ref para html-to-image) ===== */}
-            <div ref={captureRef} className="bg-gradient-to-b from-orange-400 to-amber-500 relative overflow-hidden">
+            <div ref={captureRef} className="bg-orange-500 relative overflow-hidden">
 
               {/* Soft Sun/Clouds gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
@@ -508,7 +508,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             {/* ===== FIM DA ÁREA CAPTURÁVEL ===== */}
 
             {/* Botão de Ação / Compartilhamento (FORA da captura) */}
-            <div className="px-4 sm:px-6 pb-5 sm:pb-8 pt-3 sm:pt-4 relative z-20 bg-gradient-to-t from-amber-500 to-amber-500">
+            <div className="px-4 sm:px-6 pb-5 sm:pb-8 pt-3 sm:pt-4 relative z-20 bg-orange-500">
               <button
                 onClick={handleShare}
                 disabled={shareLoading}

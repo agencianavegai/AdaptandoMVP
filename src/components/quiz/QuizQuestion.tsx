@@ -60,11 +60,11 @@ export default function QuizQuestion({
       if (acertou) {
         timeoutId = setTimeout(() => {
           playQuizCorrect();
-        }, 300);
+        }, 50);
       } else {
         timeoutId = setTimeout(() => {
           playQuizWrong();
-        }, 300);
+        }, 50);
       }
     }
 

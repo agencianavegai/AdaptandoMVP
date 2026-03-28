@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import BottomNav from "@/components/navigation/BottomNav";
 import { AudioProvider } from "@/contexts/AudioContext";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Adaptando — Dando Linha pra Sonhar",
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -30,7 +31,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Adaptando" />
       </head>
-      <body className="font-body antialiased">
+      <body className="font-body antialiased bg-slate-50 text-slate-900 dark:bg-[#0f1117] dark:text-slate-100 transition-colors duration-300">
         <Script
           id="register-sw"
           strategy="afterInteractive"
@@ -44,10 +45,12 @@ export default function RootLayout({
             `,
           }}
         />
-        <AudioProvider>
-          {children}
-          <BottomNav />
-        </AudioProvider>
+        <ThemeProvider>
+          <AudioProvider>
+            {children}
+            <BottomNav />
+          </AudioProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

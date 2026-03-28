@@ -5,55 +5,23 @@ import { useRouter } from "next/navigation";
 import { getRanking } from "@/lib/actions/user";
 import { Crown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { UserAvatar } from "@/components/ui/UserAvatar";
 
 interface RankUser {
   id: string;
   nome: string;
-  avatar_url: string | null;
+  avatar_url?: string | null;
+  avatar_type?: string | null;
+  uploaded_url?: string | null;
+  character_id?: string | null;
+  avatar_bg_color?: string | null;
   metros_linha: number;
   is_adapete?: boolean;
 }
 
 type TabFilter = "adapete" | "global";
 
-function UserAvatar({ 
-  nome, 
-  avatar_url, 
-  sizeClass, 
-  borderClass 
-}: { 
-  nome: string; 
-  avatar_url: string | null; 
-  sizeClass: string;
-  borderClass: string; 
-}) {
-  const initials = (nome || "?")
-    .split(" ")
-    .map((n) => n[0])
-    .slice(0, 2)
-    .join("")
-    .toUpperCase();
 
-  if (avatar_url) {
-    return (
-      <img
-        src={avatar_url}
-        alt={nome}
-        className={cn("rounded-full object-cover border-4 shadow-md bg-white", sizeClass, borderClass)}
-      />
-    );
-  }
-
-  return (
-    <div className={cn(
-      "rounded-full bg-slate-200 flex items-center justify-center font-display font-black text-slate-500 border-4 shadow-md",
-      sizeClass,
-      borderClass
-    )}>
-      {initials}
-    </div>
-  );
-}
 
 function PodiumCard({ user, position, isMe }: { user: RankUser; position: 1 | 2 | 3; isMe: boolean }) {
   const configs = {
@@ -104,10 +72,10 @@ function PodiumCard({ user, position, isMe }: { user: RankUser; position: 1 | 2 
       <div className="relative mb-3 flex flex-col items-center">
         {config.crown}
         <UserAvatar 
-          nome={user.nome} 
-          avatar_url={user.avatar_url} 
-          sizeClass={config.avatarSize} 
-          borderClass={config.avatarBorder}
+          user={user} 
+          className={cn("border-4 shadow-lg bg-white", config.avatarSize, config.avatarBorder)}
+          iconSizeClassName="text-2xl font-black"
+          style={{ borderRadius: "50%" }}
         />
         
         {/* Number Badge */}
@@ -123,7 +91,7 @@ function PodiumCard({ user, position, isMe }: { user: RankUser; position: 1 | 2 
       {/* Name */}
       <p className={cn(
         "font-display font-black text-sm text-center max-w-[90px] truncate mt-2", 
-        isMe ? "text-[var(--color-brand)]" : "text-white/80"
+        isMe ? "text-[var(--color-brand)]" : "text-slate-700 dark:text-white/80"
       )}>
         {user.nome?.split(" ")[0] || "Anônimo"}
       </p>
@@ -182,28 +150,28 @@ export default function RankingPage() {
   const rest = ranking.slice(3);
 
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-[var(--color-storm-dark)] to-[var(--color-storm-mid)] pb-28 font-sans">
+    <div className="min-h-dvh bg-slate-100 dark:bg-gradient-to-b dark:from-[var(--color-storm-dark)] dark:to-[var(--color-storm-mid)] pb-28 font-sans transition-colors duration-300">
       
       {/* Header */}
       <div className="pt-12 pb-4 text-center px-4">
-        <h1 className="font-display font-black text-4xl text-white uppercase tracking-tight">
+        <h1 className="font-display font-black text-4xl text-slate-800 dark:text-white uppercase tracking-tight">
           Os Maiores Voos
         </h1>
-        <p className="text-white/60 font-bold text-sm mt-2 tracking-wide">
+        <p className="text-slate-500 dark:text-white/60 font-bold text-sm mt-2 tracking-wide">
           O Pódio dos Pipeiros Mais Altos
         </p>
       </div>
 
       {/* Tab Switcher (Pill Style) */}
       <div className="flex justify-center px-6 mb-6">
-        <div className="bg-white/10 backdrop-blur-md rounded-full p-1 flex gap-1 border border-white/20 shadow-lg w-full max-w-xs">
+        <div className="bg-slate-200/80 dark:bg-white/10 backdrop-blur-md rounded-full p-1 flex gap-1 border border-slate-300 dark:border-white/20 shadow-lg w-full max-w-xs">
           <button
             onClick={() => handleTabChange("adapete")}
             className={cn(
               "flex-1 py-2.5 px-4 rounded-full font-display font-black text-sm tracking-wide uppercase transition-all duration-300",
               activeTab === "adapete"
                 ? "bg-[var(--color-brand)] text-white shadow-md"
-                : "text-white/60 hover:text-white/80"
+                : "text-slate-500 dark:text-white/60 hover:text-slate-700 dark:hover:text-white/80"
             )}
           >
             Liga Ádapo
@@ -214,7 +182,7 @@ export default function RankingPage() {
               "flex-1 py-2.5 px-4 rounded-full font-display font-black text-sm tracking-wide uppercase transition-all duration-300",
               activeTab === "global"
                 ? "bg-sky-500 text-white shadow-md"
-                : "text-white/60 hover:text-white/80"
+                : "text-slate-500 dark:text-white/60 hover:text-slate-700 dark:hover:text-white/80"
             )}
           >
             Global
@@ -228,7 +196,7 @@ export default function RankingPage() {
           <div className="w-24 h-24 bg-[var(--color-brand)] rounded-[var(--radius-kite)] flex items-center justify-center animate-float shadow-[0_8px_0_0_var(--color-brand-shadow)]">
             <span className="text-5xl" aria-hidden="true">🏆</span>
           </div>
-          <h2 className="text-white font-display font-black text-2xl tracking-wide uppercase">
+          <h2 className="text-slate-700 dark:text-white font-display font-black text-2xl tracking-wide uppercase">
             Carregando Ranking...
           </h2>
         </div>
@@ -270,30 +238,30 @@ export default function RankingPage() {
                       "flex items-center gap-4 rounded-2xl p-4 border-2 border-b-[6px] transition-all",
                       isMe
                         ? "bg-[var(--color-brand)]/10 border-[var(--color-brand)]/40 border-b-[var(--color-brand-shadow)]/40 shadow-sm"
-                        : "bg-white border-slate-200 border-b-slate-300"
+                        : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 border-b-slate-300 dark:border-b-slate-600"
                     )}
                   >
                     {/* Position */}
                     <span className={cn(
                       "font-display font-black text-lg w-6 text-center",
-                      isMe ? "text-[var(--color-brand)]" : "text-slate-400"
+                      isMe ? "text-[var(--color-brand)]" : "text-slate-400 dark:text-slate-500"
                     )}>
                       {position}
                     </span>
 
                     {/* Avatar */}
                     <UserAvatar 
-                      nome={user.nome} 
-                      avatar_url={user.avatar_url} 
-                      sizeClass="w-12 h-12 text-sm" 
-                      borderClass={isMe ? "border-[var(--color-brand)]/60" : "border-slate-200"}
+                      user={user} 
+                      className={cn("w-12 h-12 border-[3px] shadow-sm", isMe ? "border-[var(--color-brand)]" : "border-slate-200")} 
+                      iconSizeClassName="text-sm font-black"
+                      style={{ borderRadius: "50%" }}
                     />
 
                     {/* Name */}
                     <div className="flex-1 min-w-0">
                       <p className={cn(
                         "font-display font-black text-base truncate", 
-                        isMe ? "text-[var(--color-brand)]" : "text-slate-700"
+                        isMe ? "text-[var(--color-brand)]" : "text-slate-700 dark:text-slate-200"
                       )}>
                         {user.nome || "Anônimo"}
                       </p>
@@ -303,7 +271,7 @@ export default function RankingPage() {
                     <div className="text-right">
                       <p className={cn(
                         "font-display font-black text-xl leading-none",
-                        isMe ? "text-[var(--color-brand)]" : "text-slate-800"
+                        isMe ? "text-[var(--color-brand)]" : "text-slate-800 dark:text-slate-100"
                       )}>
                         {user.metros_linha}
                       </p>

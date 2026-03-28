@@ -44,16 +44,16 @@ function StatCard({
 }) {
   return (
     <div className={cn(
-      "bg-white rounded-2xl p-4 flex flex-col items-start border-2 border-slate-200 border-b-[6px]",
+      "bg-white dark:bg-slate-800 rounded-2xl p-4 flex flex-col items-start border-2 border-slate-200 dark:border-slate-700 border-b-[6px]",
       borderColorClass
     )}>
       <div className={cn(`w-8 h-8 rounded-lg flex items-center justify-center mb-3`, colorClass)}>
         {icon}
       </div>
-      <p className="font-display font-black text-2xl text-slate-800 leading-none mb-1">
+      <p className="font-display font-black text-2xl text-slate-800 dark:text-slate-100 leading-none mb-1">
         {value}
       </p>
-      <p className="text-slate-500 font-bold text-xs uppercase tracking-wider">
+      <p className="text-slate-500 dark:text-slate-400 font-bold text-xs uppercase tracking-wider">
         {label}
       </p>
     </div>
@@ -78,11 +78,11 @@ function AchievementCard({
   const percentage = Math.min(100, Math.max(0, (progress / maxProgress) * 100));
 
   return (
-    <div className="bg-white rounded-2xl p-4 flex items-center gap-4 border-2 border-slate-200 border-b-[6px] border-b-slate-300">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl p-4 flex items-center gap-4 border-2 border-slate-200 dark:border-slate-700 border-b-[6px] border-b-slate-300 dark:border-b-slate-600">
       {/* Left Icon */}
       <div className={cn(
         "w-16 h-16 rounded-2xl shrink-0 flex items-center justify-center text-3xl",
-        isUnlocked ? "bg-amber-100 border-2 border-amber-300" : "bg-slate-100 border-2 border-slate-200 grayscale opacity-60"
+        isUnlocked ? "bg-amber-100 dark:bg-amber-900/30 border-2 border-amber-300 dark:border-amber-700" : "bg-slate-100 dark:bg-slate-700 border-2 border-slate-200 dark:border-slate-600 grayscale opacity-60"
       )}>
         {icon}
       </div>
@@ -91,16 +91,16 @@ function AchievementCard({
       <div className="flex-1 min-w-0 flex flex-col justify-center">
         <h3 className={cn(
           "font-display font-black text-lg mb-0.5 truncate",
-          isUnlocked ? "text-slate-800" : "text-slate-500"
+          isUnlocked ? "text-slate-800 dark:text-slate-100" : "text-slate-500 dark:text-slate-400"
         )}>
           {title}
         </h3>
-        <p className="text-slate-500 text-xs font-medium line-clamp-2 leading-snug mb-2">
+        <p className="text-slate-500 dark:text-slate-400 text-xs font-medium line-clamp-2 leading-snug mb-2">
           {description}
         </p>
 
         {/* Progress Bar */}
-        <div className="w-full bg-slate-100 h-3.5 rounded-full overflow-hidden flex relative">
+        <div className="w-full bg-slate-100 dark:bg-slate-700 h-3.5 rounded-full overflow-hidden flex relative">
           <div 
             className={cn(
               "h-full rounded-full transition-all duration-500",
@@ -225,7 +225,7 @@ export default function PerfilPage() {
     .toUpperCase();
 
   return (
-    <div className="min-h-dvh bg-slate-50 pb-36 font-sans">
+    <div className="min-h-dvh bg-slate-50 dark:bg-[#0f1117] pb-36 font-sans transition-colors duration-300">
       
       <SettingsHubModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
       
@@ -256,7 +256,7 @@ export default function PerfilPage() {
       <div className="px-6 pt-6 flex justify-end gap-3">
         <button
           onClick={() => setShowSettings(true)}
-          className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-400 border-2 border-slate-200 shadow-sm hover:text-slate-600 hover:border-slate-300 transition-colors active:scale-95"
+          className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center text-slate-400 dark:text-slate-500 border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:text-slate-600 dark:hover:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600 transition-colors active:scale-95"
           title="Configurações"
         >
           <Settings strokeWidth={2.5} className="w-5 h-5" />
@@ -264,7 +264,7 @@ export default function PerfilPage() {
         <button
           onClick={handleLogout}
           disabled={loggingOut}
-          className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-slate-400 border-2 border-slate-200 shadow-sm hover:text-red-500 hover:border-red-200 transition-colors active:scale-95"
+          className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center text-slate-400 dark:text-slate-500 border-2 border-slate-200 dark:border-slate-700 shadow-sm hover:text-red-500 hover:border-red-200 dark:hover:border-red-800 transition-colors active:scale-95"
           title="Sair da Conta"
         >
           <LogOut strokeWidth={2.5} className="w-5 h-5" />
@@ -293,15 +293,15 @@ export default function PerfilPage() {
           )}
 
           {/* Subtle decoration */}
-          <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-1.5 shadow-md border-2 border-slate-100 z-20">
+          <div className="absolute -bottom-2 -right-2 bg-white dark:bg-slate-800 rounded-full p-1.5 shadow-md border-2 border-slate-100 dark:border-slate-700 z-20">
              <Trophy className="w-6 h-6 text-amber-500 fill-amber-100" />
           </div>
         </div>
 
-        <h1 className="font-display font-black text-3xl text-slate-800 text-center uppercase tracking-wide">
+        <h1 className="font-display font-black text-3xl text-slate-800 dark:text-slate-100 text-center uppercase tracking-wide">
           {voluntario.nome || "Anônimo"}
         </h1>
-        <p className="text-slate-500 font-bold text-sm tracking-wide mt-1 mb-5">
+        <p className="text-slate-500 dark:text-slate-400 font-bold text-sm tracking-wide mt-1 mb-5">
            Membro do Ádapo
         </p>
 
@@ -317,7 +317,7 @@ export default function PerfilPage() {
           <button
             onClick={() => fileInputRef.current?.click()}
             disabled={isUploading}
-            className="flex-1 min-h-[44px] bg-white border-2 border-slate-200 text-slate-600 font-black text-sm uppercase tracking-wider rounded-xl shadow-sm hover:border-slate-300 hover:text-slate-800 active:scale-95 flex items-center justify-center gap-2 outline-none transition-all disabled:opacity-50 disabled:scale-100"
+            className="flex-1 min-h-[44px] bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-black text-sm uppercase tracking-wider rounded-xl shadow-sm hover:border-slate-300 dark:hover:border-slate-600 hover:text-slate-800 dark:hover:text-slate-100 active:scale-95 flex items-center justify-center gap-2 outline-none transition-all disabled:opacity-50 disabled:scale-100"
           >
             <ImageIcon strokeWidth={2.5} className="w-4 h-4" />
             <span className="hidden min-[360px]:inline">Foto</span>
@@ -334,11 +334,11 @@ export default function PerfilPage() {
         </div>
       </div>
 
-      <div className="w-full h-px bg-slate-200 my-8" />
+      <div className="w-full h-px bg-slate-200 dark:bg-slate-800 my-8" />
 
       {/* STATS GRID */}
       <div className="px-5 mb-10">
-        <h2 className="font-display font-black text-xl text-slate-800 uppercase tracking-wide mb-4">
+        <h2 className="font-display font-black text-xl text-slate-800 dark:text-slate-100 uppercase tracking-wide mb-4">
           Estatísticas
         </h2>
         <div className="grid grid-cols-2 gap-4">
@@ -375,7 +375,7 @@ export default function PerfilPage() {
 
       {/* ACHIEVEMENTS (BADGES) */}
       <div className="px-5 mb-8">
-        <h2 className="font-display font-black text-xl text-slate-800 uppercase tracking-wide mb-4">
+        <h2 className="font-display font-black text-xl text-slate-800 dark:text-slate-100 uppercase tracking-wide mb-4">
           Minhas Pipas
         </h2>
         <div className="flex flex-col gap-4">

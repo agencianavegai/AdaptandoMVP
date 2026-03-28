@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { X, ChevronRight, Volume2, VolumeX, Shield, Info, MessageSquare, ArrowLeft, Send } from "lucide-react";
+import { X, ChevronRight, Volume2, VolumeX, Shield, Info, MessageSquare, ArrowLeft, Send, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAudio } from "@/contexts/AudioContext";
 import { useGameSound } from "@/hooks/useGameSound";
 import { submitFeedback } from "@/lib/actions/feedback";
+import { useTheme } from "next-themes";
 
 type ScreenContext = "main" | "about" | "privacy" | "rights" | "feedback";
 
@@ -18,6 +19,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   const [screen, setScreen] = useState<ScreenContext>("main");
   const { isMuted, toggleMute } = useAudio();
   const { playClick, playModalSwoosh } = useGameSound();
+  const { theme, setTheme } = useTheme();
 
   // Feedback State
   const [feedMsg, setFeedMsg] = useState("");
@@ -26,9 +28,11 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   const [toastMsg, setToastMsg] = useState<string | null>(null);
 
   if (!isOpen) {
-    if (screen !== "main") setScreen("main"); // reset on close natively
+    if (screen !== "main") setScreen("main");
     return null;
   }
+
+  const isDark = theme === "dark";
 
   const handleClose = () => {
     playModalSwoosh();
@@ -44,6 +48,11 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   const toggleSound = () => {
     playClick();
     toggleMute();
+  };
+
+  const toggleTheme = () => {
+    playClick();
+    setTheme(isDark ? "light" : "dark");
   };
 
   const handleFeedbackSubmit = async (e: React.FormEvent) => {
@@ -75,21 +84,21 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
       />
 
       {/* Modal Box */}
-      <div className="relative w-full max-w-sm bg-white rounded-[1.5rem] shadow-2xl flex flex-col overflow-hidden animate-in zoom-in-95 duration-300">
+      <div className="relative w-full max-w-sm bg-white dark:bg-slate-900 rounded-[1.5rem] shadow-2xl flex flex-col overflow-hidden animate-in zoom-in-95 duration-300">
 
         {/* Header */}
-        <div className="bg-slate-50 flex items-center justify-between px-5 py-4 border-b-2 border-slate-100">
+        <div className="bg-slate-50 dark:bg-slate-800 flex items-center justify-between px-5 py-4 border-b-2 border-slate-100 dark:border-slate-700">
           <div className="flex items-center gap-2">
             {screen !== "main" && (
               <button
                 onClick={() => navigateTo(screen === 'privacy' || screen === 'rights' ? 'about' : 'main')}
-                className="p-1 -ml-2 text-slate-400 hover:text-slate-600 transition-colors"
+                className="p-1 -ml-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
                 title="Voltar"
               >
                 <ArrowLeft className="w-5 h-5" strokeWidth={3} />
               </button>
             )}
-            <h2 className="font-display font-black text-xl text-slate-800 uppercase tracking-wide">
+            <h2 className="font-display font-black text-xl text-slate-800 dark:text-slate-100 uppercase tracking-wide">
               {screen === "main" && "Ajustes de Cria"}
               {screen === "about" && "Sobre o App"}
               {screen === "privacy" && "Privacidade"}
@@ -100,7 +109,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
 
           <button
             onClick={handleClose}
-            className="w-8 h-8 flex items-center justify-center bg-slate-200 text-slate-500 rounded-full hover:bg-slate-300 hover:text-slate-700 transition-colors"
+            className="w-8 h-8 flex items-center justify-center bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 rounded-full hover:bg-slate-300 dark:hover:bg-slate-600 hover:text-slate-700 dark:hover:text-slate-200 transition-colors"
           >
             <X className="w-5 h-5" strokeWidth={2.5} />
           </button>
@@ -112,43 +121,64 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
           {/* SCREEN: MAIN */}
           {screen === "main" && (
             <div className="flex flex-col gap-2">
+              {/* Sound Toggle */}
               <button
                 onClick={toggleSound}
-                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left group"
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left group"
               >
                 <div className="flex items-center gap-3">
-                  <div className={cn("p-2 rounded-lg", isMuted ? "bg-red-100 text-red-500" : "bg-brand/10 text-brand")}>
+                  <div className={cn("p-2 rounded-lg", isMuted ? "bg-red-100 dark:bg-red-900/30 text-red-500" : "bg-brand/10 text-brand")}>
                     {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
                   </div>
-                  <span className="font-bold text-slate-700 text-[15px]">Efeitos Sonoros</span>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Efeitos Sonoros</span>
                 </div>
-                <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", isMuted ? "bg-slate-300" : "bg-green-500")}>
+                <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", isMuted ? "bg-slate-300 dark:bg-slate-600" : "bg-green-500")}>
                   <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", !isMuted && "translate-x-6")} />
                 </div>
               </button>
 
+              {/* Theme Toggle */}
               <button
-                onClick={() => navigateTo("about")}
-                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left"
+                onClick={toggleTheme}
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-blue-100 text-blue-500">
+                  <div className={cn("p-2 rounded-lg", isDark ? "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-500" : "bg-amber-100 text-amber-500")}>
+                    {isDark ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+                  </div>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">
+                    Aparência ({isDark ? "Escuro" : "Claro"})
+                  </span>
+                </div>
+                <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", isDark ? "bg-indigo-500" : "bg-slate-300 dark:bg-slate-600")}>
+                  <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", isDark && "translate-x-6")} />
+                </div>
+              </button>
+
+              {/* About */}
+              <button
+                onClick={() => navigateTo("about")}
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-500">
                     <Info className="w-5 h-5" />
                   </div>
-                  <span className="font-bold text-slate-700 text-[15px]">Sobre o Adaptando</span>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Sobre o Adaptando</span>
                 </div>
                 <ChevronRight className="w-5 h-5 text-slate-400" />
               </button>
 
+              {/* Feedback */}
               <button
                 onClick={() => navigateTo("feedback")}
-                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 hover:bg-slate-100 transition-all text-left"
+                className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-orange-100 text-orange-500">
+                  <div className="p-2 rounded-lg bg-orange-100 dark:bg-orange-900/30 text-orange-500">
                     <MessageSquare className="w-5 h-5" />
                   </div>
-                  <span className="font-bold text-slate-700 text-[15px]">Enviar Feedback</span>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Enviar Feedback</span>
                 </div>
                 <ChevronRight className="w-5 h-5 text-slate-400" />
               </button>
@@ -158,7 +188,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
           {/* SCREEN: ABOUT */}
           {screen === "about" && (
             <div className="flex flex-col gap-4 animate-in slide-in-from-right-4 duration-200">
-              <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 text-amber-900">
+              <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-4 border border-amber-200 dark:border-amber-700 text-amber-900 dark:text-amber-200">
                 <p className="text-[14px] leading-relaxed font-medium">
                   O projeto <strong>Adaptando</strong> é uma iniciativa educacional e gamificada desenvolvida pelo <strong>Instituto Ádapo</strong> para empoderar os membros do terceiro setor de forma lúdica, engajadora e transformadora.
                 </p>
@@ -167,16 +197,16 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
               <div className="flex flex-col gap-2 mt-2">
                 <button
                   onClick={() => navigateTo("privacy")}
-                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 transition-all text-left"
+                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-all text-left"
                 >
-                  <span className="font-bold text-slate-600 text-sm">Políticas de Privacidade</span>
+                  <span className="font-bold text-slate-600 dark:text-slate-300 text-sm">Políticas de Privacidade</span>
                   <Shield className="w-4 h-4 text-slate-400" />
                 </button>
                 <button
                   onClick={() => navigateTo("rights")}
-                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border-2 border-slate-100 hover:border-slate-300 transition-all text-left"
+                  className="w-full flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-all text-left"
                 >
-                  <span className="font-bold text-slate-600 text-sm">Direitos dos Usuários</span>
+                  <span className="font-bold text-slate-600 dark:text-slate-300 text-sm">Direitos dos Usuários</span>
                   <ChevronRight className="w-4 h-4 text-slate-400" />
                 </button>
               </div>
@@ -185,21 +215,21 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
 
           {/* SCREEN: PRIVACY */}
           {screen === "privacy" && (
-            <div className="flex flex-col gap-3 text-slate-600 text-sm leading-relaxed animate-in slide-in-from-right-4 duration-200">
+            <div className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm leading-relaxed animate-in slide-in-from-right-4 duration-200">
               <p>
                 No Instituto Ádapo, levamos a proteção dos seus dados a sério. Coletamos informações de progresso do jogo e interações puramente para melhorar sua jornada educacional.
               </p>
               <p>
-                As informações salvas englobam os testes respondidos e a métrica de desempenho contínuo (A "Ofensiva"). Nenhum dado sensível é repassado a terceiros de fins comerciais.
+                As informações salvas englobam os testes respondidos e a métrica de desempenho contínuo (A &quot;Ofensiva&quot;). Nenhum dado sensível é repassado a terceiros de fins comerciais.
               </p>
             </div>
           )}
 
           {/* SCREEN: RIGHTS (LGPD) */}
           {screen === "rights" && (
-            <div className="flex flex-col gap-4 text-slate-600 text-sm leading-relaxed animate-in slide-in-from-right-4 duration-200">
-              <div className="bg-red-50 p-4 rounded-xl border border-red-200 text-red-800 font-medium">
-                "Você tem o direito de solicitar a exclusão total dos seus dados a qualquer momento."
+            <div className="flex flex-col gap-4 text-slate-600 dark:text-slate-300 text-sm leading-relaxed animate-in slide-in-from-right-4 duration-200">
+              <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-xl border border-red-200 dark:border-red-800 text-red-800 dark:text-red-300 font-medium">
+                &quot;Você tem o direito de solicitar a exclusão total dos seus dados a qualquer momento.&quot;
               </div>
               <p>
                 Conforme a Lei Geral de Proteção de Dados (LGPD), você detém controle do que coletamos. Você tem o direito ao acesso, correção de informações incompletas, anonimização e portabilidade.
@@ -214,23 +244,23 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
           {screen === "feedback" && (
             <form onSubmit={handleFeedbackSubmit} className="flex flex-col gap-4 animate-in slide-in-from-right-4 duration-200">
               {toastMsg ? (
-                <div className="bg-green-50 text-green-700 p-4 font-bold rounded-xl border border-green-200 flex items-center gap-2 text-sm justify-center text-center animate-in fade-in duration-300">
+                <div className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 p-4 font-bold rounded-xl border border-green-200 dark:border-green-800 flex items-center gap-2 text-sm justify-center text-center animate-in fade-in duration-300">
                   {toastMsg}
                 </div>
               ) : (
                 <>
-                  <div className="flex gap-2 p-1 bg-slate-100 rounded-lg">
+                  <div className="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-lg">
                     <button
                       type="button"
                       onClick={() => setFeedType("sugestao")}
-                      className={cn("flex-1 py-1.5 text-xs font-bold rounded-md transition-all", feedType === "sugestao" ? "bg-white text-slate-800 shadow-sm" : "text-slate-500 hover:text-slate-700")}
+                      className={cn("flex-1 py-1.5 text-xs font-bold rounded-md transition-all", feedType === "sugestao" ? "bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 shadow-sm" : "text-slate-500 hover:text-slate-700 dark:hover:text-slate-300")}
                     >
                       💡 Sugestão
                     </button>
                     <button
                       type="button"
                       onClick={() => setFeedType("bug")}
-                      className={cn("flex-1 py-1.5 text-xs font-bold rounded-md transition-all", feedType === "bug" ? "bg-white text-red-600 shadow-sm" : "text-slate-500 hover:text-red-500")}
+                      className={cn("flex-1 py-1.5 text-xs font-bold rounded-md transition-all", feedType === "bug" ? "bg-white dark:bg-slate-700 text-red-600 dark:text-red-400 shadow-sm" : "text-slate-500 hover:text-red-500")}
                     >
                       🐛 Erro / Bug
                     </button>
@@ -242,7 +272,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                     value={feedMsg}
                     onChange={(e) => setFeedMsg(e.target.value)}
                     placeholder={feedType === 'sugestao' ? "Como podemos empolgar mais o seu voo?" : "O que atrapalhou seu progresso?"}
-                    className="w-full bg-slate-50 border-2 border-slate-200 rounded-xl p-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 transition-all resize-none h-32"
+                    className="w-full bg-slate-50 dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 rounded-xl p-3 text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-brand focus:ring-4 focus:ring-brand/10 transition-all resize-none h-32"
                   />
 
                   <button
