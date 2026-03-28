@@ -87,23 +87,23 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
 
     try {
       // Generate PNG at 9:16 Story ratio (1080×1920) for Instagram/WhatsApp Stories
-      // The style overrides temporarily resize the capture node to story dimensions,
-      // centering the content vertically while the gradient fills the extra space.
+      // Using 540x960 CSS dimensions with pixelRatio 2 to ensure text sizes scale
+      // up correctly (not tiny) while maintaining the 1080x1920 output perfectly.
       const dataUrl = await toPng(captureRef.current, {
-        quality: 0.95,
-        pixelRatio: 1,
-        width: 1080,
-        height: 1920,
+        quality: 1.0,
+        pixelRatio: 2,
+        width: 540,
+        height: 960,
         style: {
-          width: '1080px',
-          height: '1920px',
+          width: '540px',
+          height: '960px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '80px 100px',
+          background: 'linear-gradient(to bottom, #fb923c, #f59e0b)', // Ensures gradient fills entirely
+          margin: 0,
         },
-        backgroundColor: "#f59e0b",
       });
 
       // Convert data URL to Blob then File
