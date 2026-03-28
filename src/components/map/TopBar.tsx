@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Trophy, Clock, X, Info, Flame, Target, User, Heart, Star, Share2, Check } from "lucide-react";
+import { Trophy, Clock, X, Info, Flame, Target, User, Heart, Star, Share2, Check, VolumeX, Volume2, Wind, Loader2, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toPng } from "html-to-image";
 import { useAudio } from "@/contexts/AudioContext";
