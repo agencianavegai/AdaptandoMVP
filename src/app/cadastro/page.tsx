@@ -153,16 +153,16 @@ export default function CadastroPage() {
             </div>
 
             {/* Adapete Toggle */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <label className="font-black text-[var(--color-text-secondary)] uppercase text-sm tracking-wider ml-1">
+            <div className="flex flex-col gap-2 w-full max-w-full overflow-hidden">
+              <div className="flex flex-row items-center justify-between gap-2 w-full max-w-full">
+                <div className="flex items-center gap-1 flex-1 min-w-0">
+                  <label className="font-black text-[var(--color-text-secondary)] uppercase text-sm tracking-wider ml-1 truncate">
                     Sou um Adapete
                   </label>
                   <button
                     type="button"
                     onClick={() => setShowAdapeteInfo(!showAdapeteInfo)}
-                    className="text-gray-400 hover:text-[var(--color-info)] transition-colors"
+                    className="text-gray-400 hover:text-[var(--color-info)] transition-colors shrink-0 p-1 outline-none"
                     aria-label="O que é um Adapete?"
                   >
                     <HelpCircle className="w-4 h-4" />
@@ -175,7 +175,7 @@ export default function CadastroPage() {
                   role="switch"
                   aria-checked={isAdapete}
                   onClick={() => setIsAdapete(!isAdapete)}
-                  className={`relative w-14 h-8 rounded-full transition-colors duration-300 ${isAdapete ? 'bg-[var(--color-brand)]' : 'bg-gray-300'}`}
+                  className={`relative w-14 h-8 shrink-0 rounded-full transition-colors duration-300 ${isAdapete ? 'bg-[var(--color-brand)]' : 'bg-gray-300'} outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-brand)]`}
                 >
                   <span className={`absolute top-1 w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300 ${isAdapete ? 'translate-x-7' : 'translate-x-1'}`} />
                 </button>

@@ -93,9 +93,8 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
     const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo!${focusText} Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
 
     try {
-      // Generate PNG at 9:16 Story ratio (1080×1920) for Instagram/WhatsApp Stories
-      // Using 540x960 CSS dimensions with pixelRatio 2 to ensure text sizes scale
-      // up correctly (not tiny) while maintaining the 1080x1920 output perfectly.
+      // Captura da tela cheia em 9:16 Story ratio (1080×1920) para o Instagram.
+      // O ref agora aponta pro root (fixed inset-0) para trazer a cor do overlay (glass).
       const dataUrl = await toPng(captureRef.current, {
         quality: 1.0,
         pixelRatio: 2,
@@ -104,13 +103,15 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
         style: {
           width: '540px',
           height: '960px',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          background: '#f97316',
+          background: 'transparent',
           margin: 0,
         },
+        filter: (node) => {
+          if (node instanceof HTMLElement && node.dataset?.hideOnCapture === 'true') {
+            return false;
+          }
+          return true; // mantém todo o resto
+        }
       });
 
       // Convert data URL to Blob then File
@@ -397,22 +398,24 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
       {/* Profile Summary & Share Modal (Celebração do Herói - Duolingo Style) */}
       {showProfileModal && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm animate-in fade-in duration-300 p-3 sm:p-4 overscroll-contain touch-none"
+          ref={captureRef}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-md p-3 sm:p-4 overscroll-contain touch-none"
           onClick={(e) => { if (e.target === e.currentTarget) setShowProfileModal(false); }}
         >
           {/* Modal Container — fit-to-screen on mobile, no scroll needed */}
-          <div className="w-full max-h-[calc(100dvh-24px)] sm:max-h-[90vh] overflow-hidden sm:max-w-md bg-orange-500 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up">
+          <div className="w-full max-h-[calc(100dvh-24px)] sm:max-h-[90vh] overflow-hidden sm:max-w-md bg-orange-600/80 backdrop-blur-xl border border-white/20 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col relative animate-slide-up">
 
-            {/* Fechar Modal (FORA da captura) */}
+            {/* Fechar Modal (Oculto no print) */}
             <button
+              data-hide-on-capture="true"
               onClick={() => setShowProfileModal(false)}
               className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 w-8 h-8 sm:w-10 sm:h-10 bg-black/10 rounded-full flex items-center justify-center text-white hover:bg-black/20 transition-colors backdrop-blur-md cursor-pointer outline-none"
             >
               <X strokeWidth={3} className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
-            {/* ===== ÁREA CAPTURÁVEL (ref para html-to-image) ===== */}
-            <div ref={captureRef} className="bg-orange-500 relative overflow-hidden">
+            {/* ===== CONTEÚDO CAPTURÁVEL ===== */}
+            <div className="relative overflow-hidden w-full flex-1">
 
               {/* Soft Sun/Clouds gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
@@ -507,8 +510,8 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
             </div>
             {/* ===== FIM DA ÁREA CAPTURÁVEL ===== */}
 
-            {/* Botão de Ação / Compartilhamento (FORA da captura) */}
-            <div className="px-4 sm:px-6 pb-5 sm:pb-8 pt-3 sm:pt-4 relative z-20 bg-orange-500">
+            {/* Botão de Ação / Compartilhamento (Oculto no print) */}
+            <div data-hide-on-capture="true" className="px-4 sm:px-6 pb-5 sm:pb-8 pt-3 sm:pt-4 relative z-20 bg-transparent mt-2">
               <button
                 onClick={handleShare}
                 disabled={shareLoading}
