@@ -184,7 +184,7 @@ export default function PerfilPage() {
   const handleShare = async () => {
     if (!voluntario) return;
     
-    const text = `Estou a ${voluntario.ofensiva_atual} dias me Adaptando e já conquistei ${voluntario.metros_linha} metros de linha no Instituto Ádapo! Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
+    const text = `Estou a ${voluntario.ofensiva_atual} dias me Adaptando e já conquistei ${voluntario.metros_linha} metros de linha no Instituto Ádapo! Vem dar linha pra sonhar também! 🪁🔥 #Adaptando #InstitutoAdapo`;
     
     try {
       if (navigator.share) {

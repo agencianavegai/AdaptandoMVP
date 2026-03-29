@@ -90,7 +90,7 @@ export default function TopBar({ voluntario, nextRechargeSeconds = 0, currentFoc
     setShareLoading(true);
 
     const focusText = currentFocus ? ` Meu foco atual é dominar: ${currentFocus}.` : "";
-    const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo!${focusText} Vem dar linha pra sonhar também! 🪁🔥 #Adaptdando #InstitutoAdapo`;
+    const text = `Estou a ${ofensiva} dias me Adaptando no Instituto Ádapo!${focusText} Vem dar linha pra sonhar também! 🪁🔥 #Adaptando #InstitutoAdapo`;
 
     try {
       // Captura da tela cheia em 9:16 Story ratio (1080×1920) para o Instagram.

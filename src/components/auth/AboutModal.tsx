@@ -12,7 +12,7 @@ export default function AboutModal() {
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full shadow-lg border border-white/30 flex items-center justify-center text-white hover:bg-white/30 hover:scale-110 active:scale-95 transition-all duration-300 animate-float group"
-        aria-label="Sobre o Adaptdando"
+        aria-label="Sobre o Adaptando"
         title="O que é isso?"
       >
         <Info className="w-6 h-6 opacity-80 group-hover:opacity-100" />
@@ -48,11 +48,11 @@ export default function AboutModal() {
               </div>
 
               <h2 className="font-display font-black text-2xl sm:text-3xl text-white uppercase tracking-wide drop-shadow-md mb-4 leading-tight">
-                O que é o<br />Adaptdando?
+                O que é o<br />Adaptando?
               </h2>
 
               <p className="text-white/95 font-medium text-base sm:text-lg leading-relaxed mb-6">
-                O <strong>Adaptdando</strong> é uma plataforma gamificada para capacitar voluntários e líderes sociais. Uma jornada por mundos temáticos que definem as áreas de uma OSC para dominar desde o básico do voluntariado até a gestão completa de uma ONG.
+                O <strong>Adaptando</strong> é uma plataforma gamificada para capacitar voluntários e líderes sociais. Uma jornada por mundos temáticos que definem as áreas de uma OSC para dominar desde o básico do voluntariado até a gestão completa de uma ONG.
               </p>
 
               {/* Credits */}
