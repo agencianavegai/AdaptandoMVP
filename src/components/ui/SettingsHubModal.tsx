@@ -52,7 +52,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   }, []);
 
   const adminEmailEnv = process.env.NEXT_PUBLIC_ADMIN_EMAIL || "";
-  const adminEmails = adminEmailEnv 
+  const adminEmails = adminEmailEnv
     ? adminEmailEnv.split(",").map(e => e.trim().toLowerCase())
     : ["filipegallo2@gmail.com"];
   const isAdmin = userEmail ? adminEmails.includes(userEmail.toLowerCase()) : false;
@@ -63,6 +63,10 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   // Push State
   const [isPushActive, setIsPushActive] = useState(false);
   const [isPushLoading, setIsPushLoading] = useState(false);
+  
+  // Broadcast State (Admin)
+  const [broadcastTitle, setBroadcastTitle] = useState("Olá Adapetes! 🪁");
+  const [broadcastBody, setBroadcastBody] = useState("Este é um teste, se você recebeu essa mensagem faça sua missão do dia e mande um 🪁 no grupo!");
 
   useEffect(() => {
     if (isOpen && "serviceWorker" in navigator && "PushManager" in window) {
@@ -258,48 +262,69 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                   <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", isPushActive && "translate-x-6")} />
                 </div>
               </button>
-              
+
               {/* Test Megafone (Broadcast) */}
               {isAdmin && (
-                <button
-                  onClick={async () => {
-                    playClick();
-                    setIsPushLoading(true);
-                    setToastMsg("Disparando Megafone... 🚀");
-                    try {
-                      const res = await fetch("/api/push/broadcast", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                          title: "Voo de Teste! 🪁",
-                          body: "O Instituto Ádapo está testando os motores. Se você recebeu isso, está pronto para decolar!",
-                          url: "/mapa"
-                        }),
-                      });
-                      const data = await res.json();
-                      if (res.ok && data.success) {
-                         setToastMsg(`Sucesso! Enviado para ${data.results?.success} users.`);
-                      } else {
-                         setToastMsg(data.error || "Erro ao disparar broadcast.");
-                      }
-                    } catch (e) {
-                      setToastMsg("Falha na rede ao testar.");
-                    } finally {
-                      setIsPushLoading(false);
-                      setTimeout(() => setToastMsg(null), 4000);
-                    }
-                  }}
-                  disabled={isPushLoading}
-                  className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left group disabled:opacity-50"
-                >
+                <div className="w-full flex justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-all group flex-col gap-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-500">
                       <Send className="w-5 h-5" />
                     </div>
-                    <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Testar Megafone (Admin)</span>
+                    <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Megafone (Admin)</span>
                   </div>
-                  <ChevronRight className="w-5 h-5 text-slate-400" />
-                </button>
+                  
+                  <div className="flex flex-col gap-3">
+                    <input 
+                      type="text" 
+                      value={broadcastTitle} 
+                      onChange={(e) => setBroadcastTitle(e.target.value)} 
+                      placeholder="Título da Notificação"
+                      className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 focus:outline-none focus:border-brand font-bold"
+                    />
+                    <textarea 
+                      value={broadcastBody} 
+                      onChange={(e) => setBroadcastBody(e.target.value)} 
+                      placeholder="Corpo da Notificação (Mensagem)"
+                      rows={2}
+                      className="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 focus:outline-none focus:border-brand resize-none"
+                    />
+                    
+                    <button
+                      onClick={async () => {
+                        playClick();
+                        setIsPushLoading(true);
+                        setToastMsg("Disparando Megafone... 🚀");
+                        try {
+                          const res = await fetch("/api/push/broadcast", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                              title: broadcastTitle,
+                              body: broadcastBody,
+                              url: "/mapa"
+                            }),
+                          });
+                          const data = await res.json();
+                          if (res.ok && data.success) {
+                            setToastMsg(`Sucesso! Enviado para ${data.results?.success} users.`);
+                          } else {
+                            setToastMsg(data.error || "Erro ao disparar broadcast.");
+                          }
+                        } catch (e) {
+                          setToastMsg("Falha na rede ao testar.");
+                        } finally {
+                          setIsPushLoading(false);
+                          setTimeout(() => setToastMsg(null), 4000);
+                        }
+                      }}
+                      disabled={isPushLoading || !broadcastTitle || !broadcastBody}
+                      className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-red-500 hover:bg-red-600 active:bg-red-700 text-white font-bold rounded-xl transition-colors disabled:opacity-50 mt-1 shadow-sm"
+                    >
+                      {isPushLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
+                      Disparar para Todos
+                    </button>
+                  </div>
+                </div>
               )}
 
               {/* Theme Toggle */}
