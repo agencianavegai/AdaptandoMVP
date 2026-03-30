@@ -1,6 +1,7 @@
 "use server";
 
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createClient } from "@supabase/supabase-js";
 
 interface PushSubscriptionData {
   endpoint: string;
@@ -10,12 +11,22 @@ interface PushSubscriptionData {
   };
 }
 
+function getAdminClient() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || "",
+    process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
+  );
+}
+
 export async function savePushSubscription(subscription: PushSubscriptionData) {
+  // Validate user identity via cookies
   const supabase = await createSupabaseServerClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) throw new Error("Não autenticado");
 
-  const { error } = await supabase
+  // Use admin client to bypass RLS
+  const admin = getAdminClient();
+  const { error } = await admin
     .from("push_subscriptions")
     .upsert(
       {
@@ -30,11 +41,14 @@ export async function savePushSubscription(subscription: PushSubscriptionData) {
 }
 
 export async function removePushSubscription() {
+  // Validate user identity via cookies
   const supabase = await createSupabaseServerClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) throw new Error("Não autenticado");
 
-  const { error } = await supabase
+  // Use admin client to bypass RLS
+  const admin = getAdminClient();
+  const { error } = await admin
     .from("push_subscriptions")
     .delete()
     .eq("user_id", user.id);
