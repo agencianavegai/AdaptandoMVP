@@ -37,13 +37,14 @@ export async function POST(request: NextRequest) {
     const userClient = await createSupabaseServerClient();
     const { data: { user } } = await userClient.auth.getUser();
 
-    const adminEmails = process.env.ADMIN_EMAIL 
-      ? process.env.ADMIN_EMAIL.split(',')
+    const adminEmailEnv = process.env.ADMIN_EMAIL || process.env.NEXT_PUBLIC_ADMIN_EMAIL || "";
+    const adminEmails = adminEmailEnv 
+      ? adminEmailEnv.split(',').map(e => e.trim().toLowerCase())
       : ["filipegallo2@gmail.com"]; // Fallback to main dev/po
 
-    if (!user || !user.email || !adminEmails.includes(user.email)) {
+    if (!user || !user.email || !adminEmails.includes(user.email.toLowerCase())) {
        return NextResponse.json(
-         { error: "Acesso Negado: Você não tem permissão de Developer para disparar o Megafone." },
+         { error: `Acesso Negado: Seu email (${user.email}) não tem permissão.` },
          { status: 403 }
        );
     }
