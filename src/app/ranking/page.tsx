@@ -104,7 +104,7 @@ function PodiumCard({ user, position, isMe }: { user: RankUser; position: 1 | 2 
         config.borderColor
       )}>
         <p className={cn("font-display font-black text-sm", config.textColor)}>
-          {user.metros_linha}
+          {user.metros_linha ?? 0}
         </p>
         <p className={cn("text-[10px] font-bold uppercase opacity-80", config.textColor)}>
           metros
@@ -119,7 +119,7 @@ export default function RankingPage() {
   const [myId, setMyId] = useState("");
   const [myPosition, setMyPosition] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<TabFilter>("adapete");
+  const [activeTab, setActiveTab] = useState<TabFilter>("global");
   const router = useRouter();
 
   async function loadRanking(filter: TabFilter) {
@@ -273,7 +273,7 @@ export default function RankingPage() {
                         "font-display font-black text-xl leading-none",
                         isMe ? "text-[var(--color-brand)]" : "text-slate-800 dark:text-slate-100"
                       )}>
-                        {user.metros_linha}
+                        {user.metros_linha ?? 0}
                       </p>
                       <p className={cn(
                         "text-[10px] font-bold uppercase tracking-wide mt-0.5",

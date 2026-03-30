@@ -39,6 +39,24 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toastMsg, setToastMsg] = useState<string | null>(null);
 
+  // Admin / Dev State
+  const [userEmail, setUserEmail] = useState<string | null>(null);
+
+  useEffect(() => {
+    import("@/lib/supabase/client").then(({ createSupabaseBrowserClient }) => {
+      const supabase = createSupabaseBrowserClient();
+      supabase.auth.getUser().then(({ data }) => {
+        if (data?.user?.email) setUserEmail(data.user.email);
+      });
+    });
+  }, []);
+
+  const isAdmin = userEmail ? (
+    process.env.NEXT_PUBLIC_ADMIN_EMAIL 
+      ? userEmail === process.env.NEXT_PUBLIC_ADMIN_EMAIL 
+      : ["filipegallo2@gmail.com"].includes(userEmail)
+  ) : false;
+
   // Push State
   const [isPushActive, setIsPushActive] = useState(false);
   const [isPushLoading, setIsPushLoading] = useState(false);
@@ -198,6 +216,13 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
           {/* SCREEN: MAIN */}
           {screen === "main" && (
             <div className="flex flex-col gap-2">
+              {/* Toast for Main Screen messages (Push / Admin) */}
+              {toastMsg && (
+                <div className="bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-300 p-3 font-bold rounded-xl border border-orange-200 dark:border-orange-800 flex items-center gap-2 text-sm justify-center text-center animate-in fade-in duration-300">
+                  {toastMsg}
+                </div>
+              )}
+
               {/* Sound Toggle */}
               <button
                 onClick={toggleSound}
@@ -230,6 +255,49 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                   <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", isPushActive && "translate-x-6")} />
                 </div>
               </button>
+              
+              {/* Test Megafone (Broadcast) */}
+              {isAdmin && (
+                <button
+                  onClick={async () => {
+                    playClick();
+                    setIsPushLoading(true);
+                    setToastMsg("Disparando Megafone... 🚀");
+                    try {
+                      const res = await fetch("/api/push/broadcast", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          title: "Voo de Teste! 🪁",
+                          body: "O Instituto Ádapo está testando os motores. Se você recebeu isso, está pronto para decolar!",
+                          url: "/mapa"
+                        }),
+                      });
+                      const data = await res.json();
+                      if (res.ok && data.success) {
+                         setToastMsg(`Sucesso! Enviado para ${data.results?.success} users.`);
+                      } else {
+                         setToastMsg(data.error || "Erro ao disparar broadcast.");
+                      }
+                    } catch (e) {
+                      setToastMsg("Falha na rede ao testar.");
+                    } finally {
+                      setIsPushLoading(false);
+                      setTimeout(() => setToastMsg(null), 4000);
+                    }
+                  }}
+                  disabled={isPushLoading}
+                  className="w-full flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all text-left group disabled:opacity-50"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-500">
+                      <Send className="w-5 h-5" />
+                    </div>
+                    <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Testar Megafone (Admin)</span>
+                  </div>
+                  <ChevronRight className="w-5 h-5 text-slate-400" />
+                </button>
+              )}
 
               {/* Theme Toggle */}
               <button
