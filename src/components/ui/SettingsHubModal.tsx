@@ -120,8 +120,10 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
         setToastMsg("Notificações ativadas! 🪁");
       }
     } catch (err: any) {
-      console.error(err);
-      setToastMsg("Falha ao configurar notificações.");
+      console.error("[Push Setup Error]:", err);
+      // Extrair mensagem de erro para o toast
+      const errorMsg = err instanceof Error ? err.message : (err?.message || "Erro desconhecido");
+      setToastMsg(`Erro: ${errorMsg}`);
       setIsPushActive(false);
     } finally {
       setIsPushLoading(false);
