@@ -117,7 +117,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
         // Send to server
         await savePushSubscription(sub.toJSON() as any);
         setIsPushActive(true);
-        setToastMsg("Lembretes ativados! 🪁");
+        setToastMsg("Notificações ativadas! 🪁");
       }
     } catch (err: any) {
       console.error(err);
@@ -256,7 +256,7 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
                   <div className={cn("p-2 rounded-lg", isPushActive ? "bg-orange-500 text-white" : "bg-brand/10 text-brand dark:text-orange-400 dark:bg-orange-500/20")}>
                     {isPushLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : isPushActive ? <Bell className="w-5 h-5" /> : <BellOff className="w-5 h-5" />}
                   </div>
-                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Lembretes de Voo</span>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 text-[15px]">Notificações</span>
                 </div>
                 <div className={cn("w-12 h-6 rounded-full p-1 transition-colors", !isPushActive ? "bg-slate-300 dark:bg-slate-600" : "bg-orange-500")}>
                   <div className={cn("bg-white w-4 h-4 rounded-full shadow-sm transition-transform", isPushActive && "translate-x-6")} />
