@@ -43,19 +43,22 @@ export default function SettingsHubModal({ isOpen, onClose }: SettingsHubModalPr
   const [userEmail, setUserEmail] = useState<string | null>(null);
 
   useEffect(() => {
-    import("@/lib/supabase/client").then(({ createSupabaseBrowserClient }) => {
-      const supabase = createSupabaseBrowserClient();
+    import("@/lib/supabase/client").then(({ createSupabaseClient }) => {
+      const supabase = createSupabaseClient();
       supabase.auth.getUser().then(({ data }) => {
         if (data?.user?.email) setUserEmail(data.user.email);
       });
     });
   }, []);
 
-  const isAdmin = userEmail ? (
-    process.env.NEXT_PUBLIC_ADMIN_EMAIL 
-      ? userEmail === process.env.NEXT_PUBLIC_ADMIN_EMAIL 
-      : ["filipegallo2@gmail.com"].includes(userEmail)
-  ) : false;
+  const adminEmailEnv = process.env.NEXT_PUBLIC_ADMIN_EMAIL || "";
+  const adminEmails = adminEmailEnv 
+    ? adminEmailEnv.split(",").map(e => e.trim().toLowerCase())
+    : ["filipegallo2@gmail.com"];
+  const isAdmin = userEmail ? adminEmails.includes(userEmail.toLowerCase()) : false;
+
+  // DEBUG: remover após confirmar funcionamento
+  console.log("[Megafone Debug]", { userEmail, adminEmailEnv, adminEmails, isAdmin });
 
   // Push State
   const [isPushActive, setIsPushActive] = useState(false);
