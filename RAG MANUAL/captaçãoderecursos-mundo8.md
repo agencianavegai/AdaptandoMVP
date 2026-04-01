@@ -1,339 +1,339 @@
 [
   {
     "pilula": {
-      "titulo": "A Matriz de Competências na Diretoria",
-      "conteudo": "Montar o conselho certo é o primeiro passo para o sucesso na captação de recursos e na gestão institucional. O segredo reside em ter clareza sobre o que a organização busca: em vez de apenas convidar conhecidos, utilize um **Quadro de Conselheiros**. Essa ferramenta estratégica permite identificar lacunas em áreas como liderança, expertise jurídica, contabilidade, marketing e, crucialmente, contatos influentes na comunidade.\n\nImagine o poder de uma diretoria onde cada membro traz um ativo único que complementa os demais. Ao organizar essas competências em categorias, a organização deixa de operar no escuro e passa a recrutar com intenção, buscando perfis que realmente possam abrir portas em empresas e fundações. Esse alinhamento transforma a diretoria de um grupo passivo em uma força motriz de transformação social.\n\nA construção dessa matriz deve ser um esforço coletivo liderado pelo presidente do conselho. Ao visualizar quem a organização já tem e quem falta, cria-se um roteiro para o crescimento sustentável. Seja ousado em suas buscas: a liderança certa faz toda a diferença para que os sonhos da sua organização se tornem realidade palpável."
+      "titulo": "A Nobre Missão de Servir: Captar é Transformar",
+      "conteudo": "Captar recursos é, acima de tudo, um ato de amor e uma missão sagrada. Muitas vezes, caímos na armadilha de pensar que estamos 'implorando esmolas' ou segurando uma 'latinha de moedas', mas a verdade é que somos as pessoas que servem. Nossa função é ser o canal, o condutor que conecta pessoas generosas aos recursos necessários para gerar a mudança que o mundo tanto precisa. \n\nEntenda que o doador não doa 'para' a sua organização, ele doa 'por meio' dela. Ele doa porque você atende as necessidades dele de dar significado à vida e de participar de algo maior. A captação é a 'gentil arte de ensinar às pessoas a alegria de doar'. Quando você faz um pedido, você não está tirando nada de ninguém; você está oferecendo a oportunidade de alguém se tornar um investidor social e um parceiro na construção de um futuro melhor. \n\nLembre-se: se você não balançar o taco, nunca acertará a bola. Tenha coragem para pedir com orgulho, sabendo que você é um 'profeta social' trabalhando para mudar a história. Cada real captado é uma semente de esperança que prosperará através do seu compromisso."
     },
     "quizzes": [
       {
-        "pergunta": "Qual é o principal objetivo do 'Quadro de Conselheiros' mencionado nas fontes?",
+        "pergunta": "De acordo com o texto, qual é a percepção correta sobre a função do captador de recursos?",
         "alternativas": [
-          "Registrar as presenças em reuniões mensais.",
-          "Identificar lacunas de habilidades e ativos necessários na diretoria.",
-          "Substituir o planejamento estratégico da organização.",
-          "Controlar o pagamento de salários dos diretores."
+          "Ele é alguém que implora por esmolas.",
+          "Ele é uma pessoa que 'bebe' os recursos alheios.",
+          "Ele é um condutor que conecta pessoas a recursos para gerar mudança.",
+          "Ele é apenas um cobrador de impostos institucionais."
         ],
-        "explicacao": "O quadro é uma ferramenta que esclarece tipos de características e competências que a instituição precisa, como expertise em contabilidade ou contatos em empresas.",
-        "correta_idx": 1,
+        "explicacao": "O texto afirma explicitamente que os captadores são as pessoas que servem e atuam como condutores que conectam pessoas aos recursos para a mudança.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Segundo as fontes, como os membros da diretoria devem ser organizados na matriz?",
+        "pergunta": "Para quem, de fato, o doador direciona sua contribuição segundo a visão transformadora?",
         "alternativas": [
-          "Por ordem de idade e tempo de residência.",
-          "Apenas por sua capacidade financeira de doação.",
-          "Em categorias como liderança, expertise, geografia e demografia.",
-          "Por afinidade pessoal com o fundador da organização."
+          "Diretamente para a conta bancária da equipe.",
+          "Para a organização, visando sustentar seus luxos.",
+          "Por meio da organização, para atender a uma causa ou necessidade.",
+          "Para o governo, visando o abatimento fiscal imediato."
         ],
-        "explicacao": "As fontes recomendam organizar os itens em categorias que incluam liderança, expertise, conexão com a missão, capacidade financeira e demografia.",
+        "explicacao": "O texto destaca que 'as pessoas não doam para você; elas doam por meio de você' para atender necessidades da comunidade.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Quem deve, idealmente, liderar o processo de convencimento para o uso da matriz de competências?",
+        "pergunta": "Como Henry Rosso define a captação de recursos?",
         "alternativas": [
-          "O estagiário de comunicação.",
-          "O presidente do conselho.",
-          "Um consultor externo de RH.",
-          "Os beneficiários do projeto."
+          "A difícil tarefa de convencer quem não quer ajudar.",
+          "A gentil arte de ensinar às pessoas a alegria de doar.",
+          "O processo burocrático de preenchimento de editais.",
+          "A ciência de extrair dinheiro de grandes empresas."
         ],
-        "explicacao": "As fontes afirmam que o presidente do conselho deve convencer os outros membros sobre a importância da ferramenta para guiar o recrutamento.",
+        "explicacao": "A citação de Henry Rosso no texto define a captação como a 'gentil arte de ensinar às pessoas a alegria de doar'.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que a matriz permite fazer após identificar o que está faltando no conselho?",
+        "pergunta": "Qual é o termo usado no texto para descrever o captador que busca uma 'bela profecia para o futuro'?",
         "alternativas": [
-          "Reduzir o número de reuniões anuais.",
-          "Compartilhar o perfil buscado com a rede de contatos para recrutamento focado.",
-          "Extinguir o conselho consultivo imediatamente.",
-          "Aumentar o valor das mensalidades dos associados."
+          "Vendedor de sonhos.",
+          "Gestor financeiro.",
+          "Profeta social.",
+          "Arrecadador de fundos."
         ],
-        "explicacao": "Uma vez que as falhas são identificadas, o perfil deve ser compartilhado com a rede para encontrar pessoas apaixonadas pela missão que preencham essas lacunas.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Quais tipos de ativos são considerados valiosos para um prospect de diretoria?",
-        "alternativas": [
-          "Apenas a vontade de trabalhar como voluntário no dia a dia.",
-          "Conhecimento técnico em áreas como contabilidade ou marketing e influência na comunidade.",
-          "Possuir bens imóveis na mesma rua da sede.",
-          "Não ter experiência prévia no Terceiro Setor."
-        ],
-        "explicacao": "A matriz busca ativos como expertise em áreas-chave (contabilidade, marketing) e alcance ou influência na comunidade.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "O Contrato de Conselheiro e a Expectativa de Doação",
-      "conteudo": "A transparência é a alma de uma diretoria engajada. Para evitar surpresas e falhas de comunicação, o uso de um **Contrato de Conselheiro** é essencial. Este documento formaliza as responsabilidades, como a frequência obrigatória em reuniões e a participação ativa em comitês. Quando as expectativas são escritas de forma clara, o compromisso se torna inquestionável e a organização ganha em profissionalismo.\n\nUm ponto crucial na gestão de uma diretoria é a contribuição financeira pessoal. As fontes são enfáticas: cada membro deve fazer uma doação anual de acordo com sua capacidade. Se os próprios líderes não priorizam a causa em seus investimentos filantrópicos, a credibilidade da instituição perante doadores externos fica seriamente comprometida. Não se trata de um valor fixo, mas sim de uma demonstração de fé na missão.\n\nAlém de doar, os diretores devem atuar como pontes. O contrato deve prever um número mínimo de apresentações de novos prospects ao longo do ano. Ao definir metas individuais de captação, a diretoria deixa de ser apenas um órgão burocrático e se torna o coração pulsante da sustentabilidade financeira, provando que a mudança começa de dentro para fora."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual é a principal função do 'Contrato de Conselheiro'?",
-        "alternativas": [
-          "Garantir o pagamento de bônus por desempenho aos diretores.",
-          "Formalizar expectativas e detalhar as responsabilidades de cada membro.",
-          "Substituir o estatuto social da organização.",
-          "Isentar o conselheiro de participar das reuniões trimestrais."
-        ],
-        "explicacao": "O contrato é uma lista de expectativas escrita claramente para evitar falhas de comunicação e detalhar tarefas como a presença em reuniões.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que as fontes dizem sobre a contribuição financeira pessoal dos diretores?",
-        "alternativas": [
-          "É opcional e depende apenas do desejo momentâneo do diretor.",
-          "Deve ser um valor igual para todos os membros da diretoria.",
-          "Cada membro deve fazer uma doação anual de acordo com sua capacidade pessoal.",
-          "Os diretores são proibidos de doar dinheiro para evitar conflitos de interesse."
-        ],
-        "explicacao": "As fontes indicam que cada membro deve contribuir financeiramente conforme sua capacidade, sendo um de seus três principais investimentos sociais no ano.",
+        "explicacao": "O texto utiliza o termo 'profeta social' (prophet) para descrever o captador que trabalha por um futuro melhor.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "O que acontece se um conselheiro não puder cumprir os requisitos do contrato?",
+        "pergunta": "O que acontece quando você não faz um pedido de doação, segundo a lógica do 'balançar o taco'?",
         "alternativas": [
-          "Ele é processado judicialmente pela organização.",
-          "Ele deve ser incentivado a considerar a transição para um papel consultivo.",
-          "O contrato é ignorado para manter a amizade.",
-          "Ele deve pagar uma multa em dobro para a organização."
+          "Você economiza o tempo do doador.",
+          "A organização ganha mais prestígio por ser silenciosa.",
+          "Você nunca acertará a bola, ou seja, não obterá o recurso.",
+          "O doador acabará doando espontaneamente sem ser solicitado."
         ],
-        "explicacao": "As fontes sugerem que, se não for possível aceitar o cargo e suas obrigações, o membro pode migrar para um papel consultivo.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Além da doação pessoal, qual responsabilidade de captação deve constar no contrato?",
-        "alternativas": [
-          "Vender rifas em semáforos todos os finais de semana.",
-          "Apresentar a instituição a um número mínimo de potenciais doadores (prospects) por ano.",
-          "Cuidar pessoalmente da limpeza da sede da organização.",
-          "Captar exclusivamente recursos governamentais."
-        ],
-        "explicacao": "As fontes sugerem que o contrato peça um número mínimo de apresentações anuais a possíveis doadores e parceiros.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual é a recomendação para o valor da doação financeira de um diretor?",
-        "alternativas": [
-          "Deve ser o maior valor que ele pode doar confortavelmente, priorizando a organização.",
-          "Deve ser exatamente 10% do seu salário mensal.",
-          "Não deve ultrapassar o valor de 20 reais anuais.",
-          "Deve ser mantido em sigilo total, sem registro na base de dados."
-        ],
-        "explicacao": "A doação deve ser a maior quantia que alguém pode doar confortavelmente, figurando entre seus principais investimentos sociais.",
-        "correta_idx": 0,
+        "explicacao": "O texto usa a metáfora de que se você não balançar o taco, não acertará a bola, enfatizando a necessidade de pedir.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Capacitação da Diretoria e o Modelo Triplo A",
-      "conteudo": "A paixão pela causa é um pré-requisito, mas a técnica é o que potencializa os resultados. A diretoria não nasce sabendo captar; ela precisa de treinamento constante para articular a missão de forma persuasiva. É responsabilidade da gestão equipar os diretores com fatos, números e, principalmente, histórias de impacto que toquem o coração dos doadores.\n\nUma estratégia revolucionária é o modelo **Triplo A**: Embaixador, Defensor e Solicitante (Ambassador, Advocate, Solicitor). Nem todos os diretores se sentem confortáveis pedindo dinheiro (Solicitantes), mas todos devem ser treinados como Embaixadores para promover a marca e Defensores para advogar pela causa em espaços de decisão. Essa divisão de papéis permite que cada membro contribua onde é mais forte.\n\nTreinar a diretoria envolve também superar o medo da rejeição. Os diretores devem entender que um pedido de doação é, na verdade, o convite para uma parceria transformadora. Quando a liderança está preparada, ela deixa de ver a captação como um fardo e passa a celebrá-la como um ato sagrado de conexão entre recursos e impacto social."
+      "titulo": "Sustentabilidade: A Regra de Ouro da Diversificação",
+      "conteudo": "A sobrevivência de uma organização social depende da sua autonomia financeira. No Brasil, muitas instituições vivem em um ciclo de risco ao dependerem excessivamente de uma única fonte, como convênios governamentais ou um único grande doador. Para alcançar a verdadeira sustentabilidade, é preciso aplicar a 'Regra dos Três Terços': nenhuma fonte de recurso deve representar mais do que 35% da sua receita total. \n\nImagine a liberdade de gerir uma organização onde o apoio vem de forma equilibrada entre empresas, indivíduos e governos. Se uma dessas 'pernas' falhar ou a torneira fechar devido a uma crise, a instituição não colapsa; ela aperta o cinto e sobrevive com as outras fontes até encontrar novos aliados. Diversificar não é apenas uma estratégia financeira, é um ato de proteção à sua causa. \n\nA captação com indivíduos, embora trabalhosa, é o que garante o chamado 'dinheiro não carimbado', aquele recurso livre que permite cobrir custos administrativos e imprevistos que editais rígidos não alcançam. Ao construir uma pirâmide de doadores diversificada, você garante que sua missão continue viva, independentemente das oscilações políticas ou econômicas do mercado."
     },
     "quizzes": [
       {
-        "pergunta": "O que compõe o modelo 'Triplo A' para a atuação da diretoria?",
+        "pergunta": "Qual é o percentual máximo recomendado que uma única fonte deve representar na receita da ONG?",
         "alternativas": [
-          "Administrador, Auditor e Analista.",
-          "Embaixador, Defensor e Solicitante.",
-          "Ajudante, Associado e Arrecadador.",
-          "Ativista, Artista e Advogado."
+          "50%",
+          "35%",
+          "70%",
+          "90%"
         ],
-        "explicacao": "O modelo consiste nos papéis de Embaixador (fazer amigos), Defensor (defender a causa) e Solicitante (fazer o pedido de doação).",
+        "explicacao": "O texto estabelece que, para a sustentabilidade, nenhuma fonte deve representar mais do que 35% dos recursos.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual é a função do diretor no papel de 'Embaixador'?",
+        "pergunta": "O que o texto chama de 'dinheiro não carimbado'?",
         "alternativas": [
-          "Pedir quantias específicas de dinheiro em reuniões.",
-          "Ser um porta-voz entusiasmado e conhecer a mensagem da organização.",
-          "Auditar as contas financeiras no final do ano.",
-          "Contratar novos funcionários para a equipe de programas."
+          "Recursos vindos exclusivamente de editais internacionais.",
+          "Dinheiro que deve ser devolvido ao governo se não usado.",
+          "Recurso livre que permite cobrir custos administrativos e imprevistos.",
+          "Doações feitas através de moedas estrangeiras."
         ],
-        "explicacao": "Embaixadores conhecem a mensagem da organização, são excelentes porta-vozes e devem estar animados com a causa.",
-        "correta_idx": 1,
+        "explicacao": "O texto define 'dinheiro não carimbado' como o recurso livre, geralmente vindo de indivíduos, para despesas não cobertas por editais.",
+        "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "De acordo com as fontes, com que frequência deve-se realizar sessões de treinamento para o conselho?",
+        "pergunta": "De acordo com o texto, qual é o principal risco de depender de uma única fonte de recursos?",
         "alternativas": [
-          "A cada dez anos, apenas para novos membros.",
-          "A cada um ou dois anos.",
-          "Semanalmente, durante as reuniões ordinárias.",
-          "Somente quando a organização estiver em crise financeira."
+          "A organização se torna famosa demais.",
+          "A equipe fica sobrecarregada com muitos relatórios.",
+          "O fechamento das portas se a fonte única falhar.",
+          "Aumento excessivo do número de voluntários."
         ],
-        "explicacao": "As fontes recomendam sessões de treinamento conduzidas por diretores ou consultores a cada um ou dois anos.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual ferramenta é considerada essencial para dar aos diretores segurança na fala?",
-        "alternativas": [
-          "Um roteiro jurídico completo com todas as leis de incentivo.",
-          "Fatos, números e histórias reais de impacto.",
-          "Uma lista com os nomes de todos os concorrentes da organização.",
-          "Um manual de como evitar perguntas de doadores."
-        ],
-        "explicacao": "É essencial dar ferramentas como argumentos, fatos e, mais importante, histórias para humanizar o trabalho e dar segurança ao conselho.",
-        "correta_idx": 1,
+        "explicacao": "O texto alerta que a dependência excessiva de uma fonte única pode levar ao colapso ou fechamento se o recurso for cortado.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que as fontes dizem sobre membros que não se sentem confortáveis em pedir dinheiro?",
+        "pergunta": "Quais são as três pernas do 'mix' ideal de fontes sugerido na pílula?",
         "alternativas": [
-          "Eles devem ser imediatamente expulsos da diretoria.",
-          "Eles podem atuar como Embaixadores ou Defensores, identificando prospects.",
-          "Eles devem ser obrigados a pedir até perderem o medo.",
-          "Eles perdem o direito de voto nas reuniões de conselho."
+          "Indivíduos, Empresas e Governos.",
+          "Editais, Bingos e Rifas.",
+          "Voluntários, Estagiários e Diretores.",
+          "Bancos, Fundações e Família."
         ],
-        "explicacao": "Nem todos se sentirão confortáveis para pedir (Solicitantes), mas todos podem ajudar identificando prospects ou fazendo conexões.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Liderança e Protagonismo na Captação",
-      "conteudo": "A força de uma organização social é testada pela capacidade de sua liderança de 'servir' em vez de apenas 'beber' recursos. Diretores são condutores que conectam pessoas aos recursos que geram a mudança desejada no mundo. Por isso, o presidente do conselho tem um papel vital: ele deve ser o primeiro a dar o exemplo, tanto em doações quanto na mobilização de seus pares.\n\nPedidos de doação feitos por colegas de mesmo nível (peer-to-peer) são as ferramentas mais poderosas de uma diretoria. O presidente deve ser responsável por solicitar pessoalmente a contribuição anual de cada membro, garantindo que o compromisso financeiro seja uma prioridade institucional. Essa liderança ativa elimina a ideia de que captar recursos é 'implorar esmolas' e a reposiciona como um ato de coragem e amor pela causa.\n\nPara maximizar o impacto, o diretor executivo deve atuar como um parceiro estratégico, fornecendo ao presidente dados sobre o histórico e os interesses de cada membro. Juntos, eles transformam a captação em um convite para que cada diretor deixe seu legado, tornando o mundo um lugar melhor um real de cada vez. Quando a liderança assume seu papel, a organização torna-se imparável."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Quem deve ser o responsável por pedir as doações anuais aos outros membros da diretoria?",
-        "alternativas": [
-          "O captador de recursos recém-contratado.",
-          "O Presidente do Conselho (ou presidente do comitê de governança).",
-          "O contador da organização.",
-          "Os beneficiários do projeto durante um evento."
-        ],
-        "explicacao": "As fontes indicam que é sempre melhor quando um colega (o presidente do conselho) pede aos integrantes que contribuam ativamente.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual é a metáfora da 'vovó Gertrude' sobre a captação de recursos mencionada no Guia?",
-        "alternativas": [
-          "O copo está sempre vazio para quem não trabalha.",
-          "Depende se você está servindo ou bebendo.",
-          "É dando que se recebe em dobro.",
-          "Quem não pede não ganha."
-        ],
-        "explicacao": "A história ilustra que captadores são pessoas que servem, conectando pessoas aos recursos, e não pessoas que apenas 'bebem' (consomem) contribuições.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual informação o diretor executivo deve fornecer para ajudar o presidente do conselho nos pedidos?",
-        "alternativas": [
-          "Uma lista de fofocas sobre a vida pessoal dos membros.",
-          "Dados sobre a capacidade de doação e histórico de apoio de cada membro.",
-          "O valor total da dívida externa do país.",
-          "Instruções de como manipular os sentimentos dos diretores."
-        ],
-        "explicacao": "O papel do gestor é dar informações sobre a capacidade de doação e o histórico de doações para customizar cada pedido.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Segundo as fontes, por que as pessoas doam para uma organização?",
-        "alternativas": [
-          "Porque a organização tem muitas necessidades financeiras.",
-          "Porque a organização atende às necessidades dos próprios doadores e da causa.",
-          "Por medo de serem punidas pelo governo.",
-          "Exclusivamente para aparecerem em colunas sociais."
-        ],
-        "explicacao": "Kay Sprinkel Grace afirma que as pessoas não doam porque você tem necessidades, mas porque você atende as necessidades delas (ou da comunidade).",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual é a 'regra de ouro' do engajamento de diretoria na captação?",
-        "alternativas": [
-          "Muita interação e baixo valor de doação.",
-          "Pouca interação e alto valor (focar na contribuição estratégica).",
-          "Reuniões diárias com duração de cinco horas cada.",
-          "Proibir os diretores de darem opiniões estratégicas."
-        ],
-        "explicacao": "A melhor forma de engajar o conselho é a abordagem 'pouca interação, alto valor', focando na contribuição que só eles podem dar.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Reuniões de Diretoria: Diálogo e Eficiência",
-      "conteudo": "As reuniões de diretoria não devem ser monólogos cansativos de prestação de contas, mas sim fóruns vibrantes de discussão estratégica. Uma ferramenta poderosa para isso é o uso de **notas e avisos prévios**, que resumem relatórios em poucos parágrafos para aprovação rápida, liberando tempo precioso para o diálogo. Eficiência na reunião significa focar no que realmente move a agulha da missão.\n\nPara manter a chama da paixão acesa, utilize os **'Momentos da Missão'**. Convide um beneficiário ou voluntário para compartilhar como a organização mudou sua vida. Esses depoimentos conectam os diretores à realidade da ponta, lembrando a todos por que dedicam seu tempo e prestígio à causa. Dados são importantes, mas histórias são o que inspiram a ação.\n\nPor fim, as reuniões devem servir para celebrar sucessos e aprender com os 'nãos'. Compartilhar como um membro lidou com uma rejeição de doador humaniza a liderança e encoraja outros a persistirem. Transforme seu conselho em um espaço de acolhimento e estratégia, e você verá o engajamento atingir níveis sem precedentes."
-    },
-    "quizzes": [
-      {
-        "pergunta": "O que são 'Momentos da Missão' em reuniões de diretoria?",
-        "alternativas": [
-          "O intervalo para o café e lanches.",
-          "Depoimentos de beneficiários ou apoiadores sobre o impacto da organização.",
-          "A leitura formal da missão e visão da empresa.",
-          "O momento de cobrança de doações atrasadas."
-        ],
-        "explicacao": "Momentos da missão são quando um beneficiário ou apoiador compartilha como a organização mudou sua vida, conectando o conselho à causa.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Como as reuniões de conselho podem se tornar mais eficientes, segundo as fontes?",
-        "alternativas": [
-          "Lendo todos os relatórios financeiros em voz alta do início ao fim.",
-          "Utilizando notas e avisos prévios para agilizar atualizações e focar no diálogo.",
-          "Aumentando a duração das reuniões para o dia inteiro.",
-          "Cancelando qualquer discussão sobre captação de recursos."
-        ],
-        "explicacao": "A recomendação é usar notas e avisos resumidos para garantir que a reunião seja um local de discussão e não apenas de monólogos.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual deve ser a proporção entre diálogo e monólogo em uma boa reunião de diretoria?",
-        "alternativas": [
-          "Deve-se privilegiar o diálogo e a discussão estratégica.",
-          "O diretor executivo deve falar durante 90% do tempo.",
-          "Não deve haver diálogo para evitar conflitos de ideias.",
-          "A reunião deve ser apenas uma leitura silenciosa de documentos."
-        ],
-        "explicacao": "As fontes afirmam que reuniões de conselho devem ser um local de discussão e diálogo, e não de monólogo.",
+        "explicacao": "O texto sugere que o apoio venha de forma equilibrada entre empresas, indivíduos e governos.",
         "correta_idx": 0,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Por que é importante compartilhar histórias de 'nãos' recebidos durante as reuniões?",
+        "pergunta": "Por que a captação com indivíduos é considerada essencial para a autonomia?",
         "alternativas": [
-          "Para punir publicamente o diretor que falhou.",
-          "Para mostrar que não se deve levar a rejeição para o lado pessoal e aprender com ela.",
-          "Para desistir daquele doador para sempre.",
-          "Para preencher o tempo quando não há boas notícias."
+          "Porque é a forma mais fácil e rápida de conseguir milhões.",
+          "Porque gera recursos sem restrições de uso (não carimbados).",
+          "Porque dispensa a necessidade de ter transparência.",
+          "Porque os indivíduos não exigem prestação de contas."
         ],
-        "explicacao": "Compartilhar como se lida com os 'nãos' ajuda outros membros a perceberem que a rejeição faz parte do processo e não é pessoal.",
+        "explicacao": "O texto afirma que a captação com indivíduos garante o 'dinheiro não carimbado', essencial para custos administrativos e flexibilidade.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Transparência: O Alicerce da Confiança do Doador",
+      "conteudo": "No Terceiro Setor, a transparência não é uma escolha, é uma obrigação ética e estratégica. Para que o doador confie na sua gestão e continue investindo na sua causa, ele precisa ver para onde o dinheiro está indo. Ser transparente consolida a relação da organização com a comunidade e garante que o doador se sinta parte do sucesso. \n\nUma organização transparente deve ter, no mínimo, cinco ações práticas: um site atualizado com missão e equipe; a divulgação clara de quem forma o corpo dirigente; a publicação anual de um relatório de atividades visualmente atraente; e a exposição aberta de seus números financeiros e balanços. Não caia no erro de esconder dados por medo da concorrência; nas organizações sociais, a clareza atrai mais recursos. \n\nMantenha um canal de comunicação direto e frequente, como informativos mensais, para contar não apenas as vitórias, mas também os desafios superados. Quando o doador vê que seu dinheiro está sendo bem utilizado, ele não apenas doa novamente, mas torna-se um defensor da sua causa, ajudando a ampliar sua rede de impacto de forma permanente."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual é a principal consequência de ser uma organização transparente para a captação?",
+        "alternativas": [
+          "Atrair a fiscalização punitiva do governo.",
+          "Consolidar a relação de confiança com o doador.",
+          "Perder doadores para a concorrência.",
+          "Aumentar os custos com publicidade paga."
+        ],
+        "explicacao": "O texto afirma que a transparência consolida a relação com os doadores e é um dos principais fatores para o sucesso na captação.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Quais itens financeiros devem estar visíveis no site da organização segundo o texto?",
+        "alternativas": [
+          "Apenas as dívidas pendentes.",
+          "Os salários individuais de todos os funcionários.",
+          "Números financeiros, Demonstrativo de Resultados e balanço atualizado.",
+          "Apenas o valor total das doações recebidas."
+        ],
+        "explicacao": "O texto menciona que é preciso colocar no site os números da organização, o Demonstrativo de Resultados e o balanço atualizado.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que deve constar no relatório de atividades anual de uma ONG?",
+        "alternativas": [
+          "Somente fotos dos eventos festivos.",
+          "Atividades desenvolvidas, resultados alcançados, perfil do público e parceiros.",
+          "Uma lista de pedidos de doação sem prestação de contas.",
+          "Apenas a história do fundador da instituição."
+        ],
+        "explicacao": "Segundo o texto, o relatório deve mostrar as atividades, resultados alcançados, perfil do público, parceiros e números.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Por que o texto desaconselha esconder dados por 'medo da concorrência'?",
+        "alternativas": [
+          "Porque as outras ONGs já sabem seus dados de qualquer forma.",
+          "Porque esse argumento é falacioso, já que a finalidade da ONG é pública.",
+          "Porque a Receita Federal obriga a publicação em jornais de grande circulação.",
+          "Porque a transparência é a única forma de evitar multas pesadas."
+        ],
+        "explicacao": "O texto diz que o argumento da concorrência é falacioso pois organizações de finalidade pública devem ser transparentes.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual ferramenta visual ajuda a avaliar a saúde da organização nas reuniões?",
+        "pergunta": "Com que frequência o texto sugere manter a comunicação direta com os doadores?",
         "alternativas": [
-          "Um álbum de fotos das festas de fim de ano.",
-          "Painéis organizacionais com indicadores (verde, amarelo e vermelho).",
-          "O extrato bancário impresso da última semana.",
-          "Uma lista de todos os erros cometidos pela equipe."
+          "Apenas uma vez por ano, no Natal.",
+          "Diariamente, via mensagens de texto.",
+          "Periodicamente, mesmo que apenas mensalmente.",
+          "Somente quando houver uma crise financeira grave."
         ],
-        "explicacao": "Painéis organizacionais (dashboards) ajudam a equipe e conselheiros a verem rapidamente se a organização está no caminho certo.",
+        "explicacao": "O texto recomenda manter um informativo periódico, mesmo que apenas mensal, para comunicar conquistas e dificuldades.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Planejamento: Transformando Desejos em Resultados",
+      "conteudo": "Como diz o ditado, 'um objetivo sem um plano é apenas um desejo'. Para ter uma captação de recursos eficaz, você precisa de um mapa claro. O sucesso começa com a pergunta: 'O que é sucesso para você?'. Um bom plano de captação deve detalhar quanto dinheiro você precisa, de onde ele virá e quem será responsável por cada ação, transformando metas abstratas em tarefas mensuráveis. \n\nO planejamento estratégico é o coração de tudo o que dá certo. Ele ajuda a organização a ser eficiente (fazer as coisas corretamente) e efetiva (fazer as coisas certas). Não basta ter boa vontade; é necessário investir tempo para avaliar o ambiente interno e externo, identificar lacunas na equipe e definir táticas específicas, como metas de submissão de projetos a editais ou cronogramas de campanhas digitais. \n\nUm plano escrito é um documento vivo que deve ser revisado regularmente. Ele permite que a equipe celebre as vitórias e ajuste a rota diante dos erros. Quando você se planeja para o sucesso, deixa de reagir às crises e passa a liderar o crescimento da sua organização, garantindo que os recursos cheguem com constância e segurança para sustentar sua missão."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que diferencia a eficiência da efetividade no contexto do planejamento?",
+        "alternativas": [
+          "Eficiência é gastar pouco; efetividade é gastar muito.",
+          "Eficiência é fazer as coisas corretamente; efetividade é fazer as coisas certas.",
+          "Não há diferença, ambos os termos significam captar recursos.",
+          "Efetividade é apenas para grandes organizações; eficiência é para as pequenas."
+        ],
+        "explicacao": "O texto cita William McDonough para explicar que eficiência é fazer corretamente e efetividade é fazer o que é certo.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Quais são as duas perguntas básicas que um plano de captação deve responder?",
+        "alternativas": [
+          "Quem é o fundador e quando a sede foi construída?",
+          "Quanto dinheiro captar e de quem/onde captar?",
+          "Qual é o salário da equipe e quantos voluntários existem?",
+          "Quantas curtidas temos no Facebook e qual o preço do banner?"
+        ],
+        "explicacao": "De acordo com o texto, desenvolver um plano significa responder 'Quanto dinheiro você quer captar' e 'De quem/onde você pretende captar'.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Por que o plano de captação é descrito como um 'documento vivo'?",
+        "alternativas": [
+          "Porque ele muda de cor conforme os resultados financeiros.",
+          "Porque deve ser atualizado ou revisado anualmente para guiar as atividades.",
+          "Porque ele contém fotos e vídeos dos beneficiários.",
+          "Porque ele é assinado por todos os doadores da instituição."
+        ],
+        "explicacao": "O texto afirma que o plano deve ser um documento vivo que guie as atividades e seja revisado anualmente.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que acontece com um objetivo que não possui um plano, segundo Saint-Exupéry?",
+        "alternativas": [
+          "Torna-se uma lei.",
+          "É apenas um desejo.",
+          "Gera lucro automático.",
+          "Atrai voluntários."
+        ],
+        "explicacao": "A citação de abertura do capítulo de planejamento diz que 'um objetivo sem um plano é apenas um desejo'.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual ferramenta visual é mencionada para avaliar rapidamente a saúde da organização em reuniões?",
+        "alternativas": [
+          "Painéis organizacionais com cores (indicadores).",
+          "Álbum de recortes de jornal.",
+          "Lista de presença em papel.",
+          "Projeção de vídeos institucionais longos."
+        ],
+        "explicacao": "O texto menciona que painéis organizacionais (dashboards) ajudam a dizer prontamente se a organização está no caminho certo.",
+        "correta_idx": 0,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "A Arte de Pedir: Superando o Medo e Encantando Doadores",
+      "conteudo": "Muitas organizações falham na captação por um motivo surpreendente: elas simplesmente não pedem. No Brasil, não temos a cultura do pedir, mas os doadores individuais são o público que mais cresce e muitos deles só precisam de um convite claro e direto para agir. O pedido de doação deve ser feito com orgulho, sem desculpas, pois você está oferecendo a alguém a chance de mudar uma realidade. \n\nPara encantar um doador, use o poder do Storytelling. Conte histórias reais de transformação, focando no 'antes' e 'depois' da intervenção do seu projeto. O doador quer ver a mudança ocorrer; ele quer se sentir conectado emocionalmente à causa. Quando você compartilha a história de uma vida que foi salva ou de um jovem que conquistou a universidade, você atinge o coração e a razão, facilitando a decisão de contribuir. \n\nNão se esqueça de ser específico e direto: peça uma quantia determinada e explique exatamente o que ela vai proporcionar. 'Doe 30 reais agora e alimente uma criança por uma semana' é muito mais poderoso do que um pedido genérico de ajuda. Agradeça sempre, trate o pequeno doador com o mesmo respeito do grande e mostre o impacto da sua generosidade. Captar é, acima de tudo, construir uma ponte de gratidão."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Segundo o texto, qual é uma das principais razões pelas quais as pessoas não doam?",
+        "alternativas": [
+          "Falta de dinheiro na economia.",
+          "Porque as organizações não pedem.",
+          "Desinteresse total pelas causas sociais.",
+          "Excesso de burocracia governamental."
+        ],
+        "explicacao": "O texto afirma categoricamente que 'uma das principais razões pelas quais as pessoas não doam é porque as organizações não pedem'.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que é 'Storytelling' no contexto da captação de recursos?",
+        "alternativas": [
+          "A leitura formal do estatuto para o doador.",
+          "Contar boas histórias reais para engajar e emocionar apoiadores.",
+          "O registro contábil de todas as doações recebidas.",
+          "Uma técnica de venda de produtos da ONG."
+        ],
+        "explicacao": "O texto descreve o Storytelling como o uso de histórias reais de transformação para engajar pessoas em prol das causas.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Como deve ser a linguagem de um pedido de doação eficiente?",
+        "alternativas": [
+          "Vaga e poética para não constranger o doador.",
+          "Técnica e cheia de siglas para demonstrar autoridade.",
+          "Explícita, tangível e que mostre urgência e necessidade.",
+          "Apenas visual, sem o uso de palavras."
+        ],
+        "explicacao": "O texto orienta que o pedido deve ser explícito, tangível e mostrar urgência (ex: 'doe R$ 30 agora e salve uma vida').",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "De acordo com as dicas de 'Van Jones', o que se deve fazer logo após fazer o pedido?",
+        "alternativas": [
+          "Ficar em silêncio e deixar o doador falar.",
+          "Continuar falando para convencer o doador.",
+          "Pedir desculpas pelo valor alto.",
+          "Mudar de assunto rapidamente para aliviar a tensão."
+        ],
+        "explicacao": "O texto sugere que, após o pedido direto, o captador deve ficar quieto, pois quem precisa falar agora é o doador.",
+        "correta_idx": 0,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual é a recomendação para tratar doadores de diferentes tamanhos?",
+        "alternativas": [
+          "Priorizar apenas os grandes e ignorar os pequenos.",
+          "Tratar todo doador como um prospect de grande doador, com respeito e atenção.",
+          "Automatizar o contato com os grandes para ganhar tempo.",
+          "Pedir dinheiro apenas para quem já doou valores altos no passado."
+        ],
+        "explicacao": "O texto diz que 'todo doador deve ser tratado como um prospect de um grande doador, digno de acompanhamento', independente do porte.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       }
@@ -341,68 +341,68 @@
   },
   {
     "pilula": {
-      "titulo": "Diversidade e Protagonismo na Governança",
-      "conteudo": "A nova fronteira da filantropia exige diretoriais que sejam espelhos da pluralidade da sociedade. É fundamental democratizar o acesso ao poder de decisão, priorizando a contratação e a inclusão de perfis negros, periféricos, LGBTQIAP+ e de mulheres em cargos de gestão e direção. Uma diretoria diversa não é apenas uma questão ética; é uma estratégia de inovação que traz o conhecimento de quem vive a realidade na ponta.\n\nDescentralizar significa dar 'o poder da caneta' a quem historicamente foi marginalizado. As periferias e seus líderes não devem ser vistos apenas como beneficiários, mas como protagonistas que pautam o repasse de recursos e constroem metodologias decoloniais. Essa mudança de cosmovisão na diretoria garante que os recursos cheguem onde a realidade realmente acontece.\n\nA Iniciativa PIPA acredita que a genialidade das periferias pode revolucionar o ecossistema filantrópico brasileiro. Ao reposicionar esses sujeitos no centro do processo decisório, as organizações sociais combatem a desigualdade sistêmica e fortalecem a democracia. Uma diretoria diversa é uma diretoria conectada com o futuro do Brasil."
+      "titulo": "Mensuração de Impacto: Provando que sua Causa Vale a Pena",
+      "conteudo": "Em um mundo com recursos escassos, os doadores querem investir onde o impacto é real e comprovado. Medir o impacto tem dois objetivos vitais: oferecer dados e histórias que conquistam novos apoiadores e permitir que sua equipe tome decisões estratégicas baseadas em fatos. Utilize KPIs (Indicadores Chave de Desempenho) para monitorar desde o número de beneficiários atendidos até a eficácia financeira de cada campanha. \n\nEntenda a diferença entre 'produção' e 'resultado'. Produção é o que você fez (ex: enviou 1000 e-mails); resultado é a mudança que isso gerou (ex: 50 jovens conseguiram emprego). O doador moderno não se contenta em saber que você trabalhou muito; ele quer saber se o seu trabalho mudou a vida de alguém. Use painéis visuais (dashboards) com as cores do semáforo para identificar rapidamente onde a organização está prosperando e onde precisa de ajuda. \n\nNunca subestime o valor das histórias pessoais combinadas com números frios. Dados dão credibilidade, mas histórias dão alma ao seu trabalho. Ao mostrar que você mediu os resultados e aprendeu com os erros, você constrói uma reputação de seriedade e transparência que atrai financiadores robustos, como grandes fundações e empresas. Mostre que sua organização é um investimento seguro em transformação social."
     },
     "quizzes": [
       {
-        "pergunta": "De acordo com a Iniciativa PIPA, quem deve estar no centro de todas as etapas do processo filantrópico?",
+        "pergunta": "Qual é a diferença entre 'produção' e 'resultado' segundo o texto?",
         "alternativas": [
-          "Apenas os grandes empresários do Sudeste.",
-          "Os sujeitos das periferias e grupos historicamente marginalizados.",
-          "Consultores internacionais de tecnologia.",
-          "O governo federal exclusivamente."
+          "Não há diferença, são sinônimos.",
+          "Produção é o que você fez; resultado é a consequência/mudança gerada.",
+          "Resultado é o que você planejou; produção é o que sobrou.",
+          "Produção é para o governo; resultado é para as empresas."
         ],
-        "explicacao": "A PIPA visa construir metodologias que reposicionem sujeitos das periferias ao centro de todas as etapas do processo filantrópico.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual é a recomendação da 'Carta Aberta à Filantropia' sobre cargos de gestão e direção?",
-        "alternativas": [
-          "Manter os perfis tradicionais para garantir estabilidade.",
-          "Priorizar a contratação de perfis negros, periféricos, mulheres e LGBTQIAP+.",
-          "Eliminar cargos de direção para reduzir custos.",
-          "Contratar apenas pessoas indicadas pelos atuais doadores."
-        ],
-        "explicacao": "O manifesto convida as organizações a repensarem políticas internas priorizando esses perfis para gerirem portfólios e estarem na direção.",
+        "explicacao": "O texto explica que produção é a ação quantificável (o quê), enquanto resultados são as consequências e mudanças (o que aconteceu).",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "O que significa 'descentralização na gerência de recursos' segundo as fontes?",
+        "pergunta": "O que significa a sigla KPI mencionada no texto?",
         "alternativas": [
-          "Mover a sede da organização para outro país.",
-          "Dar poder de decisão a quem 'tem a caneta' e incluir minorias politicamente representadas.",
-          "Dividir o dinheiro igualmente entre todos os funcionários.",
-          "Deixar que cada doador gaste seu dinheiro como quiser."
+          "Key Performance Indicators (Indicadores Chave de Desempenho).",
+          "Knowledge Project Impact (Impacto do Conhecimento do Projeto).",
+          "Kilo Per Investment (Quilo por Investimento).",
+          "Keep People Interested (Manter as Pessoas Interessadas)."
         ],
-        "explicacao": "A descentralização perpassa quem tem o poder de decisão sobre o repasse, demandando diversidade de fato nesse sentido.",
-        "correta_idx": 1,
-        "dificuldade": "média"
+        "explicacao": "O texto refere-se a KPIs como métricas úteis para avaliar o progresso, conhecidos como Indicadores Chave de Desempenho.",
+        "correta_idx": 0,
+        "dificuldade": "fácil"
       },
       {
-        "pergunta": "Como as periferias devem ser vistas pelos investidores sociais privados?",
+        "pergunta": "De acordo com Peter Drucker, citado no texto, o que acontece com o que não se pode medir?",
         "alternativas": [
-          "Apenas como beneficiárias passivas de caridade.",
-          "Como parceiras estratégicas e protagonistas da mudança.",
-          "Como locais de alto risco onde não se deve investir.",
-          "Como uma fonte de mão de obra barata para as empresas."
+          "Torna-se invisível.",
+          "Não pode ser administrado.",
+          "Ganha mais valor emocional.",
+          "É automaticamente descartado."
         ],
-        "explicacao": "As favelas e periferias devem ser vistas não apenas como beneficiárias, mas como protagonistas da mudança.",
+        "explicacao": "A citação de Peter Drucker que abre o texto afirma: 'Se você não pode medir, não pode administrar'.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual é o principal foco da Iniciativa PIPA ao articular debates de governança?",
+        "pergunta": "Para que servem os painéis com as cores verde, amarelo e vermelho?",
         "alternativas": [
-          "Promover a centralização de recursos em São Paulo.",
-          "Garantia de direitos e fortalecimento da democracia brasileira através da diversidade.",
-          "Criar novos impostos para as ONGs.",
-          " desencorajar a cultura de doação individual."
+          "Para decorar a recepção da organização.",
+          "Para indicar o nível de perigo no território.",
+          "Para avaliar visualmente e de forma rápida a saúde e o progresso da organização.",
+          "Para classificar os doadores por classe social."
         ],
-        "explicacao": "O propósito é promover um debate diverso e plural para a descentralização de recursos, com foco na garantia de direitos e democracia.",
-        "correta_idx": 1,
+        "explicacao": "O texto menciona o uso de painéis com cores (verde, amarelo, vermelho) para que a equipe veja rapidamente se o projeto está no caminho certo.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual combinação o texto considera ideal para atrair financiadores robustos?",
+        "alternativas": [
+          "Apenas números e planilhas complexas.",
+          "Apenas vídeos emocionantes de música.",
+          "Dados estatísticos combinados com histórias pessoais de transformação.",
+          "Uma lista de todas as necessidades financeiras da ONG."
+        ],
+        "explicacao": "O texto enfatiza que dados dão credibilidade, mas histórias dão alma, e essa combinação humaniza o trabalho para os doadores.",
+        "correta_idx": 2,
         "dificuldade": "média"
       }
     ]

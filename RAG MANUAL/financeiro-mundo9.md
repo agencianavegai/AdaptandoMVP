@@ -1,67 +1,135 @@
 [
   {
     "pilula": {
-      "titulo": "Liderança Estratégica: O Papel do Dirigente no MROSC",
-      "conteudo": "Ser um dirigente no Terceiro Setor vai muito além de gerir recursos; trata-se de ser o arquiteto de mudanças sociais profundas. Segundo a Lei nº 13.019/2014, o **dirigente** é a pessoa que detém poderes de administração, gestão ou controle da OSC, sendo a autoridade máxima para assinar termos de colaboração ou fomento. Esta liderança carrega a nobre missão de garantir que a organização cumpra sua função social com integridade e competência técnica.\n\nA governança exige atenção a requisitos rigorosos. Para celebrar parcerias, a OSC não pode ter em seu quadro dirigentes que sejam membros de Poder ou do Ministério Público da mesma esfera governamental, nem aqueles cujas contas tenham sido julgadas irregulares nos últimos 8 anos. Além disso, a gestão moderna exige que a diretoria estabeleça canais de comunicação fluidos e um diálogo técnico constante com a administração pública.\n\nInspire sua equipe através do exemplo! O sucesso de uma parceria depende de um planejamento robusto onde o dirigente assegura que a capacidade técnica e operacional da OSC esteja alinhada aos objetivos propostos. Liderar é transformar desafios regulatórios em degraus para o impacto social. Mantenha o foco na missão, pois sua gestão é o motor que move a transformação de direitos em realidade."
+      "titulo": "Superávit não é Lucro: A Sustentabilidade da Missão",
+      "conteudo": "No universo financeiro das Organizações da Sociedade Civil (OSCs), é vital desmistificar a ideia de que a entidade não pode ter saldo positivo. O **superávit** é a sobra de recursos que deve ser integralmente reinvestida nas finalidades estatutárias da organização. Diferente do lucro das empresas privadas, que visa remunerar sócios, o superávit no Terceiro Setor é o combustível para a expansão e o aprimoramento dos serviços sociais prestados à comunidade.\n\nA busca por um saldo positivo é, na verdade, um sinal de gestão responsável e estratégica. Sem recursos excedentes, a instituição ficaria vulnerável e incapaz de realizar investimentos de longo prazo ou lidar com imprevistos. O segredo da imunidade reside na **não distribuição de resultados**: as OSCs podem e devem ser eficientes financeiramente, desde que cada centavo permaneça dentro da instituição para servir ao bem comum.\n\nSua organização deve almejar o vigor financeiro! Manter as contas no azul com transparência é o que permite transformar o 'superávit material' em 'superávit imaterial' — aquele medido em vidas transformadas, pacientes curados e cidadãos educados. Lembre-se: uma OSC financeiramente saudável é uma OSC com maior poder de impacto social."
     },
     "quizzes": [
       {
-        "pergunta": "Quem é considerado dirigente de uma OSC para fins de assinatura de parcerias?",
+        "pergunta": "Qual a definição de superávit segundo o conteúdo?",
         "alternativas": [
-          "Apenas o presidente eleito em assembleia geral.",
-          "Qualquer funcionário com mais de 5 anos de casa.",
-          "A pessoa que detém poderes de administração, gestão ou controle da organização.",
-          "Somente consultores jurídicos externos autorizados."
+          "É o lucro destinado aos fundadores da OSC.",
+          "É o saldo negativo entre receitas e despesas.",
+          "É o saldo positivo que deve ser reinvestido nos fins da entidade.",
+          "É um valor que obrigatoriamente deve ser devolvido ao governo."
         ],
-        "explicacao": "Conforme a Lei nº 13.019/2014, dirigente é quem possui poderes de administração, gestão ou controle, habilitado a assinar os instrumentos de parceria.",
+        "explicacao": "O superávit é o saldo positivo que, no Terceiro Setor, deve ser revertido para a manutenção dos objetivos da própria entidade.",
         "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual é o impedimento temporal para um dirigente que teve contas julgadas irregulares?",
+        "pergunta": "O que diferencia essencialmente uma OSC de uma empresa do Segundo Setor quanto aos resultados financeiros?",
         "alternativas": [
-          "2 anos em decisão irrecorrível.",
-          "5 anos em decisão preliminar.",
-          "8 anos em decisão irrecorrível.",
-          "10 anos apenas na esfera federal."
+          "A OSC não pode ter receitas maiores que as despesas.",
+          "A OSC é proibida de cobrar por qualquer serviço prestado.",
+          "A OSC não distribui resultados ou patrimônio entre seus dirigentes.",
+          "A OSC não precisa de contabilidade regular."
         ],
-        "explicacao": "A legislação impede a celebração de parcerias por OSCs que tenham dirigentes com contas julgadas irregulares ou rejeitadas nos últimos 8 anos.",
+        "explicacao": "A vedação legal para OSCs está na distribuição do resultado positivo ou patrimônio entre seus dirigentes ou sócios.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Um dirigente pode delegar a competência de assinar termos de parceria?",
+        "pergunta": "A norma constitucional exige a gratuidade total dos produtos e serviços de uma OSC?",
         "alternativas": [
-          "Não, a assinatura deve ser exclusivamente do presidente.",
-          "Sim, a legislação permite que essa competência seja delegada.",
-          "Sim, mas apenas se o delegado for um servidor público.",
-          "Não, delegações são proibidas no regime do MROSC."
+          "Sim, se cobrar por qualquer serviço, perde a imunidade.",
+          "Não, não há impedimento legal para a cobrança, desde que o lucro não seja distribuído.",
+          "Sim, as doações devem ser a única fonte de renda permitida.",
+          "Não, mas a cobrança só é permitida para instituições religiosas."
         ],
-        "explicacao": "A lei estabelece que o dirigente é habilitado a assinar os termos, ainda que delegue essa competência a terceiros.",
+        "explicacao": "A norma não exige gratuidade; a OSC pode cobrar, mas deve reverter o resultado integralmente para seus fins estatutários.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual das seguintes vedações se aplica ao quadro de dirigentes de uma OSC?",
+        "pergunta": "O que compõe o chamado 'superávit imaterial' mencionado no texto?",
         "alternativas": [
-          "Ser membro de sindicatos patronais.",
-          "Ser membro de Poder ou do Ministério Público da mesma esfera da parceria.",
-          "Possuir mais de uma formação acadêmica superior.",
-          "Ter atuado no setor privado nos últimos 3 anos."
+          "As aplicações financeiras de alto rendimento.",
+          "Os bens imóveis valorizados pela inflação.",
+          "Os resultados sociais, como vidas transformadas e cidadãos educados.",
+          "As dívidas perdoadas pelo governo federal."
         ],
-        "explicacao": "Há impedimento para celebrar parcerias se houver entre os dirigentes membros de Poder ou do Ministério Público na mesma esfera governamental.",
+        "explicacao": "O texto define superávit imaterial como o fruto das ações práticas que geram impacto social positivo.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Segundo o texto, por que o superávit é recomendável para uma OSC?",
+        "alternativas": [
+          "Para permitir a divisão de bônus entre os diretores no fim do ano.",
+          "Para garantir a continuidade dos projetos e o reinvestimento nas atividades.",
+          "Para que o governo possa tributar a sobra de recursos.",
+          "Para converter a OSC em uma empresa com fins lucrativos futuramente."
+        ],
+        "explicacao": "O saldo positivo é necessário para que a entidade possa dar continuidade aos seus projetos e ações sociais.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Gestão Rigorosa dos Recursos Públicos",
+      "conteudo": "A transparência na execução financeira é o alicerce da confiança entre a Administração Pública e a OSC. No regime do MROSC, os recursos repassados devem ser mantidos em uma **conta corrente específica** em instituição financeira pública, isenta de tarifas bancárias. Toda a movimentação deve ocorrer preferencialmente por transferência eletrônica, permitindo a rastreabilidade total do beneficiário final através da plataforma Transferegov.br.\n\nEnquanto os recursos não forem utilizados para sua finalidade, a diretoria financeira tem o dever de aplicá-los em investimentos de baixo risco, como cadernetas de poupança ou fundos lastreados em títulos públicos. Esses **rendimentos financeiros** não pertencem à OSC, mas devem ser aplicados obrigatoriamente no objeto da parceria, mediante certidão de apostilamento. É uma oportunidade de otimizar o recurso e gerar ainda mais impacto social.\n\nSeja diligente! O pagamento em espécie é uma exceção rigorosa, limitada a R$ 5.000,00 por beneficiário e deve ser devidamente justificada no plano de trabalho. A correta gestão dos fatos geradores — pagando apenas despesas ocorridas durante a vigência da parceria — protege sua instituição de sanções e garante que cada centavo público cumpra seu nobre destino social."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Onde devem ser depositados os recursos financeiros de uma parceria MROSC federal?",
+        "alternativas": [
+          "Em qualquer conta bancária de livre escolha da OSC.",
+          "Em conta corrente específica mantida em instituição financeira pública.",
+          "Na conta pessoal do presidente da organização.",
+          "Em cofres físicos dentro da sede da instituição."
+        ],
+        "explicacao": "A lei exige o uso de conta corrente específica em instituição financeira pública para os recursos da parceria.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que deve ser feito com os rendimentos das aplicações financeiras dos recursos da parceria?",
+        "alternativas": [
+          "Devem ser retirados pela OSC como taxa de administração.",
+          "Podem ser gastos livremente em despesas não previstas.",
+          "Devem ser aplicados obrigatoriamente no objeto da parceria.",
+          "Devem ser devolvidos imediatamente à Receita Federal."
+        ],
+        "explicacao": "Os rendimentos devem ser aplicados no objeto da parceria, sujeitos às mesmas condições de prestação de contas.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual o limite individual para pagamentos em espécie, quando autorizados?",
+        "alternativas": [
+          "R$ 1.000,00.",
+          "R$ 5.000,00.",
+          "R$ 10.000,00.",
+          "Não há limites para pagamentos em dinheiro."
+        ],
+        "explicacao": "Os pagamentos em espécie estão restritos ao limite individual de R$ 5.000,00 por beneficiário.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "É permitido pagar despesas com fato gerador anterior à vigência da parceria?",
+        "alternativas": [
+          "Sim, para qualquer despesa administrativa.",
+          "Não, é expressamente vedado, salvo custos de elaboração da proposta.",
+          "Sim, desde que a OSC tenha saldo em conta.",
+          "Sim, se o gestor da parceria autorizar verbalmente."
+        ],
+        "explicacao": "É vedado o pagamento de despesa cujo fato gerador ocorreu antes da vigência, com exceção da elaboração da proposta.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Quem define quem são os dirigentes dentro da estrutura de uma OSC?",
+        "pergunta": "Como deve ser feita a movimentação financeira para garantir a rastreabilidade?",
         "alternativas": [
-          "A prefeitura local por decreto.",
-          "O Ministério da Gestão e Inovação.",
-          "O estatuto da OSC e demais normas de organização interna.",
-          "O conselho gestor de fundos municipais."
+          "Por meio de cheques nominais.",
+          "Exclusivamente por saques no caixa eletrônico.",
+          "Mediante transferência eletrônica identificando o beneficiário final.",
+          "Por meio de cartões de débito corporativos sem senha."
         ],
-        "explicacao": "O estatuto social e as normas internas da própria OSC definem quem são seus dirigentes.",
+        "explicacao": "Os pagamentos devem ser realizados por transferência eletrônica sujeita à identificação do beneficiário final no Transferegov.br.",
         "correta_idx": 2,
         "dificuldade": "fácil"
       }
@@ -69,135 +137,135 @@
   },
   {
     "pilula": {
-      "titulo": "Imunidade Tributária: Um Direito das Entidades Éticas",
-      "conteudo": "A imunidade tributária não é um 'favor' do Estado, mas o reconhecimento de que as entidades sem fins lucrativos exercem atividades essenciais que complementam o dever público. Para a diretoria, o domínio deste conceito é vital: a imunidade sobre o patrimônio, renda e serviços é um direito constitucional que protege os recursos para que sejam aplicados integralmente no Brasil e em suas finalidades estatutárias.\n\nA essência de ser 'sem fins lucrativos' reside na **não distribuição de excedentes**. A organização pode e deve buscar o superávit (saldo positivo) para garantir sua sustentabilidade e reinvestimento, mas este valor jamais deve ser distribuído entre sócios, associados ou dirigentes como lucro. O patrimônio da entidade pertence à sociedade, e em caso de dissolução, deve ser transferido a outra instituição de igual natureza.\n\nLembre-se: o dirigente deve zelar pela escrituração contábil rigorosa. Manter os livros revestidos de formalidades e assegurar a aplicação dos recursos nos objetivos institucionais são os pilares que sustentam este benefício fiscal. Sua gestão ética é o que garante que cada centavo economizado em impostos se transforme em mais educação e assistência para quem precisa."
+      "titulo": "Custos Indiretos e a Estrutura Organizacional",
+      "conteudo": "Para que uma OSC execute seus projetos com excelência, ela precisa de uma base sólida. Os **custos indiretos** são as despesas administrativas indispensáveis para a sustentação da parceria, como aluguel, internet, energia, serviços contábeis e assessoria jurídica. O MROSC e o Decreto 8.726/2016 não estabelecem um teto rígido para esses custos, permitindo que sejam realizados de forma compatível com o objeto e baseados nos princípios da economicidade e eficiência.\n\nUma prática financeira inteligente é o **rateio proporcional** desses custos. Se a sua sede abriga múltiplos projetos, as despesas de luz e aluguel podem ser divididas entre eles, desde que a memória de cálculo seja clara e registre a origem dos recursos para cada fração. Isso garante que a parceria pague apenas pela parte da estrutura que efetivamente utiliza, mantendo o equilíbrio financeiro institucional.\n\nA legislação também valoriza o esforço intelectual prévio: as OSCs podem prever o ressarcimento dos **custos com a elaboração da proposta** de plano de trabalho. Esse pagamento é limitado a 5% do valor global da parceria, com teto de R$ 50.000,00. É o reconhecimento de que planejar bem exige tempo e recursos, e que o sucesso financeiro começa antes mesmo da assinatura do termo."
     },
     "quizzes": [
       {
-        "pergunta": "Qual a principal diferença entre superávit e lucro para uma OSC?",
+        "pergunta": "O que são considerados custos indiretos em uma parceria?",
         "alternativas": [
-          "Superávit é proibido, enquanto o lucro é permitido.",
-          "Superávit é a sobra reinvestida nos fins da OSC; lucro visa distribuição aos sócios.",
-          "Não há diferença, são sinônimos perfeitos em qualquer setor.",
-          "Superávit refere-se apenas a doações, lucro a vendas de serviços."
+          "Apenas os salários dos técnicos de campo.",
+          "Custos administrativos como aluguel, internet e contabilidade.",
+          "Multas e juros por atrasos no pagamento de impostos.",
+          "Doações feitas pela OSC a outras entidades."
         ],
-        "explicacao": "O superávit é o saldo positivo que deve ser revertido integralmente aos objetivos da entidade, ao contrário do lucro empresarial que visa distribuição.",
+        "explicacao": "Custos indiretos referem-se a despesas administrativas necessárias para a execução da parceria, como aluguel e utilidades.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que deve acontecer com o patrimônio da OSC em caso de sua dissolução?",
+        "pergunta": "Qual a regra para o rateio de custos administrativos entre diferentes projetos?",
         "alternativas": [
-          "Deve ser dividido entre os diretores atuais.",
-          "Retorna integralmente para os fundadores da entidade.",
-          "Deve ser transferido a outra pessoa jurídica de igual natureza e objeto semelhante.",
-          "É automaticamente leiloado pelo governo federal."
+          "É proibido realizar rateio com recursos públicos.",
+          "O rateio deve ser feito sem necessidade de justificativa.",
+          "É permitido, desde que haja memória de cálculo e registro das origens dos recursos.",
+          "O rateio só é permitido para despesas com combustível."
         ],
-        "explicacao": "O estatuto deve prever que, em caso de dissolução, o patrimônio líquido seja transferido a outra entidade de igual natureza que preencha os requisitos da lei.",
+        "explicacao": "O rateio é permitido mediante registro da memória de cálculo e indicação do valor integral e das frações por fonte de custeio.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Quais são os requisitos do Art. 14 do CTN para o gozo da imunidade?",
+        "pergunta": "Qual o limite para pagamento de custos com a elaboração da proposta?",
         "alternativas": [
-          "Ter sede própria, 10 anos de existência e 50 voluntários.",
-          "Não distribuir patrimônio/rendas, aplicar recursos no país e manter escrituração regular.",
-          "Ser reconhecida por decreto presidencial e não cobrar mensalidades.",
-          "Possuir Certificado de Utilidade Pública Estadual e Municipal."
+          "Até 10% do valor global, sem teto fixo.",
+          "Até 5% do valor global, limitado a R$ 50.000,00.",
+          "Até 2% do valor global, limitado a R$ 10.000,00.",
+          "É proibido cobrar custos de elaboração da proposta."
         ],
-        "explicacao": "Os requisitos cumulativos são: não distribuir parcelas de patrimônio ou rendas, aplicar recursos integralmente no país e manter escrituração de receitas e despesas.",
+        "explicacao": "A lei permite até 5% do valor global da parceria para cobrir esses custos, respeitando o teto de 50 mil reais.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "A imunidade tributária pode ser suspensa pela autoridade competente?",
+        "pergunta": "Existe um limite percentual fixo no Decreto 8.726/2016 para custos indiretos?",
         "alternativas": [
-          "Não, uma vez concedida ela é eterna e irrevogável.",
-          "Sim, caso a entidade descumpra os requisitos previstos em lei.",
-          "Sim, mas apenas se a entidade mudar de endereço.",
-          "Não, apenas o Supremo Tribunal Federal pode suspender a imunidade."
+          "Sim, o limite é de 15% do valor total.",
+          "Sim, o limite é de 25% para projetos de educação.",
+          "Não, eles devem ser compatíveis com o objeto e obedecer princípios como economicidade.",
+          "Sim, o limite é definido anualmente pelo Ministério da Fazenda."
         ],
-        "explicacao": "A autoridade competente pode suspender a aplicação do benefício na falta de cumprimento dos requisitos legais.",
-        "correta_idx": 1,
+        "explicacao": "O Decreto não limita despesas com custos indiretos, mas exige compatibilidade com o objeto e obediência aos princípios administrativos.",
+        "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Uma OSC pode cobrar por seus serviços e ainda assim ser imune?",
+        "pergunta": "Quais OSCs recebem o valor referente à elaboração da proposta?",
         "alternativas": [
-          "Não, a gratuidade total é condição obrigatória para a imunidade.",
-          "Sim, desde que a receita seja aplicada integralmente em suas finalidades essenciais.",
-          "Sim, mas apenas se o valor cobrado for simbólico (até 10 reais).",
-          "Não, cobrança de serviços caracteriza atividade empresarial de Segundo Setor."
+          "Todas que enviarem propostas no chamamento público.",
+          "Apenas as OSCs que não forem selecionadas.",
+          "Apenas as OSCs que celebrarem a parceria com a administração pública.",
+          "Nenhuma, esse valor é uma contribuição voluntária da OSC."
         ],
-        "explicacao": "A norma constitucional não exige gratuidade; a cobrança é permitida desde que o resultado seja revertido para os objetivos estatutários.",
-        "correta_idx": 1,
-        "dificuldade": "difícil"
+        "explicacao": "O texto deixa claro que OSCs que não celebrarem a parceria não receberão os valores para custear a elaboração da proposta.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Profissionalização e Remuneração da Diretoria",
-      "conteudo": "A era do amadorismo no Terceiro Setor ficou para trás. Hoje, a legislação brasileira reconhece que a gestão de uma OSC exige dedicação exclusiva e competência técnica elevada. A Lei nº 13.151/2015 marcou uma evolução histórica ao permitir a **remuneração de dirigentes** que atuam efetivamente na gestão executiva, sem que a entidade perca seus benefícios fiscais ou o Cebas.\n\nPara que a remuneração seja legítima, a diretoria deve observar critérios claros: os valores devem respeitar o teto do mercado da região e ser fixados pelo órgão de deliberação superior (como a Assembleia Geral ou Conselho Curador), com o devido registro em ata. No caso de fundações, é obrigatória a comunicação ao Ministério Público.\n\nÉ fundamental distinguir remuneração de distribuição de lucros. Enquanto o lucro é uma divisão de excedentes sem prestação de serviço, a remuneração é o pagamento justo pelo trabalho e pelas horas dedicadas ao crescimento da instituição. Valorizar o capital humano da diretoria é um passo estratégico para aumentar a eficiência e o impacto social das suas ações."
+      "titulo": "Remuneração de Dirigentes e o Teto Federal",
+      "conteudo": "A profissionalização do Terceiro Setor permitiu que os dirigentes estatutários que atuam efetivamente na gestão executiva sejam remunerados com recursos da parceria. Essa remuneração não descaracteriza a natureza 'sem fins lucrativos' da entidade, desde que respeite o **valor de mercado** da região e não ultrapasse o teto individual de remuneração dos servidores do Poder Executivo Federal.\n\nPara as entidades portadoras do Cebas, o limite individual é ainda mais específico: a remuneração não pode exceder **70% do valor** da remuneração dos servidores do Poder Executivo Federal. Além disso, existe um teto global onde a soma das remunerações de todos os dirigentes não pode ultrapassar cinco vezes esse limite individual. Tais pagamentos devem ser formalizados em ata pelo órgão de deliberação superior e, no caso de fundações, comunicados ao Ministério Público.\n\nValorizar quem lidera é um investimento na eficácia da OSC. A remuneração justa garante dedicação exclusiva e competência técnica para gerir recursos complexos. É fundamental, porém, que esses valores estejam previstos no plano de trabalho e sejam proporcionais ao tempo dedicado à parceria, assegurando que a gestão financeira ande de mãos dadas com a conformidade legal."
     },
     "quizzes": [
       {
-        "pergunta": "Qual lei passou a permitir a remuneração de dirigentes em associações assistenciais e fundações?",
+        "pergunta": "Qual a condição principal para que um dirigente estatutário seja remunerado com recursos da parceria?",
         "alternativas": [
-          "Lei nº 13.019/2014 (MROSC).",
-          "Lei nº 13.151/2015.",
-          "Consolidação das Leis do Trabalho (CLT) original de 1943.",
-          "Lei de Improbidade Administrativa."
-        ],
-        "explicacao": "A Lei nº 13.151/2015 alterou legislações anteriores para permitir a remuneração de dirigentes.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual condição é essencial para que um dirigente estatutário seja remunerado?",
-        "alternativas": [
+          "Ser o fundador da organização.",
           "Atuar efetivamente na gestão executiva.",
-          "Ser o sócio fundador da organização.",
-          "Ter mais de 65 anos de idade.",
-          "Trabalhar apenas em regime de home office."
+          "Ter mais de 10 anos de experiência voluntária.",
+          "Ser indicado por um parlamentar."
         ],
-        "explicacao": "A remuneração é permitida para dirigentes que atuem efetivamente na gestão executiva.",
-        "correta_idx": 0,
-        "dificuldade": "média"
+        "explicacao": "A legislação permite a remuneração para dirigentes que atuem efetivamente na gestão executiva da entidade.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual o limite individual de remuneração para dirigentes estatutários em entidades com Cebas?",
+        "pergunta": "Qual o limite individual de remuneração para dirigentes em entidades com Cebas?",
         "alternativas": [
-          "100% do salário mínimo nacional.",
+          "100% do teto do serviço público federal.",
+          "50% do salário do Governador do Estado.",
           "70% do valor da remuneração dos servidores do Poder Executivo Federal.",
-          "Não há limites, o mercado define livremente.",
-          "O dobro do salário do maior funcionário da OSC."
+          "O dobro do menor salário pago pela OSC."
         ],
-        "explicacao": "O limite é de até 70% do valor da remuneração dos servidores do Poder Executivo Federal.",
-        "correta_idx": 1,
-        "dificuldade": "difícil"
-      },
-      {
-        "pergunta": "No caso de Fundações, quem deve ser comunicado sobre a remuneração de dirigentes?",
-        "alternativas": [
-          "A prefeitura municipal.",
-          "O sindicato da categoria.",
-          "O Ministério Público.",
-          "A Receita Federal apenas."
-        ],
-        "explicacao": "Para fundações, o valor fixado deve ser comunicado ao Ministério Público.",
+        "explicacao": "Conforme o texto, o limite é de até 70% do valor da remuneração dos servidores do Poder Executivo Federal.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "O que diferencia remuneração de distribuição de lucro, segundo o material?",
+        "pergunta": "Quem deve fixar o valor da remuneração dos dirigentes de uma associação?",
         "alternativas": [
-          "Não há diferença legal.",
-          "Remuneração é pagamento por serviço; lucro é divisão de excedentes sem serviço.",
-          "Remuneração é paga anualmente; lucro é pago mensalmente.",
-          "Lucro é apenas para diretores; remuneração é apenas para estagiários."
+          "O próprio dirigente que será remunerado.",
+          "A prefeitura municipal por decreto.",
+          "O órgão de deliberação superior (como a Assembleia Geral), registrado em ata.",
+          "O banco onde a conta da parceria está aberta."
         ],
-        "explicacao": "Remuneração é a contraprestação por serviços; lucro é a divisão financeira baseada apenas na posição ocupada, sem prestação de labor.",
+        "explicacao": "O valor deve ser fixado pelo órgão de deliberação superior da instituição e formalizado em ata.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "No caso de Fundações, qual o requisito adicional para remunerar dirigentes?",
+        "alternativas": [
+          "Publicar o salário no jornal de maior circulação.",
+          "Obter autorização individual de cada doador.",
+          "Realizar a comunicação ao Ministério Público.",
+          "Contratar uma auditoria internacional."
+        ],
+        "explicacao": "Para fundações, além da fixação em ata, é necessária a comunicação ao Ministério Público.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Pagar salário a um dirigente torna a OSC uma entidade com fins lucrativos?",
+        "alternativas": [
+          "Sim, pois qualquer salário é considerado lucro.",
+          "Não, desde que seja contraprestação por serviço e não distribuição de excedentes.",
+          "Sim, a menos que o dirigente devolva 50% do salário como doação.",
+          "Não, mas a OSC perde o direito à imunidade tributária."
+        ],
+        "explicacao": "Remuneração é pagamento por trabalho; distribuição de lucro é divisão de excedentes sem prestação de serviço.",
         "correta_idx": 1,
         "dificuldade": "média"
       }
@@ -205,205 +273,137 @@
   },
   {
     "pilula": {
-      "titulo": "Planejamento Estratégico e a 'Árvore de Problemas'",
-      "conteudo": "Para uma diretoria de alta performance, o planejamento da parceria é o momento de definir o destino da organização. Uma técnica essencial sugerida é a construção da **'Árvore de Problemas'**, onde o tronco representa o problema central, as raízes são as causas e a copa as consequências. O foco da diretoria deve ser 'cortar o problema pela raiz', direcionando as ações para as causas potencias.\n\nAo definir os objetivos, o dirigente deve garantir que eles sejam: Essenciais, Controláveis, Mensuráveis, Operacionais, Concisos e Inteligíveis. Um objetivo bem delineado evita ambiguidades e facilita a execução pela equipe técnica. Além disso, a redação do objeto da parceria deve ser cuidadosa: não deve se resumir à compra de um bem (como uma colheitadeira), mas sim ao alcance de um propósito social (como aumentar a renda de produtores).\n\nEste olhar estratégico permite que a OSC tenha flexibilidade. Se no meio do caminho a diretoria perceber que outro equipamento é mais útil para o mesmo fim, ajustes no plano de trabalho podem ser feitos sem alterar o objeto da parceria. Planejar com inteligência é assegurar que a organização seja um agente de mudança real e adaptável."
+      "titulo": "Imunidade em Investimentos: Proteção do Patrimônio",
+      "conteudo": "A imunidade tributária das OSCs de educação e assistência social é um escudo constitucional que protege seu patrimônio e renda. Uma vitória crucial para o setor é o reconhecimento de que essa imunidade se estende aos **rendimentos de aplicações financeiras**. O STF e tribunais superiores decidiram que tributar esses rendimentos (como o IR sobre aplicações) é, na prática, tributar o próprio patrimônio da entidade imune.\n\nA lógica é simples e poderosa: manter recursos aplicados visa proteger o valor da moeda contra a **corrosão inflacionária** e gerar meios financeiros para a realização dos objetivos sociais. Ao não pagar impostos sobre esses rendimentos, a OSC garante que o recurso permaneça íntegro para o projeto social. No entanto, é fundamental que a OSC preencha os requisitos do Art. 14 do CTN: não distribuir lucros, aplicar os recursos no país e manter escrituração regular.\n\nUtilize este direito com sabedoria! A manutenção de investimentos é um instrumento útil para a sustentabilidade. Quando sua OSC defende a imunidade sobre aplicações financeiras ou sobre o **IOF**, ela está lutando pela saúde econômica que permite a continuidade da sua missão. O patrimônio da sua organização é sagrado e deve ser totalmente dedicado à transformação social."
     },
     "quizzes": [
       {
-        "pergunta": "Na técnica da 'Árvore de Problemas', o que representam as raízes?",
+        "pergunta": "Qual o argumento do STF para garantir a imunidade sobre aplicações financeiras das OSCs?",
         "alternativas": [
-          "O problema central que a OSC quer resolver.",
-          "As consequências visíveis na sociedade.",
-          "As causas potenciais do problema público.",
-          "Os recursos financeiros disponíveis para o projeto."
+          "Que as OSCs são braços do governo federal.",
+          "Que tributar rendimentos é tributar o patrimônio necessário aos fins sociais.",
+          "Que as OSCs não podem ter contas em bancos privados.",
+          "Que os bancos são obrigados a doar o imposto para a OSC."
         ],
-        "explicacao": "Na analogia da árvore, as raízes representam as causas do problema que a política pública visa atacar.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Quais são as características de um objetivo de parceria adequado?",
-        "alternativas": [
-          "Vago, ambicioso, longo e complexo.",
-          "Essencial, controlável, mensurável, operacional, conciso e inteligível.",
-          "Exclusivamente financeiro e focado em lucro.",
-          "Baseado apenas em opiniões pessoais da diretoria."
-        ],
-        "explicacao": "O guia prático indica que objetivos devem ser essenciais, controláveis, mensuráveis, operacionais, concisos e inteligíveis.",
+        "explicacao": "A imposição tributária sobre aplicações estaria tributando o patrimônio da entidade, o que é vedado pela Constituição.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Por que não se deve resumir o objeto da parceria à aquisição de um bem específico?",
+        "pergunta": "Segundo o Art. 14 do CTN, qual requisito é indispensável para o gozo da imunidade?",
         "alternativas": [
-          "Porque a lei proíbe OSCs de comprarem equipamentos.",
-          "Porque isso engessa o plano de trabalho e impede ajustes futuros sem mudar o objeto.",
-          "Porque bens materiais não têm valor social.",
-          "Porque o governo sempre doa os equipamentos necessários."
+          "Ter mais de 100 voluntários registrados.",
+          "Manter escrituração de receitas e despesas em livros formais e exatos.",
+          "Não cobrar mensalidade de nenhum beneficiário.",
+          "Ser proprietária da sede onde atua."
         ],
-        "explicacao": "O objeto deve ser o objetivo social; se for a mera compra do bem, qualquer alteração no item exigiria alteração de objeto, o que é mais complexo.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que caracteriza um objetivo 'Mensurável'?",
-        "alternativas": [
-          "Aquele que é muito grande para ser medido.",
-          "Aquele que depende apenas de fatores externos incontroláveis.",
-          "Aquele que permite quantificar ou qualificar resultados com indicadores claros.",
-          "Aquele que é escrito em linguagem técnica de difícil compreensão."
-        ],
-        "explicacao": "Mensurável refere-se à possibilidade de verificar se o objetivo foi atingido através de números, porcentagens ou parâmetros.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que o dirigente deve priorizar ao atacar um problema público?",
-        "alternativas": [
-          "As consequências, para dar visibilidade imediata.",
-          "As causas (raízes), para resolver o problema de forma definitiva.",
-          "Apenas o tronco, ignorando o resto da árvore.",
-          "Nenhuma das alternativas, o planejamento deve ser aleatório."
-        ],
-        "explicacao": "O procedimento orienta que o foco deve ser a causa, ou seja, 'cortar o problema pela raiz'.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Gestão de Pessoas e Riscos Trabalhistas",
-      "conteudo": "A diretoria é a guardiã da saúde jurídica da OSC. No Brasil, a contratação de pessoal é regida majoritariamente pela **CLT**, que exige registro obrigatório sempre que houver habitualidade, subordinação e pagamento. O descumprimento dessas normas não é uma opção, mas um risco que pode gerar passivos trabalhistas devastadores para a instituição.\n\nModelos como a 'pejotização' (contratação de PJs para mascarar vínculo de emprego) são perigosos. Se o prestador pessoa jurídica trabalhar com pessoalidade e subordinação, a Justiça do Trabalho pode anular o contrato e exigir todos os direitos celetistas. Da mesma forma, o trabalho voluntário exige cautela: é essencial a formalização do **Termo de Adesão**, garantindo que a atividade seja espontânea e não remunerada.\n\nMantenha o controle! Para organizações com mais de 10 trabalhadores, o registro de ponto (manual ou eletrônico) é obrigatório. Uma diretoria diligente revisa processos, capacita gestores e utiliza ferramentas como o eSocial para garantir que a transparência e a conformidade sejam a marca registrada da sua gestão."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Quais os elementos que obrigatoriamente exigem o registro em CLT?",
-        "alternativas": [
-          "Apenas o desejo do trabalhador e o lucro da OSC.",
-          "Trabalho eventual, sem ordens e gratuito.",
-          "Hábito (habitualidade), subordinação ao contratante e pagamento.",
-          "Ser parente do dirigente e trabalhar aos domingos."
-        ],
-        "explicacao": "A relação de trabalho habitual, subordinada e mediante pagamento deve ser registrada conforme o Art. 3º da CLT.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que caracteriza o serviço voluntário segundo a Lei nº 9.608/1998?",
-        "alternativas": [
-          "Atividade remunerada com bônus anual.",
-          "Trabalho prestado por empresa privada com fins lucrativos.",
-          "Atividade não remunerada prestada por pessoa física a entidade sem fins lucrativos.",
-          "Contrato de prestação de serviços com emissão de nota fiscal."
-        ],
-        "explicacao": "O serviço voluntário é não remunerado, prestado por pessoa física em favor de instituições sem fins lucrativos com objetivos sociais.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual o risco da 'pejotização' irregular para a diretoria?",
-        "alternativas": [
-          "Nenhum, é a forma mais segura de contratação.",
-          "Redução automática de impostos sem riscos legais.",
-          "Reconhecimento de vínculo empregatício e pagamento de encargos retroativos pela justiça.",
-          "Aumento imediato de doações internacionais."
-        ],
-        "explicacao": "A 'pejotização' para mascarar o vínculo de emprego é fraude à legislação e pode gerar condenações na Justiça do Trabalho.",
-        "correta_idx": 2,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "A partir de quantos funcionários o controle de ponto torna-se obrigatório?",
-        "alternativas": [
-          "Mais de 5 trabalhadores.",
-          "Mais de 10 trabalhadores.",
-          "Mais de 50 trabalhadores.",
-          "É facultativo para qualquer quantidade."
-        ],
-        "explicacao": "De acordo com o art. 74 da CLT, estabelecimentos com mais de dez trabalhadores devem anotar obrigatoriamente a hora de entrada e saída.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O voluntário pode ser reembolsado por despesas?",
-        "alternativas": [
-          "Não, qualquer pagamento descaracteriza o voluntariado.",
-          "Sim, desde que as despesas sejam autorizadas e comprovadas com recibos.",
-          "Sim, ele pode receber um salário fixo como 'reembolso'.",
-          "Não, o voluntário deve arcar com todos os custos pessoalmente."
-        ],
-        "explicacao": "A lei permite o reembolso de despesas (transporte, alimentação, etc.) desde que expressamente aprovado e comprovado.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Accountability: Transparência como Valor Supremo",
-      "conteudo": "A prestação de contas não deve ser vista pela diretoria como um fardo burocrático, mas como a oportunidade de demonstrar a integridade e o valor da OSC para a sociedade. Sob o regime do MROSC, a prestação de contas foca no **cumprimento do objeto** e no alcance das metas pactuadas, e não apenas na análise financeira fria.\n\nO dirigente deve assegurar a 'Transparência Ativa': os dados da parceria, valores recebidos e remuneração da equipe devem estar disponíveis no site da OSC e em locais visíveis da sede. Ferramentas como o **Transferegov.br** e o **Mapa das OSC** são aliados fundamentais para consolidar essa imagem de confiança perante o Governo Federal e os doadores.\n\nLiderar com transparência atrai novos parceiros e fortalece o controle social. Se as contas forem rejeitadas por falhas formais sem má-fé, a diretoria pode buscar ações compensatórias de interesse público. Agir com transparência é o melhor seguro contra sanções e o caminho mais curto para a sustentabilidade institucional."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual o foco principal da prestação de contas no regime da Lei 13.019/2014?",
-        "alternativas": [
-          "Exclusivamente a conferência de notas fiscais.",
-          "O cumprimento do objeto e o alcance das metas e resultados.",
-          "A quantidade de curtidas nas redes sociais da OSC.",
-          "Apenas o currículo dos diretores."
-        ],
-        "explicacao": "A prestação de contas visa verificar o cumprimento do objeto da parceria e o alcance dos resultados previstos.",
+        "explicacao": "O CTN exige manter escrituração de receitas e despesas em livros revestidos de formalidades que assegurem exatidão.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que compõe a 'Transparência Ativa' obrigatória para a OSC?",
+        "pergunta": "A aplicação financeira por uma OSC configura desvirtuamento de finalidade?",
         "alternativas": [
-          "Divulgação de fotos das festas de fim de ano.",
-          "Publicação do instrumento de parceria, objeto e valores no site oficial.",
-          "Envio de cartas anônimas aos doadores.",
-          "Manter os dados da parceria em sigilo absoluto."
+          "Sim, OSCs só podem guardar dinheiro em espécie na sede.",
+          "Não, é um meio de resguardar o patrimônio contra a inflação e gerar recursos para os fins sociais.",
+          "Sim, o dinheiro público deve ser gasto imediatamente após o recebimento.",
+          "Não, mas apenas se a aplicação for em ações de empresas estatais."
         ],
-        "explicacao": "A administração pública e a OSC devem divulgar informações como data de assinatura, objeto e valor total da parceria em seus sites.",
+        "explicacao": "O texto afirma que a aplicação é instrumento útil para formação de recursos e proteção contra a inflação.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "O que a OSC pode utilizar caso não possua site oficial próprio para transparência?",
+        "pergunta": "O imposto sobre operações financeiras (IOF) atinge as OSCs imunes?",
         "alternativas": [
-          "Apenas o mural físico da sede.",
-          "A plataforma 'Mapa das OSC' mantida pelo Ipea.",
-          "Anúncios em jornais de grande circulação nacional.",
-          "Nenhuma opção, o site próprio é indispensável para existir legalmente."
+          "Sim, o IOF é obrigatório para todas as pessoas jurídicas.",
+          "Não, a imunidade afasta a incidência do IOF sobre ativos e rendas de aplicações.",
+          "Sim, mas o valor é devolvido em dobro após a prestação de contas.",
+          "Não, mas apenas para OSCs que atuam na área do esporte."
         ],
-        "explicacao": "OSCs que não possuem site próprio podem utilizar a plataforma Mapa das OSC para divulgar suas informações.",
+        "explicacao": "Tribunais entendem que a imunidade constitucional afasta a incidência do IOF para instituições de educação e assistência social.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual o prazo para guarda dos documentos originais da parceria pela OSC?",
+        "pergunta": "Qual o prazo para a guarda de documentos originais comprovantes de despesas pela OSC?",
         "alternativas": [
           "2 anos.",
           "5 anos.",
           "10 anos.",
-          "20 anos."
+          "30 anos."
         ],
         "explicacao": "As OSCs devem manter a guarda dos documentos originais por 10 anos.",
         "correta_idx": 2,
         "dificuldade": "fácil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Responsabilidade na Execução Financeira e Devoluções",
+      "conteudo": "O encerramento de uma parceria exige o mesmo rigor financeiro do seu início. Ao final da execução, qualquer **saldo remanescente** da conta bancária específica, inclusive os rendimentos das aplicações, deve ser devolvido ao Tesouro Nacional no prazo improrrogável de trinta dias. A falha nessa restituição pode levar à instauração imediata de uma **Tomada de Contas Especial**, um processo rigoroso de apuração de danos ao erário.\n\nA prestação de contas financeira é complementar e ocorre quando há indícios de irregularidade. Nela, o gestor examina a **conformidade das despesas**, confrontando o que foi previsto no plano de trabalho com o que foi efetivamente gasto. A conciliação bancária — o batimento entre os pagamentos registrados no sistema e os débitos na conta corrente — é o coração dessa análise, garantindo que o recurso público seguiu estritamente o caminho pactuado.\n\nAtenção aos prazos e multas! Se a Administração Pública atrasar o repasse por mais de trinta dias, a OSC pode suspender atividades; se atrasar mais de sessenta, pode rescindir a parceria. Nessas situações de atraso do Estado, eventuais multas e juros de pagamentos feitos pela OSC podem ser pagos com recursos da própria parceria. Gestão financeira ética é prever riscos e agir com transparência para proteger o patrimônio social da sua entidade."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual o destino dos recursos não utilizados ao final da parceria?",
+        "alternativas": [
+          "Permanecem com a OSC para uso em outros projetos.",
+          "Devem ser devolvidos à Conta Única do Tesouro Nacional.",
+          "Devem ser divididos entre a equipe técnica como bônus.",
+          "Devem ser usados para pagar dívidas tributárias antigas da OSC."
+        ],
+        "explicacao": "Recursos não utilizados, incluindo rendimentos, devem ser devolvidos ao final da parceria.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que é uma 'Ação Compensatória' no contexto de contas rejeitadas?",
+        "pergunta": "Qual o prazo improrrogável para devolução do saldo remanescente?",
         "alternativas": [
-          "Um processo judicial contra o governo.",
-          "Ressarcimento ao erário através de novos serviços de interesse público, sem dolo ou fraude.",
-          "Um bônus pago aos diretores por terem concluído o projeto.",
-          "A devolução em dobro de todos os recursos recebidos."
+          "15 dias.",
+          "30 dias.",
+          "60 dias.",
+          "90 dias."
         ],
-        "explicacao": "Quando não há dolo ou fraude, a OSC pode solicitar o ressarcimento por meio de ações compensatórias mediante novo plano de trabalho.",
+        "explicacao": "O comprovante de devolução deve ser apresentado no prazo improrrogável de trinta dias.",
         "correta_idx": 1,
-        "dificuldade": "difícil"
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que acontece se a administração pública atrasar o repasse de recursos por mais de 30 dias?",
+        "alternativas": [
+          "A OSC é obrigada a usar recursos próprios sem direito a reembolso.",
+          "A OSC pode suspender as atividades até a regularização.",
+          "O presidente da OSC pode ser preso por interrupção de serviço público.",
+          "A parceria é automaticamente cancelada e os bens confiscados."
+        ],
+        "explicacao": "No caso de atraso superior a trinta dias, a organização pode suspender as atividades.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Em que situação o Relatório de Execução Financeira é obrigatoriamente exigido?",
+        "alternativas": [
+          "Em todas as parcerias, mensalmente.",
+          "Apenas quando a OSC não possui CNPJ próprio.",
+          "Quando forem identificadas irregularidades ou inexecução do objeto.",
+          "Somente em parcerias com valor inferior a 50 mil reais."
+        ],
+        "explicacao": "O relatório de execução financeira é emitido em situações excepcionais de indícios de irregularidade.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que é verificado na 'conciliação bancária' da prestação de contas?",
+        "alternativas": [
+          "Se o gerente do banco é parente do dirigente da OSC.",
+          "A correlação entre as despesas pagas e os débitos na conta corrente da parceria.",
+          "O total de depósitos feitos por doadores privados na conta da sede.",
+          "A quantidade de folhas de cheque utilizadas durante o ano."
+        ],
+        "explicacao": "A conciliação bancária afere a correlação entre a relação de pagamentos e os débitos efetuados na conta específica.",
+        "correta_idx": 1,
+        "dificuldade": "média"
       }
     ]
   }

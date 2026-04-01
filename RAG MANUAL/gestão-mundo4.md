@@ -1,409 +1,409 @@
 [
   {
     "pilula": {
-      "titulo": "O Coração da Estratégia: A Diretoria e a Missão",
-      "conteudo": "A definição da missão de uma instituição é uma das responsabilidades mais nobres da sua alta administração e diretoria. Mais do que um texto burocrático, a missão deve declarar a razão de ser da organização, servindo como uma bússola que orienta cada passo e decisão estratégica. Quando a diretoria assume o papel de guardiã dessa identidade, ela garante que a instituição mantenha o foco e a credibilidade necessários para transformar a realidade social.\n\nPara que esse propósito ganhe vida, é fundamental que a diretoria compartilhe a missão com todos os colaboradores. Esse entendimento comum permite que cada pessoa compreenda seu papel específico e contribua de forma sinérgica para os objetivos institucionais. Uma diretoria motivadora é aquela que transforma a visão de futuro em um sonho compartilhado, inspirando a equipe a caminhar na mesma direção com clareza e entusiasmo.\n\nAlém de definir o propósito, os gestores devem realizar uma análise constante dos ambientes interno e externo. Identificar forças, fraquezas, oportunidades e ameaças é essencial para que a liderança tome decisões assertivas e proteja a sustentabilidade da organização. Liderar com base no planejamento estratégico é o que diferencia uma gestão comum de uma diretoria que deixa um legado duradouro na sociedade."
+      "titulo": "A Essência Transformadora dos Projetos Sociais",
+      "conteudo": "Um projeto social é muito mais do que um documento; é uma ação planejada que nasce da vontade de mudar a realidade e construir caminhos para soluções efetivas. Ele se caracteriza por ser um empreendimento com início, meio e fim, utilizando recursos limitados para atingir objetivos específicos em um prazo determinado. Para que essa semente de mudança floresça, é essencial integrar o planejamento com a execução, transformando sonhos em metas palpáveis e exequíveis.\n\nA elaboração de um projeto deve se apoiar em três grandes movimentos: construir uma visão clara da realidade atual e da desejada, definir as ações para promover essa mudança e diagnosticar as condições necessárias para viabilizá-la. Essa estrutura lógica permite que a organização saia do campo das ideias e passe para a prática com segurança, garantindo que os esforços não sejam desperdiçados e que o impacto social seja real.\n\nGerenciar um projeto exige compromisso com resultados que produzam mudanças concretas. O gestor deve ser capaz de orientar a dinâmica da organização para que todas as pessoas contribuam sinergicamente para a missão. Ao final, um projeto bem-sucedido não apenas resolve um problema específico, mas deixa um legado de aprendizado e empoderamento para todos os envolvidos."
     },
     "quizzes": [
       {
-        "pergunta": "De acordo com o texto, de quem é a responsabilidade pela definição da missão institucional?",
+        "pergunta": "Qual é a definição de projeto social citada no texto?",
         "alternativas": [
-          "Dos beneficiários do projeto",
-          "Dos parceiros externos",
-          "Da alta administração e diretoria",
-          "Apenas dos voluntários"
+          "Uma atividade sem prazo definido voltada ao lucro",
+          "Uma ação social planejada com recursos e tempo limitados",
+          "Um movimento espontâneo de caridade sem metas",
+          "Uma política pública permanente do governo"
         ],
-        "explicacao": "O texto afirma explicitamente que a definição da missão é de responsabilidade da alta administração e diretoria da instituição.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual a importância de compartilhar a missão com todos os servidores e colaboradores?",
-        "alternativas": [
-          "Apenas para cumprir uma formalidade legal",
-          "Para que todos compreendam seu papel e contribuam para o alcance da missão",
-          "Para reduzir os custos operacionais da organização",
-          "Para evitar que a diretoria tenha que tomar decisões estratégicas"
-        ],
-        "explicacao": "O compartilhamento garante que todos tenham um entendimento comum e saibam como contribuir para os objetivos institucionais.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que a missão institucional deve declarar de forma sucinta?",
-        "alternativas": [
-          "O lucro esperado para o próximo ano",
-          "A lista de todos os parceiros financiadores",
-          "A razão de ser da instituição: o que ela faz e para quê",
-          "O currículo completo dos diretores"
-        ],
-        "explicacao": "A missão deve declarar a razão de ser da instituição, focando no que ela faz e qual o seu propósito.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Além de definir a missão, o que a diretoria deve analisar constantemente no planejamento estratégico?",
-        "alternativas": [
-          "Apenas o ambiente externo",
-          "Os ambientes interno e externo (forças, fraquezas, oportunidades e ameaças)",
-          "Somente a folha de pagamento dos voluntários",
-          "Apenas as redes sociais dos beneficiários"
-        ],
-        "explicacao": "O texto menciona que a análise de ambientes (interno e externo) é essencial para identificar pontos fortes e riscos.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual é o principal benefício de uma missão descrita de forma clara e pública?",
-        "alternativas": [
-          "Aumentar o valor das mensalidades",
-          "Permitir o exercício do controle social pela sociedade",
-          "Substituir a necessidade de liderança carismática",
-          "Garantir a isenção automática de todos os impostos"
-        ],
-        "explicacao": "Uma missão clara e pública é o primeiro passo para que a sociedade possa exercer qualquer tipo de controle social sobre a instituição.",
-        "correta_idx": 1,
-        "dificuldade": "difícil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Liderança na Diretoria: Agir com e para as Pessoas",
-      "conteudo": "A liderança dentro de uma diretoria não se resume a ocupar cargos; trata-se de liberar a capacidade criativa das pessoas para atingir objetivos construídos no coletivo. O verdadeiro líder da diretoria entende que o resultado de um projeto é a consequência natural de um processo humano, e não um fim em si mesmo que justifica o uso das pessoas como meros instrumentos. Para uma diretoria ser eficaz, ela deve conquistar a confiança dos seus liderados por meio de uma postura ética e transparente.\n\nExistem diferentes estilos de liderança que uma diretoria pode assumir: a racional, baseada em argumentos coerentes; a carismática, pautada nas características pessoais; e a tradicional, muitas vezes enraizada em valores locais. No entanto, o maior desafio é montar grupos de trabalho com valores integrados, onde a força agregadora da liderança transforme indivíduos isolados em uma equipe coesa. Liderar é acreditar no potencial de cada um para construir uma sociedade mais próspera.\n\nUma diretoria empreendedora não toma decisões baseada no medo, mas sim na ousadia de buscar novas e melhores formas de realizar o trabalho social. O gestor/líder deve estar atento às potencialidades do grupo e formalizar as atribuições de cada membro, garantindo que o recrutamento, o treinamento e a motivação sejam funções administrativas prioritárias. Quando a diretoria lidera com as pessoas, o sucesso do projeto torna-se um legado compartilhado por todos."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual é a principal distinção que o texto faz entre um líder e alguém que busca resultados a qualquer custo?",
-        "alternativas": [
-          "O líder usa as pessoas apenas como instrumentos para o fim",
-          "O líder consegue resultados com as pessoas, colocando-as em primeiro lugar",
-          "O líder foca apenas no capital financeiro disponível",
-          "O líder evita qualquer tipo de diálogo com o grupo"
-        ],
-        "explicacao": "O texto afirma que o líder consegue resultados 'com' as pessoas, tratando os resultados como consequência e as pessoas como prioridade.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Quais são os três tipos de liderança mencionados no conteúdo?",
-        "alternativas": [
-          "Autocrática, Democrática e Liberal",
-          "Tradicional, Carismática e Racional",
-          "Financeira, Operacional e Estratégica",
-          "Pública, Privada e Terceirizada"
-        ],
-        "explicacao": "O texto cita as lideranças Tradicional, Carismática e Racional como tipos presentes nos grupos.",
+        "explicacao": "O texto define projeto social como uma ação planejada, estruturada em objetivos e resultados, com recursos e tempo limitados.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que uma liderança empreendedora deve evitar ao tomar decisões, segundo a pílula?",
+        "pergunta": "Quais são os três grandes movimentos que apoiam a elaboração de projetos?",
         "alternativas": [
-          "Tomar decisões baseadas em dados",
-          "Tomar decisões baseadas no medo",
-          "Ouvir a opinião da comunidade",
-          "Investir em capacitação técnica"
+          "Arrecadação, publicidade e encerramento",
+          "Pesquisa acadêmica, lucro e fiscalização",
+          "Visão da realidade, definição de ações e diagnóstico de condições",
+          "Contratação, execução e demissão"
         ],
-        "explicacao": "O texto destaca que um 'Empreendedor não toma decisão baseada no medo!'.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Segundo o texto, o que é fundamental para a diretoria formalizar em relação à equipe?",
-        "alternativas": [
-          "As preferências políticas de cada um",
-          "As atribuições de cada membro e os procedimentos de execução",
-          "Apenas o valor exato das horas extras",
-          "O histórico de redes sociais dos colaboradores"
-        ],
-        "explicacao": "É fundamental formalizar as atribuições e procedimentos necessários para a execução das tarefas do grupo.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que constitui o núcleo da questão na liderança digna de confiança?",
-        "alternativas": [
-          "O volume de recursos captados",
-          "A dimensão moral do que é executado",
-          "A quantidade de reuniões semanais",
-          "O tamanho da sede física da instituição"
-        ],
-        "explicacao": "O texto aponta que o núcleo da questão da confiança mútua entre líder e liderados é a dimensão moral do trabalho.",
-        "correta_idx": 1,
-        "dificuldade": "difícil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Governança e Integridade: O Compromisso Ético da Diretoria",
-      "conteudo": "A gestão financeira e a captação de recursos exigem que a diretoria atue com o mais alto nível de transparência e ética. Nas associações sem fins econômicos, é um requisito fundamental que os resultados das atividades de captação não sejam partilhados entre diretores, conselheiros ou associados. Todo o recurso mobilizado deve ser integralmente destinado à consecução do objetivo social da entidade, garantindo que a confiança dos doadores e da sociedade seja preservada.\n\nPara assegurar a imunidade tributária e a credibilidade institucional, a diretoria deve manter uma escrituração contábil regular e não remunerar seus dirigentes, exceto nos casos previstos para organizações qualificadas como OSCIP. Essa postura de austeridade e dedicação à causa é o que fortalece o tecido social e permite que a organização seja vista como um agente legítimo de transformação. A transparência na prestação de contas, acompanhada pelos conselhos administrativo e fiscal, é a melhor vitrine do profissionalismo da gestão.\n\nUma diretoria responsável também se preocupa com a regularidade jurídica e fiscal, mantendo certidões e estatutos sempre atualizados. Falhas na documentação podem caracterizar inconsistência e incapacidade administrativa aos olhos dos financiadores. Portanto, a organização administrativa e o planejamento financeiro não são apenas tarefas burocráticas, mas ferramentas vitais que garantem a sustentabilidade e a expansão do impacto social da instituição."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual é a regra fundamental sobre os resultados da captação de recursos em associações sem fins econômicos?",
-        "alternativas": [
-          "Devem ser divididos igualmente entre os diretores como bônus",
-          "Devem ser investidos no mercado de ações para lucro pessoal",
-          "Não podem ser partilhados entre diretores, conselheiros ou associados",
-          "Podem ser usados para pagar viagens de férias da diretoria"
-        ],
-        "explicacao": "O conteúdo afirma que os resultados não devem ser partilhados entre diretores e conselheiros, devendo ser usados no objetivo social.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual condição é geralmente necessária para a imunidade tributária (exceto para OSCIPs)?",
-        "alternativas": [
-          "Remunerar os diretores com salários de mercado",
-          "Não remunerar seus dirigentes sob qualquer forma",
-          "Distribuir lucros anuais aos associados",
-          "Manter a contabilidade em sigilo absoluto"
-        ],
-        "explicacao": "Para gozar de imunidade, um dos requisitos é não remunerar dirigentes, salvo exceções como o certificado de OSCIP.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que a falha na documentação (certidões, estatutos) pode indicar aos financiadores?",
-        "alternativas": [
-          "Que a organização é muito criativa",
-          "Inconsistência e incapacidade administrativa",
-          "Que o foco da organização é apenas no trabalho de campo",
-          "Que a diretoria é voluntária e não precisa de organização"
-        ],
-        "explicacao": "A falta de documentação em dia é vista pelos financiadores como um sinal de inconsistência e má gestão.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Onde devem ser aplicados integralmente os resultados das atividades de captação de recursos?",
-        "alternativas": [
-          "Na compra de bens de luxo para a sede",
-          "Na consecução do objetivo social da entidade",
-          "No pagamento de dívidas pessoais dos fundadores",
-          "Exclusivamente em marketing político"
-        ],
-        "explicacao": "O texto estabelece que os resultados devem ser destinados integralmente à consecução do objetivo social da organização.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Quem deve prestar contas juntamente com o Conselho Fiscal para garantir a transparência?",
-        "alternativas": [
-          "Apenas os voluntários de campo",
-          "O Conselho Administrativo/Diretoria",
-          "Os beneficiários dos projetos",
-          "A prefeitura local obrigatoriamente"
-        ],
-        "explicacao": "O texto menciona que a transparência envolve o Conselho Administrativo prestando contas junto ao Fiscal.",
-        "correta_idx": 1,
-        "dificuldade": "difícil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "A Estrutura Organizacional: O Alicerce da Diretoria",
-      "conteudo": "Uma organização social funciona como um sistema vivo, sustentado por normas e uma estrutura administrativa clara. A composição mais comum de uma diretoria executiva inclui os cargos de Presidente, Vice-presidente e Tesoureiro, cada um com responsabilidades vitais para o equilíbrio institucional. Complementando essa estrutura, o Conselho Fiscal, composto por no mínimo dois membros, atua como um órgão de controle e análise, garantindo que a gestão dos recursos seja feita com rigor e conformidade.\n\nO bom funcionamento da diretoria depende de processos bem lavrados em ata e assembleias participativas. É através desses documentos oficiais que as decisões ganham legitimidade e os membros da diretoria são formalmente eleitos. O estatuto social, por sua vez, é o contrato que disciplina o funcionamento da entidade, estabelecendo direitos e deveres. Quando a diretoria respeita esses instrumentos, ela fortalece as relações internas e constrói uma base sólida para parcerias externas.\n\nA gestão administrativa eficiente requer que o gestor organize não apenas as tarefas, mas também o tempo e as ferramentas de trabalho. Manter arquivos claros e de fácil consulta é essencial, pois a memória da organização reside em seus documentos. Diretrizes gerais de conduta, planos de ação e procedimentos rotineiros são os trilhos que permitem à diretoria conduzir a instituição rumo ao alcance de seus objetivos com segurança e profissionalismo."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Quais são os cargos mais comuns que compõem uma Diretoria Executiva?",
-        "alternativas": [
-          "Presidente, Secretário e Coordenador de Campo",
-          "Presidente, Vice-presidente e Tesoureiro",
-          "Apenas Diretor Geral e Gerente Financeiro",
-          "Presidente e Conselho de Voluntários"
-        ],
-        "explicacao": "A pílula cita que a composição mais comum é Presidente, Vice-presidente e Tesoureiro.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual é a função do Conselho Fiscal e qual sua composição mínima sugerida?",
-        "alternativas": [
-          "Recrutar pessoas; mínimo de 5 membros",
-          "Controlar e analisar contas; mínimo de 02 membros",
-          "Definir a missão; mínimo de 10 membros",
-          "Realizar eventos; mínimo de 01 membro"
-        ],
-        "explicacao": "O Conselho Fiscal analisa contas e deve ser composto por, no mínimo, 02 membros.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que é o Estatuto Social de acordo com o texto?",
-        "alternativas": [
-          "Um panfleto de divulgação da ONG",
-          "Um contrato que disciplina o funcionamento e estabelece normas, direitos e deveres",
-          "A lista de presença das reuniões diárias",
-          "O currículo dos beneficiários atendidos"
-        ],
-        "explicacao": "O estatuto social reúne as normas que estruturam a entidade e disciplinam seu funcionamento.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Onde são registradas oficialmente as decisões de uma reunião da diretoria?",
-        "alternativas": [
-          "Em redes sociais privadas",
-          "Em atas de assembleia/reunião",
-          "Apenas em conversas informais",
-          "Em cartazes na entrada da instituição"
-        ],
-        "explicacao": "As atas são os documentos que registram por escrito os debates e decisões oficiais.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Por que é importante manter arquivos claros e organizados na gestão administrativa?",
-        "alternativas": [
-          "Para ocupar o espaço físico da sede",
-          "Porque o arquivo é a memória da organização e facilita a recuperação de informações",
-          "Para impedir que os parceiros tenham acesso aos dados",
-          "Apenas por uma exigência estética da diretoria"
-        ],
-        "explicacao": "O texto enfatiza que o arquivo é a memória da organização e permite acesso rápido às informações desejadas.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Diretoria e Comunicação: Construindo Credibilidade",
-      "conteudo": "A comunicação é, talvez, a ferramenta mais estratégica para uma diretoria que deseja dar visibilidade e credibilidade aos seus projetos. Um líder que mantém um diálogo franco e aberto com a comunidade e com os parceiros deixa um legado de confiança que facilita a captação de recursos e a adesão de novos colaboradores. Como diz o ditado popular citado no material: 'Quem não comunica, se trumbica'. A transparência na comunicação não é apenas uma escolha ética, mas um fator de sobrevivência e sucesso institucional.\n\nA construção de parcerias sólidas depende da clareza com que a diretoria define responsabilidades e preserva a autonomia de cada parceiro. É papel dos gestores motivar os demais membros a adotar um espírito empreendedor no dia a dia, alinhando as ideias e as estratégias. Um plano de comunicação bem estruturado ajuda a desenhar o portfólio da organização, garantindo que a imagem externa reflita com precisão os valores e os resultados alcançados pelo grupo.\n\nAlém de informar, a comunicação serve para ouvir. A diretoria deve estar aberta à crítica construtiva e ao feedback constante, tanto dos financiadores quanto da comunidade atendida. Essa troca de experiências é um canal de aprendizagem contínuo que fortalece a identidade local e melhora a autoestima da comunidade e das lideranças. Ao se comunicar de forma eficaz, a diretoria transforma projetos isolados em redes de prosperidade e confiança no futuro."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual a relação entre comunicação e captação de recursos mencionada no texto?",
-        "alternativas": [
-          "A comunicação não tem impacto no financeiro",
-          "A comunicação dá visibilidade e credibilidade, contribuindo para a captação",
-          "A comunicação deve ser evitada para não atrair fiscalização",
-          "A captação de recursos deve ser feita em segredo total"
-        ],
-        "explicacao": "O texto afirma que a comunicação é o melhor meio de dar visibilidade e credibilidade, o que contribui para captar recursos.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que a transparência na comunicação gera na relação com parceiros?",
-        "alternativas": [
-          "Dúvidas sobre o uso dos recursos",
-          "Maior confiança e melhores resultados",
-          "Afastamento de doadores",
-          "Burocracia desnecessária"
-        ],
-        "explicacao": "Quanto mais transparente é a relação, maior é a confiança e melhores são os resultados obtidos.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual característica é necessária no estabelecimento de uma parceria eficaz pela diretoria?",
-        "alternativas": [
-          "Dependência total de um único parceiro",
-          "Indefinição de prazos",
-          "Definir com clareza a responsabilidade de cada parceiro e ter transparência",
-          "Evitar críticas construtivas para não gerar conflito"
-        ],
-        "explicacao": "Definir responsabilidades com clareza e garantir transparência são características essenciais de uma parceria.",
+        "explicacao": "O texto lista especificamente a visão clara da realidade, a definição de ações e o diagnóstico das condições para viabilizar mudanças.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Segundo o conteúdo, a comunicação serve para informar e também para quê?",
+        "pergunta": "O que caracteriza o 'ciclo de vida' de um projeto mencionado no conteúdo?",
         "alternativas": [
-          "Apenas para vender produtos",
-          "Compartilhar, participar e transmitir ideias e conhecimentos",
-          "Esconder os erros da diretoria",
-          "Excluir a comunidade das decisões"
+          "Ter um fluxo contínuo sem encerramento previsto",
+          "Depender exclusivamente de voluntários",
+          "Ter um início, um meio e um fim determinados",
+          "Ser imutável do início ao fim"
         ],
-        "explicacao": "Comunicar significa informar, compartilhar, participar e transmitir conhecimentos, sendo um canal de aprendizagem.",
-        "correta_idx": 1,
-        "dificuldade": "média"
+        "explicacao": "O texto ressalta que é fundamental construir o projeto para ter início, meio e fim, orientando prazos de entrega.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que a construção de um plano de comunicação possibilita externamente?",
+        "pergunta": "Segundo o texto, o que gerenciar projetos exige prioritariamente?",
         "alternativas": [
-          "Maior visibilidade e credibilidade junto aos parceiros",
-          "Aumento imediato do salário da diretoria",
-          "Isenção total de prestar contas financeiras",
-          "Redução da participação popular"
+          "Compromisso com resultados que produzam mudança",
+          "Aumento imediato do faturamento da ONG",
+          "Substituição das funções do Estado",
+          "Manutenção do problema social original"
         ],
-        "explicacao": "O plano de comunicação garante externamente maior visibilidade e credibilidade para a organização.",
+        "explicacao": "Gerenciar é a capacidade de orientar a dinâmica para alcançar objetivos e fornecer resultados que produzam mudança.",
         "correta_idx": 0,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual é o efeito de um projeto social bem elaborado além de resolver um problema?",
+        "alternativas": [
+          "Tornar a comunidade dependente de recursos externos",
+          "Eliminar a necessidade de prestação de contas",
+          "Deixar um legado de aprendizado e empoderamento",
+          "Garantir lucro para os diretores da organização"
+        ],
+        "explicacao": "O texto afirma que projetos bem elaborados geram experiência enriquecedora e empoderamento.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "O Poder do Diagnóstico e do Contexto Local",
+      "conteudo": "Antes de escrever qualquer linha de um projeto, é fundamental conhecer profundamente a realidade onde se pretende intervir. O diagnóstico social não é apenas um levantamento de dados frios; é uma análise interpretativa que permite entender as causas e as consequências dos problemas em um território. Usar ferramentas como a 'Árvore de Problemas' ajuda a isolar a questão central das suas causas imediatas e dos efeitos em curso, tornando o problema tratável.\n\nA participação da comunidade é o grande diferencial de um diagnóstico robusto. Quando os moradores percebem as demandas e expressam o desejo de resolvê-las, eles se tornam atores protagonistas da ação. O 'Mapa Falante' é uma técnica participativa valiosa aqui, pois utiliza o saber local para identificar não apenas os gargalos, mas também os recursos e potencialidades já existentes na comunidade.\n\nUm bom diagnóstico evita o 'ativismo imediatista' ou o 'apagar incêndios', que compromete a qualidade do serviço social. Ao delimitar uma 'fatia' do problema que seja exequível com os recursos disponíveis, o projeto ganha foco e viabilidade. Lembre-se: entender o contexto é o alicerce que garante que o projeto será relevante e terá ressonância no futuro."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que a ferramenta 'Árvore de Problemas' ajuda a identificar?",
+        "alternativas": [
+          "O custo total de cada atividade do projeto",
+          "O problema central, suas causas e suas consequências",
+          "O currículo dos gestores da instituição",
+          "A lista de patrocinadores internacionais"
+        ],
+        "explicacao": "A Árvore de Problemas é usada para analisar o problema central, causas diretas e consequências essenciais.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Por que o diagnóstico socioterritorial busca romper com o imediatismo?",
+        "alternativas": [
+          "Para aumentar o tempo de lazer da diretoria",
+          "Para evitar que os dados sejam publicados na internet",
+          "Para orientar a gestão com base na análise sistemática da realidade",
+          "Para reduzir o número de beneficiários atendidos"
+        ],
+        "explicacao": "O diagnóstico busca romper com o imediatismo ao traduzir a realidade vivenciada em informações que orientam a gestão e avaliação.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que é o 'Mapa Falante' segundo as fontes?",
+        "alternativas": [
+          "Um GPS de alta precisão usado para entregas",
+          "Um relatório contábil lido em voz alta na assembleia",
+          "Uma representação gráfica da realidade feita coletivamente pela comunidade",
+          "Um software que traduz o estatuto da ONG para outros idiomas"
+        ],
+        "explicacao": "O Mapa Falante é uma técnica participativa que retrata o território a partir da percepção e saber dos participantes.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual é o risco de realizar ações sem planejamento e diagnóstico?",
+        "alternativas": [
+          "Aumentar excessivamente a transparência",
+          "Gerar uma atuação desqualificada baseada no 'apagar fogo'",
+          "Receber mais recursos do que o necessário",
+          "Tornar o projeto replicável demais"
+        ],
+        "explicacao": "A falta de lógica de planejamento leva a uma atuação baseada no imediatismo ('apagar fogo'), afetando a qualidade e os resultados.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que significa 'delimitar uma fatia do problema' no diagnóstico?",
+        "alternativas": [
+          "Ignorar as necessidades da comunidade",
+          "Escolher um ponto de intervenção exequível com os recursos disponíveis",
+          "Dividir o orçamento igualmente entre todos os diretores",
+          "Reduzir a duração do projeto para poucos dias"
+        ],
+        "explicacao": "A metodologia sugere reduzir o problema a uma dimensão alcançável pelo grupo, evitando a 'paralisia por hipnose' diante de problemas macro.",
+        "correta_idx": 1,
         "dificuldade": "difícil"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Gestão de Projetos e Resultados: O Foco na Eficácia",
-      "conteudo": "Para uma diretoria, gerenciar é a capacidade de orientar a dinâmica da organização para que todos os esforços convirjam para os objetivos definidos. Um projeto social bem-sucedido nasce de um diagnóstico preciso e de um planejamento que estabelece metas claras e mensuráveis. A diretoria deve estar atenta para que o projeto não tente substituir as atribuições do Estado, mas sim demonstrar, por meio de ideias criativas, que é possível transformar a realidade e inspirar novas políticas públicas.\n\nA avaliação sistemática e o monitoramento atravessam todo o processo de gestão. É através deles que a diretoria verifica se as atividades seguem o planejado e se os resultados estão sendo alcançados de forma eficiente (menor custo com maior benefício), eficaz (alcance de metas) e efetiva (mudanças duradouras na vida dos beneficiários). Um gestor de excelência sabe que erros comuns, como planejamento incompleto ou indicadores pouco claros, devem ser identificados e corrigidos rapidamente para não comprometer o futuro da ação.\n\nAo final de cada ciclo, a diretoria deve homologar os produtos do projeto e levantar as lições aprendidas. Esse conhecimento gerado deve ser documentado em um banco de dados histórico, servindo como base de melhores práticas para iniciativas futuras. Uma gestão que valoriza o aprendizado contínuo e a sistematização de processos garante a melhoria constante e a sustentabilidade técnica da instituição. Lembre-se: a organização e o planejamento são as chaves para o futuro próspero de qualquer organização social."
+      "titulo": "Planejamento Estratégico: O Mapa dos Objetivos e Metas",
+      "conteudo": "Planejar é a maneira coordenada de se organizar para atingir resultados extraordinários. No coração do planejamento estratégico estão os objetivos: o Geral, que aponta para a mudança de longo prazo (o impacto), e os Específicos, que são as vitórias concretas e mensuráveis que o projeto entregará. Um objetivo claro é aquele que todos conhecem, aceitam e se sentem motivados a alcançar.\n\nPara que as metas não fiquem apenas no papel, recomenda-se o uso do critério SMART: elas devem ser Específicas, Mensuráveis, Atingíveis, Relevantes e Temporais. Isso garante que o projeto tenha 'pés no chão', permitindo que o progresso seja medido sistematicamente. Além disso, a metodologia define o 'como': as técnicas e abordagens que transformarão as metas em realidade social.\n\nUm cronograma bem estruturado equilibra as atividades ao longo do tempo, evitando meses sobrecarregados e garantindo que cada tarefa tenha um prazo viável. Fique atento: o objetivo de um projeto é sua razão de existir e não deve ser mudado no meio do caminho, pois isso alteraria todo o seu escopo. Com foco e planejamento, a visão de futuro deixa de ser um sonho e passa a ser um plano de ação vitorioso."
     },
     "quizzes": [
       {
-        "pergunta": "O que significa 'gerenciar' segundo o texto?",
+        "pergunta": "Qual a diferença entre Objetivo Geral e Objetivos Específicos?",
         "alternativas": [
-          "Apenas contratar e demitir funcionários",
-          "A capacidade de orientar a dinâmica da organização para alcançar objetivos e a missão",
-          "Controlar as redes sociais dos voluntários",
-          "Captar recursos sem planejamento"
+          "O Geral é financeiro e os Específicos são sociais",
+          "O Geral é a ideia que move a ação a longo prazo; os Específicos visam resultados concretos e mensuráveis",
+          "Não há diferença, são sinônimos usados para preencher formulários",
+          "O Geral é definido pelos beneficiários e os Específicos pela diretoria"
         ],
-        "explicacao": "Gerenciar é orientar a dinâmica organizacional para que os esforços atinjam objetivos e a missão.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual a diferença entre eficiência e eficácia na gestão de projetos pela diretoria?",
-        "alternativas": [
-          "Não há diferença, são sinônimos",
-          "Eficiência foca no custo-benefício; Eficácia foca no alcance de metas",
-          "Eficácia foca no custo; Eficiência foca na visibilidade política",
-          "Eficiência é para empresas; Eficácia é para ONGs"
-        ],
-        "explicacao": "Eficiência é maior quanto menor o custo/maior benefício; Eficácia é quanto maior o alcance de metas.",
+        "explicacao": "O Objetivo Geral é o impacto de longo prazo; os Específicos são resultados intermediários mensuráveis que desdobram em ações.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "O que a diretoria deve fazer com as 'lições aprendidas' ao final de um projeto?",
+        "pergunta": "O que compõe o acrônimo SMART para a definição de metas?",
         "alternativas": [
-          "Ignorá-las para não reviver o passado",
-          "Documentá-las em um banco de dados para melhoria contínua e práticas futuras",
-          "Apenas contar verbalmente aos novos sócios",
-          "Excluir todos os registros de erros cometidos"
+          "Simples, Moderno, Ágil, Rápido e Teórico",
+          "Específico, Mensurável, Atingível, Relevante e Temporal",
+          "Sistemático, Mutável, Aleatório, Rígido e Técnico",
+          "Solidário, Motivador, Aberto, Regional e Transparente"
         ],
-        "explicacao": "As lições aprendidas devem ser registradas para contribuir para a melhoria contínua em projetos futuros.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual o papel do diagnóstico no processo de elaboração de projetos pela gestão?",
-        "alternativas": [
-          "É uma etapa opcional que pode ser pulada",
-          "Serve para identificar o problema, suas causas e possibilidades de mudança",
-          "Apenas para justificar o aumento de gastos",
-          "Para listar o nome de todos os diretores envolvidos"
-        ],
-        "explicacao": "O diagnóstico prepara os dados para o planejamento, identificando o problema e as formas de resolvê-lo.",
+        "explicacao": "O critério SMART (em inglês) exige que metas sejam específicas, mensuráveis, atingíveis, relevantes e temporais.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Segundo o texto, um projeto social deve ter por função substituir o Estado?",
+        "pergunta": "O que acontece se o Objetivo de um projeto for alterado durante a execução?",
         "alternativas": [
-          "Sim, as ONGs devem fazer o que o governo não faz",
-          "Não, o projeto não deve substituir o Estado, mas sim demonstrar soluções criativas e inspirar políticas",
-          "Sim, pois o Estado é ineficiente em todas as áreas",
-          "Apenas se o financiamento for 100% privado"
+          "O projeto torna-se mais flexível e eficiente",
+          "O financiador dobra o valor do repasse automaticamente",
+          "Muda-se todo o escopo, sendo tecnicamente um projeto diferente",
+          "Aumenta-se a credibilidade junto aos parceiros"
         ],
-        "explicacao": "O conteúdo ressalta que o projeto não tem por função a substituição do Estado em suas atribuições.",
+        "explicacao": "O conteúdo afirma que o objetivo não pode ser mudado, pois isso altera todo o escopo e significa que o projeto é outro.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que o cronograma de atividades deve buscar evitar?",
+        "alternativas": [
+          "Ter datas específicas para conclusão de tarefas",
+          "Meses cheios de atividades e outros com poucas (desequilíbrio)",
+          "A participação da equipe na sua elaboração",
+          "O uso de ferramentas digitais como planilhas"
+        ],
+        "explicacao": "Geralmente busca-se equilibrar a realização das atividades no tempo, evitando meses sobrecarregados e outros vazios.",
         "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Segundo o texto, o que a metodologia de um projeto deve descrever?",
+        "alternativas": [
+          "Apenas o custo total dos equipamentos",
+          "O 'como' as atividades serão realizadas para atingir os objetivos",
+          "O histórico de vida dos fundadores da ONG",
+          "A lista de todos os feriados do ano"
+        ],
+        "explicacao": "A metodologia é o caminho escolhido, descrevendo o método e procedimentos pelos quais o projeto será desenvolvido.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Gestão Financeira e Orçamentação Inteligente",
+      "conteudo": "A orçamentação é uma etapa crucial que define como os recursos financeiros serão distribuídos para que o projeto atinja seus objetivos com segurança. Um orçamento realista deve incluir não apenas os custos diretos das atividades, mas também provisões para recursos humanos (salários, encargos), materiais, serviços e infraestrutura. Recomenda-se incluir uma margem de contingência de 5% a 10% para cobrir imprevistos, garantindo a resiliência financeira da iniciativa.\n\nPara o coordenador, a 'Memória de Cálculo' é uma ferramenta indispensável: ela detalha cada rubrica, facilitando a alocação de notas fiscais e a prestação de contas futura. Além disso, o 'Cronograma de Desembolso' permite visualizar a necessidade de recursos em cada etapa da execução, mantendo o fluxo de caixa alinhado ao cronograma de atividades. Transparência é a palavra de ordem: o uso eficiente dos recursos é a melhor vitrine do profissionalismo da organização.\n\nA contrapartida também merece destaque, pois demonstra que a instituição não está apenas pedindo, mas também investindo seus próprios recursos, sejam eles financeiros, humanos ou materiais. Uma gestão financeira rigorosa, que acompanha a conta bancária semanalmente e mantém a documentação sem rasuras, protege a organização de riscos fiscais e fortalece a confiança de parceiros e doadores."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que deve ser incluído em um orçamento realista além do custo das atividades?",
+        "alternativas": [
+          "Apenas o lucro esperado para os diretores",
+          "Recursos humanos, encargos trabalhistas, materiais e infraestrutura",
+          "Somente o valor da sede física da ONG",
+          "Gastos pessoais dos voluntários não relacionados ao projeto"
+        ],
+        "explicacao": "O orçamento deve prever RH (salários, encargos), materiais, serviços e despesas administrativas.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual é o percentual sugerido para a margem de contingência no orçamento?",
+        "alternativas": [
+          "Exatamente 50%",
+          "Entre 5% a 10%",
+          "Não é recomendável ter margem de contingência",
+          "Sempre 100% do valor do projeto"
+        ],
+        "explicacao": "O texto sugere uma reserva de 5% a 10% do orçamento total para contingências.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Para que serve a 'Memória de Cálculo' em um projeto social?",
+        "alternativas": [
+          "Para registrar o histórico de reuniões da diretoria",
+          "Para detalhar rubricas, quantidades e valores unitários, facilitando a prestação de contas",
+          "Para listar os nomes de todos os beneficiários atendidos",
+          "Para desenhar o logotipo do projeto"
+        ],
+        "explicacao": "A memória de cálculo corresponde ao detalhamento de cada rubrica (valor unitário, quantidade e total), facilitando a gestão do coordenador.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que é a 'Contrapartida' no contexto de financiamento de projetos?",
+        "alternativas": [
+          "Uma multa paga pelo atraso do projeto",
+          "Os recursos que a própria instituição ou outros parceiros disponibilizam para o projeto",
+          "O valor que o doador cobra de juros da ONG",
+          "Um imposto federal sobre doações"
+        ],
+        "explicacao": "Contrapartida significa que a organização também está se prontificando a custear alguns gastos, com recursos próprios ou de parceiros.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual a periodicidade sugerida para o acompanhamento da conta bancária do projeto?",
+        "alternativas": [
+          "Anual",
+          "Somente ao final do contrato",
+          "Semanalmente, se possível",
+          "Nunca, para evitar burocracia"
+        ],
+        "explicacao": "O roteiro de prestação de contas recomenda o acompanhamento da conta bancária preferencialmente de forma semanal.",
+        "correta_idx": 2,
         "dificuldade": "difícil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Monitoramento e Avaliação: Aprendendo com a Prática",
+      "conteudo": "Monitoramento e avaliação (M&A) são os processos que garantem que o projeto não saia dos trilhos e atinja sua eficácia máxima. Enquanto o monitoramento é o acompanhamento contínuo e sistemático das atividades e gastos, a avaliação mede o impacto e a efetividade dos resultados alcançados. Ter indicadores claros – métricas que dizem se você está no caminho correto – é vital para transformar dados em decisões estratégicas.\n\nExistem indicadores de Eficiência (se os recursos estão sendo bem usados no tempo previsto) e de Eficácia (se os objetivos e metas foram atingidos). Já a Efetividade é o degrau mais alto: ela mede as mudanças significativas e duradouras na vida dos beneficiários. Para coletar essas informações, as 'Fontes de Verificação' (fotos, listas de presença, relatórios financeiros) são essenciais, pois servem como as provas documentais da execução.\n\nAdotar o conceito de MEAL (Monitoramento, Avaliação, Accountability e Aprendizado) eleva o padrão de gestão da organização. Isso significa usar os erros e acertos para melhorar processos futuros e manter a transparência absoluta com parceiros e com a comunidade. A avaliação final não deve apenas prestar contas, mas sistematizar as 'Lições Aprendidas' em um banco de dados histórico para inspirar as próximas gerações de transformadores sociais."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual a diferença conceitual entre Monitoramento e Avaliação?",
+        "alternativas": [
+          "Não há diferença, são palavras diferentes para o mesmo processo",
+          "Monitoramento é o acompanhamento contínuo; Avaliação analisa resultados e impactos em períodos específicos",
+          "Avaliação é diária; Monitoramento ocorre apenas após 10 anos",
+          "Monitoramento é feito por doadores; Avaliação é feita pelos beneficiários"
+        ],
+        "explicacao": "O monitoramento acompanha as atividades continuamente; a avaliação ocorre em períodos específicos ou ao final para analisar resultados.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que mede o indicador de 'Efetividade'?",
+        "alternativas": [
+          "O menor custo possível para uma tarefa",
+          "Apenas se o relatório foi entregue no prazo",
+          "As mudanças significativas e duradouras na vida dos beneficiários",
+          "O número de postagens em redes sociais"
+        ],
+        "explicacao": "Efetividade é medida de acordo com as mudanças significativas de forma efetiva e duradoura na qualidade de vida dos beneficiários.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que compõe as 'Fontes de Verificação' de um projeto?",
+        "alternativas": [
+          "Apenas a opinião pessoal do presidente da ONG",
+          "Documentos que comprovam as metas (listas de presença, fotos, recibos)",
+          "A lista de futuras ideias que ainda não foram executadas",
+          "O manual de instruções de equipamentos comprados"
+        ],
+        "explicacao": "Fontes de verificação são documentos, como fotos, vídeos e listas de presença, que comprovam a execução das ações.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que significa o 'A' do conceito MEAL?",
+        "alternativas": [
+          "Arrecadação (Fundraising)",
+          "Accountability (Prestação de contas e responsabilidade)",
+          "Agilidade (Agility)",
+          "Ambição (Ambition)"
+        ],
+        "explicacao": "O conceito MEAL integra Monitoramento, Avaliação, Accountability (transparência/prestação de contas) e Aprendizado.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que deve ser feito com as 'Lições Aprendidas' ao final de um projeto?",
+        "alternativas": [
+          "Devem ser apagadas para evitar críticas",
+          "Devem ser guardadas em segredo absoluto",
+          "Devem ser documentadas em um banco de dados histórico para melhoria contínua",
+          "Devem ser transformadas em bônus salarial"
+        ],
+        "explicacao": "As lições aprendidas devem integrar um banco de dados para contribuir com a melhoria contínua em projetos futuros.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Mobilização de Recursos e Comunicação Estratégica",
+      "conteudo": "A sustentabilidade de um projeto social está diretamente ligada à sua capacidade de captar recursos de fontes diversas. Isso envolve desde doações de pessoas físicas e jurídicas até patrocínios vinculados a incentivos fiscais, como a Lei Rouanet ou a Lei do Esporte. Um gestor proativo não apenas pede dinheiro; ele constrói parcerias legítimas, onde cada ator tem responsabilidades claras e autonomia preservada.\n\nA comunicação é a ferramenta que dá visibilidade e credibilidade a esse trabalho, sendo essencial para 'vender' a ideia aos doadores. Um plano de comunicação eficaz ajuda a alinhar as estratégias entre os parceiros e garante que a sociedade exerça o controle social sobre o projeto. Lembre-se: 'Quem não comunica, se trumbica'. A transparência nas redes sociais e em locais visíveis da sede é uma exigência legal para parcerias públicas (MROSC).\n\nPor fim, a manutenção do relacionamento com os patrocinadores (processo de 'revenda') é o que garante a continuidade das ações. Ao fornecer atualizações constantes sobre o impacto das contribuições e relatórios de progresso bem estruturados, a organização transforma um doador eventual em um parceiro de longo prazo na construção de um futuro mais justo."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual a importância da comunicação estratégica para projetos sociais?",
+        "alternativas": [
+          "Apenas para cumprir exigências estéticas",
+          "Dar visibilidade, credibilidade e auxiliar na captação de recursos",
+          "Para esconder os erros da gestão da comunidade",
+          "Não possui importância em projetos sem fins lucrativos"
+        ],
+        "explicacao": "O texto afirma que a comunicação é o melhor meio de dar visibilidade e credibilidade, contribuindo para a captação de recursos.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Segundo o MROSC (Lei 13.019), o que as organizações devem divulgar em seus sites?",
+        "alternativas": [
+          "A lista de compras pessoal dos diretores",
+          "Informações sobre parcerias, valores liberados e situação da prestação de contas",
+          "O telefone privado de todos os beneficiários",
+          "Nenhuma informação financeira deve ser pública"
+        ],
+        "explicacao": "As OSCs devem divulgar informações sobre fomento, parcerias, descrição do objeto e valores totais para garantir transparência.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que caracteriza uma parceria de sucesso conforme a cartilha?",
+        "alternativas": [
+          "A dependência financeira absoluta de um único doador",
+          "Clareza nas responsabilidades, autonomia dos parceiros e transparência",
+          "A inexistência de contratos formais entre as partes",
+          "O silêncio total sobre os resultados negativos"
+        ],
+        "explicacao": "Uma parceria exige definir clareza de responsabilidades, preservar autonomia, garantir crítica construtiva e ter transparência.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que significa o termo 'revenda' no fluxo de captação de recursos?",
+        "alternativas": [
+          "Vender os equipamentos do projeto para terceiros",
+          "Manter e aprofundar o relacionamento com patrocinadores após a captação inicial",
+          "Cobrar dos beneficiários pelo serviço prestado",
+          "Tentar vender o projeto para um concorrente"
+        ],
+        "explicacao": "A 'revenda' refere-se ao processo de manter o relacionamento, fornecendo atualizações e oferecendo novas oportunidades ao patrocinador atual.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que permite a dedução do imposto de renda para doadores em projetos culturais?",
+        "alternativas": [
+          "Lei Rouanet",
+          "Código de Trânsito Brasileiro",
+          "Qualquer doação em dinheiro vivo sem recibo",
+          "Apenas doações para partidos políticos"
+        ],
+        "explicacao": "A Lei Rouanet (Lei 8.313/91) é o principal mecanismo que possibilita a utilização de incentivos fiscais para cultura.",
+        "correta_idx": 0,
+        "dificuldade": "fácil"
       }
     ]
   }

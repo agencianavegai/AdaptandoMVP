@@ -1,408 +1,408 @@
 [
   {
     "pilula": {
-      "titulo": "A Liderança que Inspira: O Papel do Gestor como Mediador",
-      "conteudo": "A figura do gestor na escola moderna, especialmente em programas como o Escola da Família, transcende a mera administração burocrática. Ele é o elo vital que une a proposta pedagógica semanal às atividades transformadoras do fim de semana, atuando como um facilitador do acesso aos espaços e ao corpo docente. Ser um gestor é ter a nobre missão de orientar, divulgar e buscar parcerias que ampliem os horizontes de toda uma comunidade.\n\nNeste cenário, o Professor Coordenador Pedagógico (PCP) ganha destaque ao assumir a gestão, pois sua proximidade com os aspectos pedagógicos permite uma mediação mais profunda e eficaz. Ele não apenas organiza, mas inspira voluntários e universitários a transformarem a escola em um verdadeiro centro de cidadania. A presença ativa da diretoria é o que garante que a escola seja vista não apenas como um prédio, mas como uma fonte de soluções para a vida real.\n\nMotivar sua equipe é o combustível para o sucesso. Quando o gestor apoia e orienta com clareza, ele cria um ambiente onde a criatividade floresce e o sentimento de pertencimento se fortalece. Liderar é acreditar no potencial de cada projeto e saber que, através da sua coordenação, vidas estão sendo impactadas e o futuro está sendo construído com mãos dadas com a comunidade."
+      "titulo": "A Revolução do Aprender Fazendo: Metodologia de Projetos",
+      "conteudo": "A pedagogia contemporânea nos convida a romper com o modelo tradicional, onde o aluno é apenas um receptor passivo de informações fossilizadas. A Metodologia de Projetos surge como uma luz, transformando a sala de aula em um espaço vivo de pesquisa e descoberta. Inspirada no pensamento de John Dewey, ela defende que a educação é a própria vida, não apenas uma preparação para ela. Ao aprender fazendo, o estudante deixa de ser um receptáculo de conteúdos para se tornar o protagonista de sua própria história intelectual.\n\nNesta jornada, o professor assume o papel nobre de mediador e pesquisador junto aos seus alunos. O foco desloca-se da simples memorização para a construção ativa do conhecimento, onde problemas reais do dia a dia tornam-se o combustível para a curiosidade. Trabalhar com projetos permite que o saber seja tratado como uma rede de significados, integrando diferentes áreas e desenvolvendo competências fundamentais como autonomia, pensamento crítico e colaboração.\n\nAcredite no potencial transformador de uma prática que valoriza a bagagem cultural do aluno. Quando o ensino é pautado na problematização e na experiência real, o aprendizado torna-se duradouro e ganha sentido pleno. Seja você o agente dessa mudança, incentivando a iniciativa e a autonomia intelectual. Uma escola que pesquisa e cria é uma escola que prepara verdadeiramente para os desafios constantes de um mundo dinâmico e plural."
     },
     "quizzes": [
       {
-        "pergunta": "Qual profissional é frequentemente citado como mediador ideal das atividades da escola com o Programa no fim de semana?",
+        "pergunta": "Segundo o texto, qual é o papel do aluno na Metodologia de Projetos?",
         "alternativas": [
-          "O Secretário Escolar",
-          "O Professor Coordenador Pedagógico (PCP)",
-          "O Supervisor de Ensino",
-          "O Inspetor de Alunos"
+          "Receptor passivo de conteúdos prontos",
+          "Receptáculo de informações fossilizadas",
+          "Protagonista de sua própria história intelectual",
+          "Espectador silencioso das lições do mestre"
         ],
-        "explicacao": "O PCP é visto como facilitador por estar envolvido com os aspectos pedagógicos da unidade, facilitando a mediação.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "De acordo com o texto, quais são as funções principais do gestor na estruturação do Programa?",
-        "alternativas": [
-          "Apenas limpeza e manutenção",
-          "Fiscalização punitiva e controle de estoque",
-          "Orientar, divulgar e buscar parcerias",
-          "Ministrar todas as aulas de esportes"
-        ],
-        "explicacao": "O papel do gestor envolve orientar os envolvidos, divulgar o projeto e buscar parcerias para seu funcionamento.",
+        "explicacao": "A Metodologia de Projetos coloca o aluno no centro, agindo e construindo seu saber.",
         "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Como a presença da diretoria impacta a visão da comunidade sobre a escola?",
+        "pergunta": "Qual pensador é citado como inspiração para a ideia de 'aprender fazendo'?",
         "alternativas": [
-          "A escola passa a ser vista como um local de sequestro social",
-          "A escola é vista como fonte de soluções para a educação e comunidade",
-          "A escola torna-se um ambiente puramente burocrático",
-          "Aumenta o isolamento da escola em relação ao bairro"
+          "Aristóteles",
+          "John Dewey",
+          "Platão",
+          "Skinner"
         ],
-        "explicacao": "O envolvimento da gestão ajuda a ver o jovem e a escola como fontes de solução, não como problemas.",
+        "explicacao": "O texto menciona Dewey como defensor de que a educação é vida e ocorre pela ação.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que substitui a simples memorização na Metodologia de Projetos?",
+        "alternativas": [
+          "A cópia de textos extensos",
+          "A construção ativa do conhecimento",
+          "A repetição de fórmulas específicas",
+          "O silêncio absoluto em sala de aula"
+        ],
+        "explicacao": "O foco muda para o engajamento do aluno na criação de significados.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "O que o gestor garante ao atuar como facilitador do acesso aos espaços escolares?",
+        "pergunta": "Como o conhecimento é tratado nesta abordagem pedagógica?",
         "alternativas": [
-          "O fechamento dos portões para evitar vandalismo",
-          "A exclusividade do uso da sala de informática para funcionários",
-          "O apoio e a orientação necessários para o sucesso dos projetos",
-          "A cobrança de taxas para uso da quadra"
+          "Como unidades isoladas de estudo",
+          "Como uma sequência de fatos lineares",
+          "Como uma rede de significados integrada",
+          "Como uma verdade absoluta ditada pelo livro"
         ],
-        "explicacao": "O papel do gestor é facilitar o acesso e oferecer o apoio e orientação necessários para os projetos.",
+        "explicacao": "O saber é visto de forma global e interdisciplinar, como uma rede.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual sentimento é fortalecido quando o gestor apoia e orienta corretamente a comunidade?",
+        "pergunta": "Qual o novo papel do professor descrito na pílula?",
         "alternativas": [
-          "Sentimento de exclusão",
-          "Sentimento de pertencimento",
-          "Sentimento de apatia",
-          "Sentimento de superioridade"
+          "Dono absoluto de todo o saber",
+          "Fonte única de informações exatas",
+          "Mediador e pesquisador junto aos alunos",
+          "Modelador externo da inteligência do objeto"
         ],
-        "explicacao": "O apoio da gestão fortalece o sentimento de pertencimento da comunidade intra e extra-escolar.",
-        "correta_idx": 1,
+        "explicacao": "O professor deixa de ser centralizador para apoiar o interesse dos estudantes.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "A Estrutura do Sucesso: Coordenação Regional e Local",
-      "conteudo": "O sucesso de grandes projetos educacionais reside em uma engrenagem de coordenação bem lubrificada. Na Diretoria de Ensino, a Coordenação Regional, composta por Supervisores e Assistentes Técnico-Pedagógicos (ATP), trabalha incansavelmente para promover capacitações e trocas de experiências que enriquecem o cotidiano escolar. Essa liderança estratégica é fundamental para alinhar os objetivos macro da educação com a realidade pulsante de cada bairro.\n\nNa ponta desse processo, o Educador Profissional e o Gestor Local formam uma dupla dinâmica responsável por dar vida ao currículo e aos eixos norteadores. Eles são os guardiões da limpeza, da organização e, acima de tudo, do entusiasmo da equipe. Quando a diretoria se envolve ativamente na captação de voluntários e no estabelecimento de parcerias, ela cria uma rede de proteção que acolhe crianças e jovens, transformando a escola em um verdadeiro 'Espaço de Paz'.\n\nSeja um líder que valoriza cada relatório e cada feedback. A organização da grade de atividades baseada nas necessidades reais da comunidade é um ato de escuta e respeito que define uma gestão de excelência. Lembre-se: sua atuação coordenada é o que permite que a educação vá além dos muros, integrando saber e viver de forma harmoniosa e motivadora."
+      "titulo": "O Brincar como Alicerce do Conhecimento",
+      "conteudo": "Na Educação Infantil, o brincar não é apenas um passatempo, mas a base fundamental de toda aprendizagem. É através da ludicidade que a criança explora o mundo, simboliza realidades e constrói significados profundos sobre si e sobre o outro. Como sujeito de direitos, o pequeno estudante utiliza o lúdico para impulsionar sua 'zona de desenvolvimento proximal', realizando ações que desafiam sua própria rotina e expandem seu potencial criativo todos os dias.\n\nA verdadeira educação infantil integra o cuidar e o educar, transformando interações e brincadeiras em eixos estruturantes do currículo. Quando a criança brinca com materiais não estruturados, ela não apenas se diverte, mas desenvolve autonomia, motricidade e sociabilidade. A intencionalidade pedagógica do professor é o que brilha aqui: ele não dita o caminho, mas atua como um observador atento e facilitador, garantindo ambientes ricos e desafiadores para a experimentação.\n\nPromover a ludicidade é respeitar a essência da infância. Um aprendizado significativo nasce do prazer e do esforço conjunto em descobrir o novo. Ao valorizar a dimensão lúdica, estamos formando cidadãos mais seguros, empáticos e capazes de resolver problemas com criatividade. Deixe a imaginação fluir no pátio e na sala; ali, entre jogos e fantasias, o futuro está sendo construído com alegria e liberdade."
     },
     "quizzes": [
       {
-        "pergunta": "Quem compõe a Coordenação Regional do programa mencionada no texto?",
+        "pergunta": "O que o ato de brincar impulsiona na criança, segundo o texto?",
         "alternativas": [
-          "Apenas o Diretor da Escola",
-          "Supervisor de Ensino e Assistente Técnico-Pedagógico (ATP)",
-          "Representantes da prefeitura e alunos",
-          "Pais e mestres voluntários"
+          "A passividade escolar",
+          "A zona de desenvolvimento proximal",
+          "Apenas o cansaço físico",
+          "O isolamento social"
         ],
-        "explicacao": "A coordenação regional na Diretoria de Ensino é formada por Supervisor e ATP.",
+        "explicacao": "O texto destaca que o brincar permite que a criança vá além de seu comportamento habitual.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Quais são os três aspectos essenciais para o bom funcionamento do Programa citados para os eixos?",
+        "pergunta": "Na Educação Infantil, quais são os eixos estruturantes do currículo?",
         "alternativas": [
-          "Fiscalização, punição e burocracia",
-          "Captação de voluntários, parcerias e conservação da limpeza",
-          "Cobrança de mensalidades, lanches e fardamento",
-          "Aulas expositivas, provas e notas"
+          "Provas e notas bimestrais",
+          "Interações e brincadeiras",
+          "Cópia e memorização de sílabas",
+          "Disciplina rígida e silêncio"
         ],
-        "explicacao": "O Manual Operativo destaca a captação de voluntários, parcerias e limpeza como essenciais.",
+        "explicacao": "As diretrizes e o texto reafirmam que interações e brincadeiras são centrais.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Como a grade de atividades deve ser organizada pela gestão local?",
+        "pergunta": "Qual a função da 'intencionalidade pedagógica' do professor no brincar?",
         "alternativas": [
-          "Seguindo rigidamente um modelo nacional sem alterações",
-          "Apenas conforme o desejo do Diretor",
-          "Adequada à realidade local e necessidades da comunidade",
-          "Sorteando as atividades semanalmente"
+          "Controlar cada passo da criança",
+          "Proibir o uso de fantasias",
+          "Garantir ambientes ricos e facilitadores para a experimentação",
+          "Substituir o brinquedo pelo livro didático"
         ],
-        "explicacao": "O quadro de sugestões deve ser adequado conforme a realidade e expectativas da comunidade local.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que a coordenação regional promove para auxiliar os gestores e coordenadores de área?",
-        "alternativas": [
-          "Exames de proficiência semanais",
-          "Reuniões de capacitação e trocas de experiências",
-          "Apenas o repasse de verbas sem orientações",
-          "Multas por descumprimento de horários"
-        ],
-        "explicacao": "A equipe regional promove reuniões de capacitação para garantir o andamento do programa.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Quem é o responsável por alimentar os relatórios das unidades no site do programa?",
-        "alternativas": [
-          "O Supervisor Regional",
-          "O Educador Profissional",
-          "O Presidente da Associação de Moradores",
-          "O Aluno protagonista"
-        ],
-        "explicacao": "O Educador Profissional é responsável por alimentar os relatórios online da unidade.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Liderança em Tempos de Mudança: Flexibilidade e Visão",
-      "conteudo": "Gerir uma escola no século XXI exige a coragem de romper com modelos engessados e puramente técnicos. A diretoria deve atuar como o centro de gravidade que desloca o foco da simples transmissão de conteúdo para o desenvolvimento de competências humanas e sociais. É necessário 'aprender a desaprender' para acolher metodologias ativas que coloquem o aluno no centro do processo.\n\nUma gestão de excelência entende que imprevistos e desafios são partes orgânicas de projetos inovadores. Fornecer o suporte necessário para que educadores e alunos vivenciem essas vulnerabilidades sem medo é o diferencial de um líder transformador. Quando a diretoria investe na formação contínua da sua equipe, ela não está apenas cumprindo uma norma, mas garantindo que a instituição caminhe lado a lado com as demandas de um mundo dinâmico.\n\nAcredite: um currículo flexível e um plano de ação construído coletivamente são as ferramentas mais poderosas para combater a apatia e a desmotivação. Sua visão estratégica é o que permite que a escola seja um espaço de vida real, onde a criatividade e a autonomia são celebradas todos os dias. Seja o gestor que inspira sua equipe a ir além, transformando desafios em degraus para o crescimento mútuo."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Segundo o texto, o que a diretoria deve fornecer aos envolvidos em projetos pedagógicos orgânicos?",
-        "alternativas": [
-          "Roteiros predefinidos que não podem ser alterados",
-          "Punições para quem cometer erros técnicos",
-          "O suporte necessário para lidar com imprevistos e desafios",
-          "Apenas os materiais físicos sem orientação"
-        ],
-        "explicacao": "Projetos orgânicos não seguem roteiros rígidos e exigem suporte da instituição para lidar com imprevistos.",
+        "explicacao": "O professor planeja o ambiente para que o brincar seja educativo.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual é a recomendação de Nóvoa (2005) para a formação de professores citada no contexto da gestão?",
+        "pergunta": "O que a criança desenvolve ao brincar com materiais não estruturados?",
         "alternativas": [
-          "Deve terminar com a obtenção do diploma",
-          "Deve ser uma jornada contínua",
-          "Deve ser realizada apenas fora da escola",
-          "Não é necessária se o professor tiver experiência"
+          "Apenas desordem",
+          "Dependência total do adulto",
+          "Autonomia, motricidade e sociabilidade",
+          "Medo de errar"
         ],
-        "explicacao": "A formação deve ser contínua devido ao dinamismo do processo de ensino-aprendizagem.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que caracteriza a 'mudança de paradigma' necessária na atuação do educador sob gestão inovadora?",
-        "alternativas": [
-          "Trabalhar exclusivamente com modelos conteudistas",
-          "Seguir rigidamente o que foi planejado no início do ano",
-          "Adotar atitudes alinhadas com métodos flexíveis e colaborativos",
-          "Ignorar as interconexões entre as disciplinas"
-        ],
-        "explicacao": "A gestão inovadora exige maior flexibilidade e interconexão entre as aprendizagens individual e colaborativa.",
+        "explicacao": "A manipulação livre estimula diversas dimensões do desenvolvimento global.",
         "correta_idx": 2,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Para que a escola seja um espaço de vida real, o que a diretoria deve priorizar?",
-        "alternativas": [
-          "A padronização dos resultados a qualquer custo",
-          "A experiência e a reflexão para construir aprendizagens significativas",
-          "A memorização de dados para avaliações externas",
-          "O silêncio absoluto nos corredores"
-        ],
-        "explicacao": "A escola deve prezar pela experiência e reflexão para que as aprendizagens sejam significativas.",
-        "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual o risco de formações de professores desconectadas da realidade da unidade escolar, segundo o texto?",
+        "pergunta": "De acordo com a pílula, de onde nasce um aprendizado significativo?",
         "alternativas": [
-          "Gerar mudanças rápidas demais",
-          "Resultar em uma formação vazia que não frutifica em mudanças de ação",
-          "Aumentar o salário dos professores automaticamente",
-          "Tornar os alunos dependentes dos livros didáticos"
+          "Do medo da punição",
+          "Da repetição mecânica",
+          "Do prazer e do esforço em descobrir o novo",
+          "Apenas da explicação verbal do professor"
         ],
-        "explicacao": "Formações desconectadas do contexto desafiador da escola tendem a ser vazias e ineficazes.",
-        "correta_idx": 1,
+        "explicacao": "A motivação intrínseca e o engajamento lúdico geram significados duradouros.",
+        "correta_idx": 2,
         "dificuldade": "média"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Gestão Humanizada: Cuidado e Resiliência na Comunidade Escolar",
-      "conteudo": "A diretoria desempenha um papel fundamental na promoção da saúde mental e na gestão de crises dentro do ambiente educativo. Em momentos de dificuldade, o líder deve ser o porto seguro que oferece acolhimento, escuta ativa e suporte emocional para alunos, professores e famílias. Reconhecer que cada indivíduo tem seu tempo de reorganização emocional é a base de uma gestão empática e resiliente.\n\nPromover espaços onde os professores se sintam valorizados e seguros para compartilhar suas vivências é uma estratégia essencial de prevenção ao adoecimento psíquico. O cuidado com o cuidador deve ser uma prioridade da gestão, garantindo que a rotina profissional não sufoque o bem-estar pessoal. Quando a diretoria lidera com humanidade, ela transforma a escola em um local de proteção e reconstrução de vínculos.\n\nSeja um gestor que mapeia as redes de apoio e fortalece a intersetorialidade entre educação, saúde e assistência social. Sua capacidade de agir de forma coordenada em situações estressoras é o que garante a continuidade da missão educativa com segurança e afeto. Liderar com o coração é saber que, juntos, somos capazes de superar qualquer crise e construir uma escola verdadeiramente acolhedora."
+      "titulo": "Metodologias Ativas: O Aluno no Centro do Saber",
+      "conteudo": "As metodologias ativas representam um novo paradigma onde o engajamento e a proatividade são as chaves para o sucesso. Diferente do ensino tradicional passivo, aqui o estudante assume o comando de sua jornada de aprendizagem. Estratégias como a 'sala de aula invertida' e o 'ensino híbrido' permitem que o aluno explore conteúdos previamente e chegue ao espaço escolar pronto para debater, questionar e aplicar o conhecimento em situações reais e desafiadoras.\n\nIntegrar tecnologias digitais e gamificação no currículo não é apenas uma modernização, mas um meio poderoso de capturar a atenção de uma geração hiperconectada. Ao transformar o aprendizado em um processo interativo, despertamos o pensamento crítico e a capacidade de resolver problemas complexos. O professor atua como um mestre inspirador, um tutor que guia o processo e fornece feedbacks constantes, respeitando o ritmo e a singularidade de cada aprendiz.\n\nO objetivo final é a formação de cidadãos autônomos e reflexivos. Quando valorizamos as experiências prévias dos alunos e os desafiamos a buscar soluções coletivas, estamos criando pontes para uma educação libertadora. Sinta o entusiasmo de ver seus alunos construindo o futuro com as próprias mãos. A inovação pedagógica é o caminho para um ensino que não apenas informa, mas transforma vidas e realidades sociais."
     },
     "quizzes": [
       {
-        "pergunta": "Qual deve ser a postura da escola/diretoria diante de reações emocionais intensas após uma crise?",
+        "pergunta": "Qual característica define o aluno nas metodologias ativas?",
         "alternativas": [
-          "Exigir que todos voltem ao normal imediatamente",
-          "Promover o acolhimento com escuta ativa e respeito ao tempo de cada um",
-          "Ignorar o sofrimento para focar no conteúdo acadêmico",
-          "Punir os alunos que demonstrarem medo ou ansiedade"
+          "Receptor de informações",
+          "Agente passivo",
+          "Engajamento e proatividade",
+          "Dependente do mestre"
         ],
-        "explicacao": "Situações de crise exigem acolhimento, escuta e cuidado coletivo, respeitando o tempo individual.",
+        "explicacao": "Nessas metodologias, o aluno é instigado a ter iniciativa e ser ativo.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Como funciona a 'sala de aula invertida' mencionada no texto?",
+        "alternativas": [
+          "O professor estuda e o aluno ensina",
+          "O aluno explora conteúdos antes e debate na escola",
+          "As mesas são viradas de cabeça para baixo",
+          "Não há nenhum tipo de estudo fora da escola"
+        ],
+        "explicacao": "Inverte-se a lógica: o conteúdo base é visto antes para que a aula seja prática.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual o papel da gamificação no processo educativo?",
+        "alternativas": [
+          "Apenas distrair os alunos",
+          "Substituir o professor por robôs",
+          "Capturar a atenção e interagir de forma dinâmica",
+          "Eliminar o conteúdo acadêmico"
+        ],
+        "explicacao": "A gamificação usa elementos lúdicos para engajar e motivar o aprendizado.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que o professor deve respeitar em cada aluno segundo as metodologias ativas?",
+        "alternativas": [
+          "Apenas as notas das provas",
+          "O ritmo e a singularidade de cada um",
+          "A obediência cega às regras",
+          "O silêncio durante as explicações"
+        ],
+        "explicacao": "A personalização é um pilar das metodologias inovadoras.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Como a gestão pode proteger a saúde mental dos professores?",
+        "pergunta": "Qual o objetivo final da educação descrita nesta pílula?",
         "alternativas": [
-          "Aumentando a carga horária de reuniões após o expediente",
-          "Promovendo o reconhecimento, valorização e espaços de acolhimento",
-          "Comparando o desempenho dos professores publicamente",
-          "Substituindo o diálogo por ordens verticais e rígidas"
+          "Formar reprodutores de dados",
+          "Preparar apenas para testes técnicos",
+          "Formar cidadãos autônomos e reflexivos",
+          "Manter o modelo tradicional imutável"
         ],
-        "explicacao": "O reconhecimento, valorização e espaços de fala e escuta são fatores de proteção para os docentes.",
+        "explicacao": "As metodologias ativas visam o desenvolvimento integral e a cidadania crítica.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Criatividade e Inovação: Competências para o Século XXI",
+      "conteudo": "A criatividade não é um dom exclusivo de artistas, mas uma habilidade humana universal que pode e deve ser cultivada na escola. Ela se manifesta na capacidade de pensar de forma divergente, encontrando múltiplas soluções para um único desafio. Em um mundo de mudanças rápidas, a inovação torna-se o pilar que prepara os alunos para carreiras dinâmicas, permitindo que eles se adaptem e criem valor em qualquer ambiente onde estiverem inseridos.\n\nPromover um ambiente educacional que estimule a curiosidade e o questionamento é essencial. Estratégias como brainstorming e o uso de problemas abertos, sem respostas prontas, desafiam os estudantes a irem além do óbvio. O professor criativo é aquele que 'aprende a desaprender', conhecendo os estilos de pensar de seus alunos e diversificando suas práticas para evitar a mesmice dos modelos engessados. O erro deixa de ser um fracasso para se tornar uma etapa natural de aprendizado e ajuste.\n\nAo incentivar a expressão pessoal e a experimentação, a escola fortalece a autoconfiança e a resiliência. Quando o aluno se sente seguro para propor ideias originais, ele se torna um agente de progresso social. Cultive a imaginação em suas aulas: a criatividade é a ferramenta mais poderosa para transformar a curiosidade em conhecimento e os desafios em oportunidades de crescimento para todos."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que é o 'pensamento divergente' citado no texto?",
+        "alternativas": [
+          "Pensar exatamente como o professor",
+          "Encontrar uma única resposta correta",
+          "Encontrar múltiplas soluções para um desafio",
+          "Ignorar as opiniões dos colegas"
+        ],
+        "explicacao": "O pensamento divergente foca na variedade e originalidade de ideias.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Como o erro é visto em um ambiente que estimula a criatividade?",
+        "alternativas": [
+          "Como um fracasso imperdoável",
+          "Como motivo para punição severa",
+          "Como uma etapa natural de aprendizado e ajuste",
+          "Como prova de falta de inteligência"
+        ],
+        "explicacao": "O erro é parte do processo de experimentação e inovação.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual atitude o professor deve tomar para ser criativo?",
+        "alternativas": [
+          "Seguir rigidamente modelos antigos",
+          "Recorrer sempre às mesmas estratégias",
+          "Aprender a desaprender e diversificar práticas",
+          "Evitar perguntas difíceis dos alunos"
+        ],
+        "explicacao": "A flexibilidade docente é chave para fomentar um ambiente inovador.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "A criatividade é uma habilidade limitada a quem?",
+        "alternativas": [
+          "Apenas a grandes artistas e gênios",
+          "É uma habilidade humana universal",
+          "Apenas a crianças na fase de brincar",
+          "Apenas a pessoas com diplomas específicos"
+        ],
+        "explicacao": "O texto defende que a criatividade é inerente a todos os seres humanos.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que a diretoria deve evitar para não minimizar o sofrimento de colegas ou alunos em momentos difíceis?",
+        "pergunta": "Quais ferramentas são sugeridas para desafiar os alunos?",
         "alternativas": [
-          "Pressionar para que falem do que não desejam",
-          "Oferecer pausas e descanso",
-          "Estabelecer canais de comunicação claros",
-          "Mapear a rede de apoio psicossocial"
+          "Brainstorming e problemas abertos",
+          "Cópia de lousa e ditados",
+          "Exercícios de memorização e fixação",
+          "Provas com respostas únicas"
         ],
-        "explicacao": "É essencial respeitar os limites e não forçar sentimentos ou comportamentos.",
+        "explicacao": "Estas técnicas incentivam a exploração de caminhos não óbvios.",
         "correta_idx": 0,
         "dificuldade": "média"
-      },
-      {
-        "pergunta": "Em situações de crise escolar, qual a importância de a diretoria mapear os serviços do município?",
-        "alternativas": [
-          "Para fiscalizar a vida pessoal dos funcionários",
-          "Para saber onde buscar apoio especializado (UBS, CAPS, CVV) quando as estratégias internas não forem suficientes",
-          "Apenas para cumprir uma exigência burocrática sem uso prático",
-          "Para terceirizar toda a educação para a secretaria de saúde"
-        ],
-        "explicacao": "Saber onde buscar apoio especializado é fundamental para atravessar momentos de crise.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que a gestão deve priorizar para reconstruir o senso de pertencimento e segurança na escola após um trauma coletivo?",
-        "alternativas": [
-          "Aplicação de provas rigorosas para ocupar o tempo dos alunos",
-          "Ações simbólicas e afetivas, como espaços de memória e rodas de conversa",
-          "Ocultar o que aconteceu para não gerar boatos",
-          "Substituir toda a equipe escolar por novos profissionais"
-        ],
-        "explicacao": "Rituais de homenagem e escutas qualificadas ajudam a ressignificar a dor e fortalecer vínculos.",
-        "correta_idx": 1,
-        "dificuldade": "média"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Gestão Democrática: O Poder da Participação e da Transparência",
-      "conteudo": "A gestão democrática é o pilar que sustenta uma escola viva e conectada com seu tempo. Para a diretoria, isso significa abrir espaços para que pais, alunos e funcionários participem ativamente das decisões, fortalecendo o compromisso de todos com o projeto pedagógico. Ser um líder democrático é saber que a autoridade se constrói através do respeito e da valorização das identidades presentes no cotidiano escolar.\n\nInformar com transparência é um ato de cuidado. Em momentos de reconstrução, estabelecer canais de comunicação claros com as famílias ajuda a conter boatos e a restaurar a confiança na instituição. O gestor deve ser o mediador que garante que as demandas e necessidades da comunidade sejam acolhidas com dignidade e privacidade. A verdadeira autonomia da escola nasce desse diálogo constante entre a gestão e os diversos atores sociais.\n\nAposte na força do coletivo! Quando a diretoria estimula a criação de conselhos e fóruns de participação, ela está preparando cidadãos críticos e responsáveis para a vida em sociedade. Sua liderança é a bússola que guia a escola para um futuro de mais justiça social, igualdade e solidariedade. Lidere com clareza, abra os portões para a participação e veja sua escola se transformar em um verdadeiro modelo de democracia ativa."
+      "titulo": "Cultura e Educação: Laços de Transformação",
+      "conteudo": "A relação entre cultura e educação é o que dá alma ao processo de ensino. A escola não é um espaço isolado; ela é o ponto de encontro de diferentes identidades e expressões que precisam ser celebradas. Integrar projetos culturais — como teatro, música, artesanato e cinema — ao currículo formal enriquece o repertório dos alunos e conecta os saberes acadêmicos às vivências reais das comunidades, tornando o aprendizado muito mais íntimo e potente.\n\nValorizar a cultura popular e o patrimônio local fortalece o sentimento de pertencimento e a cidadania crítica. Quando a educação reconhece a riqueza das manifestações de matriz africana, indígena e folclórica, ela promove o respeito à diversidade e combate a desigualdade. O professor atua como um facilitador dessa 'intimidade' entre os saberes do povo e o conhecimento científico, criando uma experiência pedagógica plural e verdadeiramente inclusiva.\n\nPolíticas de fomento à cultura nas escolas são sementes de mudança social. Ao democratizar o acesso à arte e ao saber, estamos preparando jovens para enfrentar o mundo com empatia e consciência. A experiência cultural transforma a vida do aluno, ampliando sua visão de mundo e sua capacidade de sonhar. Seja o educador que abre as portas para a cultura: ali, a educação transborda os muros e ganha o colorido vibrante da vida cotidiana."
     },
     "quizzes": [
       {
-        "pergunta": "Qual é um dos princípios da política educacional estadual mencionados que a gestão deve priorizar?",
+        "pergunta": "Qual a importância de integrar projetos culturais ao currículo?",
         "alternativas": [
-          "O isolamento da escola em relação ao bairro",
-          "A gestão democrática e a inclusão social",
-          "A centralização de todas as decisões na figura do Diretor",
-          "A priorização do ensino técnico em detrimento do humanista"
+          "Cumprir apenas uma burocracia extra",
+          "Isolar a escola da comunidade vizinha",
+          "Conectar saberes acadêmicos às vivências reais",
+          "Substituir as aulas de matemática e português"
         ],
-        "explicacao": "O Programa e as leis asseguram o princípio da gestão democrática e da inclusão social.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Como o gestor deve agir em relação às informações passadas às famílias após uma situação estressora?",
-        "alternativas": [
-          "Omitir detalhes para evitar pânico",
-          "Acolher, informar com objetividade e transparência, e ouvir",
-          "Culpar as famílias pela falta de disciplina dos filhos",
-          "Delegar a comunicação apenas para as redes sociais informais"
-        ],
-        "explicacao": "A comunicação entre escola e família é pilar para a superação coletiva e deve ser baseada em informações verdadeiras.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que a gestão deve promover para reduzir a vulnerabilidade social no território de abrangência da escola?",
-        "alternativas": [
-          "Aumento de acessos a serviços socioassistenciais e setoriais através do PAIF/Programa",
-          "Expulsão imediata de alunos com baixo desempenho",
-          "Fechamento da escola aos finais de semana para economizar recursos",
-          "Redução das atividades culturais para focar em exames"
-        ],
-        "explicacao": "O aumento de acessos a serviços e a melhoria da qualidade de vida são resultados esperados de uma gestão integrada.",
-        "correta_idx": 0,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Segundo o Manual Operativo, o que a grade de atividades proposta pela gestão visa fortalecer?",
-        "alternativas": [
-          "Apenas o currículo formal de matemática e português",
-          "O sentimento de pertencimento e a identidade cultural da população",
-          "A competitividade agressiva entre os alunos",
-          "O afastamento entre a escola e as famílias"
-        ],
-        "explicacao": "As atividades visam criar oportunidades para ampliar horizontes e fortalecer o pertencimento.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "A participação de vários atores sociais na vida escolar é proposta para democratizar a gestão e também para:",
-        "alternativas": [
-          "Aumentar a burocracia dos processos internos",
-          "Diminuir os processos de exclusão, como evasão e repetência",
-          "Transformar a escola em um clube privado para as elites",
-          "Eliminar a função pedagógica dos professores"
-        ],
-        "explicacao": "A abertura e participação visam diminuir a exclusão e fortalecer interações intensas com a comunidade.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "A Visão Estratégica na Gestão Escolar: Do Planejamento à Ação",
-      "conteudo": "Uma diretoria visionária não apenas executa tarefas, mas planeja o futuro com clareza de escopo e objetivos. O uso de modelos de planejamento como o SKOPOS, que integra o Plano de Ação ao monitoramento e avaliação, é uma lição valiosa para garantir a eficácia de qualquer iniciativa educacional. Ter clareza sobre 'o que', 'como' e 'para quem' é a base de um projeto vitorioso.\n\nAdministrar com eficiência os recursos materiais e financeiros, através da parceria com instâncias como a APM, é uma responsabilidade que exige transparência e foco nas metas coletivas. O gestor deve ser capaz de ajustar e adaptar os modelos a cada situação, ouvindo os interesses genuínos dos alunos e educadores para que o planejamento seja orgânico e motivador. A avaliação não deve ser apenas quantitativa, mas um momento de ajuste e crescimento contínuo.\n\nLembre-se: sua capacidade de gestão é o que dá suporte para que a inovação aconteça. Invista tempo na organização do processo de trabalho de forma participativa e veja sua equipe se sentir corresponsável pelo sucesso da escola. Seja o líder que planeja com rigor e executa com paixão, transformando a escola em um celeiro de talentos e competências para a vida inteira."
-    },
-    "quizzes": [
-      {
-        "pergunta": "De acordo com o modelo SKOPOS citado, o que representa o componente 'Escopo'?",
-        "alternativas": [
-          "A compra de materiais de limpeza",
-          "A estruturação de procedimentos e recursos de execução",
-          "A amplitude do projeto: definição do problema, objetivos e resultados esperados",
-          "O horário de entrada dos funcionários"
-        ],
-        "explicacao": "O escopo compreende a definição do problema, justificativa, objetivos e abrangência do projeto.",
+        "explicacao": "A cultura torna o conteúdo escolar mais significativo e contextualizado.",
         "correta_idx": 2,
-        "dificuldade": "média"
+        "dificuldade": "fácil"
       },
       {
-        "pergunta": "Segundo o texto, como a verba geralmente chega até a escola no programa Escola da Família?",
+        "pergunta": "O que a valorização da cultura popular fortalece nos alunos?",
         "alternativas": [
-          "Diretamente em dinheiro entregue ao Diretor",
-          "Através de uma conta da Associação de Pais e Mestres (APM)",
-          "Não há repasse de verbas, apenas doações de lanches",
-          "Por meio de sorteios entre as escolas participantes"
+          "O desejo de abandonar a escola",
+          "O sentimento de pertencimento e a cidadania",
+          "A competitividade agressiva entre colegas",
+          "A vergonha de suas origens"
         ],
-        "explicacao": "A verba é anual e chega por meio da conta da APM da unidade escolar.",
+        "explicacao": "O reconhecimento da identidade cultural gera orgulho e engajamento social.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Como deve ser a avaliação no trabalho com projetos, contrapondo as avaliações tradicionais?",
+        "pergunta": "Qual o papel do professor na relação entre saberes populares e científicos?",
         "alternativas": [
-          "Deve ser puramente quantitativa e classificatória",
-          "Deve ocorrer durante todo o processo para fazer ajustes entre ensino e aprendizagem",
-          "Não deve existir avaliação para não estressar os alunos",
-          "Deve focar apenas na memorização do conteúdo"
+          "Ignorar os saberes populares em aula",
+          "Facilitar a 'intimidade' e o diálogo entre eles",
+          "Priorizar apenas o que está no livro didático",
+          "Separar rigidamente os dois tipos de conhecimento"
         ],
-        "explicacao": "A avaliação permeia todas as etapas, compara resultados e analisa as estratégias de construção do conhecimento.",
+        "explicacao": "O professor atua como mediador entre a realidade do aluno e a ciência.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual a finalidade de planejar atividades de forma democrática e participativa na gestão?",
+        "pergunta": "Como o texto descreve o impacto da experiência cultural na vida do aluno?",
         "alternativas": [
-          "Garantir que apenas a vontade do gestor prevaleça",
-          "Aumentar a corresponsabilidade e engajamento da equipe",
-          "Reduzir o tempo de permanência dos alunos na escola",
-          "Substituir o planejamento pedagógico por lúdico exclusivamente"
+          "É um complemento desnecessário",
+          "Atrasa o aprendizado de matérias técnicas",
+          "Amplia a visão de mundo e a capacidade de sonhar",
+          "Gera confusão mental sobre os conteúdos"
         ],
-        "explicacao": "O envolvimento ativo dos atores torna o processo colaborativo e eficaz.",
-        "correta_idx": 1,
+        "explicacao": "A arte e a cultura são fundamentais para o desenvolvimento humano integral.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que a diretoria deve priorizar ao enfrentar o desafio de implementar metodologias ativas?",
+        "pergunta": "O que a educação promove ao reconhecer manifestações de diferentes matrizes?",
         "alternativas": [
-          "O conhecimento e a capacitação contínua dos educadores",
-          "A manutenção de modelos conteudistas invariáveis",
-          "A redução do uso de tecnologias digitais",
-          "O aumento do número de alunos sentados em fileiras fixas"
+          "Respeito à diversidade e combate à desigualdade",
+          "A homogeneização de todos os alunos",
+          "O fim do currículo oficial de ensino",
+          "O isolamento de grupos minoritários"
         ],
-        "explicacao": "A implementação exige capacitação, paciência e respeito às singularidades dos alunos.",
+        "explicacao": "Uma educação plural celebra a diversidade e promove justiça social.",
         "correta_idx": 0,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Saúde Mental e Acolhimento na Comunidade Escolar",
+      "conteudo": "A escola deve ser um 'Espaço de Paz', onde a saúde mental é priorizada tanto quanto o desempenho acadêmico. Momentos de crise ou luto exigem uma postura de acolhimento profundo, escuta ativa e respeito ao tempo individual de reorganização emocional. Entender que cada pessoa vivencia a dor de forma única é o primeiro passo para construir uma comunidade resiliente, capaz de superar desafios traumáticos com humanidade e afeto.\n\nFatores de proteção, como vínculos fortes com professores e espaços para a livre expressão de sentimentos, são essenciais para prevenir o adoecimento psíquico. O cuidado com o professor também é fundamental: reconhecer suas limitações e oferecer suporte emocional garante que o 'cuidador' tenha forças para continuar sua missão educativa. A escola transforma-se em um local de proteção quando integra as dimensões cognitiva, social e emocional de forma harmoniosa e empática.\n\nSaber buscar ajuda especializada e mapear redes de apoio (como CAPS e UBS) demonstra uma gestão responsável e ética. Nunca subestime o poder de uma roda de conversa ou de um gesto de solidariedade. Juntos, famílias e educadores podem criar um ambiente onde todos se sintam seguros e valorizados. Liderar com o coração é garantir que nenhum aluno ou colega caminhe sozinho em tempos de dificuldade."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual deve ser a postura da escola em momentos de crise ou luto?",
+        "alternativas": [
+          "Exigir normalidade imediata",
+          "Focar apenas nas notas dos alunos",
+          "Acolhimento, escuta ativa e respeito ao tempo",
+          "Ignorar os sentimentos para evitar pânico"
+        ],
+        "explicacao": "O suporte emocional e a paciência são vitais para a recuperação coletiva.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O que caracteriza um 'fator de proteção' na escola?",
+        "alternativas": [
+          "Vínculos fortes e espaços para expressão de sentimentos",
+          "Punições rigorosas para quem chora",
+          "Ausência total de diálogo entre pais e mestres",
+          "Excesso de tarefas escolares em períodos de estresse"
+        ],
+        "explicacao": "O apoio social e a abertura emocional protegem contra o sofrimento psíquico.",
+        "correta_idx": 0,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Por que o cuidado com o professor é destacado no texto?",
+        "alternativas": [
+          "Porque ele não possui problemas pessoais",
+          "Para garantir que ele possa continuar cuidando dos alunos",
+          "Apenas por uma exigência trabalhista burocrática",
+          "Para que ele nunca precise de folgas ou descansos"
+        ],
+        "explicacao": "Cuidar do cuidador é essencial para manter a saúde de toda a escola.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que a gestão deve mapear para oferecer suporte completo?",
+        "alternativas": [
+          "Apenas as notas baixas da turma",
+          "Redes de apoio especializado como CAPS e UBS",
+          "Lojas de materiais de construção",
+          "Apenas os horários das aulas teóricas"
+        ],
+        "explicacao": "Saber onde buscar ajuda profissional externa é parte da gestão da saúde mental.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Como a escola deve ser vista em relação à saúde mental?",
+        "alternativas": [
+          "Como um local de cobrança estritamente técnica",
+          "Como um espaço de proteção e acolhimento emocional",
+          "Como um ambiente onde as emoções devem ser escondidas",
+          "Como um lugar desvinculado das necessidades das famílias"
+        ],
+        "explicacao": "A escola integral cuida do ser humano em todas as suas dimensões.",
+        "correta_idx": 1,
         "dificuldade": "fácil"
       }
     ]

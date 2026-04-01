@@ -1,67 +1,271 @@
 [
   {
     "pilula": {
-      "titulo": "Liderança Estratégica: O Poder de Reinventar a Captação",
-      "conteudo": "Para a diretoria de uma Organização da Sociedade Civil (OSC), a captação de recursos não deve ser vista apenas como um projeto isolado, mas sim como um **plano estratégico contínuo**. Em tempos de crise, a liderança tem o papel fundamental de inspirar a organização a se reinventar, injetando criatividade e diversificando fontes para garantir autonomia e sobrevivência. A regra de ouro para uma gestão sustentável é não permitir que uma única fonte represente mais de um terço da receita total, mantendo o equilíbrio entre empresas, pessoas físicas e recursos públicos.\n\nO diretor deve agir como a ponte entre os doadores e a causa, comunicando com transparência que é através da sua OSC que os recursos chegam a quem mais precisa. Mais do que pedir, a diretoria precisa saber apresentar a causa de forma atraente para mobilizar aliados, que são os recursos mais importantes de qualquer entidade. O uso estratégico da tecnologia e do marketing de conteúdo permite iniciar uma conversa direta com as pessoas, sem intermediários, construindo vínculos duradouros e fidelizando doadores.\n\nO sucesso institucional depende da capacidade da diretoria em estruturar processos organizados, como o 'funil de doações', que atrai e converte apoiadores por meio de conteúdos relevantes. Investir tempo no diálogo constante com doadores individuais traz um crescimento orgânico e constante, pois a maioria desses doadores torna-se fiel por anos. Líderes visionários entendem que a tecnologia é uma ferramenta que habilita processos, mas o protagonismo da transformação social permanece sempre humano e comunitário."
+      "titulo": "Governo Digital: A Ponte para a Inclusão e Cidadania",
+      "conteudo": "O conceito de **Governo Digital** representa uma revolução na administração pública, utilizando tecnologias de informação e comunicação (TICs) para aproximar o Estado do cidadão, simplificando o acesso a direitos e reduzindo a burocracia. Durante a pandemia, ferramentas como o Auxílio Emergencial demonstraram que a tecnologia pode ser uma porta de acesso vital a serviços essenciais, corporificando direitos sociais no espaço digital. É uma jornada emocionante onde o digital não é apenas um fim, mas um instrumento para fortalecer a democracia e tornar os serviços mais ágeis e eficientes.\n\nNo entanto, o verdadeiro sucesso dessa transformação reside em garantir que ninguém seja deixado para trás. A tecnologia deve ser uma força para diminuir a distância entre o governo e a população, agindo sobre as causas da desigualdade digital. Adaptar canais com linguagens simples e interfaces acessíveis é fundamental para que cidadãos com diferentes níveis de instrução possam exercer sua cidadania plenamente.\n\nLiderar essa mudança exige sensibilidade para entender que, quanto mais excluída digitalmente for uma pessoa, mais ela precisa que o Estado aja de forma inclusiva. Ao priorizar o foco no usuário e o desenho de serviços centrados nas pessoas, transformamos a tecnologia em uma aliada poderosa na busca por um mundo mais inclusivo e equitativo."
     },
     "quizzes": [
       {
-        "pergunta": "De acordo com o texto, qual é a definição correta de captação de recursos para uma OSC?",
+        "pergunta": "Qual o objetivo principal das iniciativas de governo digital?",
         "alternativas": [
-          "Um projeto de curto prazo focado apenas no ato de pedir.",
-          "Um plano estratégico organizado que define metas e objetivos.",
-          "Uma atividade secundária que não exige planejamento.",
-          "Um processo exclusivamente voltado para grandes doadores empresariais."
+          "Aumentar a burocracia estatal.",
+          "Facilitar o acesso aos serviços públicos e reduzir custos.",
+          "Substituir totalmente o atendimento humano.",
+          "Priorizar apenas o setor privado."
         ],
-        "explicacao": "O texto afirma explicitamente que a captação de recursos não é um projeto, mas um plano onde é necessário definir estratégias, metas e objetivos.",
+        "explicacao": "Iniciativas de governo digital visam facilitar o acesso a serviços públicos, diminuindo burocracia e custos desnecessários.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual é a 'regra de ouro' mencionada para garantir a sustentabilidade financeira da organização?",
+        "pergunta": "Que exemplo brasileiro é citado como uso estratégico da tecnologia para direitos sociais na pandemia?",
         "alternativas": [
-          "Captar recursos apenas de fontes governamentais.",
-          "Garantir que pelo menos 50% dos recursos venham de empresas.",
-          "Nenhuma fonte de recursos deve representar mais de um terço da receita.",
-          "Focar exclusivamente em doações de pessoas físicas."
+          "O uso de drones para entrega de alimentos.",
+          "A criação de um novo imposto digital.",
+          "A implementação do Auxílio Emergencial via aplicativo.",
+          "A proibição do uso de redes sociais por servidores."
         ],
-        "explicacao": "A pílula destaca que nenhuma fonte de recursos deve representar mais de 35% (ou um terço) do total, garantindo a autonomia da organização.",
+        "explicacao": "A pílula destaca a implementação do Auxílio Emergencial via aplicativo como exemplo de acesso a direitos sociais na pandemia.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual o risco da exclusão digital mencionado no texto?",
+        "alternativas": [
+          "Melhora automática da eficiência do governo.",
+          "Redução das desigualdades sociais.",
+          "Tornar o cidadão sem recursos tecnológicos 'invisível' para o Estado.",
+          "Aumentar o número de voluntários presenciais."
+        ],
+        "explicacao": "A falta de recursos tecnológicos pode tornar o cidadão invisível para o Estado, ampliando as distâncias em vez de diminuí-las.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual o papel fundamental da diretoria na relação com os doadores?",
+        "pergunta": "Como o Estado deve agir para realizar sua finalidade de reduzir desigualdades no digital?",
         "alternativas": [
-          "Agir como uma barreira burocrática.",
-          "Ser a ponte entre os doadores e o público atendido, comunicando o destino dos recursos.",
-          "Delegar toda a comunicação para empresas terceirizadas sem supervisão.",
-          "Evitar o uso de tecnologias para manter a tradição."
+          "Cobrando taxas pelo acesso a sites governamentais.",
+          "Agindo sobre as causas da desigualdade digital e adaptando canais para acessibilidade.",
+          "Digitalizando apenas processos internos da diretoria.",
+          "Incentivando o uso de tecnologias obsoletas."
         ],
-        "explicacao": "O texto enfatiza que a diretoria deve ser a ponte, garantindo que os doadores saibam que os recursos chegam a quem precisa.",
+        "explicacao": "Para reduzir desigualdades, o Estado precisa agir nas causas da exclusão digital e garantir acessibilidade em seus canais.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que significa incorporar 'abordagens de desenho de serviços focado nas pessoas'?",
+        "alternativas": [
+          "Criar sistemas que apenas engenheiros de TI compreendam.",
+          "Focar exclusivamente no lucro da organização.",
+          "Conhecer perfis, necessidades e jornadas do público-alvo para garantir o acesso.",
+          "Remover a possibilidade de atendimento presencial."
+        ],
+        "explicacao": "Design focado nas pessoas envolve conhecer o usuário e sua jornada para remover barreiras de acesso.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "E-filantropia e Novas Fronteiras da Captação via Web",
+      "conteudo": "A captação de recursos evoluiu de pedidos 'cara a cara' para um ecossistema digital dinâmico, onde a **e-filantropia** utiliza o potencial da rede para gerar engajamento e impacto social. Com a Web 2.0, o internauta deixou de ser espectador para se tornar protagonista, permitindo que a inteligência coletiva mobilize recursos em prol de objetivos comuns. Atualmente, modelos como o *crowdfunding* e a captação *peer-to-peer* (P2P) demonstram o poder das redes colaborativas para angariar microdoações e ampliar o alcance das causas sociais.\n\nNeste novo cenário, o marketing de conteúdo torna-se essencial: antes de pedir, é preciso oferecer valor, notícias e informações relevantes que criem um vínculo de confiança com o doador. A transparência e a conectividade permitem uma conversa direta com as pessoas, eliminando intermediários e descobrindo a essência das marcas e organizações. O uso de estratégias multicanais, incluindo e-mail marketing, redes sociais e dispositivos móveis, é indispensável para alcançar doadores de todos os perfis.\n\nO sucesso institucional depende de um Plano de Captação Estratégico que utilize ferramentas inovadoras, como lojas virtuais e sistemas de filiação online seguros. À medida que avançamos para a Web 4.0, sistemas operacionais inteligentes e automação baseada em IA prometem suporte ainda mais profundo à tomada de decisão e eficiência organizacional. A tecnologia é o motor que nos permite transformar milhares de pequenas contribuições em grandes mudanças sociais."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que caracteriza a Web 2.0 no contexto da captação de recursos?",
+        "alternativas": [
+          "O uso de sites puramente informáticos e unidirecionais.",
+          "A mudança para uma internet como plataforma com forte participação da sociedade.",
+          "A proibição do uso de aplicativos móveis.",
+          "O fim da necessidade de doações individuais."
+        ],
+        "explicacao": "A Web 2.0 é caracterizada pela participação ativa da sociedade e pelo uso da internet como plataforma colaborativa.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual a premissa básica do marketing de conteúdo na web para OSCs?",
+        "alternativas": [
+          "Colocar um botão de 'doe aqui' logo na página inicial sem outras informações.",
+          "Oferecer conteúdo online gratuito, relevante e de qualidade antes de solicitar doações.",
+          "Esconder os resultados da organização para atrair curiosos.",
+          "Focar exclusivamente em anúncios impressos."
+        ],
+        "explicacao": "O marketing de conteúdo visa educar, informar e criar empatia antes de pedir recursos.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Segundo o texto, o que o marketing de conteúdo permite à organização?",
+        "pergunta": "O que é o crowdfunding segundo o texto?",
         "alternativas": [
-          "Aumentar a burocracia nos processos de doação.",
-          "Criar anúncios invasivos que afastam o público.",
-          "Iniciar uma conversa direta com as pessoas e descobrir a essência da marca.",
-          "Substituir totalmente a necessidade de planos estratégicos."
+          "Um empréstimo bancário com altos juros.",
+          "Um modelo de financiamento coletivo baseado em microdoações de usuários interessados.",
+          "Uma técnica de venda de produtos em lojas físicas.",
+          "Um subsídio governamental exclusivo para grandes empresas."
         ],
-        "explicacao": "O marketing de conteúdo abre a oportunidade de uma conversa direta e permite que as pessoas conheçam a essência das organizações.",
+        "explicacao": "Crowdfunding é o financiamento coletivo feito por uma 'multidão' interessada em viabilizar um projeto.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual a principal vantagem de uma base de apoiadores constantes (indivíduos)?",
+        "alternativas": [
+          "Exige menos planejamento que editais.",
+          "O recurso é sempre carimbado para fins específicos.",
+          "Gera sustentabilidade financeira e legitimidade institucional.",
+          "É a fonte de recursos mais instável que existe."
+        ],
+        "explicacao": "Ter milhares de indivíduos doando traz segurança constante e confere legitimidade à organização.",
         "correta_idx": 2,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual é o benefício de longo prazo ao se investir em doadores individuais?",
+        "pergunta": "O que caracteriza a futura Web 4.0 mencionada na pílula?",
         "alternativas": [
-          "Eles costumam desistir da doação após o primeiro mês.",
-          "Gera um crescimento orgânico constante e fidelidade por anos.",
-          "É a fonte de recursos mais cara e menos eficiente para uma OSC.",
-          "Exige menos trabalho logístico do que qualquer outra fonte."
+          "O retorno aos sites estáticos da década de 90.",
+          "Um sistema operacional inteligente e dinâmico baseado em IA.",
+          "O fim total da conectividade móvel.",
+          "O uso exclusivo de papel-moeda para doações."
         ],
-        "explicacao": "Estudos citados indicam que a captação com indivíduos resulta em crescimento orgânico constante e fidelidade à instituição por anos.",
+        "explicacao": "A Web 4.0 será um sistema dinâmico que realizará tarefas de forma automática usando inteligência artificial.",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Inteligência Artificial: O Novo Motor do Impacto Social",
+      "conteudo": "A **Inteligência Artificial (IA)** não é mais uma promessa futurista; ela já está transformando o campo socioambiental brasileiro, impulsionando a produtividade em 68% e a criatividade em 58% das organizações que a adotam. Ferramentas como o ChatGPT lideram o uso, sendo exploradas para otimizar a comunicação e a criação de rascunhos de relatórios. No entanto, ainda existe uma subutilização estratégica em áreas críticas como gestão financeira e captação de recursos, que permanecem largamente intocadas pela inovação.\n\nAdotar a IA exige um processo gradual em espiral: começa-se pelo uso pessoal experimental para ganhar familiaridade, avança-se para o uso profissional de produtividade e atinge-se o nível organizacional estratégico. Líderes visionários utilizam a IA não apenas como uma ferramenta técnica, mas como uma ponte para um mundo mais inclusivo, democratizando o acesso ao conhecimento. É vital enfrentar as desigualdades interseccionais e regionais para garantir que a IA beneficie a todos, especialmente no Norte e Centro-Oeste do país.\n\nApesar do entusiasmo, a responsabilidade deve ser o guia. Menos de 20% das organizações mencionam ações concretas para mitigar riscos éticos, como vieses algorítmicos e violação de privacidade. O futuro promissor da IA reside na análise de dados para tomada de decisões baseadas em evidências, permitindo que as organizações sociais foquem sua energia humana no que realmente importa: o cuidado com pessoas e causas."
+    },
+    "quizzes": [
+      {
+        "pergunta": "De acordo com a pesquisa citada, qual o impacto mais destacado do uso de IA nas organizações?",
+        "alternativas": [
+          "Redução total da equipe de funcionários.",
+          "Aumento da produtividade e da criatividade.",
+          "Aumento de 90% na receita imediata.",
+          "Criação de novos impostos digitais."
+        ],
+        "explicacao": "A pesquisa relatou que 68% dos respondentes observaram aumento na produtividade e 58% na criatividade.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Quais são as áreas onde a IA é mais utilizada atualmente no campo social?",
+        "alternativas": [
+          "Gestão financeira e captação de recursos.",
+          "Comunicação e criação de conteúdo.",
+          "Previsão de padrões e recrutamento.",
+          "Limpeza e manutenção física."
+        ],
+        "explicacao": "A IA é amplamente usada para comunicação (70%) e criação de conteúdo (75%), mas subutilizada em áreas financeiras.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual a porcentagem de organizações que se consideram líderes em integração tecnológica de IA?",
+        "alternativas": [
+          "50%",
+          "6%",
+          "90%",
+          "29%"
+        ],
+        "explicacao": "Apenas 6% das organizações relatam uma integração avançada ou liderança no uso de IA.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que caracteriza o estágio inicial da 'Espiral do uso da IA'?",
+        "alternativas": [
+          "Uso organizacional para análise preditiva.",
+          "Uso pessoal para traduções, resumos e experimentos simples.",
+          "Uso em redes para regulamentação nacional.",
+          "Substituição de diretores por chatbots."
+        ],
+        "explicacao": "A espiral começa com o uso pessoal (traduções, rascunhos) para perder o medo e ganhar familiaridade.",
+        "correta_idx": 1,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Qual é a principal barreira para a adoção de IA relatada por 42% dos respondentes?",
+        "alternativas": [
+          "Medo de robôs dominarem o mundo.",
+          "Falta de conhecimento ou habilidades técnicas.",
+          "A proibição legal do uso de computadores.",
+          "A falta de interesse dos beneficiários."
+        ],
+        "explicacao": "A falta de conhecimento técnico é o principal obstáculo citado (42%) para a adoção da tecnologia.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Tecnologia Social: Inovação para a Transformação Comunitária",
+      "conteudo": "Diferente da tecnologia convencional (TC), que foca na maximização do lucro e muitas vezes gera exclusão, a **Tecnologia Social (TS)** nasce da interação com a população para resolver demandas sociais concretas. Inspirada pelos ideais de Gandhi e pelo conceito de 'produção pelas massas', a TS é um instrumento de emancipação que respeita a cultura local e os saberes populares. Ela se manifesta através de produtos, técnicas e metodologias reaplicáveis que promovem a inclusão social e a melhoria da qualidade de vida.\n\nA TS baseia-se em quatro dimensões fundamentais: Conhecimento, ciência e tecnologia; Participação, cidadania e democracia; Educação; e Relevância social. Nela, o beneficiário não é apenas um consumidor, mas o ator central do processo, apropriando-se da tecnologia para ganhar autonomia. Exemplos como o Portal Transparência e tecnologias assistivas para pessoas com deficiência mostram como a inovação pode ser orientada pela necessidade humana em vez da lucratividade do mercado.\n\nPara que uma inovação seja verdadeiramente social, ela precisa ser eficaz e gerar melhorias mensuráveis no bem-estar da comunidade. A diretoria de uma OSC deve incentivar o planejamento organizado do conhecimento, garantindo que a tecnologia sirva à missão social e não o contrário. Ao adotar tecnologias sociais, as organizações fortalecem os laços de confiança e protagonizam uma democracia mais participativa e heterogênea."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Qual a principal diferença entre Tecnologia Social (TS) e Tecnologia Convencional (TC)?",
+        "alternativas": [
+          "A TC é gratuita e a TS é paga.",
+          "A TC visa ao lucro e exclusão, enquanto a TS visa à solução de demandas sociais e inclusão.",
+          "A TS é feita apenas por máquinas e a TC por humanos.",
+          "Nenhuma, são sinônimos perfeitos."
+        ],
+        "explicacao": "A TS coloca a necessidade social e o bem-estar acima da lucratividade de mercado, ao contrário da TC.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Quem foi a figura histórica mencionada como pioneira no uso de 'equipamento tecnologicamente apropriado'?",
+        "alternativas": [
+          "Steve Jobs na garagem.",
+          "Schumpeter com a inovação tradicional.",
+          "Gandhi com a roca de fiar (Charkha).",
+          "Bill Gates com o sistema operacional Windows."
+        ],
+        "explicacao": "Gandhi é citado por utilizar tecnologias simples para despertar a consciência política e autodeterminação do povo.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "Quais são as quatro dimensões da Tecnologia Social segundo o ITS?",
+        "alternativas": [
+          "Lucro, Mercado, Competição e Publicidade.",
+          "Hardware, Software, Internet e Nuvem.",
+          "Conhecimento, Participação, Educação e Relevância Social.",
+          "Burocracia, Hierarquia, Controle e Sigilo."
+        ],
+        "explicacao": "O Instituto de Tecnologia Social define essas quatro dimensões como pilares da TS.",
+        "correta_idx": 2,
+        "dificuldade": "média"
+      },
+      {
+        "pergunta": "O que significa o termo 'reaplicação' (em vez de replicação) em Tecnologia Social?",
+        "alternativas": [
+          "Copiar exatamente igual sem mudar nada.",
+          "Reprojetar a tecnologia considerando o contexto e valores locais.",
+          "Excluir os beneficiários do processo de decisão.",
+          "Patentar a ideia para que ninguém mais use."
+        ],
+        "explicacao": "Diferente da replicação em série, a reaplicação exige adequação sociotécnica ao novo contexto.",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      },
+      {
+        "pergunta": "Para que uma Tecnologia Assistiva (TA) seja considerada Social, o que é necessário?",
+        "alternativas": [
+          "Que seja o produto mais caro do mercado.",
+          "Que o conhecimento seja democratizado e voltado para a necessidade do beneficiário.",
+          "Que seja importada de países do Norte Global.",
+          "Que não envolva participação de familiares."
+        ],
+        "explicacao": "Para ser TS, a TA deve permitir a apropriação do conhecimento e focar na emancipação da pessoa com deficiência.",
         "correta_idx": 1,
         "dificuldade": "média"
       }
@@ -69,339 +273,135 @@
   },
   {
     "pilula": {
-      "titulo": "Transparência: A Chave da Diretoria para a Legitimidade",
-      "conteudo": "A transparência não é apenas uma obrigação de prestação de contas, mas um **instrumento de fortalecimento institucional** e ação política. Para a diretoria, assumir uma postura transparente é vital para converter desconfiança em apoio, especialmente em contextos de crise. Tecnologias como o 'Portal Transparência' permitem que a organização publicize sua identidade, gestão e resultados, respondendo a perguntas essenciais como 'quem somos', 'o que fazemos' e 'como fazemos'.\n\nO processo de preenchimento desses dados mobiliza diversos setores internos e exige que a diretoria reflita sobre seu próprio estatuto e eficácia social. Ao adotar selos de compromisso com a transparência, a gestão comunica seriedade e profissionalismo, o que é um diferencial estratégico em editais de financiamento e premiações. A transparência digital facilita o acesso descentralizado à informação e fortalece o controle social, combatendo práticas de corrupção.\n\nA diretoria deve liderar a mudança cultural necessária para a abertura de dados, entendendo que isso gera confiança pública e parcerias duradouras com universidades, setor privado e governos. Relatórios de sustentabilidade gerados automaticamente por plataformas digitais tornam-se poderosos aliados no diálogo com investidores sociais, simplificando a comunicação de impacto. Ser transparente é, acima de tudo, garantir o direito do cidadão à informação e elevar o padrão ético do terceiro setor."
+      "titulo": "Transformação Digital: Redesenhando o Futuro da Gestão",
+      "conteudo": "A **Transformação Digital** na gestão pública e nas OSCs vai muito além da simples informatização; ela implica uma reformulação completa dos modelos de gestão e da cultura organizacional. Para que seja efetiva, a liderança deve romper com práticas tradicionais e burocráticas, adotando uma gestão dinâmica, colaborativa e centrada nas necessidades da população. Tecnologias emergentes como *Big Data*, Inteligência Artificial e *Blockchain* são elementos cruciais para modernizar processos e garantir a segurança das transações públicas.\n\nFerramentas como sistemas de gestão integrada (ERPs) permitem a centralização de informações e a automação de processos financeiros e de recursos humanos, eliminando redundâncias e reduzindo desperdícios. No nível municipal, portais como o Gov.br exemplificam como a digitalização simplifica a vida do cidadão, permitindo que serviços essenciais sejam acessados sem sair de casa. A transformação digital bem-sucedida não depende apenas de *chips*, mas de pessoas preparadas e comprometidas com a inovação.\n\nO desafio para a diretoria é investir na capacitação contínua e na inclusão digital, assegurando que o avanço tecnológico não crie novas formas de exclusão. Ao integrar a tecnologia de forma estratégica, as organizações sociais tornam-se mais transparentes, rastreáveis e auditáveis, fortalecendo a confiança pública e o controle social. Ser digital é, acima de tudo, ser mais humano e acessível em um mundo em constante mudança."
     },
     "quizzes": [
       {
-        "pergunta": "Além da prestação de contas, como o texto define a transparência para uma OSC?",
-        "alternativas": [
-          "Um custo operacional desnecessário.",
-          "Um instrumento de fortalecimento institucional e ação política.",
-          "Uma forma de esconder dados estratégicos da concorrência.",
-          "Uma exigência técnica apenas para grandes fundações."
-        ],
-        "explicacao": "O texto destaca que a transparência é um instrumento para fortalecer a instituição e exercer ação política.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Quais são as dimensões organizacionais que o Portal Transparência ajuda a responder?",
-        "alternativas": [
-          "Apenas o saldo bancário da organização.",
-          "Identidade, Gestão, Resultados e Parcerias.",
-          "Lucratividade e ROI (Retorno sobre Investimento).",
-          "Nomes e endereços privados de todos os doadores."
-        ],
-        "explicacao": "As informações no portal são organizadas nas dimensões de Identidade, Gestão, Resultados e Parcerias.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual é o impacto interno do preenchimento de dados de transparência segundo a pílula?",
-        "alternativas": [
-          "Causa desmotivação na equipe de campo.",
-          "Não gera impacto, sendo apenas um trabalho burocrático.",
-          "Mobiliza setores internos e faz a diretoria refletir sobre estatutos e eficácia.",
-          "Substitui a necessidade de ter uma diretoria ativa."
-        ],
-        "explicacao": "O processo de preencher dados faz a organização repensar sua estrutura e atuação, mobilizando diretoria e coordenadores.",
-        "correta_idx": 2,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "O que o 'selo de compromisso com a transparência' comunica à sociedade?",
-        "alternativas": [
-          "Que a organização possui muitos recursos financeiros.",
-          "Seriedade, comprometimento e profissionalismo na gestão.",
-          "Que a organização não precisa mais de novos doadores.",
-          "Apenas a logomarca da instituição parceira."
-        ],
-        "explicacao": "O selo é uma forma de demonstrar a seriedade do trabalho e o compromisso anual com a prestação de contas.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Como a transparência digital contribui para a democracia, segundo o conteúdo?",
-        "alternativas": [
-          "Limitando o acesso à informação a especialistas.",
-          "Fortalecendo o controle social e combatendo a corrupção.",
-          "Garantindo o sigilo absoluto de todos os atos governamentais.",
-          "Aumentando os custos de fiscalização para o cidadão."
-        ],
-        "explicacao": "A transparência fortalece o controle social, inibe a corrupção e promove uma administração justa.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Transformação Digital: Liderando a Cultura da Inovação",
-      "conteudo": "A transformação digital na gestão pública e nas OSCs vai muito além da simples informatização de processos; ela exige uma **reformulação completa dos modelos de gestão** e da cultura organizacional. Para a diretoria, o desafio é não apenas 'digitalizar a burocracia', mas redesenhar funções para que a tecnologia habilite serviços focados nas necessidades reais das pessoas. A liderança deve ser o motor dessa mudança, combatendo a resistência interna e incentivando um ambiente permissivo à experimentação.\n\nGestores visionários compreendem que o uso intensivo de dados e a automação geram ganhos expressivos de eficiência e agilidade, permitindo decisões baseadas em evidências. No entanto, a diretoria deve estar atenta às desigualdades digitais: quanto mais excluída digitalmente for uma pessoa, menos acesso ela terá aos serviços. Por isso, é papel da liderança garantir que os canais sejam acessíveis, utilizando interfaces e linguagens simples que não exijam habilidades técnicas complexas dos usuários.\n\nA capacitação contínua dos servidores e colaboradores é indispensável. A diretoria deve investir não só no domínio das ferramentas, mas no desenvolvimento de uma nova mentalidade voltada para a colaboração e melhoria contínua. Ao liderar com empatia e foco nas pessoas, a gestão transforma a tecnologia em uma aliada estratégica para reduzir iniquidades sociais e elevar a qualidade de vida da comunidade atendida."
-    },
-    "quizzes": [
-      {
-        "pergunta": "O que a transformação digital implica, além da informatização?",
+        "pergunta": "Segundo o texto, o que é a Transformação Digital na esfera pública?",
         "alternativas": [
           "Apenas a compra de novos computadores.",
-          "Reformulação dos modelos de gestão, cultura e formas de interação.",
-          "A substituição total de humanos por robôs na diretoria.",
-          "O fim de qualquer atendimento presencial por lei."
+          "A simples digitalização de documentos em PDF.",
+          "Uma reformulação completa dos modelos de gestão, cultura e interação.",
+          "O fim da participação cidadã nas decisões."
         ],
-        "explicacao": "A transformação digital envolve uma reformulação completa da cultura organizacional e dos modelos de trabalho.",
-        "correta_idx": 1,
+        "explicacao": "A transformação digital exige mudar a cultura e os modelos de trabalho, não apenas informatizar processos.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual deve ser o foco principal ao desenhar serviços digitais, segundo o texto?",
+        "pergunta": "Qual ferramenta é citada para garantir transparência e segurança em transações públicas?",
         "alternativas": [
-          "Facilitar apenas o trabalho da diretoria.",
-          "As necessidades reais das pessoas e o foco no usuário.",
-          "O uso da tecnologia mais cara disponível no mercado.",
-          "A criação de processos mais burocráticos e complexos."
+          "Blockchain.",
+          "Máquinas de escrever elétricas.",
+          "Correio convencional.",
+          "Telefone fixo."
         ],
-        "explicacao": "A pílula afirma que é preciso incorporar abordagens de desenho de serviços focados nas pessoas e em suas necessidades.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
+        "explicacao": "O blockchain é mencionado como uma inovação para garantir transparência e segurança.",
+        "correta_idx": 0,
+        "dificuldade": "média"
       },
       {
-        "pergunta": "Qual o risco da exclusão digital para o papel do Estado ou das OSCs?",
+        "pergunta": "Para que servem os sistemas ERPs mencionados na pílula?",
         "alternativas": [
-          "Nenhum, pois o digital é apenas uma opção.",
-          "Agravamento das desigualdades sociais.",
-          "Redução imediata de todos os custos operacionais.",
-          "Aumento automático da produtividade de quem não tem acesso."
+          "Para aumentar o tempo de resposta do governo.",
+          "Para centralizar informações e automatizar processos administrativos.",
+          "Para substituir a necessidade de conexão à internet.",
+          "Para monitorar exclusivamente a vida privada dos servidores."
         ],
-        "explicacao": "Quanto mais digitalmente excluída a pessoa, menos acesso a serviços ela terá, o que agrava as desigualdades sociais.",
+        "explicacao": "ERPs permitem integrar áreas como finanças e RH, otimizando a alocação de recursos.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Como a diretoria deve lidar com a resistência à mudança interna?",
+        "pergunta": "O que o portal Gov.br exemplifica na transformação digital brasileira?",
         "alternativas": [
-          "Impondo novas tecnologias de forma autoritária.",
-          "Incentivando a inovação, a comunicação aberta e a capacitação contínua.",
-          "Ignorando os colaboradores que têm dificuldades técnicas.",
-          "Paralisando todos os processos digitais até que todos concordem."
+          "O aumento das filas presenciais.",
+          "A criação de um muro digital entre governo e cidadão.",
+          "A consolidação de diversos serviços em uma única plataforma digital.",
+          "A exclusão total de pessoas com mais de 50 anos."
         ],
-        "explicacao": "A gestão deve incentivar práticas de inovação, capacitação contínua e uma nova mentalidade colaborativa.",
-        "correta_idx": 1,
-        "dificuldade": "média"
+        "explicacao": "O Gov.br consolida serviços, reduzindo filas e economizando tempo para o cidadão.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que significa 'decisões baseadas em evidências' no contexto digital?",
+        "pergunta": "Qual é a principal recomendação para que a transformação digital seja sustentável?",
         "alternativas": [
-          "Decidir com base apenas na intuição do diretor.",
-          "Usar análise de dados e sistemas integrados para orientar escolhas.",
-          "Seguir o que outras organizações estão fazendo sem critério.",
-          "Esperar por ordens externas para agir."
+          "Investir apenas em hardware e ignorar as pessoas.",
+          "Proibir o uso de dados abertos.",
+          "Enfrentar desafios culturais e investir na capacitação dos servidores.",
+          "Manter os modelos burocráticos tradicionais intactos."
         ],
-        "explicacao": "Tecnologias como sistemas de gestão e análise de dados permitem ganhos de eficiência e tomada de decisões fundamentadas.",
-        "correta_idx": 1,
+        "explicacao": "A sustentabilidade da inovação depende de superar barreiras culturais e qualificar as pessoas envolvidas.",
+        "correta_idx": 2,
         "dificuldade": "média"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Adoção de IA: A Espiral do Sucesso Organizacional",
-      "conteudo": "A jornada de adoção da Inteligência Artificial (IA) no campo social não é um salto repentino, mas um **processo gradual em espiral**. A diretoria deve liderar essa evolução, começando pelo 'Uso Pessoal' (experimentos simples como traduções e resumos) para ganhar familiaridade, avançando para o 'Uso Profissional' de produtividade, até atingir o 'Uso Organizacional' estratégico. Integrar a IA em áreas centrais como monitoramento de impacto e automação de processos pode liberar tempo precioso para a equipe focar no cuidado humano.\n\nLíderes devem incentivar a criação de grupos internos de experimentação e a documentação de aprendizados (prompts, erros e acertos), fortalecendo a memória institucional. A IA pode ser uma 'aliada estratégica' na construção de uma sociedade mais justa, apoiando a gestão financeira e a captação de recursos. No entanto, a tecnologia nunca é neutra; cabe à diretoria garantir que sua aplicação amplie vozes e proteja direitos, evitando que se torne uma ferramenta de exclusão.\n\nO desafio para a gestão é apropriar-se da IA com entusiasmo, mas sem ingenuidade. É fundamental agir sobre as causas da desigualdade digital e capacitar a equipe para o uso crítico das ferramentas. Ao participar de redes de aprendizado coletivo e debates regulatórios, a diretoria assegura que sua organização permaneça na vanguarda da transformação social, utilizando a inovação para democratizar oportunidades e fortalecer a democracia."
+      "titulo": "Ética, Dados e Segurança: O Alicerce do Terceiro Setor",
+      "conteudo": "A adoção tecnológica traz consigo a responsabilidade inegociável da **proteção de dados pessoais** e da governança ética. A Lei Geral de Proteção de Dados (LGPD) define diretrizes vitais para o tratamento de informações, e sua implementação é um passo urgente para as organizações sociais, especialmente aquelas que lidam com públicos vulneráveis. No entanto, a pesquisa TIC Osfil revela que apenas 29% das OSCs possuem uma área ou pessoa responsável por essa adequação, indicando um longo caminho a percorrer.\n\nBarreiras como a falta de recursos financeiros (64%) e o déficit de habilidades digitais nas equipes ainda limitam o potencial das TICs no setor. O letramento digital não é apenas uma competência técnica, mas uma ferramenta de defesa contra a desinformação e os vieses algorítmicos que podem reproduzir injustiças históricas. É dever da diretoria garantir que a tecnologia seja usada com princípios de justiça, equidade e transparência.\n\nConstruir confiança com doadores e beneficiários exige transparência radical sobre como os dados são coletados e protegidos. O uso de IA responsável requer protocolos internos rigorosos e a revisão humana constante de todos os resultados gerados. Ao investir em segurança digital e ética, as organizações não apenas protegem vidas, mas também se tornam referências de seriedade e profissionalismo no novo paradigma da sociedade da informação."
     },
     "quizzes": [
       {
-        "pergunta": "Quais são as fases iniciais sugeridas para a adoção de IA por uma liderança?",
+        "pergunta": "Qual a porcentagem de OSCs que reportaram ter um responsável pela implementação da LGPD em 2022?",
         "alternativas": [
-          "Contratar rrobôs e demitir a equipe.",
-          "Uso pessoal experimental seguido de uso profissional de produtividade.",
-          "Começar direto pela automação completa de todos os departamentos.",
-          "Aguardar 10 anos até a tecnologia estar totalmente pronta."
-        ],
-        "explicacao": "A pílula sugere uma espiral que começa no uso pessoal para ganhar familiaridade e ruma ao profissional e organizacional.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que a diretoria ganha ao integrar a IA em áreas centrais e estratégicas?",
-        "alternativas": [
-          "Mais burocracia e lentidão nos processos.",
-          "Liberação de tempo para focar no cuidado com pessoas e causas.",
-          "Fim total da necessidade de interação humana.",
-          "Aumento garantido de 100% nas doações em um mês."
-        ],
-        "explicacao": "A pílula destaca que a eficiência gerada pela IA deve ser devolvida ao cuidado com pessoas e comunidades.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual a recomendação prática para fortalecer a 'memória institucional' no uso de IA?",
-        "alternativas": [
-          "Deletar todos os registros de erros cometidos.",
-          "Registrar e documentar aprendizados, como prompts e acertos.",
-          "Proibir o compartilhamento de informações entre departamentos.",
-          "Usar apenas ferramentas pagas e exclusivas."
-        ],
-        "explicacao": "Documentar prompts e aprendizados coletivos fortalece a autonomia e a memória da organização.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Segundo o texto, a tecnologia é neutra?",
-        "alternativas": [
-          "Sim, a tecnologia nunca interfere nos resultados sociais.",
-          "Não, ela pode concentrar poder ou distribuir oportunidades dependendo do uso.",
-          "Sim, desde que seja uma Inteligência Artificial.",
-          "Não, mas a diretoria não tem poder para mudar isso."
-        ],
-        "explicacao": "O texto afirma explicitamente que a tecnologia nunca é neutra, podendo ser aliada ou ameaça à justiça social.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual o objetivo final sugerido para o uso da IA no campo social?",
-        "alternativas": [
-          "Substituir a diretoria por sistemas automáticos.",
-          "Ser um catalisador de mudanças profundas e equidade.",
-          "Apenas reduzir o número de funcionários remunerados.",
-          "Competir com empresas de tecnologia do setor privado."
-        ],
-        "explicacao": "O verdadeiro impacto da tecnologia está em transformar vidas e promover um mundo mais inclusivo e equitativo.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Governança Ética e Proteção de Dados: O Dever da Gestão",
-      "conteudo": "A implementação da Lei Geral de Proteção de Dados (LGPD) e o uso ético da IA são pilares inegociáveis para a diretoria moderna. Apenas 29% das OSCs possuem uma área ou pessoa responsável pela proteção de dados, o que indica que muitas organizações ainda estão em um estágio inicial. A diretoria deve assumir a responsabilidade de nomear um encarregado (DPO) e criar protocolos rigorosos para garantir que informações sensíveis de beneficiários nunca sejam expostas em ferramentas abertas.\n\nO letramento em dados é um direito e uma necessidade: a diretoria deve investir em treinamentos internos para sensibilizar a equipe sobre os riscos de vieses algorítmicos e desinformação. A tecnologia deve ser usada com princípios claros de **justiça, equidade e transparência**. Ignorar esses riscos pode comprometer a credibilidade da instituição e prejudicar populações já vulneráveis. A governança ética exige que os resultados da IA (outputs) sejam sempre revisados por mãos humanas plurais antes da publicação.\n\nConstruir confiança com parceiros e doadores exige que a organização pratique a transparência radical sobre como utiliza a tecnologia. Criar guias internos de uso responsável e participar de coalizões sobre regulação digital são passos fundamentais. Uma diretoria ética não busca apenas eficiência, mas protege vidas e assegura que a inovação tecnológica sirva para fortalecer a democracia e o bem-estar social."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual a porcentagem de OSCs que reportaram ter uma pessoa responsável pela LGPD em 2022?",
-        "alternativas": [
-          "95%",
-          "29%",
+          "85%",
           "10%",
-          "68%"
+          "29%",
+          "50%"
         ],
-        "explicacao": "Segundo a pesquisa TIC Osfil 2022, apenas 29% das organizações reportaram ter um responsável pela implementação da lei.",
+        "explicacao": "Segundo a pesquisa TIC Osfil 2022, apenas 29% das organizações contam com essa estrutura dedicada.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual é a principal dificuldade relatada pelas organizações para o investimento em tecnologia?",
+        "alternativas": [
+          "Excesso de burocracia governamental.",
+          "Falta de recursos financeiros.",
+          "Oposição dos beneficiários ao uso de computadores.",
+          "Indisponibilidade de softwares no Brasil."
+        ],
+        "explicacao": "A maioria das organizações (64%) relata a falta de recursos financeiros como a principal barreira.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que o termo 'IA Responsável' significa na prática organizacional?",
+        "pergunta": "O que significa 'IA Responsável' no âmbito das organizações sociais?",
         "alternativas": [
-          "Deixar a máquina decidir tudo sem intervenção humana.",
-          "Traduzir princípios éticos em protocolos internos e revisão de outputs.",
-          "Usar IA apenas para tarefas que não envolvem pessoas.",
-          "Comprar as ferramentas de IA mais seguras e caras do mercado."
+          "Deixar a máquina decidir sem qualquer supervisão.",
+          "Tradução de princípios éticos em práticas concretas, como protocolos e revisões humanas.",
+          "O uso de inteligência artificial apenas para lazer dos funcionários.",
+          "A proibição total de ferramentas digitais para proteger a privacidade."
         ],
-        "explicacao": "IA responsável é a tradução de princípios em práticas como criar protocolos e treinar equipes para evitar vieses.",
+        "explicacao": "IA responsável envolve criar protocolos, proteger dados sensíveis e revisar os resultados gerados (outputs).",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Qual o perigo de inserir dados sensíveis em chatbots abertos (como ChatGPT gratuito)?",
+        "pergunta": "Qual o risco de inserir dados de beneficiários em chatbots de IA abertos (não protegidos)?",
         "alternativas": [
-          "O sistema pode cobrar taxas extras por isso.",
-          "Essas informações podem ser expostas e violar a privacidade.",
-          "A IA ficará lenta demais para responder.",
-          "Nenhum perigo, pois esses sistemas são 100% seguros por padrão."
+          "A IA pode ficar mais inteligente e cobrar menos.",
+          "Pode expor informações sensíveis de pessoas vulneráveis, violando a privacidade.",
+          "O computador pode quebrar pelo excesso de dados.",
+          "Nenhum, pois a internet é privada por definição."
         ],
-        "explicacao": "Informações de pessoas atendidas não pertencem a sistemas abertos; a exposição desses dados viola direitos e compromete vidas.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual a importância de incluir 'diversidade nos testes' de ferramentas de IA?",
-        "alternativas": [
-          "É apenas uma exigência estética sem valor prático.",
-          "Serve para evitar estereótipos, reduzir vieses e ampliar representatividade.",
-          "Aumenta a velocidade de processamento dos dados.",
-          "Garante que a IA fale todas as línguas do mundo."
-        ],
-        "explicacao": "Convidar vozes plurais para revisar textos e imagens gerados por IA ajuda a evitar preconceitos históricos.",
+        "explicacao": "Inserir dados sensíveis em sistemas abertos pode expor as pessoas atendidas a riscos e violações.",
         "correta_idx": 1,
         "dificuldade": "média"
       },
       {
-        "pergunta": "Quem é o principal responsável por supervisionar o programa de governança em privacidade de dados?",
+        "pergunta": "O que é o 'Letramento Digital e em Dados' mencionado no texto?",
         "alternativas": [
-          "Qualquer voluntário da organização.",
-          "O Encarregado de Dados (DPO).",
-          "O programador externo terceirizado.",
-          "O doador que investe na tecnologia."
+          "Saber ler e escrever apenas no papel.",
+          "A fluência técnica para usar ferramentas, interpretar informações e decidir com base em evidências.",
+          "A capacidade de consertar computadores quebrados fisicamente.",
+          "O ato de deletar todos os dados da organização mensalmente."
         ],
-        "explicacao": "O encarregado supervisiona a implementação do programa de privacidade, traduz obrigações e treina o pessoal.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Soberania Tecnológica e Redes: O Futuro da Gestão",
-      "conteudo": "As redes sociais tradicionais alteraram seus algoritmos, limitando o alcance orgânico e forçando as organizações ao patrocínio de postagens. Para a diretoria, isso gera um desafio de sustentabilidade: apenas 13% das OSCs pagam por anúncios na internet, o que reduz drasticamente sua visibilidade. Líderes devem incentivar a exploração de **infraestruturas alternativas e redes comunitárias**, como a 'Black e Black' ou redes autônomas, que oferecem ambientes mais seguros e alinhados aos valores de justiça social.\n\nO sucesso da organização depende da construção de relacionamentos de qualidade com stakeholders, e não apenas de cliques. A diretoria deve estar atenta para não se tornar meramente consumidora de 'soluções proprietárias' do Norte Global, o que caracteriza o colonialismo digital. Investir em ferramentas de código aberto (Open Source) e parcerias multissetoriais permite maior controle sobre os dados e maior autonomia tecnológica.\n\nA colaboração em rede é o caminho para superar a falta de talentos técnicos e recursos. Ao participar de iniciativas onde o 'dinheiro público gera código público', as organizações sociais fortalecem o ecossistema brasileiro de tecnologia social. A diretoria que aposta na cooperação e na soberania tecnológica garante que sua causa não fique refém de monopólios corporativos, protegendo a missão institucional a longo prazo."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Segundo o texto, o que aconteceu com o alcance orgânico nas redes sociais como o Facebook?",
-        "alternativas": [
-          "Aumentou muito, permitindo viralização gratuita.",
-          "Foi limitado pelos algoritmos, favorecendo postagens patrocinadas.",
-          "Permaneceu igual desde a criação da internet.",
-          "Acabou totalmente a possibilidade de postar sem pagar."
-        ],
-        "explicacao": "O texto cita que os algoritmos mudaram para limitar o alcance orgânico, priorizando o conteúdo pago.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual a porcentagem de organizações sociais que declararam pagar por anúncios na internet?",
-        "alternativas": [
-          "80%",
-          "13%",
-          "50%",
-          "5%"
-        ],
-        "explicacao": "O dado apresentado indica que apenas 13% das organizações pagaram por anúncios, o que restringe seu alcance.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que é o 'colonialismo digital' mencionado na pílula?",
-        "alternativas": [
-          "O uso de internet em áreas rurais isoladas.",
-          "A dependência de infraestruturas e soluções proprietárias de grandes empresas globais.",
-          "O processo de tradução de sites para outras línguas.",
-          "A criação de novos domínios .br por organizações locais."
-        ],
-        "explicacao": "Refere-se ao papel de meros consumidores de soluções fechadas, perdendo soberania sobre dados e tecnologias.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Quais alternativas às redes tradicionais o texto sugere?",
-        "alternativas": [
-          "Migrar apenas para canais de TV e Rádio.",
-          "Explorar redes alternativas, comunitárias e de código aberto.",
-          "Parar totalmente com a comunicação externa.",
-          "Investir todo o orçamento em outdoors nas ruas."
-        ],
-        "explicacao": "O texto sugere infraestruturas alternativas como a Black e Black e redes autônomas como a Fuxico.",
-        "correta_idx": 1,
-        "dificuldade": "média"
-      },
-      {
-        "pergunta": "Qual é a principal vantagem de participar de redes de aprendizado coletivo?",
-        "alternativas": [
-          "Dividir as dívidas financeiras com outras organizações.",
-          "Fortalecer a autonomia institucional e compartilhar práticas de inovação.",
-          "Garantir que a diretoria não precise mais trabalhar.",
-          "Substituir todos os processos de gestão por reuniões em rede."
-        ],
-        "explicacao": "A pílula afirma que nenhuma organização enfrenta o desafio sozinha e o aprendizado em rede fortalece a autonomia.",
+        "explicacao": "Letramento digital envolve desde dominar planilhas até compreender algoritmos e dashboards para tomada de decisão.",
         "correta_idx": 1,
         "dificuldade": "média"
       }

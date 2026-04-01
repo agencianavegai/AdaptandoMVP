@@ -1,409 +1,409 @@
 [
   {
     "pilula": {
-      "titulo": "Governança e Transparência: O Pilar da Confiança",
-      "conteudo": "A diretoria de uma Organização da Sociedade Civil (OSC) carrega a nobre missão de zelar pela ética e pela continuidade da causa. Para que uma instituição seja verdadeiramente sólida, é fundamental que seus órgãos de governança funcionem com maestria. Isso envolve a realização de Assembleias Gerais anuais para prestação de contas e a eleição de gestores comprometidos, garantindo que o Estatuto Social não seja apenas um documento, mas a alma da organização disponível para todos no site.\n\nA transparência é o combustível da doação estratégica. Uma diretoria eficaz assegura que as demonstrações contábeis sejam analisadas por um Conselho Fiscal independente e aprovadas em assembleia, sempre assinadas por um contador registrado. É esse rigor que transforma a intenção de ajudar em um impacto social real e mensurável, permitindo que a sociedade acompanhe cada passo dado em direção a um mundo melhor.\n\nLiderar uma OSC exige visão de futuro. O mandato do Conselho Deliberativo deve ser equilibrado, variando entre 2 a 4 anos, permitindo renovações que não ultrapassem 8 anos de permanência. Essa alternância oxigena a gestão e fortalece a democracia interna. Quando a diretoria assume o compromisso com a clareza e o cumprimento das normas, ela inspira doadores, voluntários e a própria comunidade a acreditarem que a transformação é, de fato, possível."
+      "titulo": "A Bússola do Impacto Social",
+      "conteudo": "Indicadores sociais não são apenas números em uma planilha; eles são a **marca** e o sinalizador que guiam as organizações em direção à sua missão. No universo do terceiro setor, um indicador funciona como um parâmetro que detalha em que medida os objetivos de um projeto foram alcançados dentro de um prazo e local específicos. Eles nos permitem traduzir realidades complexas em dados observáveis, transformando a intenção de ajudar em um investimento social concreto e mensurável.\n\nAdotar uma cultura de indicadores é fundamental para o **doar estratégico**. O doador moderno busca transparência e resultados efetivos, querendo entender se a sua contribuição está realmente revertendo quadros de pobreza ou desigualdade. Quando uma organização utiliza indicadores validados, ela constrói um elo de confiança indestrutível com seus parceiros, provando que a transformação social não é um sonho distante, mas uma realidade em construção.\n\nAprender a medir é aprender a crescer. Definir indicadores logo na fase de **planejamento** — e não ao final — permite que a gestão monitore o progresso e reoriente rotas quando necessário. É essa clareza que evita o desperdício de energia e garante que cada recurso investido floresça em mudanças reais na vida das pessoas. Liderar com base em dados é dar voz à eficiência e luz ao impacto social."
     },
     "quizzes": [
       {
-        "pergunta": "Qual é o tempo de mandato recomendado para o Conselho Deliberativo de uma OSC?",
+        "pergunta": "Segundo os textos, o que são indicadores em projetos sociais?",
         "alternativas": [
-          "Mínimo de 2 anos e máximo de 4 anos",
-          "Mínimo de 1 ano e máximo de 2 anos",
-          "Tempo indeterminado, conforme a vontade do fundador",
-          "Exatamente 5 anos, sem renovação"
+          "A própria realidade social em sua totalidade.",
+          "Parâmetros que detalham a medida em que objetivos foram alcançados.",
+          "Documentos fiscais obrigatórios para o governo.",
+          "Apenas opiniões e impressões subjetivas dos gestores."
         ],
-        "explicacao": "De acordo com as boas práticas de governança, o prazo de mandato deve ser de no mínimo 2 e no máximo 4 anos.",
-        "correta_idx": 0,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual o limite máximo de permanência contínua de um membro no conselho deliberativo, considerando renovações?",
-        "alternativas": [
-          "4 anos",
-          "8 anos",
-          "10 anos",
-          "Não há limite"
-        ],
-        "explicacao": "O texto indica que pode haver renovação de mandato, respeitando o período máximo de 8 anos de permanência.",
-        "correta_idx": 1,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "Quem deve assinar anualmente o demonstrativo de resultados e o balanço patrimonial da organização?",
-        "alternativas": [
-          "Apenas o Presidente da ONG",
-          "Qualquer voluntário da área administrativa",
-          "Um contador registrado",
-          "O principal doador da instituição"
-        ],
-        "explicacao": "A organização deve elaborar anualmente o balanço assinado por um contador registrado.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O Conselho Fiscal deve ser vinculado a qual órgão para garantir sua função?",
-        "alternativas": [
-          "Deve ser dependente da gestão executiva",
-          "Deve ser independente da gestão executiva e do conselho deliberativo",
-          "Deve ser formado obrigatoriamente pelos maiores doadores",
-          "Deve ser subordinado diretamente ao diretor de marketing"
-        ],
-        "explicacao": "Para garantir a transparência, o conselho fiscal deve ser independente da gestão executiva e do conselho deliberativo.",
-        "correta_idx": 1,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "Onde o Estatuto Social da organização deve estar disponível para garantir a transparência?",
-        "alternativas": [
-          "Apenas arquivado em cartório",
-          "No site da organização",
-          "Apenas na sede física, sob consulta prévia",
-          "No mural interno para funcionários apenas"
-        ],
-        "explicacao": "Uma das boas práticas listadas é manter o Estatuto Social disponível no site da organização.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Liderança Estratégica: Transformando Missão em Realidade",
-      "conteudo": "Para uma diretoria de excelência, a missão e a visão não são apenas quadros na parede, mas bússolas que orientam cada decisão. O Planejamento Estratégico é a ferramenta vital que conecta a visão de longo prazo com os desafios do contexto local, garantindo que os projetos realizados estejam intrinsecamente vinculados à razão de ser da instituição. Liderar é ter a coragem de olhar para o horizonte e traçar um caminho claro e comunicável para toda a equipe.\n\nA verdadeira força de uma gestão operacional reside na clareza dos seus processos administrativos e financeiros. Uma diretoria motivada estabelece objetivos e metas bem especificados, identificando os fatores de sucesso que permitirão à organização florescer. Quando os planos e estratégias estão alinhados, a organização deixa de apenas 'apagar incêndios' e passa a construir um legado sustentável e profissional.\n\nO envolvimento e a corresponsabilidade da equipe na execução do planejamento são marcas de uma liderança avançada. Não se trata apenas de dar ordens, mas de criar uma agenda institucional periódica de revisão, onde todos entendem seu papel na transformação social. Motive sua equipe através da transparência e da clareza de propósito, pois uma OSC fortalecida institucionalmente é capaz de promover mudanças muito mais profundas e duradouras."
-    },
-    "quizzes": [
-      {
-        "pergunta": "O que deve estar refletido nos programas e projetos de uma organização segundo o planejamento estratégico?",
-        "alternativas": [
-          "Apenas a vontade pessoal do diretor",
-          "As necessidades do público atendido e o contexto local",
-          "As tendências das redes sociais do momento",
-          "Somente as exigências do governo federal"
-        ],
-        "explicacao": "O planejamento deve garantir que as necessidades do público e o contexto local estejam refletidos nos programas.",
+        "explicacao": "Indicadores são definidos como parâmetros qualificados ou quantificados que servem para detalhar em que medida os objetivos de um projeto foram alcançados.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual característica define o nível 'Avançado' de planejamento na Matriz de Fortalecimento Institucional?",
+        "pergunta": "Para que o monitoramento seja viável, quando os indicadores devem ser definidos?",
         "alternativas": [
-          "A organização não possui nenhum plano escrito",
-          "As tarefas são feitas sob demanda externa apenas",
-          "Envolvimento e corresponsabilidade da equipe no acompanhamento e execução do plano",
-          "O plano é feito apenas pela liderança sem consulta à equipe"
+          "Apenas no final do projeto para prestação de contas.",
+          "Somente quando o financiador solicitar um relatório.",
+          "Logo na fase de planejamento.",
+          "Após a conclusão das atividades principais."
         ],
-        "explicacao": "No nível avançado, existe envolvimento e corresponsabilidade da equipe na execução e revisão do planejamento.",
+        "explicacao": "Os indicadores devem ser definidos logo na fase de planejamento para viabilizar o monitoramento e permitir reorientações.",
         "correta_idx": 2,
         "dificuldade": "médio"
       },
       {
-        "pergunta": "Como deve ser a relação entre os projetos realizados e a missão da organização?",
+        "pergunta": "Qual o papel dos indicadores na relação com o doador estratégico?",
         "alternativas": [
-          "Devem ser independentes para diversificar a atuação",
-          "A maior parte dos projetos deve estar vinculada à missão e objetivos",
-          "A missão deve mudar conforme os projetos que aparecem",
-          "Não há necessidade de vínculo entre eles"
+          "Apenas burocratizar o processo de doação.",
+          "Substituir a necessidade de transparência financeira.",
+          "Ajudar o doador a escolher organizações que comprovam seus resultados.",
+          "Esconder falhas nos processos internos das ONGs."
         ],
-        "explicacao": "Uma boa prática de gestão é que a maior parte dos projetos esteja vinculada à missão e objetivos da organização.",
+        "explicacao": "Indicadores ajudam doadores estratégicos a entender o poder e o impacto da sua doação e a escolher organizações que concretizam transformações.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "O termo 'marca' ou 'sinalizador' refere-se à ideia de que os indicadores:",
+        "alternativas": [
+          "São ferramentas de marketing para vender a imagem da ONG.",
+          "Indicam um aspecto da realidade, mas não são a própria realidade.",
+          "Serve para sinalizar perigo financeiro iminente.",
+          "São etiquetas colocadas nos produtos doados."
+        ],
+        "explicacao": "Indicadores sugerem uma 'marca' ou sinalizador que busca expressar um aspecto da realidade, mas ressalta-se que eles não são a própria realidade.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Qual a relação entre indicadores e a 'Conferência Rio 92' citada?",
+        "alternativas": [
+          "Foi o evento onde se proibiu o uso de indicadores quantitativos.",
+          "Foi o marco que deflagrou o debate sobre o impacto do terceiro setor.",
+          "Foi onde se criou o primeiro formulário de impostos para ONGs.",
+          "Foi um evento exclusivo para empresas privadas sem fins lucrativos."
+        ],
+        "explicacao": "O debate sobre indicadores e impacto do terceiro setor ganhou força especialmente a partir da Conferência Rio 92.",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Tangível ou Intangível: A Dualidade da Medição",
+      "conteudo": "A construção de um sistema de indicadores exige sensibilidade para captar as diferentes faces da mudança social. Existem aspectos **tangíveis**, que são facilmente observáveis e aferíveis, como renda, escolaridade, saúde e o número de atendimentos realizados. Estes dados fornecem a base sólida e quantitativa que comprova a eficiência operacional da organização.\n\nPor outro lado, o verdadeiro coração de muitos projetos reside nos aspectos **intangíveis**. Elementos como auto-estima, consciência social, cidadania e valores são dimensões complexas que não podem ser medidas diretamente por um único número. Para monitorar esses processos não lineares, a diretoria deve utilizar um conjunto de indicadores que 'cerquem' a complexidade, captando manifestações indiretas dessa evolução humana.\n\nCombinar indicadores **quantitativos** (números, médias e porcentagens) com indicadores **qualitativos** (referências de grandeza como 'satisfatório' ou 'frágil') é o segredo para uma avaliação profunda. Essa visão integrada permite que a organização não apenas conte quantas pessoas passaram por suas portas, mas compreenda a intensidade da transformação que ocorreu dentro de cada uma delas. Valorize o invisível tanto quanto o visível."
+    },
+    "quizzes": [
+      {
+        "pergunta": "Quais são exemplos de aspectos tangíveis da realidade social?",
+        "alternativas": [
+          "Consciência social e auto-estima.",
+          "Estilos de comportamento e liderança.",
+          "Renda, escolaridade e saúde física.",
+          "Cidadania e valores éticos."
+        ],
+        "explicacao": "Tangíveis são os facilmente observáveis e aferíveis, como renda, escolaridade e saúde.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Como os aspectos intangíveis devem ser captados em um sistema de indicadores?",
+        "alternativas": [
+          "Através de uma única pergunta direta e simples.",
+          "Apenas por meio de planilhas financeiras de custos.",
+          "De forma parcial e indireta através de um conjunto de indicadores.",
+          "Ignorando-os, pois não podem ser medidos estatisticamente."
+        ],
+        "explicacao": "Aspectos intangíveis demandam um conjunto de indicadores que apreendam manifestações indiretas, 'cercando' a complexidade.",
+        "correta_idx": 2,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Qual a característica de um indicador qualitativo?",
+        "alternativas": [
+          "Foca exclusivamente em valores numéricos absolutos.",
+          "Utiliza referências de grandeza, intensidade ou estado (ex: satisfatório/insatisfatório).",
+          "Mede apenas a quantidade de recursos financeiros gastos.",
+          "É usado apenas para medir a temperatura corporal em clínicas."
+        ],
+        "explicacao": "Indicadores qualitativos utilizam referências de grandeza, intensidade ou estado, como forte/fraco ou satisfatório/insatisfatório.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual o papel da Missão e Visão na comunicação externa de uma OSC?",
+        "pergunta": "A auto-estima e a cidadania são classificadas como:",
         "alternativas": [
-          "Devem ser mantidas em segredo para evitar concorrência",
-          "Devem estar escritas e ser claramente comunicadas e divulgadas no site",
-          "Servem apenas para documentos internos de RH",
-          "Só devem ser reveladas para grandes investidores"
+          "Variáveis de eficiência operacional.",
+          "Aspectos tangíveis e lineares.",
+          "Aspectos intangíveis da realidade.",
+          "Indicadores exclusivamente quantitativos."
         ],
-        "explicacao": "A missão e visão devem ser claramente comunicadas aos membros e divulgadas no site da organização.",
-        "correta_idx": 1,
+        "explicacao": "O texto classifica consciência social, auto-estima e cidadania como aspectos intangíveis.",
+        "correta_idx": 2,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que caracteriza uma gestão de processos 'Avançada'?",
+        "pergunta": "Para que serve a combinação de indicadores quantitativos e qualitativos?",
         "alternativas": [
-          "Processos estruturados, eficientes e a serviço da visão estratégica com integração entre equipes",
-          "Realização de tarefas apenas sob demanda externa",
-          "Visão fragmentada dos processos por projetos",
-          "Processos que causam tensão interna constante"
+          "Para confundir os doadores com excesso de informação.",
+          "Para garantir que apenas os dados financeiros sejam vistos.",
+          "Para oferecer uma base confiável e multidimensional para a avaliação.",
+          "Para reduzir os custos administrativos da coleta de dados."
         ],
-        "explicacao": "A gestão avançada possui processos estruturados, revisados e integrados que servem à visão estratégica.",
-        "correta_idx": 0,
+        "explicacao": "A combinação adequada de diferentes tipos de indicadores fornece uma base confiável para o monitoramento e avaliação.",
+        "correta_idx": 2,
         "dificuldade": "médio"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Mensuração de Desempenho: O Termômetro do Impacto",
-      "conteudo": "Para a diretoria de uma ONG, medir o desempenho é essencial para gerenciar o impacto social. Como diz o ditado, 'o que não é medido, não é gerenciado'. Os indicadores funcionam como sinalizadores que expressam aspectos da realidade, permitindo que a liderança avalie se os objetivos do projeto estão sendo alcançados no prazo e local definidos. Eles são as 'marcas' que guiam a organização em direção à sua missão.\n\nExistem diferentes tipos de indicadores que a diretoria deve acompanhar: os quantitativos, que traduzem processos em números e médias, e os qualitativos, que captam grandezas como a intensidade e o estado de mudança (ex: satisfeito ou insatisfatório). Um sistema de indicadores robusto combina dados tangíveis, como renda e escolaridade, com dados intangíveis, como auto-estima e consciência social, para oferecer uma visão completa da transformação gerada.\n\nA escolha criteriosa desses parâmetros permite que a diretoria realize uma doação estratégica, baseada em evidências e não apenas em impressões. Ao definir indicadores desde o planejamento, a liderança garante a viabilidade do monitoramento e a capacidade de reorientar rumos quando necessário. Celebrar sucessos baseados em dados reais fortalece a confiança de todos os parceiros e doadores envolvidos na causa."
+      "titulo": "Os Quatro Pilares do Resultado: Eficiência ao Impacto",
+      "conteudo": "Para avaliar se uma organização está no caminho certo, a diretoria deve dominar quatro conceitos fundamentais: **eficiência, eficácia, efetividade e impacto**. A eficiência foca no 'como' os recursos são usados — é a boa utilização de dinheiro e pessoas para realizar as atividades planejadas. Já a eficácia olha para o 'quê' foi entregue, verificando se os resultados previstos (como a capacitação de jovens) foram realmente alcançados.\n\nA **efetividade** eleva o olhar para a permanência da mudança. Ela examina em que medida os benefícios estão incorporados à realidade da população de modo duradouro, como um grupo que se mantém por iniciativa própria após a saída da ONG. É o teste do tempo para o projeto social. Por fim, o **impacto** revela o poder de irradiação: são as mudanças em áreas ou públicos não trabalhados diretamente, provando que um bom modelo pode influenciar políticas públicas e inspirar outras comunidades.\n\nLiderar uma OSC é equilibrar esses quatro ângulos. Não basta ser eficiente se não houver eficácia nos resultados. E não basta ter resultados momentâneos se eles não forem efetivos no longo prazo. O objetivo final é o impacto — a transformação que ecoa além das fronteiras do projeto original."
     },
     "quizzes": [
       {
-        "pergunta": "Segundo o conteúdo, por que os indicadores são considerados sinalizadores?",
-        "alternativas": [
-          "Porque emitem luzes de alerta nas sedes das ONGs",
-          "Porque buscam expressar aspectos da realidade para observação ou mensuração",
-          "Porque servem apenas para indicar onde os funcionários devem estacionar",
-          "Porque são usados exclusivamente para sinalizar perigo financeiro"
-        ],
-        "explicacao": "Indicadores são sinalizadores que buscam expressar aspectos da realidade para que possamos observá-los ou mensurá-los.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual a diferença entre indicadores quantitativos e qualitativos?",
-        "alternativas": [
-          "Quantitativos focam em números e médias; qualitativos em referências de grandeza ou estado",
-          "Quantitativos são para grandes ONGs; qualitativos para pequenas",
-          "Qualitativos são sempre melhores que quantitativos",
-          "Não existe diferença prática entre eles no terceiro setor"
-        ],
-        "explicacao": "Quantitativos usam termos numéricos; qualitativos usam referências de grandeza ou intensidade como forte/fraco ou satisfatório/insatisfatório.",
-        "correta_idx": 0,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "O que são indicadores 'intangíveis' mencionados no texto?",
-        "alternativas": [
-          "Dados que podem ser tocados fisicamente",
-          "Aspectos captados apenas indiretamente, como auto-estima e cidadania",
-          "Relatórios financeiros impressos em papel especial",
-          "Equipamentos de TI que a organização possui"
-        ],
-        "explicacao": "Intangíveis são aspectos como consciência social, auto-estima e valores, captados apenas parcial e indiretamente.",
-        "correta_idx": 1,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "Quando os indicadores devem ser definidos em um projeto social?",
-        "alternativas": [
-          "Somente após o término de todas as atividades",
-          "Logo na fase de planejamento",
-          "Apenas quando o doador solicitar",
-          "Um ano após o início da execução"
-        ],
-        "explicacao": "Para viabilizar o monitoramento, os indicadores devem ser definidos logo na fase de planejamento.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Qual o principal objetivo da utilização de indicadores para a tomada de decisão?",
-        "alternativas": [
-          "Tornar o processo de decisão menos aleatório e mais científico",
-          "Apenas cumprir uma burocracia legal",
-          "Aumentar o número de reuniões da diretoria",
-          "Substituir o papel do diretor executivo"
-        ],
-        "explicacao": "A medição aparece quando o tomador de decisões busca um processo menos aleatório e mais científico.",
-        "correta_idx": 0,
-        "dificuldade": "médio"
-      }
-    ]
-  },
-  {
-    "pilula": {
-      "titulo": "Eficiência, Eficácia e Impacto: O Caminho do Resultado",
-      "conteudo": "A diretoria deve dominar quatro conceitos fundamentais para avaliar o sucesso de suas intervenções: eficiência, eficácia, efetividade e impacto. A eficiência foca na otimização dos recursos em relação às atividades, como o custo por pessoa atingida. Já a eficácia observa se os resultados previstos foram realmente alcançados, como a aquisição de novas habilidades por participantes de um curso.\n\nA efetividade vai além, examinando se as mudanças geradas tornaram-se permanentes na vida da população atendida, como a manutenção de novos hábitos de saúde ao longo do tempo. Por fim, o impacto revela o poder de irradiação do projeto, atingindo áreas ou públicos não trabalhados diretamente, como quando um modelo de sucesso é replicado em outras localidades.\n\nUm bom sistema de indicadores não tenta dar conta da totalidade, mas foca em aspectos centrais da estratégia, sendo simples o suficiente para ser compreendido por todos. A diretoria deve evitar o 'cemitério de dados' — montanhas de informações coletadas que ninguém analisa ou utiliza para tomar decisões. O foco deve ser o aprendizado contínuo, estimulando reflexões que aprimorem constantemente o trabalho da sociedade civil."
-    },
-    "quizzes": [
-      {
-        "pergunta": "Qual conceito trata da 'boa utilização dos recursos' em relação às atividades e resultados?",
+        "pergunta": "Qual conceito trata da boa utilização dos recursos em relação às atividades?",
         "alternativas": [
           "Eficácia",
+          "Efetividade",
           "Eficiência",
-          "Impacto",
-          "Efetividade"
+          "Impacto"
         ],
         "explicacao": "Eficiência diz respeito à boa utilização dos recursos (financeiros, materiais e humanos) em relação às atividades e resultados.",
+        "correta_idx": 2,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Se um programa de capacitação permitiu aos participantes adquirir novas habilidades, ele foi:",
+        "alternativas": [
+          "Eficiente",
+          "Eficaz",
+          "Efetivo",
+          "Impactante"
+        ],
+        "explicacao": "A eficácia observa se as ações do projeto permitiram alcançar os resultados previstos, como a aquisição de habilidades.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "O que define a 'Efetividade' de um projeto social?",
+        "alternativas": [
+          "O menor custo por pessoa atendida.",
+          "A incorporação permanente das mudanças na realidade da população.",
+          "A quantidade de postagens feitas nas redes sociais.",
+          "O número total de voluntários recrutados."
+        ],
+        "explicacao": "Efetividade examina em que medida os benefícios ou mudanças gerados estão incorporados de modo permanente à realidade.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Como se caracteriza o 'Impacto' de acordo com o texto?",
+        "alternativas": [
+          "Apenas o cumprimento das tarefas diárias.",
+          "Mudanças em outras áreas não trabalhadas diretamente pelo projeto.",
+          "O lucro financeiro gerado para a diretoria.",
+          "O registro de todas as atas de assembleia em cartório."
+        ],
+        "explicacao": "Impacto diz respeito às mudanças em outras áreas não diretamente trabalhadas pelo projeto, demonstrando influência e irradiação.",
         "correta_idx": 1,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "O que a 'Efetividade' examina especificamente?",
+        "pergunta": "A replicação de um modelo de sucesso em outros locais é um exemplo de:",
         "alternativas": [
-          "O custo total do projeto dividido pelo número de cursos",
-          "Se os resultados previstos foram alcançados no curto prazo",
-          "Em que medida os benefícios ou mudanças estão incorporados de modo permanente",
-          "A quantidade de materiais impressos distribuídos"
+          "Eficiência de custos",
+          "Eficácia administrativa",
+          "Impacto social",
+          "Efetividade operacional"
         ],
-        "explicacao": "A efetividade examina em que medida os resultados estão incorporados de modo permanente à realidade da população atingida.",
+        "explicacao": "O texto cita como exemplo de impacto quando resultados positivos fazem com que o modelo seja adotado em outros locais.",
         "correta_idx": 2,
         "dificuldade": "médio"
-      },
-      {
-        "pergunta": "Como o 'Impacto' é definido no contexto de projetos sociais?",
-        "alternativas": [
-          "Mudanças em áreas não diretamente trabalhadas em virtude dos resultados do projeto",
-          "O cumprimento rigoroso do cronograma de atividades",
-          "Apenas o aumento do número de beneficiários diretos",
-          "A satisfação imediata da diretoria com os resultados"
-        ],
-        "explicacao": "Impacto diz respeito às mudanças em outras áreas não diretamente trabalhadas pelo projeto em virtude de seus resultados.",
-        "correta_idx": 0,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "O que é um 'cemitério de dados' segundo o texto?",
-        "alternativas": [
-          "Um local físico onde se guardam servidores antigos",
-          "Informações produzidas em excesso que ninguém aproveita ou analisa",
-          "O histórico de beneficiários que já faleceram",
-          "Uma base de dados protegida por senhas complexas"
-        ],
-        "explicacao": "Cemitério de dados refere-se à produção de montanhas de informação que ninguém consegue aproveitar ou analisar.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Quais são as características de um bom sistema de indicadores?",
-        "alternativas": [
-          "Ser extremamente complexo e compreendido apenas por especialistas",
-          "Tentar dar conta da totalidade absoluta da realidade",
-          "Ser simples, viável operacionalmente e orientado para o aprendizado",
-          "Ser estático e nunca mudar ao longo do tempo"
-        ],
-        "explicacao": "Um bom sistema deve ser simples, compreensível por todos, viável e orientado para o aprendizado.",
-        "correta_idx": 2,
-        "dificuldade": "fácil"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Sustentabilidade e Recursos: Garantindo o Amanhã",
-      "conteudo": "A sustentabilidade financeira é um dos maiores desafios e responsabilidades da diretoria. Uma organização saudável não depende de um único doador; a boa prática recomenda que nenhum financiador represente mais de 40% da receita anual. Diversificar fontes entre indivíduos, empresas e governo é a estratégia mestre para garantir a autonomia e a resiliência institucional.\n\nTer um plano de captação de recursos regularmente seguido e avaliado é fundamental. Não basta captar; é preciso gerir com inteligência, formando reservas que permitam investir na equipe e ampliar o impacto social. A diretoria deve monitorar indicadores como o valor médio recebido por doador e a taxa de retenção de doadores, entendendo que manter quem já apoia a causa é tão vital quanto conquistar novos parceiros.\n\nTransparência financeira e diálogo constante com os financiadores criam laços de confiança indestrutíveis. Quando a diretoria apresenta relatórios anuais unificados de impacto e publica suas demonstrações contábeis no site, ela demonstra profissionalismo e respeito ao recurso doado. Lembre-se: o doar estratégico é precedido pela confiança e seguido pelo agradecimento."
+      "titulo": "Metodologia: A Ciência por Trás da Vitrine",
+      "conteudo": "A criação de um guia de indicadores robusto não nasce do acaso, mas de um rigoroso processo científico e colaborativo. O projeto Vitrine de ONGs utilizou uma metodologia baseada em quatro etapas essenciais: **pesquisa de indicadores (benchmarking)**, formação de um **grupo mentor**, **validação** com stakeholders e consolidação final. Esse processo envolveu a análise de quase 900 métricas iniciais, refinadas para as áreas prioritárias do investimento social no Brasil.\n\nA validação é o ponto crítico que garante a utilidade do indicador. No projeto, tanto investidores sociais quanto as próprias ONGs avaliaram cada métrica sob cinco prismas: compreensão, relevância, precisão da coleta, regularidade e acesso à informação. Somente indicadores com **% de adequação** acima de 70% foram mantidos automaticamente, garantindo que o que é medido seja realmente viável no dia a dia das instituições.\n\nEssa metodologia retira o tema da avaliação de uma 'caixa preta' e o coloca à disposição de todo o ecossistema. Ao utilizar indicadores validados por especialistas do Insper e mentores de renome, as organizações ganham segurança para reportar suas histórias de impacto e alinhar expectativas com seus doadores. O rigor metodológico é o que separa a boa intenção da transformação social comprovada."
     },
     "quizzes": [
       {
-        "pergunta": "Qual o percentual máximo recomendado que um único financiador deve representar na receita anual de uma ONG?",
+        "pergunta": "Quais foram as fontes utilizadas na fase de pesquisa de indicadores (benchmarking)?",
         "alternativas": [
-          "20%",
-          "40%",
-          "60%",
-          "80%"
+          "Apenas sites de notícias populares.",
+          "Relatórios de ONGs, ONU, GuideStar e IRIS.",
+          "Documentos internos secretos de empresas privadas.",
+          "Apenas o diário oficial da união."
         ],
-        "explicacao": "A boa prática indica que nenhum financiador único deve representar mais de 40% da receita anual.",
+        "explicacao": "O benchmarking utilizou sites e relatórios de ONGs, investidores, ONU, GuideStar e IRIS.",
         "correta_idx": 1,
         "dificuldade": "médio"
       },
       {
-        "pergunta": "Além de captar recursos para projetos, para que servem as reservas financeiras de uma OSC?",
+        "pergunta": "Quais foram as perguntas feitas às ONGs para validar um indicador?",
         "alternativas": [
-          "Apenas para pagar multas judiciais",
-          "Para aumentar investimentos em recursos humanos ou ampliar projetos",
-          "Devem ser distribuídas como lucro entre os diretores",
-          "Para compra de bens de luxo para a sede"
+          "Se ele era barato, rápido e fácil de inventar.",
+          "Se ele era compreensível, relevante e passível de coleta precisa e regular.",
+          "Se ele ajudaria a ONG a pagar menos impostos.",
+          "Se o indicador era bonito para ser postado no Instagram."
         ],
-        "explicacao": "As reservas permitem aumentar investimentos em recursos humanos ou ampliar os projetos da organização.",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "Quais são as fontes recomendadas para diversificar o plano de captação de recursos?",
-        "alternativas": [
-          "Apenas doações de pessoas físicas",
-          "Indivíduos, empresas, governo, entre outros",
-          "Apenas editais internacionais",
-          "Somente eventos de gala anuais"
-        ],
-        "explicacao": "O plano de captação deve buscar fontes distintas como indivíduos, empresas, governo, etc..",
-        "correta_idx": 1,
-        "dificuldade": "fácil"
-      },
-      {
-        "pergunta": "O que a 'Taxa de retenção de doadores' mede?",
-        "alternativas": [
-          "O número de novos doadores conquistados no mês",
-          "O número de doadores que continuaram doando em relação ao ano anterior",
-          "A velocidade com que os doadores desistem da causa",
-          "A quantia total doada por empresas apenas"
-        ],
-        "explicacao": "A taxa de retenção compara o número de doadores deste ano que também doaram no ano passado.",
+        "explicacao": "As ONGs avaliaram se compreendiam o indicador, se era relevante, se a coleta era precisa, regular e se tinham acesso à informação.",
         "correta_idx": 1,
         "dificuldade": "médio"
       },
       {
-        "pergunta": "O que deve acompanhar todo ato de doação segundo os princípios do Instituto Liga Social?",
+        "pergunta": "Qual o percentual médio de adequação para um indicador ser mantido automaticamente?",
         "alternativas": [
-          "Uma nova solicitação de recurso imediata",
-          "Um agradecimento",
-          "Uma cobrança judicial",
-          "Um contrato de exclusividade"
+          "Entre 100% e 70%",
+          "Abaixo de 50%",
+          "Exatamente 100%",
+          "Qualquer percentual era aceito"
         ],
-        "explicacao": "Acreditamos que todo ato de doação deve ser seguido por um agradecimento.",
+        "explicacao": "Indicadores que apresentaram % Adequação entre 100% e 70% foram mantidos.",
+        "correta_idx": 0,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Quem foi o parceiro técnico responsável pela metodologia do guia?",
+        "alternativas": [
+          "Uma agência de marketing digital.",
+          "O Insper, na figura do Dr. Sandro Cabral.",
+          "O Governo Federal diretamente.",
+          "Um grupo de doadores anônimos."
+        ],
+        "explicacao": "O Insper, com o professor Sandro Cabral, forneceu o apoio técnico para a criação da metodologia.",
         "correta_idx": 1,
         "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Por que alguns indicadores com adequação abaixo de 50% foram mantidos?",
+        "alternativas": [
+          "Por erro de cálculo da equipe.",
+          "Para serem usados como indicadores aspiracionais e importantes de resultado.",
+          "Porque os doadores exigiram que fossem mantidos mesmo sendo inúteis.",
+          "Para aumentar o número de páginas do guia."
+        ],
+        "explicacao": "Alguns foram mantidos por serem métricas importantes de resultado, servindo como aspiracionais para o setor.",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
       }
     ]
   },
   {
     "pilula": {
-      "titulo": "Fortalecimento Institucional e Sucessão: O Legado da Liderança",
-      "conteudo": "Uma diretoria visionária prepara a organização para o dia em que ela não estiver mais presente. A sucessão da liderança é um indicador crítico de maturidade institucional. No nível 'Avançado', a existência da organização não está vinculada à imagem de uma única liderança, mas sim a uma equipe qualificada e novas lideranças prontas para assumir a gestão sem dificuldades.\n\nFortalecer a instituição significa investir na gestão da equipe, garantindo condições para manter os colaboradores motivados e capacitados para suas funções. Além disso, a diversidade é um valor que deve ser refletido tanto na equipe quanto nos órgãos de governança, abrangendo recortes de raça/etnia, gênero e pessoas com deficiência de maneira transversal. Uma liderança diversa enriquece o olhar sobre os problemas sociais e fortalece a legitimidade da ONG perante a comunidade.\n\nPor fim, a legitimidade é conquistada quando a organização e seus líderes são reconhecidos como atores relevantes por todos os stakeholders: público atendido, famílias, parceiros, financiadores e poder público. Ao promover a participação ativa e mecanismos de escuta do público, a diretoria não apenas gerencia, mas cocria soluções transformadoras que elevam a instituição a um novo patamar de impacto e respeito social."
+      "titulo": "Desenvolvimento Territorial: O Poder do Local",
+      "conteudo": "O desenvolvimento territorial vai além de um recorte temático; é uma forma de organizar a transformação social focando no protagonismo dos atores locais. Para construir comunidades sustentáveis, a diretoria deve buscar o equilíbrio entre os capitais econômico, ambiental, social, institucional e humano. É o reconhecimento de que cada território possui desafios e potencialidades únicas que demandam soluções sob medida.\n\nA metodologia para medir o progresso territorial foca na implantação de condições básicas, como a **articulação de atores** e o estabelecimento de **agendas partilhadas**. Não se mede apenas se a mudança aconteceu, mas se os laços de confiança e o trabalho colaborativo entre o setor público, empresas e sociedade civil estão sendo fortalecidos. A ação coletiva é, em si, um dos resultados mais valiosos que uma ONG pode almejar.\n\nFortalecer os quatro capitais do território — humano (agência do cidadão), econômico (vitalidade inclusiva), institucional (instituições confiáveis) e social (laços de solidariedade) — garante que a transformação seja sustentável no longo prazo. Quando a comunidade se torna protagonista de sua própria história, a organização cumpre seu papel mais nobre de catalisadora do desenvolvimento."
     },
     "quizzes": [
       {
-        "pergunta": "O que caracteriza o nível 'Avançado' no indicador de 'Sucessão da liderança'?",
+        "pergunta": "Quais são os 4 capitais do território mencionados para o fortalecimento local?",
         "alternativas": [
-          "A organização fecha quando o líder se aposenta",
-          "A existência da organização não está vinculada à imagem da liderança e novas lideranças podem assumir",
-          "O líder escolhe um familiar para assumir o cargo",
-          "A equipe tem medo de assumir a gestão institucional"
+          "Financeiro, Imobiliário, Digital e Industrial.",
+          "Humano, Econômico, Institucional e Social.",
+          "Político, Religioso, Esportivo e Cultural.",
+          "Primário, Secundário, Terciário e Quaternário."
         ],
-        "explicacao": "No nível avançado, a organização não depende da imagem do líder e existem novas lideranças prontas na equipe.",
+        "explicacao": "O modelo se baseia no fortalecimento dos capitais humano, econômico, institucional e social.",
         "correta_idx": 1,
         "dificuldade": "médio"
       },
       {
-        "pergunta": "Sobre o indicador de 'Diversidade', o que a organização deve fazer no nível avançado?",
+        "pergunta": "O que define uma 'Comunidade Sustentável' segundo o texto?",
         "alternativas": [
-          "Ignorar as pautas de diversidade no planejamento",
-          "Trabalhar pautas de diversidade para ao menos três recortes de maneira transversal",
-          "Contratar apenas pessoas do mesmo perfil para evitar conflitos",
-          "Tratar a diversidade apenas como uma questão emergencial e pontual"
+          "Aquela que vive apenas de recursos governamentais.",
+          "Aquela que constrói democraticamente seu território com equilíbrio entre diversos aspectos.",
+          "Uma comunidade que não possui problemas sociais.",
+          "Um bairro onde todos os moradores são funcionários da mesma ONG."
         ],
-        "explicacao": "No nível avançado, a organização trabalha pautas de diversidade para ao menos três recortes de maneira transversal e articulada.",
+        "explicacao": "Comunidade sustentável é aquela que constrói democraticamente seu território, buscando equilíbrio econômico, ambiental, social, etc..",
         "correta_idx": 1,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "Como a 'Legitimidade' é atingida no seu nível mais alto (Avançado)?",
-        "alternativas": [
-          "Quando o líder é famoso nas redes sociais",
-          "Quando a organização é reconhecida por beneficiários, famílias, parceiros, financiadores e poder público",
-          "Quando a ONG recebe o maior volume de doações da região",
-          "Quando a organização é a única que atua naquele território"
-        ],
-        "explicacao": "A legitimidade avançada ocorre quando a organização e liderança são reconhecidas por todos os atores relevantes, incluindo poder público e financiadores.",
-        "correta_idx": 1,
-        "dificuldade": "médio"
-      },
-      {
-        "pergunta": "O que significa ter 'Metodologia participativa' em uma organização?",
-        "alternativas": [
-          "Ter mecanismos de escuta ativa e participação do público que promovem mudanças estruturantes",
-          "Pedir que os beneficiários apenas assinem listas de presença",
-          "Decidir tudo pela diretoria e apenas informar o público depois",
-          "Realizar ações sem envolver as famílias para ser mais rápido"
-        ],
-        "explicacao": "No nível avançado da metodologia participativa, a escuta ativa e participação promovem mudanças estruturantes na organização.",
-        "correta_idx": 0,
         "dificuldade": "fácil"
       },
       {
-        "pergunta": "Qual o objetivo da dimensão 'Gestão da Equipe' no fortalecimento institucional?",
+        "pergunta": "Qual o foco da metodologia de avaliação da RedEAmérica para o território?",
         "alternativas": [
-          "Garantir condições para manter uma equipe motivada e capacitada, assegurando a qualidade permanente",
-          "Reduzir salários para sobrar mais dinheiro para projetos",
-          "Monitorar cada minuto de trabalho dos colaboradores",
-          "Substituir todos os funcionários por voluntários"
+          "Medir apenas o PIB local da comunidade.",
+          "Focar na implantação de condições básicas como articulação e trabalho colaborativo.",
+          "Contar o número de construções físicas realizadas.",
+          "Avaliar a popularidade dos líderes políticos locais."
         ],
-        "explicacao": "O objetivo é garantir condições para uma equipe motivada e capacitada, garantindo a qualidade das atividades.",
-        "correta_idx": 0,
+        "explicacao": "A metodologia foca no desenvolvimento das condições básicas: articulação, agendas partilhadas e trabalho colaborativo.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Quais são as etapas do processo de desenvolvimento para uma comunidade sustentável?",
+        "alternativas": [
+          "Doação, Compra, Venda e Lucro.",
+          "Articulação, Geração de acordos, Fortalecimento de capacidades e Execução coordenada.",
+          "Planejamento secreto e Execução individual pelo diretor.",
+          "Apenas a execução rápida de planos sem consulta prévia."
+        ],
+        "explicacao": "O processo inclui articulação, acordos, fortalecimento de capacidades/institucionalidade e execução coordenada.",
+        "correta_idx": 1,
+        "dificuldade": "difícil"
+      },
+      {
+        "pergunta": "O que é o 'Capital Humano' no contexto territorial?",
+        "alternativas": [
+          "O valor em dinheiro que cada pessoa possui.",
+          "A capacidade de agência de cada cidadão.",
+          "O número de funcionários registrados em uma empresa.",
+          "A quantidade de seguidores de um influenciador local."
+        ],
+        "explicacao": "Capital humano é definido como aquele que se encontra na capacidade de agência de cada cidadão.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      }
+    ]
+  },
+  {
+    "pilula": {
+      "titulo": "Gestão e Transparência: Evitando Cemitérios de Dados",
+      "conteudo": "A mensuração de desempenho é uma ferramenta vital para que a diretoria decida quais medidas refletem seus objetivos reais. No entanto, um grande perigo ronda as organizações: a criação de **cemitérios de dados** — montanhas de informações coletadas que ninguém analisa ou utiliza para tomar decisões. Para evitar isso, o sistema de indicadores deve ser simples, compreensível por todos e orientado para o aprendizado contínuo.\n\nUma gestão eficiente começa com a clareza da **missão e visão**, que devem ser comunicadas a todos os membros e parceiros. Quando as metas organizacionais são frequentemente utilizadas e os objetivos da equipe estão alinhados, a organização deixa de ser um conjunto de tarefas isoladas e passa a ser um esforço cooperativo planejado. A transparência não é apenas uma obrigação legal, é o combustível da confiança do doador.\n\nUtilizar instrumentos de coleta adequados, como formulários pré-preparados ou conversas casuais sistematizadas, facilita a obtenção de informações relevantes sem sobrecarregar a equipe. Lembre-se: 'o que não é medido, não é gerenciado'. Meça o que importa, aprenda com os dados e transforme sua organização em uma vitrine de excelência e impacto social."
+    },
+    "quizzes": [
+      {
+        "pergunta": "O que é um 'cemitério de dados' segundo o conteúdo?",
+        "alternativas": [
+          "Um arquivo morto para documentos de ex-funcionários.",
+          "Montanhas de informação produzidas que ninguém consegue aproveitar ou analisar.",
+          "Uma base de dados protegida por senhas de alta segurança.",
+          "O histórico de atendimentos de saúde de uma clínica."
+        ],
+        "explicacao": "Cemitérios de dados são montanhas de informação produzidas que ninguém consegue aproveitar ou analisar.",
+        "correta_idx": 1,
         "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Qual a famosa frase de Kaplan e Norton citada sobre medição?",
+        "alternativas": [
+          "Doar é acreditar na transformação.",
+          "O que não é medido, não é gerenciado.",
+          "O lucro é a única medida de sucesso.",
+          "Planejar é melhor que executar."
+        ],
+        "explicacao": "Kaplan e Norton ressaltam que a mensuração é essencial, pois 'o que não é medido, não é gerenciado'.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "De acordo com a pesquisa em João Pessoa, quais instrumentos de coleta de dados são mais utilizados?",
+        "alternativas": [
+          "Apenas chamadas telefônicas gravadas.",
+          "Formulários pré-preparados, questionários e conversas casuais.",
+          "Drones e monitoramento por satélite.",
+          "Apenas entrevistas formais de longa duração."
+        ],
+        "explicacao": "Os instrumentos mais utilizados foram formulários/questionários e pessoal/conversas casuais.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
+      },
+      {
+        "pergunta": "Qual a característica de um 'bom sistema de indicadores'?",
+        "alternativas": [
+          "Ser o mais complexo possível para impressionar investidores.",
+          "Ser simples e capaz de ser compreendido por todos, sem ser simplista.",
+          "Focar apenas em dados financeiros e ignorar o social.",
+          "Ser guardado em segredo pela diretoria executiva."
+        ],
+        "explicacao": "Um bom sistema deve ser simples, compreendido por todos, sem ser simplista, e viável operacionalmente.",
+        "correta_idx": 1,
+        "dificuldade": "fácil"
+      },
+      {
+        "pergunta": "Em relação às metas de desempenho, quais são mais utilizadas nas OSCs pesquisadas?",
+        "alternativas": [
+          "Metas individuais de bônus financeiro.",
+          "Objetivos da equipe e metas organizacionais.",
+          "Metas políticas para candidatos locais.",
+          "Nenhuma meta é utilizada nas ONGs."
+        ],
+        "explicacao": "A análise evidenciou que os objetivos da equipe e metas organizacionais são frequentemente utilizados.",
+        "correta_idx": 1,
+        "dificuldade": "médio"
       }
     ]
   }
