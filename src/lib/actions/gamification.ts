@@ -3,7 +3,7 @@
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { revalidatePath } from "next/cache";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { shuffleArray } from "@/lib/utils";
+
 
 // ─── Streak Helpers ──────────────────────────────────────
 
@@ -168,14 +168,10 @@ export async function getArenaData(mundoId: number, faseOrdem: number) {
   ]);
 
   const rawQuizzes = (quizzesRes.data || []) as Quiz[];
-  const quizzesWithShuffledOptions = rawQuizzes.map((quiz) => ({
-    ...quiz,
-    alternativas: shuffleArray(quiz.alternativas)
-  }));
 
   return {
     pilula: pilula as Pilula,
-    quizzes: quizzesWithShuffledOptions,
+    quizzes: rawQuizzes,
     vidas: voluntarioRes.data?.vidas_atuais ?? 5,
     metrosLinha: voluntarioRes.data?.metros_linha ?? 0,
     nextRechargeSeconds,

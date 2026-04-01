@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { cn, shuffleArray } from "@/lib/utils";
 import { Loader2, ArrowRight } from "lucide-react";
 import { useGameSound } from "@/hooks/useGameSound";
 
@@ -29,11 +29,12 @@ export default function QuizQuestion({
   onSubmit,
   onNext,
 }: QuizQuestionProps) {
+  const [shuffledAlternativas] = useState(() => shuffleArray(alternativas));
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [answered, setAnswered] = useState(false);
 
-  const correctIdx = alternativas.findIndex((a) => a.correta);
+  const correctIdx = shuffledAlternativas.findIndex((a) => a.correta);
   const acertou = selectedIdx === correctIdx;
 
   const { playHover, playClick, playQuizCorrect, playQuizWrong } = useGameSound();
@@ -101,7 +102,7 @@ export default function QuizQuestion({
 
         {/* Alternativas */}
         <div className="space-y-3">
-          {alternativas.map((alt, idx) => {
+          {shuffledAlternativas.map((alt, idx) => {
             const isSelected = selectedIdx === idx;
             const isCorrect = alt.correta;
 
