@@ -11,8 +11,16 @@ interface DynamicSkyBackgroundProps {
 }
 
 export function DynamicSkyBackground({ mundoId, children, className }: DynamicSkyBackgroundProps) {
+  // Determina a ordem baseada no ID:
+  // Mundos originais (Quiz): IDs 1 a 10
+  // Novo multiverso (Cruzada): IDs 13 a 22 (13 -> 1, 14 -> 2, etc)
+  let normalizedId = mundoId;
+  if (mundoId >= 13 && mundoId <= 22) {
+    normalizedId = mundoId - 12;
+  }
+  
   // Garantir que caia em um mapa válido, limite entre 1 e 10
-  const normalizedId = Math.max(1, Math.min(10, mundoId));
+  normalizedId = Math.max(1, Math.min(10, normalizedId));
   
   // O Next.js suporta caminhos com espaços, mas encodeURIComponent garante que funcione em todos os browsers + loader da Vercel
   const imageSrc = `/images/backgrounds/MUNDO ${normalizedId}.png`;

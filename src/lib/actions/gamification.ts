@@ -106,8 +106,16 @@ export async function getMapaData() {
     });
   }
 
+  const allMundos = mundosRes.data || [];
+
   return {
-    mundos: mundosRes.data || [],
+    mundos: allMundos,
+    mundosByMode: {
+      quiz: allMundos.filter((m: { game_mode?: string }) => (m.game_mode ?? 'quiz') === 'quiz'),
+      crossword: user.email === "kayrocosta@hotmail.com" 
+        ? allMundos.filter((m: { game_mode?: string }) => m.game_mode === 'crossword')
+        : [],
+    },
     progressos: progressoRes.data || [],
     voluntario: vol,
     nextRechargeSeconds,
@@ -133,10 +141,32 @@ export async function getTrilhaData(mundoId: number) {
     supabase.from("voluntarios").select("vidas_atuais, metros_linha, last_heart_lost").eq("id", user.id).single(),
   ]);
 
+  if (mundoRes.data?.game_mode === "crossword" && user.email !== "kayrocosta@hotmail.com") {
+    throw new Error("O Multiverso das cruzadas está em construção. Acesso negado.");
+  }
+
+  let progressoData = progressoRes.data;
+
+  // Auto-initialize progress if missing for an initial world (ordem === 1)
+  if (!progressoData && mundoRes.data && mundoRes.data.ordem === 1) {
+    const { data: newProgresso } = await supabase
+      .from("progresso")
+      .insert({
+        voluntario_id: user.id,
+        mundo_id: mundoId,
+        pilula_atual: 1,
+        status: "ativo",
+        pontuacao_local: 0
+      })
+      .select()
+      .single();
+    progressoData = newProgresso;
+  }
+
   return {
     mundo: mundoRes.data,
     fases: pilulasRes.data || [],
-    progresso: progressoRes.data,
+    progresso: progressoData,
     voluntario: voluntarioRes.data,
     nextRechargeSeconds,
   };
@@ -293,10 +323,19 @@ export async function completeFase(mundoId: number, faseOrdem: number, pontosGan
 
     await supabase.rpc("increment_metros_linha", { uid: user.id, amount: 50 });
 
+    // CRITICAL: Filter by SAME game_mode to avoid cross-mode unlock
+    // First get the current world's ordem AND game_mode
+    const { data: currentMundo } = await supabase
+      .from("mundo_ceus")
+      .select("ordem, game_mode")
+      .eq("id", mundoId)
+      .single();
+
     const { data: nextMundo } = await supabase
       .from("mundo_ceus")
       .select("id")
-      .eq("ordem", (await supabase.from("mundo_ceus").select("ordem").eq("id", mundoId).single()).data!.ordem + 1)
+      .eq("ordem", currentMundo!.ordem + 1)
+      .eq("game_mode", currentMundo!.game_mode ?? 'quiz')
       .single();
 
     if (nextMundo) {

@@ -369,3 +369,31 @@
 .dark ::-webkit-scrollbar-thumb {
   background: var(--color-brand-light);
 }
+
+/* =========================================
+   CROSSWORD COQUETEL STYLES
+   ========================================= */
+.crossword-highlight {
+  background-color: #FFF3B0 !important;
+  animation: crossword-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes crossword-pulse {
+  0%, 100% { background-color: #FFF3B0; }
+  50% { background-color: #FFDE59; }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.25s ease-out;
+}
