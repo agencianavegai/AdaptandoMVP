@@ -111,9 +111,15 @@ export async function getMapaData() {
   return {
     mundos: allMundos,
     mundosByMode: {
-      quiz: allMundos.filter((m: { game_mode?: string }) => (m.game_mode ?? 'quiz') === 'quiz'),
+      quiz: allMundos.filter((m: any) => {
+        if (m.game_mode) return m.game_mode === 'quiz';
+        return m.id <= 12; // Robusto fallback (IDs 1..12 são quiz)
+      }),
       crossword: user.email === "kayrocosta@hotmail.com" 
-        ? allMundos.filter((m: { game_mode?: string }) => m.game_mode === 'crossword')
+        ? allMundos.filter((m: any) => {
+            if (m.game_mode) return m.game_mode === 'crossword';
+            return m.id >= 13; // Robusto fallback (IDs 13+ são crossword)
+          })
         : [],
     },
     progressos: progressoRes.data || [],
@@ -327,15 +333,17 @@ export async function completeFase(mundoId: number, faseOrdem: number, pontosGan
     // First get the current world's ordem AND game_mode
     const { data: currentMundo } = await supabase
       .from("mundo_ceus")
-      .select("ordem, game_mode")
+      .select("id, ordem, game_mode")
       .eq("id", mundoId)
       .single();
+
+    const expectedGameMode = currentMundo!.game_mode || (currentMundo!.id >= 13 ? 'crossword' : 'quiz');
 
     const { data: nextMundo } = await supabase
       .from("mundo_ceus")
       .select("id")
       .eq("ordem", currentMundo!.ordem + 1)
-      .eq("game_mode", currentMundo!.game_mode ?? 'quiz')
+      .eq("game_mode", expectedGameMode)
       .single();
 
     if (nextMundo) {

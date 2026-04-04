@@ -28,6 +28,7 @@ interface Mundo {
   clima_visual: string;
   cor_fase: string;
   ordem: number;
+  game_mode?: string;
 }
 
 export default function TrilhaPage() {
@@ -222,7 +223,11 @@ export default function TrilhaPage() {
                     playClick();
                     setClickedFaseId(fase.id);
                     startTransition(() => {
-                      router.push(`/arena/${mundoId}?fase=${fase.ordem}`);
+                      if (mundo.game_mode === "crossword") {
+                        router.push(`/cruzada/${mundoId}?fase=${fase.ordem}`);
+                      } else {
+                        router.push(`/arena/${mundoId}?fase=${fase.ordem}`);
+                      }
                     });
                   }}
                   className={cn(

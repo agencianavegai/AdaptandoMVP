@@ -15,6 +15,11 @@ export function useGameSound() {
   const [playQuizWrongSound] = useSound("/sounds/quiz-wrong.mp3", { volume: 0.6, interrupt: true });
   const [playPhaseCompleteSound] = useSound("/sounds/phase-complete.mp3", { volume: 0.6, interrupt: true });
   const [playModalSwooshSound] = useSound("/sounds/modal-swoosh.mp3", { volume: 0.4, interrupt: true });
+  
+  // Crossword sounds
+  const [playCrosswordTypeSound] = useSound("/sounds/crossword-type.mp3", { volume: 0.4, interrupt: true });
+  const [playCrosswordWordCorrectSound] = useSound("/sounds/crossword-correct.mp3", { volume: 0.6, interrupt: true });
+  const [playCrosswordWordWrongSound] = useSound("/sounds/crossword-wrong.mp3", { volume: 0.5, interrupt: true });
 
   const playHover = useCallback(() => {
     if (!isMuted) playUiHoverSound();
@@ -40,6 +45,18 @@ export function useGameSound() {
     if (!isMuted) playModalSwooshSound();
   }, [isMuted, playModalSwooshSound]);
 
+  const playCrosswordType = useCallback(() => {
+    if (!isMuted) playCrosswordTypeSound();
+  }, [isMuted, playCrosswordTypeSound]);
+
+  const playCrosswordWordCorrect = useCallback(() => {
+    if (!isMuted) playCrosswordWordCorrectSound();
+  }, [isMuted, playCrosswordWordCorrectSound]);
+
+  const playCrosswordWordWrong = useCallback(() => {
+    if (!isMuted) playCrosswordWordWrongSound();
+  }, [isMuted, playCrosswordWordWrongSound]);
+
   return {
     playHover,
     playClick,
@@ -47,5 +64,8 @@ export function useGameSound() {
     playQuizWrong,
     playPhaseComplete,
     playModalSwoosh,
+    playCrosswordType,
+    playCrosswordWordCorrect,
+    playCrosswordWordWrong,
   };
 }

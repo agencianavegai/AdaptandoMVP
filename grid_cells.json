@@ -1,0 +1,785 @@
+[
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 0,
+    "text": "Habilidade de se colocar no lugar do outro durante a ação",
+    "dica_curta": "Senso de união",
+    "arrow": "right",
+    "word": "EMPATIA"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 0,
+    "answer": "E",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 0,
+    "answer": "M",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 0,
+    "answer": "P",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 0,
+    "answer": "A",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 0,
+    "answer": "T",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 0,
+    "answer": "I",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 0,
+    "answer": "A",
+    "wordIds": [
+      "EMPATIA"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 1,
+    "text": "Resultado transformador gerado pela atuação voluntária na realidade brasileira",
+    "dica_curta": "Efeito positivo",
+    "arrow": "right",
+    "word": "IMPACTO"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 1,
+    "answer": "I",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 1,
+    "answer": "M",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 1,
+    "answer": "P",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 1,
+    "answer": "A",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 1,
+    "answer": "C",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 1,
+    "answer": "T",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 1,
+    "answer": "O",
+    "wordIds": [
+      "IMPACTO"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 2,
+    "text": "Documento de compromisso assinado entre o voluntário e a instituição",
+    "dica_curta": "Termo formal",
+    "arrow": "right",
+    "word": "ADESAO"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 2,
+    "answer": "A",
+    "wordIds": [
+      "ADESAO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 2,
+    "answer": "D",
+    "wordIds": [
+      "ADESAO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 2,
+    "answer": "E",
+    "wordIds": [
+      "ADESAO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 2,
+    "answer": "S",
+    "wordIds": [
+      "ADESAO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 2,
+    "answer": "A",
+    "wordIds": [
+      "ADESAO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 2,
+    "answer": "O",
+    "wordIds": [
+      "ADESAO"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 7,
+    "y": 2,
+    "text": "Ato de ceder trabalho e energia sem receber remuneração financeira",
+    "dica_curta": "Entregar tempo",
+    "arrow": "down",
+    "word": "DOAR"
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 3,
+    "text": "Área voltada para a redução de desigualdades e defesa de direitos",
+    "dica_curta": "Campo de atuação",
+    "arrow": "right",
+    "word": "SOCIAL"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 3,
+    "answer": "S",
+    "wordIds": [
+      "SOCIAL"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 3,
+    "answer": "O",
+    "wordIds": [
+      "SOCIAL"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 3,
+    "answer": "C",
+    "wordIds": [
+      "SOCIAL"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 3,
+    "answer": "I",
+    "wordIds": [
+      "SOCIAL"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 3,
+    "answer": "A",
+    "wordIds": [
+      "SOCIAL"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 3,
+    "answer": "L",
+    "wordIds": [
+      "SOCIAL"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 3,
+    "answer": "D",
+    "wordIds": [
+      "DOAR"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 4,
+    "text": "Profissionais e voluntários que trabalham em harmonia para realizar a missão",
+    "dica_curta": "Base funcional",
+    "arrow": "right",
+    "word": "EQUIPE"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 4,
+    "answer": "E",
+    "wordIds": [
+      "EQUIPE"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 4,
+    "answer": "Q",
+    "wordIds": [
+      "EQUIPE"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 4,
+    "answer": "U",
+    "wordIds": [
+      "EQUIPE"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 4,
+    "answer": "I",
+    "wordIds": [
+      "EQUIPE"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 4,
+    "answer": "P",
+    "wordIds": [
+      "EQUIPE"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 4,
+    "answer": "E",
+    "wordIds": [
+      "EQUIPE"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 4,
+    "answer": "O",
+    "wordIds": [
+      "DOAR"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 5,
+    "text": "Prestar auxílio voluntário a quem precisa de apoio na comunidade",
+    "dica_curta": "Dar suporte",
+    "arrow": "right",
+    "word": "AJUDA"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 5,
+    "answer": "A",
+    "wordIds": [
+      "AJUDA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 5,
+    "answer": "J",
+    "wordIds": [
+      "AJUDA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 5,
+    "answer": "U",
+    "wordIds": [
+      "AJUDA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 5,
+    "answer": "D",
+    "wordIds": [
+      "AJUDA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 5,
+    "answer": "A",
+    "wordIds": [
+      "AJUDA"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 6,
+    "y": 5,
+    "text": "Resultado ou propósito que o projeto social busca efetivamente alcançar",
+    "dica_curta": "Objetivo claro",
+    "arrow": "down",
+    "word": "META"
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 5,
+    "answer": "A",
+    "wordIds": [
+      "DOAR"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 6,
+    "text": "Propósito social que motiva o voluntário a agir pela sociedade",
+    "dica_curta": "Motivo nobre",
+    "arrow": "right",
+    "word": "CAUSA"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 6,
+    "answer": "C",
+    "wordIds": [
+      "CAUSA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 6,
+    "answer": "A",
+    "wordIds": [
+      "CAUSA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 6,
+    "answer": "U",
+    "wordIds": [
+      "CAUSA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 6,
+    "answer": "S",
+    "wordIds": [
+      "CAUSA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 6,
+    "answer": "A",
+    "wordIds": [
+      "CAUSA"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 6,
+    "answer": "M",
+    "wordIds": [
+      "META"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 6,
+    "answer": "R",
+    "wordIds": [
+      "DOAR"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 7,
+    "text": "Característica que orienta a existência e a cultura da organização",
+    "dica_curta": "Princípio ético",
+    "arrow": "right",
+    "word": "VALOR"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 7,
+    "answer": "V",
+    "wordIds": [
+      "VALOR"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 7,
+    "answer": "A",
+    "wordIds": [
+      "VALOR"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 7,
+    "answer": "L",
+    "wordIds": [
+      "VALOR"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 7,
+    "answer": "O",
+    "wordIds": [
+      "VALOR"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 7,
+    "answer": "R",
+    "wordIds": [
+      "VALOR"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 7,
+    "answer": "E",
+    "wordIds": [
+      "META"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 7,
+    "y": 7,
+    "text": "Prática solidária voltada para auxiliar o próximo e a sociedade",
+    "dica_curta": "Fazer o bem",
+    "arrow": "down",
+    "word": "BEM"
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 8,
+    "text": "Parcela do dia que o cidadão dedica às causas sociais",
+    "dica_curta": "Recurso doado",
+    "arrow": "right",
+    "word": "TEMPO"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 8,
+    "answer": "T",
+    "wordIds": [
+      "TEMPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 8,
+    "answer": "E",
+    "wordIds": [
+      "TEMPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 8,
+    "answer": "M",
+    "wordIds": [
+      "TEMPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 8,
+    "answer": "P",
+    "wordIds": [
+      "TEMPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 8,
+    "answer": "O",
+    "wordIds": [
+      "TEMPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 8,
+    "answer": "T",
+    "wordIds": [
+      "META"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 8,
+    "answer": "B",
+    "wordIds": [
+      "BEM"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 9,
+    "text": "Conjunto de pessoas que cooperam juntas em prol de um objetivo",
+    "dica_curta": "Trabalho coletivo",
+    "arrow": "right",
+    "word": "GRUPO"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 9,
+    "answer": "G",
+    "wordIds": [
+      "GRUPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 9,
+    "answer": "R",
+    "wordIds": [
+      "GRUPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 9,
+    "answer": "U",
+    "wordIds": [
+      "GRUPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 9,
+    "answer": "P",
+    "wordIds": [
+      "GRUPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 9,
+    "answer": "O",
+    "wordIds": [
+      "GRUPO"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 6,
+    "y": 9,
+    "answer": "A",
+    "wordIds": [
+      "META"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 9,
+    "answer": "E",
+    "wordIds": [
+      "BEM"
+    ]
+  },
+  {
+    "type": "clue",
+    "x": 0,
+    "y": 10,
+    "text": "Responsável por orientar e motivar os voluntários em suas funções",
+    "dica_curta": "Guia da equipe",
+    "arrow": "right",
+    "word": "LIDER"
+  },
+  {
+    "type": "input",
+    "x": 1,
+    "y": 10,
+    "answer": "L",
+    "wordIds": [
+      "LIDER"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 2,
+    "y": 10,
+    "answer": "I",
+    "wordIds": [
+      "LIDER"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 3,
+    "y": 10,
+    "answer": "D",
+    "wordIds": [
+      "LIDER"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 4,
+    "y": 10,
+    "answer": "E",
+    "wordIds": [
+      "LIDER"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 5,
+    "y": 10,
+    "answer": "R",
+    "wordIds": [
+      "LIDER"
+    ]
+  },
+  {
+    "type": "input",
+    "x": 7,
+    "y": 10,
+    "answer": "M",
+    "wordIds": [
+      "BEM"
+    ]
+  }
+]

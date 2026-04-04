@@ -19,6 +19,7 @@ export type Database = {
           ativo: boolean
           clima_visual: string
           cor_fase: string
+          game_mode: Database["public"]["Enums"]["game_mode"]
           id: number
           nome_tema: string
           notebook_id: string | null
@@ -29,6 +30,7 @@ export type Database = {
           ativo?: boolean
           clima_visual: string
           cor_fase: string
+          game_mode?: Database["public"]["Enums"]["game_mode"]
           id?: number
           nome_tema: string
           notebook_id?: string | null
@@ -39,6 +41,7 @@ export type Database = {
           ativo?: boolean
           clima_visual?: string
           cor_fase?: string
+          game_mode?: Database["public"]["Enums"]["game_mode"]
           id?: number
           nome_tema?: string
           notebook_id?: string | null
@@ -46,6 +49,82 @@ export type Database = {
           simbologia?: string | null
         }
         Relationships: []
+      }
+      palavras_cruzadas_grids: {
+        Row: {
+          id: string
+          pilula_id: string
+          largura: number
+          altura: number
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          pilula_id: string
+          largura: number
+          altura: number
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          pilula_id?: string
+          largura?: number
+          altura?: number
+          created_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "palavras_cruzadas_grids_pilula_id_fkey"
+            columns: ["pilula_id"]
+            isOneToOne: true
+            referencedRelation: "pilulas"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      palavras_cruzadas_palavras: {
+        Row: {
+          id: string
+          grid_id: string
+          palavra: string
+          dica: string
+          pos_x: number
+          pos_y: number
+          direcao: string
+          ordem: number
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          grid_id: string
+          palavra: string
+          dica: string
+          pos_x: number
+          pos_y: number
+          direcao: string
+          ordem?: number
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          grid_id?: string
+          palavra?: string
+          dica?: string
+          pos_x?: number
+          pos_y?: number
+          direcao?: string
+          ordem?: number
+          created_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "palavras_cruzadas_palavras_grid_id_fkey"
+            columns: ["grid_id"]
+            isOneToOne: false
+            referencedRelation: "palavras_cruzadas_grids"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       pilulas: {
         Row: {
@@ -273,6 +352,7 @@ export type Database = {
     }
     Enums: {
       dificuldade_quiz: "facil" | "medio" | "dificil"
+      game_mode: "quiz" | "crossword"
       status_progresso: "bloqueado" | "ativo" | "concluido"
     }
     CompositeTypes: {
@@ -402,6 +482,7 @@ export const Constants = {
   public: {
     Enums: {
       dificuldade_quiz: ["facil", "medio", "dificil"],
+      game_mode: ["quiz", "crossword"],
       status_progresso: ["bloqueado", "ativo", "concluido"],
     },
   },

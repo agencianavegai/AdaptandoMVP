@@ -8,6 +8,8 @@ import WorldCard from "@/components/map/WorldCard";
 import MapAnimatedBackground from "@/components/map/MapAnimatedBackground";
 import { useGameSound } from "@/hooks/useGameSound";
 
+import { MapCarousel } from "@/components/map/MapCarousel";
+
 interface MundoCeu {
   id: number;
   nome_tema: string;
@@ -15,6 +17,7 @@ interface MundoCeu {
   cor_fase: string;
   ordem: number;
   descricao?: string;
+  game_mode: "quiz" | "crossword";
 }
 
 interface Progresso {
@@ -33,6 +36,7 @@ interface Voluntario {
 
 export default function MapaPage() {
   const [mundos, setMundos] = useState<MundoCeu[]>([]);
+  const [mundosByMode, setMundosByMode] = useState<{quiz: MundoCeu[], crossword: MundoCeu[]}>({ quiz: [], crossword: [] });
   const [progressos, setProgressos] = useState<Progresso[]>([]);
   const [voluntario, setVoluntario] = useState<Voluntario | null>(null);
   const [nextRechargeSeconds, setNextRechargeSeconds] = useState(0);
@@ -45,6 +49,7 @@ export default function MapaPage() {
       try {
         const data = await getMapaData();
         setMundos(data.mundos);
+        setMundosByMode(data.mundosByMode as {quiz: MundoCeu[], crossword: MundoCeu[]});
         setProgressos(data.progressos);
         setVoluntario(data.voluntario);
         setNextRechargeSeconds(data.nextRechargeSeconds);
@@ -59,7 +64,13 @@ export default function MapaPage() {
 
   function getWorldStatus(mundoId: number): "bloqueado" | "ativo" | "concluido" {
     const prog = progressos.find((p) => p.mundo_id === mundoId);
-    return (prog?.status as "bloqueado" | "ativo" | "concluido") || "bloqueado";
+    if (prog) return (prog.status as "bloqueado" | "ativo" | "concluido");
+    
+    // Auto-unlock first world of any game mode
+    const mundo = mundos.find(m => m.id === mundoId);
+    if (mundo && mundo.ordem === 1) return "ativo";
+    
+    return "bloqueado";
   }
 
   function getWorldScore(mundoId: number): number {
@@ -102,28 +113,77 @@ export default function MapaPage() {
       {/* Fixed Top Bar */}
       <TopBar voluntario={voluntario} nextRechargeSeconds={nextRechargeSeconds} currentFocus={getCurrentFocus()} />
 
-      {/* World Cards List */}
-      <main className="relative z-10 flex flex-col gap-6 p-5 pt-28 pb-28">
-        {/* Section Title */}
-        <div className="text-center mb-2">
-          <h1 className="font-display font-black text-2xl text-white uppercase tracking-wide">
-            Mapa dos Céus
-          </h1>
-          <p className="text-white/50 text-sm font-medium mt-1">
-            Desbloqueie cada mundo completando suas fases
-          </p>
-        </div>
-
-        {/* Cards */}
-        {mundos.map((mundo) => (
-          <WorldCard
-            key={mundo.id}
-            mundo={mundo}
-            status={getWorldStatus(mundo.id)}
-            score={getWorldScore(mundo.id)}
-            onNavigate={(id) => { playClick(); router.push(`/trilha/${id}`) }}
-          />
-        ))}
+      <main className="relative z-10 flex flex-col items-center pt-28 pb-28">
+        <MapCarousel
+          slides={[
+            {
+              id: "quiz",
+              label: "Quiz",
+              icon: "⚔️",
+              content: (
+                <div className="flex flex-col gap-6 w-full px-5">
+                  <div className="text-center mb-2">
+                    <h1 className="font-display font-black text-2xl text-white uppercase tracking-wide">
+                      Mapa dos Céus
+                    </h1>
+                    <p className="text-white/50 text-sm font-medium mt-1">
+                      Desafio Contínuo de Quiz
+                    </p>
+                  </div>
+                  {mundosByMode.quiz.map((mundo) => (
+                    <WorldCard
+                      key={mundo.id}
+                      mundo={mundo}
+                      status={getWorldStatus(mundo.id)}
+                      score={getWorldScore(mundo.id)}
+                      onNavigate={(id) => { playClick(); router.push(`/trilha/${id}`) }}
+                    />
+                  ))}
+                  {mundosByMode.quiz.length === 0 && (
+                    <p className="text-white/50 text-center italic py-10">Nenhum mundo encontrado.</p>
+                  )}
+                  {/* Espaçamento final mobile */}
+                  <div className="h-6"></div>
+                </div>
+              ),
+            },
+            ...(mundosByMode.crossword.length > 0
+              ? [
+                  {
+                    id: "crossword",
+                    label: "Cruzadas",
+                    icon: "🧩",
+                    content: (
+                      <div className="flex flex-col gap-6 w-full px-5">
+                        <div className="text-center mb-2">
+                          <h1 className="font-display font-black text-2xl text-white uppercase tracking-wide">
+                            Multiverso
+                          </h1>
+                          <p className="text-white/50 text-sm font-medium mt-1">
+                            Desafios de Palavras Cruzadas
+                          </p>
+                        </div>
+                        {mundosByMode.crossword.map((mundo) => (
+                          <WorldCard
+                            key={mundo.id}
+                            mundo={mundo}
+                            status={getWorldStatus(mundo.id)}
+                            score={getWorldScore(mundo.id)}
+                            onNavigate={(id) => {
+                              playClick();
+                              router.push(`/cruzada/${id}`);
+                            }}
+                          />
+                        ))}
+                        {/* Espaçamento final mobile */}
+                        <div className="h-6"></div>
+                      </div>
+                    ),
+                  },
+                ]
+              : []),
+          ]}
+        />
       </main>
     </div>
   );

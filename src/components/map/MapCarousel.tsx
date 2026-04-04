@@ -16,6 +16,15 @@ interface MapCarouselProps {
 export function MapCarousel({ slides }: MapCarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // If there's only one slide, just render its content directly
+  if (slides.length === 1) {
+    return (
+      <div className="w-full h-full flex flex-col items-center">
+        {slides[0].content}
+      </div>
+    );
+  }
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -25,10 +34,10 @@ export function MapCarousel({ slides }: MapCarouselProps) {
   };
 
   return (
-    <div className="relative w-full overflow-hidden flex flex-col items-center">
+    <div className="relative w-full flex flex-col items-center">
       
       {/* ─── Tabs / Pagination (Glassmorphism) ─── */}
-      <div className="z-10 mt-6 mb-2 bg-black/20 backdrop-blur-md rounded-full px-2 py-1.5 flex gap-2 border border-white/10 shadow-lg">
+      <div className="sticky top-[88px] z-40 mt-6 mb-2 bg-black/40 backdrop-blur-md rounded-full px-2 py-1.5 flex gap-2 border border-white/20 shadow-xl">
         {slides.map((slide, idx) => (
           <button
             key={slide.id}
@@ -53,22 +62,15 @@ export function MapCarousel({ slides }: MapCarouselProps) {
       </div>
 
       {/* ─── Swipeable Carousel Track ─── */}
-      {/* 
-        Using a simple layout animation wrapper. 
-        In a real scenario, use drag="x" with pan handlers for true swiping.
-        For now, snapping via buttons and tab clicks provides direct control. 
-      */}
       <div className="relative w-full h-full flex flex-1 items-stretch justify-center px-4 overflow-visible">
         
         {/* Left Arrow (Desktop/Tablet aid) */}
-        {slides.length > 1 && (
-          <button 
-            onClick={prevSlide}
-            className="hidden md:flex absolute py-10 left-4 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all active:scale-95"
-          >
-            <ChevronLeft size={24} />
-          </button>
-        )}
+        <button 
+          onClick={prevSlide}
+          className="hidden md:flex absolute py-10 left-4 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all active:scale-95"
+        >
+          <ChevronLeft size={24} />
+        </button>
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -84,14 +86,12 @@ export function MapCarousel({ slides }: MapCarouselProps) {
         </AnimatePresence>
 
         {/* Right Arrow (Desktop/Tablet aid) */}
-        {slides.length > 1 && (
-          <button 
-            onClick={nextSlide}
-            className="hidden md:flex absolute py-10 right-4 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all active:scale-95"
-          >
-            <ChevronRight size={24} />
-          </button>
-        )}
+        <button 
+          onClick={nextSlide}
+          className="hidden md:flex absolute py-10 right-4 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all active:scale-95"
+        >
+          <ChevronRight size={24} />
+        </button>
       </div>
 
       {/* Mobile hint */}
